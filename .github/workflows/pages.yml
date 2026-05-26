@@ -4,6 +4,8 @@ run-name: Publish Graphify Wiki Brain
 on:
   push:
     branches: [main]
+  repository_dispatch:
+    types: [pages-deploy]
   workflow_dispatch:
 
 permissions:
