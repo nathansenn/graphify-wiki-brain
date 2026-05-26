@@ -4,6 +4,8 @@ Public Three.js brain viewer for Graphify wiki exports and Obsidian vaults.
 
 The repo is intentionally static: import runs locally, writes `public/brain.json`, and the site renders that graph as a full-screen interactive brain.
 
+The default graph now includes the archive-derived Pattern of Mind and State of Mind layers. Provenance and source notes live in `docs/mind-graph-sources.md`.
+
 ## Run
 
 ```bash

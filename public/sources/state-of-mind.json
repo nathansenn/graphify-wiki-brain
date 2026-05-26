@@ -1,0 +1,45 @@
+{
+  "id": "state-of-mind",
+  "label": "State of Mind",
+  "source": "senn-archive/src/app/api/brain/metacognitive-journal/route.ts",
+  "description": "A metacognitive journal model that summarizes the current brain graph as a living state: scale, sacred content, embedding coverage, recent acquisitions, well-worn paths, focus areas, center of gravity, and knowledge distribution.",
+  "sections": [
+    {
+      "id": "state-of-mind-metrics",
+      "label": "State of Mind",
+      "summary": "Overall metrics snapshot: total nodes, total edges, sacred nodes, embedding coverage, and average significance."
+    },
+    {
+      "id": "recent-acquisitions",
+      "label": "Recent Acquisitions",
+      "summary": "The five most recently created nodes, used to show what the brain has just learned."
+    },
+    {
+      "id": "well-worn-paths",
+      "label": "Well-Worn Paths",
+      "summary": "The most traversed edges, used to reveal habitual routes through the graph."
+    },
+    {
+      "id": "areas-of-focus",
+      "label": "Areas of Focus",
+      "summary": "Categories ranked by node count, used to show where attention and knowledge mass are concentrated."
+    },
+    {
+      "id": "center-of-gravity",
+      "label": "Center of Gravity",
+      "summary": "The most central node in the graph, used as a live anchor for the current mind state."
+    },
+    {
+      "id": "knowledge-distribution",
+      "label": "Knowledge Distribution",
+      "summary": "Node counts by significance tier: low, mid, and high."
+    }
+  ],
+  "metrics": [
+    "totalNodes",
+    "totalEdges",
+    "sacredCount",
+    "embeddingCoverage",
+    "avgSignificance"
+  ]
+}

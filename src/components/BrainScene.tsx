@@ -228,7 +228,8 @@ function BrainField({
         const isQueryMatch = queryMatches.size === 0 || queryMatches.has(node.id);
         const isDimmed = queryMatches.size > 0 && !isQueryMatch && selectedId !== node.id;
         const isSacred = sacredMode && sacredNodeIds.has(node.id);
-        const showLabel = isSelected || isHovered || isSacred || (node.degree > 3 && visibleNodes.length < 160);
+        const isMindAnchor = node.id === "pattern-of-mind" || node.id === "state-of-mind" || node.id === "metacognitive-journal";
+        const showLabel = isMindAnchor || isSelected || isHovered || isSacred || (node.degree > 3 && visibleNodes.length < 160);
 
         return (
           <BrainNodeMesh
