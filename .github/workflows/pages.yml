@@ -1,4 +1,5 @@
 name: Pages
+run-name: Publish Graphify Wiki Brain
 
 on:
   push:
