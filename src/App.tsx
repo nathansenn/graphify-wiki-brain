@@ -28,7 +28,7 @@ function App() {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [orbiting, setOrbiting] = useState(true);
   const [sacredMode, setSacredMode] = useState(true);
-  const [pathMode, setPathMode] = useState(true);
+  const [pathMode, setPathMode] = useState(false);
   const [sceneReady, setSceneReady] = useState(false);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
 

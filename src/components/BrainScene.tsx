@@ -21,6 +21,7 @@ interface BrainSceneProps {
 const NODE_LIMIT = 1600;
 const EDGE_LIMIT = 5200;
 const EDGE_CURVE_SEGMENTS = 24;
+const ARCHIVE_ECHO_LIMIT = 1400;
 
 let glowTexture: THREE.CanvasTexture | null = null;
 
@@ -203,6 +204,8 @@ function BrainField({
     <group ref={groupRef}>
       <BrainCore selectedNode={selectedNode} sacredMode={sacredMode} />
       <SacredRadialWaves active={sacredMode} center={selectedNode?.position ?? [0, 0, 0]} />
+      <ArchiveConstellationEchoes nodes={visibleNodes} sacredMode={sacredMode} />
+      <ArchiveArcField nodes={visibleNodes} sacredMode={sacredMode} />
       <EdgeField
         edges={visibleEdges}
         positionById={positionById}
@@ -248,6 +251,145 @@ function BrainField({
         </Html>
       )}
     </group>
+  );
+}
+
+function ArchiveConstellationEchoes({
+  nodes,
+  sacredMode,
+}: {
+  nodes: PositionedBrainNode[];
+  sacredMode: boolean;
+}) {
+  const ref = useRef<THREE.Points>(null);
+  const materialRef = useRef<THREE.PointsMaterial>(null);
+  const geometry = useMemo(() => {
+    const count = Math.min(ARCHIVE_ECHO_LIMIT, Math.max(260, nodes.length * 42));
+    const positions = new Float32Array(count * 3);
+    const colors = new Float32Array(count * 3);
+
+    for (let index = 0; index < count; index += 1) {
+      const node = nodes[index % Math.max(nodes.length, 1)];
+      const color = new THREE.Color(node?.color ?? "#5db7ff");
+      const theta = seededNoise(index, 41) * Math.PI * 2;
+      const ring = 1.7 + seededNoise(index, 43) * (node?.radius ?? 1) * 5.8;
+      const lift = (seededNoise(index, 47) - 0.5) * 5.4;
+      const drift = seededNoise(index, 53) * 2.6;
+      const position = node?.position ?? [0, 0, 0];
+
+      positions[index * 3] = position[0] + Math.cos(theta) * ring + Math.sin(theta * 2.1) * drift;
+      positions[index * 3 + 1] = position[1] + Math.sin(theta * 0.7) * ring * 0.42 + lift;
+      positions[index * 3 + 2] = position[2] + Math.sin(theta) * ring + Math.cos(theta * 1.6) * drift;
+
+      color.lerp(new THREE.Color(index % 5 === 0 ? "#fff2b8" : "#6ee7f9"), seededNoise(index, 59) * 0.45);
+      colors[index * 3] = color.r;
+      colors[index * 3 + 1] = color.g;
+      colors[index * 3 + 2] = color.b;
+    }
+
+    const buffer = new THREE.BufferGeometry();
+    buffer.setAttribute("position", new THREE.BufferAttribute(positions, 3));
+    buffer.setAttribute("color", new THREE.BufferAttribute(colors, 3));
+    return buffer;
+  }, [nodes]);
+
+  useFrame(({ clock }, delta) => {
+    if (ref.current) {
+      ref.current.rotation.y += delta * 0.012;
+      ref.current.rotation.z = Math.sin(clock.getElapsedTime() * 0.09) * 0.018;
+    }
+    if (materialRef.current) {
+      materialRef.current.opacity = sacredMode ? 0.38 + Math.sin(clock.getElapsedTime() * 0.6) * 0.08 : 0.26;
+    }
+  });
+
+  if (nodes.length === 0) return null;
+
+  return (
+    <points ref={ref} geometry={geometry} renderOrder={2}>
+      <pointsMaterial
+        ref={materialRef}
+        size={sacredMode ? 0.18 : 0.12}
+        vertexColors
+        transparent
+        opacity={sacredMode ? 0.38 : 0.26}
+        blending={THREE.AdditiveBlending}
+        depthWrite={false}
+        sizeAttenuation
+      />
+    </points>
+  );
+}
+
+function ArchiveArcField({
+  nodes,
+  sacredMode,
+}: {
+  nodes: PositionedBrainNode[];
+  sacredMode: boolean;
+}) {
+  const materialRef = useRef<THREE.LineBasicMaterial>(null);
+  const geometry = useMemo(() => {
+    const positions: number[] = [];
+    const colors: number[] = [];
+    const arcCount = Math.min(300, Math.max(80, nodes.length * 12));
+
+    for (let index = 0; index < arcCount; index += 1) {
+      const source = nodes[index % Math.max(nodes.length, 1)];
+      const target = nodes[(index * 7 + 3) % Math.max(nodes.length, 1)];
+      if (!source || !target || source.id === target.id) continue;
+
+      const from: [number, number, number] = [
+        source.position[0] + (seededNoise(index, 61) - 0.5) * 8,
+        source.position[1] + (seededNoise(index, 67) - 0.5) * 5,
+        source.position[2] + (seededNoise(index, 71) - 0.5) * 6,
+      ];
+      const to: [number, number, number] = [
+        target.position[0] + (seededNoise(index, 73) - 0.5) * 8,
+        target.position[1] + (seededNoise(index, 79) - 0.5) * 5,
+        target.position[2] + (seededNoise(index, 83) - 0.5) * 6,
+      ];
+      const points = buildCurvePoints(from, to, `archive-${source.id}-${target.id}-${index}`, 12);
+      const fromColor = new THREE.Color(source.color).lerp(new THREE.Color("#fff2b8"), seededNoise(index, 89) * 0.3);
+      const toColor = new THREE.Color(target.color).lerp(new THREE.Color("#5db7ff"), seededNoise(index, 97) * 0.36);
+
+      for (let pointIndex = 0; pointIndex < points.length - 1; pointIndex += 1) {
+        const a = points[pointIndex];
+        const b = points[pointIndex + 1];
+        const tA = pointIndex / Math.max(points.length - 1, 1);
+        const tB = (pointIndex + 1) / Math.max(points.length - 1, 1);
+        const colorA = fromColor.clone().lerp(toColor, tA).multiplyScalar(sacredMode ? 0.82 : 0.58);
+        const colorB = fromColor.clone().lerp(toColor, tB).multiplyScalar(sacredMode ? 0.82 : 0.58);
+        positions.push(a.x, a.y, a.z, b.x, b.y, b.z);
+        colors.push(colorA.r, colorA.g, colorA.b, colorB.r, colorB.g, colorB.b);
+      }
+    }
+
+    const buffer = new THREE.BufferGeometry();
+    buffer.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3));
+    buffer.setAttribute("color", new THREE.Float32BufferAttribute(colors, 3));
+    return buffer;
+  }, [nodes, sacredMode]);
+
+  useFrame(({ clock }) => {
+    if (materialRef.current) {
+      materialRef.current.opacity = sacredMode ? 0.18 + Math.sin(clock.getElapsedTime() * 0.42) * 0.035 : 0.11;
+    }
+  });
+
+  if (nodes.length < 2) return null;
+
+  return (
+    <lineSegments geometry={geometry} renderOrder={1}>
+      <lineBasicMaterial
+        ref={materialRef}
+        vertexColors
+        transparent
+        opacity={sacredMode ? 0.18 : 0.11}
+        blending={THREE.AdditiveBlending}
+        depthWrite={false}
+      />
+    </lineSegments>
   );
 }
 
@@ -757,6 +899,46 @@ function PalaceStarField({ sacredMode }: { sacredMode: boolean }) {
   );
 }
 
+function PalaceFloorRings({ sacredMode }: { sacredMode: boolean }) {
+  const ref = useRef<THREE.Group>(null);
+
+  useFrame((_, delta) => {
+    if (!ref.current) return;
+    ref.current.rotation.z += delta * 0.018;
+  });
+
+  return (
+    <group ref={ref} position={[0, -13.5, 0]} rotation={[-Math.PI / 2, 0, 0]} renderOrder={0}>
+      {[18, 34, 52, 72].map((radius, index) => (
+        <mesh key={radius}>
+          <ringGeometry args={[radius, radius + 0.08, 220]} />
+          <meshBasicMaterial
+            color={index % 2 === 0 ? "#f7b84b" : "#5db7ff"}
+            transparent
+            opacity={(sacredMode ? 0.085 : 0.045) - index * 0.008}
+            blending={THREE.AdditiveBlending}
+            depthWrite={false}
+            side={THREE.DoubleSide}
+          />
+        </mesh>
+      ))}
+      {Array.from({ length: 18 }).map((_, index) => (
+        <mesh key={`spoke-${index}`} rotation={[0, 0, (index / 18) * Math.PI * 2]}>
+          <planeGeometry args={[78, 0.018]} />
+          <meshBasicMaterial
+            color={index % 3 === 0 ? "#fff2b8" : "#6ee7f9"}
+            transparent
+            opacity={sacredMode ? 0.025 : 0.014}
+            blending={THREE.AdditiveBlending}
+            depthWrite={false}
+            side={THREE.DoubleSide}
+          />
+        </mesh>
+      ))}
+    </group>
+  );
+}
+
 export default function BrainScene({
   graph,
   query,
@@ -790,6 +972,7 @@ export default function BrainScene({
       <pointLight position={[28, -8, -20]} intensity={sacredMode ? 1.75 : 1.1} color="#ff6f91" />
       <pointLight position={[0, 26, -28]} intensity={sacredMode ? 1.4 : 0.8} color="#5db7ff" />
       <PalaceStarField sacredMode={sacredMode} />
+      <PalaceFloorRings sacredMode={sacredMode} />
       <SceneSparkles
         count={sacredMode ? 360 : 130}
         scale={[96, 58, 96]}
