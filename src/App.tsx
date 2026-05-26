@@ -2,11 +2,14 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import {
   Brain,
   FileJson,
+  Flame,
   GitFork,
   LocateFixed,
   Pause,
   Play,
+  Route,
   Search,
+  Sparkles,
   Upload,
   X,
 } from "lucide-react";
@@ -14,7 +17,7 @@ import BrainScene from "./components/BrainScene";
 import { sampleBrain } from "./data/sampleBrain";
 import "./App.css";
 import type { BrainGraph, BrainNode } from "./lib/graph";
-import { computeDegrees, describeNumber, sanitizeGraph } from "./lib/graph";
+import { computeDegrees, describeNumber, groupColor, sanitizeGraph } from "./lib/graph";
 
 const DATA_URL = `${import.meta.env.BASE_URL}brain.json`;
 
@@ -25,6 +28,8 @@ function App() {
   const [activeGroup, setActiveGroup] = useState("all");
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [orbiting, setOrbiting] = useState(true);
+  const [sacredMode, setSacredMode] = useState(true);
+  const [pathMode, setPathMode] = useState(true);
   const [sceneReady, setSceneReady] = useState(false);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
 
@@ -70,6 +75,22 @@ function App() {
         .slice(0, 8),
     [degrees, graph.nodes],
   );
+  const pathNodeIds = useMemo(() => {
+    if (selectedId) {
+      const neighbors = graph.edges
+        .flatMap((edge) => {
+          if (edge.source === selectedId) return [edge.target];
+          if (edge.target === selectedId) return [edge.source];
+          return [];
+        })
+        .sort((a, b) => (degrees.get(b) ?? 0) - (degrees.get(a) ?? 0))
+        .slice(0, 7);
+
+      return [selectedId, ...neighbors];
+    }
+
+    return topNodes.slice(0, 7).map((node) => node.id);
+  }, [degrees, graph.edges, selectedId, topNodes]);
   const stats = useMemo(
     () => ({
       nodes: graph.nodes.length,
@@ -90,6 +111,17 @@ function App() {
     setQuery("");
   }
 
+  function beginTour() {
+    if (topNodes.length === 0) return;
+    const currentIndex = selectedId ? topNodes.findIndex((node) => node.id === selectedId) : -1;
+    const nextNode = topNodes[(currentIndex + 1 + topNodes.length) % topNodes.length];
+    setSelectedId(nextNode.id);
+    setActiveGroup("all");
+    setSacredMode(true);
+    setPathMode(true);
+    setOrbiting(false);
+  }
+
   return (
     <main className="app-shell">
       <BrainScene
@@ -98,6 +130,9 @@ function App() {
         group={activeGroup}
         selectedId={selectedId}
         orbiting={orbiting}
+        sacredMode={sacredMode}
+        pathMode={pathMode}
+        pathNodeIds={pathNodeIds}
         onSelect={setSelectedId}
         onReady={() => setSceneReady(true)}
       />
@@ -108,6 +143,12 @@ function App() {
           <span>Graphify Wiki Brain</span>
         </div>
       )}
+
+      <section className="palace-title" aria-label="Graph title">
+        <span>Live Archive</span>
+        <strong>Graphify Wiki Brain</strong>
+        <em>A Palace of Knowledge and Connections</em>
+      </section>
 
       <header className="topbar" aria-label="Brain controls">
         <div className="brand-lockup">
@@ -183,6 +224,29 @@ function App() {
         </div>
       </header>
 
+      <nav className="mode-rail" aria-label="Visual modes">
+        <button
+          type="button"
+          className={sacredMode ? "mode-button active" : "mode-button"}
+          onClick={() => setSacredMode((value) => !value)}
+        >
+          <Sparkles size={16} />
+          Sacred
+        </button>
+        <button
+          type="button"
+          className={pathMode ? "mode-button active" : "mode-button"}
+          onClick={() => setPathMode((value) => !value)}
+        >
+          <Route size={16} />
+          Pathfinder
+        </button>
+        <button type="button" className="mode-button tour" onClick={beginTour}>
+          <Flame size={16} />
+          Begin Tour
+        </button>
+      </nav>
+
       <aside className="left-panel" aria-label="Graph groups">
         <div className="stat-grid">
           <Stat label="Nodes" value={describeNumber(stats.nodes)} />
@@ -197,7 +261,7 @@ function App() {
             className={activeGroup === "all" ? "group-pill active" : "group-pill"}
             onClick={() => setActiveGroup("all")}
           >
-            <span className="swatch all" />
+            <span className="swatch all" aria-hidden />
             All
           </button>
           {groups.map((group) => (
@@ -210,8 +274,39 @@ function App() {
                 setSelectedId(null);
               }}
             >
-              <span className="swatch" data-group={group} />
+              <span
+                className="swatch"
+                aria-hidden
+                style={{ backgroundColor: groupColor(group), color: groupColor(group) }}
+              />
               {group}
+            </button>
+          ))}
+        </div>
+      </aside>
+
+      <aside className="legend-panel" aria-label="Cluster legend">
+        <div className="legend-header">
+          <strong>Clusters</strong>
+          <span>{activeGroup === "all" ? `${groups.length} live` : activeGroup}</span>
+        </div>
+        <div className="legend-list">
+          {groups.slice(0, 10).map((group) => (
+            <button
+              key={group}
+              type="button"
+              className={activeGroup === group ? "legend-item active" : "legend-item"}
+              onClick={() => {
+                setActiveGroup(group);
+                setSelectedId(null);
+              }}
+            >
+              <span
+                className="swatch"
+                aria-hidden
+                style={{ backgroundColor: groupColor(group), color: groupColor(group) }}
+              />
+              <span>{group}</span>
             </button>
           ))}
         </div>
