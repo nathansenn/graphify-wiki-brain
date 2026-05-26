@@ -165,6 +165,7 @@ export function computeDegrees(graph: Pick<BrainGraph, "nodes" | "edges">): Map<
 
 export function layoutBrainGraph(graph: BrainGraph, visibleGroup = "all"): PositionedBrainGraph {
   const degrees = computeDegrees(graph);
+  const maxDegree = Math.max(1, ...Array.from(degrees.values()));
   const groups = Array.from(new Set(graph.nodes.map((node) => node.group || "Knowledge"))).sort();
   const groupIndex = new Map(groups.map((group, index) => [group, index]));
   const groupCounts = new Map<string, number>();
@@ -180,30 +181,31 @@ export function layoutBrainGraph(graph: BrainGraph, visibleGroup = "all"): Posit
       const idx = groupIndex.get(group) ?? 0;
       const count = groupCounts.get(group) ?? 0;
       groupCounts.set(group, count + 1);
+      const degree = degrees.get(node.id) ?? 0;
 
-      const groupTheta = idx * GOLDEN_ANGLE;
-      const groupPhi = Math.acos(1 - (2 * (idx + 0.5)) / Math.max(groups.length, 1));
-      const anchorRadius = 18 + Math.min(groups.length, 10) * 1.35;
+      const normalized = groups.length <= 1 ? 0.5 : idx / (groups.length - 1);
+      const groupTheta = -Math.PI * 0.82 + normalized * Math.PI * 1.64;
+      const anchorRadius = 31 + Math.min(groups.length, 12) * 2.15;
       const anchor: [number, number, number] = [
-        anchorRadius * Math.sin(groupPhi) * Math.cos(groupTheta),
-        anchorRadius * Math.cos(groupPhi),
-        anchorRadius * Math.sin(groupPhi) * Math.sin(groupTheta),
+        Math.cos(groupTheta) * anchorRadius * 1.34,
+        Math.sin((normalized - 0.5) * Math.PI) * 18,
+        Math.sin(groupTheta) * anchorRadius * 0.82,
       ];
 
       const localTheta = (count + 1) * GOLDEN_ANGLE;
-      const localRadius = 2.4 + Math.sqrt(count + 1) * 1.7;
-      const localZ = ((count % 9) - 4) * 0.8;
+      const localRadius = 3.6 + Math.sqrt(count + 1) * 2.35;
+      const localZ = ((count % 9) - 4) * 1.2;
       const hasPosition = [node.x, node.y, node.z].every((coord) => Number.isFinite(coord));
-      const degree = degrees.get(node.id) ?? 0;
       const weight = Math.max(Number(node.weight ?? node.size ?? 1), 1);
       const radius = Math.min(1.95, 0.34 + Math.sqrt(degree + weight) * 0.16);
+      const hubPull = Math.min(0.48, (degree / maxDegree) * 0.42);
 
       const position: [number, number, number] = hasPosition
         ? [Number(node.x) * 0.18, Number(node.y) * 0.18, Number(node.z) * 0.18]
         : [
-            anchor[0] + Math.cos(localTheta) * localRadius,
-            anchor[1] + Math.sin(localTheta * 0.7) * localRadius * 0.45 + localZ,
-            anchor[2] + Math.sin(localTheta) * localRadius,
+            anchor[0] * (1 - hubPull) + Math.cos(localTheta) * localRadius,
+            anchor[1] * (1 - hubPull) + Math.sin(localTheta * 0.7) * localRadius * 1.0 + localZ,
+            anchor[2] * (1 - hubPull) + Math.sin(localTheta) * localRadius,
           ];
 
       return {

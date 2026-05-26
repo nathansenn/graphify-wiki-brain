@@ -55,8 +55,9 @@ button {
   height: 100svh;
   overflow: hidden;
   background:
-    linear-gradient(180deg, rgba(10, 18, 64, 0.96) 0%, rgba(4, 6, 28, 0.98) 56%, #02030b 100%),
-    linear-gradient(115deg, rgba(247, 184, 75, 0.12), rgba(93, 183, 255, 0.1) 46%, rgba(255, 111, 145, 0.08));
+    linear-gradient(180deg, rgba(12, 13, 54, 0.98) 0%, rgba(8, 8, 45, 0.99) 54%, #030313 100%),
+    linear-gradient(110deg, rgba(240, 200, 80, 0.08), rgba(93, 183, 255, 0.05) 52%, rgba(232, 160, 64, 0.06));
+  box-shadow: inset 0 0 220px rgba(0, 0, 0, 0.34);
 }
 
 .brain-canvas {
@@ -92,24 +93,28 @@ button {
 }
 
 .topbar {
-  top: 16px;
-  left: 16px;
-  right: 16px;
-  min-height: 60px;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  min-height: 30px;
   display: grid;
-  grid-template-columns: minmax(210px, 0.9fr) minmax(240px, 1.2fr) auto;
+  grid-template-columns: 220px minmax(220px, 1fr) auto;
   align-items: center;
   gap: 12px;
-  padding: 10px;
-  border-radius: 8px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+  pointer-events: none;
 }
 
 .palace-title {
   position: absolute;
-  top: 88px;
+  top: 20px;
   left: 50%;
-  z-index: 9;
-  width: min(720px, calc(100vw - 420px));
+  z-index: 12;
+  width: min(660px, calc(100vw - 520px));
   display: grid;
   justify-items: center;
   gap: 2px;
@@ -129,8 +134,11 @@ button {
 }
 
 .palace-title strong {
-  font-size: 58px;
-  line-height: 0.9;
+  font-size: 30px;
+  line-height: 1;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.97), rgba(240, 200, 80, 0.82));
+  -webkit-background-clip: text;
+  color: transparent;
   text-shadow:
     0 0 20px rgba(93, 183, 255, 0.42),
     0 0 44px rgba(247, 184, 75, 0.34),
@@ -139,7 +147,7 @@ button {
 
 .palace-title em {
   color: rgba(255, 242, 184, 0.9);
-  font-size: 15px;
+  font-size: 13px;
   font-style: normal;
   font-weight: 700;
   letter-spacing: 0;
@@ -147,7 +155,7 @@ button {
 }
 
 .brand-lockup {
-  display: flex;
+  display: none;
   align-items: center;
   gap: 10px;
   min-width: 0;
@@ -184,15 +192,19 @@ button {
 }
 
 .search-box {
-  height: 40px;
+  width: 220px;
+  height: 29px;
   display: flex;
   align-items: center;
   gap: 8px;
   min-width: 0;
   padding: 0 8px 0 12px;
   border: 1px solid var(--line);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.055);
+  border-color: rgba(240, 200, 80, 0.16);
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(10px);
+  pointer-events: auto;
 }
 
 .search-box svg {
@@ -207,6 +219,8 @@ button {
   outline: 0;
   color: var(--text);
   background: transparent;
+  font-size: 11px;
+  text-transform: uppercase;
 }
 
 .search-box input::placeholder {
@@ -217,17 +231,19 @@ button {
   display: flex;
   justify-content: flex-end;
   gap: 8px;
+  pointer-events: auto;
 }
 
 .icon-button {
-  width: 40px;
-  height: 40px;
+  width: 39px;
+  height: 30px;
   display: inline-grid;
   place-items: center;
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-color: rgba(240, 200, 80, 0.16);
+  border-radius: 4px;
   color: var(--text);
-  background: rgba(255, 255, 255, 0.06);
+  background: rgba(0, 0, 0, 0.68);
   cursor: pointer;
   text-decoration: none;
 }
@@ -250,28 +266,33 @@ button {
 }
 
 .left-panel {
-  left: 16px;
-  top: 172px;
-  width: min(290px, calc(100vw - 32px));
-  max-height: calc(100svh - 260px);
+  left: 20px;
+  top: auto;
+  bottom: 20px;
+  width: 132px;
+  max-height: 160px;
   display: grid;
   gap: 12px;
-  padding: 12px;
-  border-radius: 8px;
+  padding: 8px;
+  border-color: rgba(240, 200, 80, 0.1);
+  border-radius: 4px;
   overflow: hidden;
+  background: rgba(0, 0, 0, 0.38);
+  box-shadow: none;
 }
 
 .right-panel {
-  right: 16px;
-  top: 172px;
-  width: min(340px, calc(100vw - 32px));
-  height: min(360px, calc(100svh - 310px));
+  right: 20px;
+  top: 84px;
+  width: min(340px, calc(100vw - 40px));
+  max-height: calc(100svh - 124px);
   display: grid;
-  grid-template-rows: minmax(130px, auto) minmax(0, 1fr);
   gap: 12px;
   padding: 12px;
-  border-radius: 8px;
+  border-color: rgba(240, 200, 80, 0.18);
+  border-radius: 4px;
   overflow: hidden;
+  background: rgba(0, 0, 0, 0.54);
 }
 
 .mode-rail {
@@ -280,23 +301,29 @@ button {
   z-index: 12;
   display: flex;
   gap: 8px;
-  padding: 8px;
-  border-radius: 8px;
+  padding: 5px;
+  border-color: rgba(240, 200, 80, 0.18);
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.58);
+  box-shadow: none;
   transform: translateX(-50%);
 }
 
 .mode-button {
-  min-height: 40px;
+  min-height: 28px;
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 9px 12px;
+  padding: 6px 14px;
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-color: rgba(240, 200, 80, 0.18);
+  border-radius: 4px;
   color: var(--muted);
-  background: rgba(255, 255, 255, 0.055);
+  background: rgba(0, 0, 0, 0.54);
   cursor: pointer;
   white-space: nowrap;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 .mode-button svg {
@@ -316,15 +343,18 @@ button {
 }
 
 .legend-panel {
-  right: 16px;
-  bottom: 86px;
-  width: min(340px, calc(100vw - 32px));
-  max-height: 158px;
+  right: 20px;
+  bottom: 20px;
+  width: min(170px, calc(100vw - 40px));
+  max-height: 260px;
   display: grid;
   gap: 10px;
-  padding: 12px;
-  border-radius: 8px;
+  padding: 8px;
+  border-color: rgba(240, 200, 80, 0.1);
+  border-radius: 4px;
   overflow: hidden;
+  background: rgba(0, 0, 0, 0.38);
+  box-shadow: none;
 }
 
 .legend-header {
@@ -345,8 +375,7 @@ button {
 
 .legend-list {
   min-height: 0;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   gap: 7px;
   overflow: auto;
 }
@@ -357,11 +386,11 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  padding: 6px 8px;
-  border: 1px solid var(--line);
-  border-radius: 8px;
+  padding: 3px 2px;
+  border: 0;
+  border-radius: 2px;
   color: var(--muted);
-  background: rgba(255, 255, 255, 0.04);
+  background: transparent;
   cursor: pointer;
 }
 
@@ -380,8 +409,8 @@ button {
 
 .stat-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px;
+  grid-template-columns: 1fr;
+  gap: 3px;
 }
 
 .stat,
@@ -394,16 +423,24 @@ button {
 }
 
 .stat {
-  min-height: 64px;
-  display: grid;
-  align-content: center;
+  min-height: 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
   gap: 6px;
-  padding: 10px;
+  padding: 0;
+  border: 0;
+  background: transparent;
 }
 
 .stat strong {
-  font-size: 20px;
+  color: var(--gold);
+  font-size: 11px;
   line-height: 1;
+}
+
+.left-panel .group-list {
+  display: none;
 }
 
 .group-list {
@@ -494,6 +531,7 @@ button {
   gap: 12px;
   padding: 14px;
   overflow: auto;
+  background: rgba(5, 5, 10, 0.46);
 }
 
 .detail-kind {
@@ -658,15 +696,15 @@ button {
 
 @media (max-width: 1180px) {
   .palace-title {
-    width: min(560px, calc(100vw - 360px));
+    width: min(500px, calc(100vw - 360px));
   }
 
   .palace-title strong {
-    font-size: 46px;
+    font-size: 26px;
   }
 
   .palace-title em {
-    font-size: 13px;
+    font-size: 12px;
   }
 }
 
@@ -692,6 +730,10 @@ button {
     width: auto;
     max-height: 176px;
     grid-template-columns: 220px minmax(0, 1fr);
+  }
+
+  .left-panel .group-list {
+    display: flex;
   }
 
   .right-panel {

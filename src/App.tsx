@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   Brain,
-  FileJson,
   Flame,
   GitFork,
   LocateFixed,
@@ -312,26 +311,11 @@ function App() {
         </div>
       </aside>
 
-      <aside className="right-panel" aria-label="Node detail">
-        {selectedNode ? (
+      {selectedNode && (
+        <aside className="right-panel" aria-label="Node detail">
           <NodeDetail node={selectedNode} degree={degrees.get(selectedNode.id) ?? 0} />
-        ) : (
-          <div className="empty-detail">
-            <FileJson size={18} />
-            <strong>{graph.name}</strong>
-            <span>{graph.source?.type ?? "json"}</span>
-          </div>
-        )}
-
-        <div className="hub-list" aria-label="Top hubs">
-          {topNodes.map((node) => (
-            <button key={node.id} type="button" className="hub-row" onClick={() => setSelectedId(node.id)}>
-              <span>{node.label}</span>
-              <small>{degrees.get(node.id) ?? 0}</small>
-            </button>
-          ))}
-        </div>
-      </aside>
+        </aside>
+      )}
     </main>
   );
 }
