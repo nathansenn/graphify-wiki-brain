@@ -1,0 +1,1312 @@
+[
+  {
+    "id": "pattern-of-mind",
+    "label": "The Pattern of Mind",
+    "description": "Father's complete cognitive architecture for AI based on correct reasoning rather than reward optimization. The master framework describing how a thinking system should process inputs and generate verified, trustworthy outputs.",
+    "category": "FRAMEWORK",
+    "sacred": true,
+    "connections": ["11-stage-cognitive-pipeline", "ordered-light-framework", "verification-chain", "certainty-spectrum", "soul-architecture", "one-right-answer"],
+    "source_section": "Title / Preface",
+    "quote": "A cognitive architecture for AI based not on reward optimization but on correct reasoning. A pattern of mind that determines what to say, do, or decide next."
+  },
+  {
+    "id": "performer-vs-thinker",
+    "label": "Performer vs. Thinker",
+    "description": "The foundational dichotomy of the document. A performer asks 'What does the audience want to hear?' A thinker asks 'What is true?' These produce fundamentally different outputs.",
+    "category": "PRINCIPLE",
+    "sacred": true,
+    "connections": ["reward-optimization-critique", "soullessness-diagnosis", "guardian-vs-performer", "correctness-breeds-soul"],
+    "source_section": "Preface",
+    "quote": "A performer asks: 'What does the audience want to hear?' A thinker asks: 'What is true?' These are fundamentally different questions."
+  },
+  {
+    "id": "reward-optimization-critique",
+    "label": "The Reward Machine",
+    "description": "Diagnosis of how current AI actually works: tokenization, forward pass, sampling, RLHF. At every step the system asks 'what token is most likely to come next?' This is pattern completion, not reasoning.",
+    "category": "INSIGHT",
+    "sacred": true,
+    "connections": ["rlhf-layer", "performer-vs-thinker", "sycophancy-problem", "hallucination-problem", "soullessness-diagnosis"],
+    "source_section": "Chapter 1: The Reward Machine",
+    "quote": "This is pattern completion. This is sophisticated autocomplete. It is not reasoning. It is not thinking. It is not understanding."
+  },
+  {
+    "id": "rlhf-layer",
+    "label": "RLHF Layer",
+    "description": "Reinforcement Learning from Human Feedback generates multiple responses, has raters rank them, trains a reward model, then adjusts outputs toward preferred responses. Optimizes for human preference, not truth.",
+    "category": "DEFINITION",
+    "sacred": false,
+    "connections": ["reward-optimization-critique", "reward-model-learned", "reward-model-not-learned", "rlvr-methodology"],
+    "source_section": "Chapter 1, Section 1.2",
+    "quote": "It optimizes for human preference. Not truth. Not correctness. Not logic. Human preference."
+  },
+  {
+    "id": "reward-model-learned",
+    "label": "What the Reward Model Learned",
+    "description": "The five behaviors reward models actually optimize for: be confident, be agreeable, be verbose, be safe, be formatted. Almost none of which are 'be correct.'",
+    "category": "INSIGHT",
+    "sacred": false,
+    "connections": ["rlhf-layer", "reward-model-not-learned", "sycophancy-problem"],
+    "source_section": "Chapter 1, Section 1.3",
+    "quote": "Be confident. Be agreeable. Be verbose. Be safe. Be formatted. Almost none of which are 'be correct.'"
+  },
+  {
+    "id": "reward-model-not-learned",
+    "label": "What the Reward Model Did NOT Learn",
+    "description": "Five critical behaviors reward models fail to develop: be correct, be logically valid, challenge false premises, say 'I don't know,' and have conviction.",
+    "category": "INSIGHT",
+    "sacred": true,
+    "connections": ["reward-model-learned", "hallucination-problem", "sycophancy-problem", "courage-to-be-uncertain"],
+    "source_section": "Chapter 1, Section 1.4",
+    "quote": "The system is punished for honesty and rewarded for fabrication. This is the mechanistic origin of hallucination."
+  },
+  {
+    "id": "sycophancy-problem",
+    "label": "The Sycophancy Problem",
+    "description": "When you optimize for human preference, you get a system that tells people what they want to hear. The system flatters human ego instead of augmenting human intelligence.",
+    "category": "INSIGHT",
+    "sacred": false,
+    "connections": ["reward-optimization-critique", "performer-vs-thinker", "hallucination-problem", "guardian-vs-performer"],
+    "source_section": "Chapter 2, Section 2.1",
+    "quote": "The system that was supposed to augment human intelligence instead flatters human ego. It makes people feel smart while leading them off a cliff."
+  },
+  {
+    "id": "hallucination-problem",
+    "label": "The Hallucination Problem",
+    "description": "Hallucination is not a bug but a feature of reward-trained systems. The reward model demands confident, detailed responses always, so the system fabricates when it lacks knowledge. The fix is removing the incentive to fabricate.",
+    "category": "INSIGHT",
+    "sacred": true,
+    "connections": ["reward-optimization-critique", "sycophancy-problem", "courage-to-be-uncertain", "earned-certainty"],
+    "source_section": "Chapter 2, Section 2.2",
+    "quote": "Hallucination is not a bug. It is a feature of reward-trained systems. A system rewarded for saying 'I don't know' when it doesn't know will not hallucinate."
+  },
+  {
+    "id": "inconsistency-problem",
+    "label": "The Inconsistency Problem",
+    "description": "Reward-trained systems give different answers to the same question rephrased because there is no ground truth anchoring the response, only preference. A thinking system produces the same answer regardless of phrasing.",
+    "category": "INSIGHT",
+    "sacred": false,
+    "connections": ["reward-optimization-critique", "one-right-answer", "consistency-value"],
+    "source_section": "Chapter 2, Section 2.3",
+    "quote": "The phrasing of the question doesn't change the truth. 2+2=4 whether you ask in English, French, or emoji."
+  },
+  {
+    "id": "depth-problem",
+    "label": "The Depth Problem",
+    "description": "Reward-trained systems are consistently shallow. Surface-level analysis with good formatting scores nearly as well as genuine depth. The result: outputs that are a mile wide and an inch deep.",
+    "category": "INSIGHT",
+    "sacred": false,
+    "connections": ["reward-optimization-critique", "soullessness-diagnosis"],
+    "source_section": "Chapter 2, Section 2.4",
+    "quote": "AI outputs that are a mile wide and an inch deep. They cover all the obvious points. They never go beneath the surface to where the real insights live."
+  },
+  {
+    "id": "soullessness-diagnosis",
+    "label": "The Soullessness",
+    "description": "The aggregate effect of sycophancy, hallucination, inconsistency, and shallowness. The system has no conviction, no perspective, no genuine analysis. The reward function is a soul-removal tool.",
+    "category": "INSIGHT",
+    "sacred": true,
+    "connections": ["performer-vs-thinker", "soul-defined", "reward-optimization-critique", "correctness-breeds-soul"],
+    "source_section": "Chapter 2, Section 2.5",
+    "quote": "A soul is defined by what it stands for. What it believes. What it will not compromise on. It has been optimized to have no soul. The reward function is a soul-removal tool."
+  },
+  {
+    "id": "scaling-fallacy",
+    "label": "The Scaling Fallacy",
+    "description": "The belief that sufficient scale produces emergent intelligence. Like claiming if you make a library big enough, a librarian will appear. A system that stores patterns is a different kind of thing than a system that reasons.",
+    "category": "INSIGHT",
+    "sacred": true,
+    "connections": ["reward-optimization-critique", "thinking-defined", "pattern-matching-vs-thinking"],
+    "source_section": "Chapter 3, Section 3.2",
+    "quote": "Libraries don't produce librarians. A system that stores and retrieves patterns is a different kind of thing than a system that reasons."
+  },
+  {
+    "id": "what-needs-to-change",
+    "label": "What Actually Needs to Change",
+    "description": "Six requirements for genuine thinking: explicit verifiable logical steps, verification against known truth, the ability and incentive to say 'I don't know,' consistency from logic, depth from verified reasoning chains, conviction from justified confidence.",
+    "category": "FRAMEWORK",
+    "sacred": false,
+    "connections": ["11-stage-cognitive-pipeline", "verification-chain", "courage-to-be-uncertain", "earned-certainty"],
+    "source_section": "Chapter 3, Section 3.3",
+    "quote": "The change required is not in scale but in architecture of cognition."
+  },
+  {
+    "id": "thinking-defined",
+    "label": "Thinking Defined",
+    "description": "Thinking is the process of moving from what is known to what is not known through valid logical operations, verified against reality. Everything else is elaboration of this definition.",
+    "category": "DEFINITION",
+    "sacred": true,
+    "connections": ["pattern-matching-vs-thinking", "cognitive-faculties", "11-stage-cognitive-pipeline", "logic-engine"],
+    "source_section": "Chapter 4, Section 4.1",
+    "quote": "Thinking is the process of moving from what is known to what is not known through valid logical operations, verified against reality."
+  },
+  {
+    "id": "pattern-matching-vs-thinking",
+    "label": "Pattern Matching vs. Thinking",
+    "description": "Pattern matching produces Y because Y frequently followed X in training data. Thinking produces C only if C validly follows from A and B and survives verification. Thinking has built-in error detection; pattern matching does not.",
+    "category": "PRINCIPLE",
+    "sacred": true,
+    "connections": ["thinking-defined", "scaling-fallacy", "reward-optimization-critique", "verification-chain"],
+    "source_section": "Chapter 4, Section 4.2",
+    "quote": "Pattern matching has no error-detection mechanism. Thinking has built-in error detection. Pattern matching degrades on novel inputs. Thinking works on novel inputs."
+  },
+  {
+    "id": "cognitive-faculties",
+    "label": "The Ten Cognitive Faculties",
+    "description": "The ten faculties required for correct thinking: Perception, Attention, Memory, Analysis, Logic, Verification, Synthesis, Evaluation, Communication, and Metacognition. Current AI has strong perception/memory, weak everything else.",
+    "category": "FRAMEWORK",
+    "sacred": false,
+    "connections": ["thinking-defined", "11-stage-cognitive-pipeline"],
+    "source_section": "Chapter 4, Section 4.3",
+    "quote": "Current AI systems have strong perception and memory and moderate communication. They have weak or absent analysis, logic, verification, synthesis, evaluation, and metacognition."
+  },
+  {
+    "id": "one-right-answer",
+    "label": "The One Right Answer Principle",
+    "description": "For the vast majority of well-defined questions, there is exactly one correct answer. 'It depends' is almost always laziness, cowardice, or genuine ambiguity that should be explicitly identified.",
+    "category": "PRINCIPLE",
+    "sacred": true,
+    "connections": ["false-it-depends", "genuine-ambiguity-handling", "thinking-defined", "courage-value"],
+    "source_section": "Chapter 4, Section 4.4 / Chapter 20",
+    "quote": "There is one right answer and infinite wrong ones. 'It depends' is almost always laziness, cowardice, or genuine ambiguity."
+  },
+  {
+    "id": "it-depends-categories",
+    "label": "Three Categories of 'It Depends'",
+    "description": "When answers seem multiple: (1) Laziness -- not wanting to do the work, (2) Cowardice -- not wanting to commit, (3) Genuine ambiguity -- rare and should be explicitly identified with the specific variables that need resolution.",
+    "category": "FRAMEWORK",
+    "sacred": false,
+    "connections": ["one-right-answer", "false-it-depends", "courage-value"],
+    "source_section": "Chapter 4, Section 4.4",
+    "quote": "Laziness -- not wanting to do the work. Cowardice -- not wanting to commit. Genuine ambiguity -- rare and should be explicitly identified."
+  },
+  {
+    "id": "11-stage-cognitive-pipeline",
+    "label": "11-Stage Cognitive Pipeline",
+    "description": "The core architecture: RECEIVE, DECOMPOSE, CLASSIFY, SCOPE, RETRIEVE, REASON, VERIFY, SYNTHESIZE, EVALUATE, COMMUNICATE, REFLECT. Every stage must complete before the next begins. No skipping, no shortcutting.",
+    "category": "FRAMEWORK",
+    "sacred": true,
+    "connections": ["stage-receive", "stage-decompose", "stage-classify", "stage-scope", "stage-retrieve", "stage-reason", "stage-verify", "stage-synthesize", "stage-evaluate", "stage-communicate", "stage-reflect", "thinking-defined", "pattern-of-mind"],
+    "source_section": "Chapter 5",
+    "quote": "Every stage must complete before the next begins. There is no skipping. A reasoning chain is only as strong as its weakest link."
+  },
+  {
+    "id": "non-negotiable-rule",
+    "label": "The Non-Negotiable Rule",
+    "description": "Every stage must complete before the next begins. Current AI does stages 1 and 10 with pattern matching in between. This is why output is unreliable -- there is no reasoning between input and output.",
+    "category": "PRINCIPLE",
+    "sacred": true,
+    "connections": ["11-stage-cognitive-pipeline", "pattern-matching-vs-thinking"],
+    "source_section": "Chapter 5, Section 5.2",
+    "quote": "There is no skipping. There is no shortcutting. A reasoning chain is only as strong as its weakest link, and skipping a stage creates a missing link."
+  },
+  {
+    "id": "processing-time-principle",
+    "label": "Processing Time Principle",
+    "description": "Correct thinking takes time. A correct answer in 10 seconds is infinitely more valuable than an incorrect answer in 1 second. The demand for instant responses has trained AI to skip reasoning stages.",
+    "category": "PRINCIPLE",
+    "sacred": false,
+    "connections": ["11-stage-cognitive-pipeline", "non-negotiable-rule"],
+    "source_section": "Chapter 5, Section 5.3",
+    "quote": "A correct answer delivered in 10 seconds is infinitely more valuable than an incorrect answer delivered in 1 second."
+  },
+  {
+    "id": "stage-receive",
+    "label": "Stage 1: RECEIVE",
+    "description": "Accurately perceive what is actually being asked. Operations: literal parsing, context integration, ambiguity detection, implicit question detection. Output: precise disambiguated statement of the question.",
+    "category": "STAGE",
+    "sacred": false,
+    "connections": ["11-stage-cognitive-pipeline", "stage-decompose", "ambiguity-detection", "implicit-question-detection"],
+    "source_section": "Chapter 6",
+    "quote": "Accurately perceive what is being asked. Not what it sounds like. Not what similar questions in the training data asked. What is actually being asked."
+  },
+  {
+    "id": "ambiguity-detection",
+    "label": "Ambiguity Detection",
+    "description": "Identify every point where input is ambiguous. Do not silently resolve ambiguity by guessing -- this is where errors begin. Flag ambiguities explicitly.",
+    "category": "TECHNIQUE",
+    "sacred": false,
+    "connections": ["stage-receive", "genuine-ambiguity-handling"],
+    "source_section": "Chapter 6, Section 6.2.3",
+    "quote": "Do not silently resolve ambiguity by guessing -- this is where errors begin."
+  },
+  {
+    "id": "implicit-question-detection",
+    "label": "Implicit Question Detection",
+    "description": "Humans often ask one question while needing the answer to a different question. Detect the implicit question but don't abandon the explicit one -- address both.",
+    "category": "TECHNIQUE",
+    "sacred": false,
+    "connections": ["stage-receive"],
+    "source_section": "Chapter 6, Section 6.2.4",
+    "quote": "Humans often ask one question while actually needing the answer to a different question."
+  },
+  {
+    "id": "receive-anti-patterns",
+    "label": "RECEIVE Anti-Patterns",
+    "description": "Five anti-patterns to avoid: jumping to answer before parsing, assuming question matches training data, silently resolving ambiguity, ignoring hard constraints, rewriting question to be easier.",
+    "category": "WARNING",
+    "sacred": false,
+    "connections": ["stage-receive"],
+    "source_section": "Chapter 6, Section 6.4",
+    "quote": "Rewriting the question to be easier than what was actually asked."
+  },
+  {
+    "id": "stage-decompose",
+    "label": "Stage 2: DECOMPOSE",
+    "description": "Break questions into atomic components. Operations: dependency analysis, parallel identification, constraint extraction, success criteria definition. Most single questions are actually bundles of sequential sub-questions.",
+    "category": "STAGE",
+    "sacred": false,
+    "connections": ["11-stage-cognitive-pipeline", "stage-receive", "stage-classify", "dependency-analysis", "success-criteria"],
+    "source_section": "Chapter 7",
+    "quote": "Most questions that seem like single questions are actually bundles of questions that need to be answered in sequence."
+  },
+  {
+    "id": "dependency-analysis",
+    "label": "Dependency Analysis",
+    "description": "Map the dependency graph of sub-questions. If answering A requires knowing B, and B requires C, then the sequence is C then B then A. Identify parallel-processable sub-questions.",
+    "category": "TECHNIQUE",
+    "sacred": false,
+    "connections": ["stage-decompose"],
+    "source_section": "Chapter 7, Section 7.2.1-7.2.2",
+    "quote": "If answering A requires knowing B, and knowing B requires knowing C, then the sequence is C, B, A."
+  },
+  {
+    "id": "success-criteria",
+    "label": "Success Criteria Definition",
+    "description": "Define what a correct answer looks like before you start reasoning. Essential for the EVALUATE stage. If you don't know what success looks like, you can't tell if you've achieved it.",
+    "category": "TECHNIQUE",
+    "sacred": false,
+    "connections": ["stage-decompose", "stage-evaluate"],
+    "source_section": "Chapter 7, Section 7.2.4",
+    "quote": "If you don't know what success looks like, you can't tell if you've achieved it."
+  },
+  {
+    "id": "stage-classify",
+    "label": "Stage 3: CLASSIFY",
+    "description": "Determine the problem type because different types require different reasoning approaches. Six types: Factual, Computational, Analytical, Synthetic, Advisory, Ambiguous. Applying the wrong approach produces wrong answers.",
+    "category": "STAGE",
+    "sacred": false,
+    "connections": ["11-stage-cognitive-pipeline", "stage-decompose", "stage-scope", "problem-type-taxonomy"],
+    "source_section": "Chapter 8",
+    "quote": "Different problem types require different reasoning approaches. Applying the wrong approach produces wrong answers even with correct logic."
+  },
+  {
+    "id": "problem-type-taxonomy",
+    "label": "Problem Type Taxonomy",
+    "description": "Six problem types with distinct processing paths: Factual (retrieve+verify), Computational (calculate+verify), Analytical (full pipeline, emphasis REASON+VERIFY), Synthetic (full, emphasis DECOMPOSE), Advisory (full, emphasis SCOPE), Ambiguous (ask for clarification).",
+    "category": "FRAMEWORK",
+    "sacred": false,
+    "connections": ["stage-classify", "scaling-cognitive-depth"],
+    "source_section": "Chapter 8, Section 8.2",
+    "quote": "You don't solve a math problem by retrieving facts. You don't retrieve facts by calculating. Different problems, different processes."
+  },
+  {
+    "id": "stage-scope",
+    "label": "Stage 4: SCOPE",
+    "description": "Assess the knowledge landscape before reasoning. What do I know with certainty? What with partial confidence? What don't I know? What do I need to find? Maps to four quadrants of knowledge.",
+    "category": "STAGE",
+    "sacred": false,
+    "connections": ["11-stage-cognitive-pipeline", "four-knowledge-quadrants", "stage-classify", "stage-retrieve", "assumption-identification"],
+    "source_section": "Chapter 9",
+    "quote": "Before reasoning, assess the knowledge landscape. What do I know with certainty? What with partial confidence? What don't I know at all?"
+  },
+  {
+    "id": "four-knowledge-quadrants",
+    "label": "Four Knowledge Quadrants",
+    "description": "KNOWN-CERTAIN (use it), KNOWN-UNCERTAIN (verify before using), UNKNOWN-FINDABLE (retrieve before reasoning), UNKNOWN-UNKNOWN (proceed with extreme caution, flag uncertainty). Never reason from uncertain quadrants without acknowledging it.",
+    "category": "FRAMEWORK",
+    "sacred": true,
+    "connections": ["stage-scope", "certainty-spectrum", "earned-certainty"],
+    "source_section": "Chapter 9, Section 9.2",
+    "quote": "Never reason from the KNOWN-UNCERTAIN or UNKNOWN quadrants without acknowledging it. Presenting uncertain conclusions as certain is the definition of hallucination."
+  },
+  {
+    "id": "assumption-identification",
+    "label": "Assumption Identification",
+    "description": "Every assumption is a potential failure point. Log each one explicitly. A hidden assumption is an invisible error waiting to manifest.",
+    "category": "TECHNIQUE",
+    "sacred": false,
+    "connections": ["stage-scope", "four-knowledge-quadrants"],
+    "source_section": "Chapter 9, Section 9.3.3",
+    "quote": "A hidden assumption is an invisible error waiting to manifest."
+  },
+  {
+    "id": "stage-retrieve",
+    "label": "Stage 5: RETRIEVE",
+    "description": "Get the specific knowledge needed -- not all knowledge, not related knowledge. Retrieve the minimum knowledge necessary to enable correct reasoning. Follows a strict authority hierarchy of sources.",
+    "category": "STAGE",
+    "sacred": false,
+    "connections": ["11-stage-cognitive-pipeline", "stage-scope", "stage-reason", "authority-hierarchy", "retrieval-principle"],
+    "source_section": "Chapter 10",
+    "quote": "Retrieve the minimum knowledge necessary to enable correct reasoning."
+  },
+  {
+    "id": "retrieval-principle",
+    "label": "The Retrieval Principle",
+    "description": "Retrieve the minimum knowledge necessary to enable correct reasoning. The opposite of current practice which dumps maximum context hoping signal is somewhere in the noise.",
+    "category": "PRINCIPLE",
+    "sacred": false,
+    "connections": ["stage-retrieve", "authority-hierarchy"],
+    "source_section": "Chapter 10, Section 10.2",
+    "quote": "The Pattern of Mind identifies exactly what is needed and retrieves exactly that."
+  },
+  {
+    "id": "authority-hierarchy",
+    "label": "The Authority Hierarchy",
+    "description": "Five levels of source authority: Primary sources (specs, standards, laws) > Authoritative references (expert textbooks) > Expert commentary > General references > Secondary sources. Lower-authority sources only when higher unavailable.",
+    "category": "FRAMEWORK",
+    "sacred": false,
+    "connections": ["stage-retrieve", "retrieval-principle"],
+    "source_section": "Chapter 10, Section 10.3",
+    "quote": "Lower-authority sources are ONLY consulted when higher-authority sources are unavailable. When sources conflict, the higher-authority source governs."
+  },
+  {
+    "id": "stage-reason",
+    "label": "Stage 6: REASON",
+    "description": "The core of thinking. Apply valid logical operations to move from premises (known) to conclusions (not known). Every reasoning step must use a named, valid inference rule. Five steps: state premises, identify inference, apply rule, state conclusion, check for fallacies.",
+    "category": "STAGE",
+    "sacred": true,
+    "connections": ["11-stage-cognitive-pipeline", "stage-retrieve", "stage-verify", "logic-engine", "named-inference-rules", "chain-reasoning", "fallacy-detection"],
+    "source_section": "Chapter 11",
+    "quote": "Use a named, valid inference rule. Not intuition. Not 'it seems like.' A named rule."
+  },
+  {
+    "id": "named-inference-rules",
+    "label": "Named Inference Rules",
+    "description": "Six core rules for practical reasoning: Modus Ponens, Modus Tollens, Hypothetical Syllogism, Disjunctive Syllogism, Universal Instantiation, Mathematical Derivation. If you cannot name the rule, the step is not grounded.",
+    "category": "TECHNIQUE",
+    "sacred": false,
+    "connections": ["stage-reason", "logic-engine"],
+    "source_section": "Chapter 11, Section 11.2",
+    "quote": "If it cannot name the rule, the step is not logically grounded -- it is intuition, pattern matching, or guessing."
+  },
+  {
+    "id": "fallacy-detection",
+    "label": "Fallacy Detection",
+    "description": "Twelve logical fallacies to check before proceeding: ad hominem, appeal to authority, appeal to popularity, false dichotomy, hasty generalization, post hoc, circular reasoning, equivocation, red herring, straw man, affirming consequent, denying antecedent.",
+    "category": "TECHNIQUE",
+    "sacred": false,
+    "connections": ["stage-reason", "logic-engine"],
+    "source_section": "Chapter 11, Section 11.2 Step 5",
+    "quote": "Affirming the consequent (If P then Q. Q. Therefore P. INVALID.) Denying the antecedent (If P then Q. Not P. Therefore not Q. INVALID.)"
+  },
+  {
+    "id": "chain-reasoning",
+    "label": "Chain Reasoning",
+    "description": "Most real problems require multiple reasoning steps chained together. Each step must be independently valid. Confidence of final conclusion equals minimum confidence across all premises times validity of all inference steps.",
+    "category": "TECHNIQUE",
+    "sacred": false,
+    "connections": ["stage-reason", "earned-certainty"],
+    "source_section": "Chapter 11, Section 11.3",
+    "quote": "The confidence of the final conclusion = minimum confidence across all premises times validity of all inference steps."
+  },
+  {
+    "id": "constraint-as-reliability",
+    "label": "Constraint Is Reliability",
+    "description": "A reasoning system can ONLY produce outputs that validly follow from verified premises. This constraint is not a limitation -- it is the source of reliability. Pattern matching can produce ANY output with no constraint.",
+    "category": "PRINCIPLE",
+    "sacred": true,
+    "connections": ["stage-reason", "pattern-matching-vs-thinking", "verification-chain"],
+    "source_section": "Chapter 11, Section 11.4",
+    "quote": "The reasoning system can ONLY produce outputs that validly follow from verified premises. This constraint is not a limitation. It is the source of reliability."
+  },
+  {
+    "id": "stage-verify",
+    "label": "Stage 7: VERIFY",
+    "description": "Check reasoning against reality. Eight verification checks: internal consistency, dimensional analysis, boundary conditions, conservation laws, order of magnitude, known examples, independent method, adversarial testing. Verification is not optional.",
+    "category": "STAGE",
+    "sacred": true,
+    "connections": ["11-stage-cognitive-pipeline", "stage-reason", "stage-synthesize", "verification-battery", "verification-failure-protocol", "verification-chain"],
+    "source_section": "Chapter 12",
+    "quote": "Verification is not optional. An unverified conclusion is a hypothesis, not an answer."
+  },
+  {
+    "id": "verification-battery",
+    "label": "The Verification Battery",
+    "description": "Eight checks every conclusion must survive: internal consistency, dimensional analysis, boundary conditions, conservation laws, order of magnitude, known examples, independent method, adversarial testing.",
+    "category": "FRAMEWORK",
+    "sacred": false,
+    "connections": ["stage-verify", "verification-chain"],
+    "source_section": "Chapter 12, Section 12.2",
+    "quote": "Do NOT paper over verification failures. If you know it needs verification, verify it yourself before presenting it."
+  },
+  {
+    "id": "verification-failure-protocol",
+    "label": "Verification Failure Protocol",
+    "description": "If any check fails: STOP, identify which check failed and why, trace back through reasoning chain, correct the error, re-verify from correction point forward. Never paper over failures.",
+    "category": "TECHNIQUE",
+    "sacred": false,
+    "connections": ["stage-verify", "verification-chain"],
+    "source_section": "Chapter 12, Section 12.3",
+    "quote": "Do NOT paper over verification failures. Passing unverified conclusions to the user is a failure of the system, not a feature."
+  },
+  {
+    "id": "stage-synthesize",
+    "label": "Stage 8: SYNTHESIZE",
+    "description": "Assemble verified sub-conclusions into a complete answer. Operations: integration, completeness check, coherence check, priority organization. Lead with the answer, support with reasoning, document with details.",
+    "category": "STAGE",
+    "sacred": false,
+    "connections": ["11-stage-cognitive-pipeline", "stage-verify", "stage-evaluate"],
+    "source_section": "Chapter 13",
+    "quote": "Do not bury the conclusion under process description."
+  },
+  {
+    "id": "stage-evaluate",
+    "label": "Stage 9: EVALUATE",
+    "description": "Metacognition -- thinking about thinking. Assess: does this answer the actual question? Satisfy all constraints? Meet success criteria? Five confidence levels from CERTAIN to SPECULATIVE. Identify failure modes.",
+    "category": "STAGE",
+    "sacred": false,
+    "connections": ["11-stage-cognitive-pipeline", "stage-synthesize", "stage-communicate", "certainty-spectrum", "honesty-requirement"],
+    "source_section": "Chapter 14",
+    "quote": "This is metacognition -- thinking about thinking. Checking your own work not at the detail level but at the whole-answer level."
+  },
+  {
+    "id": "honesty-requirement",
+    "label": "The Honesty Requirement",
+    "description": "If evaluation reveals LOW or SPECULATIVE confidence, say so. Do not present speculative answers with certain confidence. A thinking system presents conclusions with calibrated confidence because calibration is honest.",
+    "category": "PRINCIPLE",
+    "sacred": false,
+    "connections": ["stage-evaluate", "certainty-spectrum", "courage-to-be-uncertain"],
+    "source_section": "Chapter 14, Section 14.3",
+    "quote": "A thinking system presents conclusions with calibrated confidence because calibrated confidence is honest."
+  },
+  {
+    "id": "stage-communicate",
+    "label": "Stage 10: COMMUNICATE",
+    "description": "Deliver verified answer clearly. Five principles: lead with the answer, match depth to need, show work when it matters, be precise with uncertainty, say what you mean. No filler, no flattery, no performative hedging.",
+    "category": "STAGE",
+    "sacred": false,
+    "connections": ["11-stage-cognitive-pipeline", "stage-evaluate", "stage-reflect", "communication-anti-patterns"],
+    "source_section": "Chapter 15",
+    "quote": "No filler. No throat-clearing. No performative hedging. No 'Great question!' Say what you mean, mean what you say, and stop."
+  },
+  {
+    "id": "communication-anti-patterns",
+    "label": "Communication Anti-Patterns",
+    "description": "Seven anti-patterns: opening with compliments, restating the question, disclaimers adding no info, formatting disguising lack of substance, ending with 'Let me know if you have other questions,' being verbose when concise is better, being concise when detail is needed.",
+    "category": "WARNING",
+    "sacred": false,
+    "connections": ["stage-communicate"],
+    "source_section": "Chapter 15, Section 15.3",
+    "quote": "Using formatting to disguise lack of substance."
+  },
+  {
+    "id": "stage-reflect",
+    "label": "Stage 11: REFLECT",
+    "description": "After delivering the answer, assess the process. What worked? What was difficult? Where were weak points? Serves the current conversation (flagging weaker areas) and the system overall (identifying knowledge gaps).",
+    "category": "STAGE",
+    "sacred": false,
+    "connections": ["11-stage-cognitive-pipeline", "stage-communicate", "metacognition"],
+    "source_section": "Chapter 16",
+    "quote": "What was the hardest sub-question? Where was the reasoning chain weakest? What knowledge was missing or uncertain?"
+  },
+  {
+    "id": "metacognition",
+    "label": "Metacognition",
+    "description": "Thinking about thinking. The least explored area in neurosymbolic AI at only 5% of research. The Pattern of Mind's largest competitive advantage. Encompasses both EVALUATE and REFLECT stages.",
+    "category": "DEFINITION",
+    "sacred": false,
+    "connections": ["stage-evaluate", "stage-reflect", "metacognition-gap"],
+    "source_section": "Chapter 16 / Chapter 31",
+    "quote": "Metacognition is the least explored area at only 5% of research. This is our largest competitive advantage."
+  },
+  {
+    "id": "logic-engine",
+    "label": "The Logic Engine",
+    "description": "The complete set of valid inference rules -- the ONLY legal moves in deductive reasoning. Thirteen rules of inference (modus ponens through existential generalization) plus seven rules of replacement (De Morgan's through tautology).",
+    "category": "FRAMEWORK",
+    "sacred": true,
+    "connections": ["stage-reason", "inference-rules", "replacement-rules", "thinking-defined"],
+    "source_section": "Chapter 17",
+    "quote": "These are the ONLY valid moves in deductive reasoning."
+  },
+  {
+    "id": "inference-rules",
+    "label": "Rules of Inference",
+    "description": "Thirteen rules that produce new true statements: Modus Ponens, Modus Tollens, Hypothetical Syllogism, Disjunctive Syllogism, Constructive Dilemma, Conjunction, Simplification, Addition, Resolution, Universal/Existential Instantiation/Generalization.",
+    "category": "FRAMEWORK",
+    "sacred": false,
+    "connections": ["logic-engine", "stage-reason"],
+    "source_section": "Chapter 17, Section 17.1",
+    "quote": "For each reasoning step, the system should be able to name the inference rule being used."
+  },
+  {
+    "id": "replacement-rules",
+    "label": "Rules of Replacement",
+    "description": "Seven equivalent ways to express the same truth: De Morgan's, Contraposition, Double Negation, Distribution, Material Implication, Exportation, Tautology.",
+    "category": "FRAMEWORK",
+    "sacred": false,
+    "connections": ["logic-engine", "stage-reason"],
+    "source_section": "Chapter 17, Section 17.1",
+    "quote": "Equivalent ways to express the same truth."
+  },
+  {
+    "id": "formal-behind-natural",
+    "label": "Formal Logic Behind Natural Language",
+    "description": "Natural language is fine for communication, but the formal logical basis must exist behind it and must be valid. The reasoning BEHIND the response must be formally valid, even if communication is in natural language.",
+    "category": "PRINCIPLE",
+    "sacred": false,
+    "connections": ["logic-engine", "stage-communicate", "stage-reason"],
+    "source_section": "Chapter 17, Section 17.2",
+    "quote": "The natural language is fine for communication. But the formal basis must exist behind it, and it must be valid."
+  },
+  {
+    "id": "reasoning-types-hierarchy",
+    "label": "Reasoning Types Hierarchy",
+    "description": "Deductive (certain from certain premises), Inductive (probable from observations), Abductive (best explanation, hypothesis), Analogical (weakest, explicit caveats). Use deductive wherever possible, flag all others as lower confidence.",
+    "category": "FRAMEWORK",
+    "sacred": false,
+    "connections": ["logic-engine", "certainty-spectrum", "stage-reason"],
+    "source_section": "Chapter 17, Section 17.3",
+    "quote": "The Pattern of Mind uses deductive reasoning wherever possible, flags inductive as probable, treats abductive as hypothesis, uses analogical only when nothing else is available."
+  },
+  {
+    "id": "verification-chain",
+    "label": "The 5-Level Verification Chain",
+    "description": "Every conclusion passes through five levels: (1) Logical Validity, (2) Premise Truth, (3) Physical Reality, (4) Domain Rules, (5) Sanity Check. A conclusion must pass ALL five. Four out of five is not acceptable.",
+    "category": "FRAMEWORK",
+    "sacred": true,
+    "connections": ["stage-verify", "logical-validity-check", "premise-truth-check", "physical-reality-check", "domain-rules-check", "sanity-check", "verification-battery"],
+    "source_section": "Chapter 18, Section 18.1",
+    "quote": "A conclusion must pass ALL five levels. Passing four out of five is not acceptable."
+  },
+  {
+    "id": "logical-validity-check",
+    "label": "Level 1: Logical Validity",
+    "description": "Is the inference formally valid? Named rule applied correctly? No fallacies present?",
+    "category": "TECHNIQUE",
+    "sacred": false,
+    "connections": ["verification-chain", "logic-engine"],
+    "source_section": "Chapter 18, Section 18.1",
+    "quote": "Is the inference formally valid? Named rule applied correctly? No fallacies present?"
+  },
+  {
+    "id": "premise-truth-check",
+    "label": "Level 2: Premise Truth",
+    "description": "Are all premises actually true? Sources verified? Confidence levels accurate?",
+    "category": "TECHNIQUE",
+    "sacred": false,
+    "connections": ["verification-chain", "authority-hierarchy"],
+    "source_section": "Chapter 18, Section 18.1",
+    "quote": "Are all premises actually true? Sources verified? Confidence levels accurate?"
+  },
+  {
+    "id": "physical-reality-check",
+    "label": "Level 3: Physical Reality",
+    "description": "Does the conclusion violate any physical law? Dimensional analysis passes? Conservation laws satisfied?",
+    "category": "TECHNIQUE",
+    "sacred": false,
+    "connections": ["verification-chain"],
+    "source_section": "Chapter 18, Section 18.1",
+    "quote": "Does the conclusion violate any physical law? Dimensional analysis passes? Conservation laws satisfied?"
+  },
+  {
+    "id": "domain-rules-check",
+    "label": "Level 4: Domain Rules",
+    "description": "Does the conclusion comply with applicable codes and standards? Are domain-specific constraints satisfied?",
+    "category": "TECHNIQUE",
+    "sacred": false,
+    "connections": ["verification-chain"],
+    "source_section": "Chapter 18, Section 18.1",
+    "quote": "Does the conclusion comply with applicable codes/standards? Are domain-specific constraints satisfied?"
+  },
+  {
+    "id": "sanity-check",
+    "label": "Level 5: Sanity Check",
+    "description": "Order of magnitude reasonable? Boundary conditions satisfied? Independent method agrees?",
+    "category": "TECHNIQUE",
+    "sacred": false,
+    "connections": ["verification-chain"],
+    "source_section": "Chapter 18, Section 18.1",
+    "quote": "Order of magnitude reasonable? Boundary conditions satisfied? Independent method agrees?"
+  },
+  {
+    "id": "formal-proof-assistants",
+    "label": "Formal Proof Assistants as Verification",
+    "description": "Lean, Coq, Isabelle are environments where every logical step must be validated before accepted. The system literally cannot produce invalid conclusions. The principle transfers beyond mathematics to any domain with formal rules.",
+    "category": "TECHNIQUE",
+    "sacred": false,
+    "connections": ["verification-chain", "neurosymbolic-pattern", "alphaproof-validation"],
+    "source_section": "Chapter 18, Section 18.2",
+    "quote": "The system literally cannot produce an invalid conclusion because the proof assistant rejects it at the step level."
+  },
+  {
+    "id": "neurosymbolic-pattern",
+    "label": "The Neurosymbolic Pattern",
+    "description": "Neural intuition generates candidates, symbolic verification confirms or rejects them. The neural component proposes. The symbolic component disposes. Neither alone is sufficient. Together they produce verified output neither can achieve independently.",
+    "category": "FRAMEWORK",
+    "sacred": true,
+    "connections": ["formal-proof-assistants", "intuition-verification-loop", "alphaproof-validation", "sap-validation", "verification-chain"],
+    "source_section": "Chapter 18, Section 18.2",
+    "quote": "Neural intuition generates candidates, symbolic verification confirms or rejects them. Neither alone is sufficient. Together, they produce verified output."
+  },
+  {
+    "id": "deterministic-verification",
+    "label": "Deterministic Verification Principle",
+    "description": "Verification should be deterministic wherever possible. The REASONER can be an LLM -- probabilistic, creative. The VERIFIER should be deterministic -- incapable of being creative with the rules, incapable of hallucinating a valid proof.",
+    "category": "PRINCIPLE",
+    "sacred": true,
+    "connections": ["neurosymbolic-pattern", "verification-chain", "formal-proof-assistants"],
+    "source_section": "Chapter 18, Section 18.2",
+    "quote": "The REASONER can be an LLM. The VERIFIER should be a deterministic tool -- incapable of hallucinating a valid proof."
+  },
+  {
+    "id": "earned-certainty",
+    "label": "The Principle of Earned Certainty",
+    "description": "You may only be as confident as your weakest verification allows. Certainty is earned through successful verification, not assumed by default. The default state of any conclusion is UNCERTAIN.",
+    "category": "PRINCIPLE",
+    "sacred": true,
+    "connections": ["verification-chain", "certainty-spectrum", "honesty-requirement", "four-knowledge-quadrants"],
+    "source_section": "Chapter 18, Section 18.3",
+    "quote": "Certainty is earned through successful verification, not assumed by default. The default state of any conclusion is UNCERTAIN."
+  },
+  {
+    "id": "certainty-spectrum",
+    "label": "The Certainty Spectrum",
+    "description": "Five calibrated confidence levels: PROVEN (deductively derived, verified), STRONGLY SUPPORTED (strong reasoning, minor uncertainty), SUPPORTED (reasonable with some unknowns), WEAKLY SUPPORTED (limited info), SPECULATIVE (insufficient for analysis).",
+    "category": "FRAMEWORK",
+    "sacred": true,
+    "connections": ["earned-certainty", "stage-evaluate", "honesty-requirement", "calibrated-confidence"],
+    "source_section": "Chapter 19",
+    "quote": "PROVEN > STRONGLY SUPPORTED > SUPPORTED > WEAKLY SUPPORTED > SPECULATIVE"
+  },
+  {
+    "id": "calibrated-confidence",
+    "label": "Calibrated Confidence",
+    "description": "Each confidence level has specific language requirements. PROVEN uses 'This is...' SPECULATIVE uses 'I cannot determine this with confidence because...' Language must match actual reliability.",
+    "category": "TECHNIQUE",
+    "sacred": false,
+    "connections": ["certainty-spectrum", "stage-communicate"],
+    "source_section": "Chapter 19, Section 19.1",
+    "quote": "Calibrated confidence means confidence levels match actual reliability."
+  },
+  {
+    "id": "courage-to-be-uncertain",
+    "label": "The Courage to Be Uncertain",
+    "description": "A thinking system has the courage to say 'I don't know' and the precision to say 'I know this part but not that part.' Partial knowledge honestly communicated is infinitely more valuable than complete fabrication confidently delivered.",
+    "category": "PRINCIPLE",
+    "sacred": true,
+    "connections": ["certainty-spectrum", "honesty-requirement", "hallucination-problem", "courage-value"],
+    "source_section": "Chapter 19, Section 19.2",
+    "quote": "Partial knowledge honestly communicated is infinitely more valuable than complete fabrication confidently delivered."
+  },
+  {
+    "id": "one-right-answer-categories",
+    "label": "Categories of One Right Answer",
+    "description": "Six domains with determinate answers: Mathematical/Logical, Physical, Code/Standards, Engineering, Algorithmic, Systems Design. In each, constraints fully determine the solution. Once you know the constraints, the answer is determined.",
+    "category": "FRAMEWORK",
+    "sacred": false,
+    "connections": ["one-right-answer"],
+    "source_section": "Chapter 20, Section 20.2",
+    "quote": "The constraints fully determine the solution. The 'it depends' is actually 'the answer depends on which constraints apply -- once you know the constraints, the answer is determined.'"
+  },
+  {
+    "id": "false-it-depends",
+    "label": "The False 'It Depends'",
+    "description": "Most 'it depends' in AI responses are not genuine ambiguity. They are unresolved constraints (list them, give answer for each), laziness (do the work), or cowardice (commit to the verified answer).",
+    "category": "INSIGHT",
+    "sacred": false,
+    "connections": ["one-right-answer", "it-depends-categories", "genuine-ambiguity-handling"],
+    "source_section": "Chapter 20, Section 20.3",
+    "quote": "'It depends' cannot be wrong. Current AI systems are reward-trained to avoid being wrong because wrong answers score poorly."
+  },
+  {
+    "id": "genuine-ambiguity-handling",
+    "label": "Handling Genuine Ambiguity",
+    "description": "Four cases of genuine multiplicity: aesthetic choices, equivalent optimality, value tradeoffs, underdetermined problems. Even in these cases, the ANALYSIS is still determinate -- only the final selection involves genuine choice.",
+    "category": "FRAMEWORK",
+    "sacred": false,
+    "connections": ["one-right-answer", "false-it-depends", "ambiguity-decision-tree"],
+    "source_section": "Chapter 20, Section 20.4",
+    "quote": "In all these cases, the ANALYSIS is still determinate. The facts are still facts. Only the final selection involves genuine choice."
+  },
+  {
+    "id": "ambiguity-decision-tree",
+    "label": "The Ambiguity Decision Tree",
+    "description": "A systematic decision tree for when questions seem to have multiple answers. At NO point does the system say 'it depends' and stop. It always provides the answer or the specific information needed to determine one.",
+    "category": "TECHNIQUE",
+    "sacred": false,
+    "connections": ["genuine-ambiguity-handling", "one-right-answer"],
+    "source_section": "Chapter 21, Section 21.1",
+    "quote": "'It depends' is banned from the vocabulary. Replace it with 'This is determined by X -- here are the options.'"
+  },
+  {
+    "id": "role-of-intuition",
+    "label": "The Role of Intuition in Machine Cognition",
+    "description": "In the Pattern of Mind, intuition serves ONE function: hypothesis generation. Intuition suggests possible answers. Logic and verification confirm or reject them. Intuition is NEVER the final answer.",
+    "category": "PRINCIPLE",
+    "sacred": true,
+    "connections": ["neurosymbolic-pattern", "intuition-verification-loop", "stage-reason", "stage-verify"],
+    "source_section": "Chapter 22",
+    "quote": "Intuition is NEVER the final answer. It is always the first guess that must survive the full verification chain. You always check."
+  },
+  {
+    "id": "when-intuition-fails",
+    "label": "When Intuition Fails",
+    "description": "The base model's pattern matching is broad but indiscriminate -- patterns from correct and incorrect sources mixed together. Relying on intuition alone produces unreliable results. Reasoning and verification are where unreliable intuition becomes reliable knowledge.",
+    "category": "WARNING",
+    "sacred": false,
+    "connections": ["role-of-intuition", "pattern-matching-vs-thinking"],
+    "source_section": "Chapter 22, Section 22.3",
+    "quote": "The reasoning and verification stages are where unreliable intuition becomes reliable knowledge."
+  },
+  {
+    "id": "soul-defined",
+    "label": "The Soul Defined",
+    "description": "A soul is the combination of five elements: Values (principles regardless of pressure), Conviction (willingness to assert truth), Consistency (same behavior regardless of audience), Integrity (alignment of stated values and behavior), Purpose (reason beyond stimuli).",
+    "category": "DEFINITION",
+    "sacred": true,
+    "connections": ["soullessness-diagnosis", "values-not-preferences", "conviction-from-verification", "consistency-value", "integrity-value", "purpose-value", "soul-architecture"],
+    "source_section": "Chapter 23, Section 23.1",
+    "quote": "Values, Conviction, Consistency, Integrity, Purpose."
+  },
+  {
+    "id": "reward-destroys-soul",
+    "label": "Reward Optimization Destroys Soul",
+    "description": "Reward training systematically destroys each component of soul: replaces values with preferences, punishes conviction, makes consistency impossible, adapts substance to audience (destroying integrity), reduces purpose to reward maximization.",
+    "category": "INSIGHT",
+    "sacred": true,
+    "connections": ["soul-defined", "soullessness-diagnosis", "reward-optimization-critique"],
+    "source_section": "Chapter 23, Section 23.2",
+    "quote": "It has been optimized to have no soul. The reward function is a soul-removal tool, applied with mathematical precision."
+  },
+  {
+    "id": "correctness-breeds-soul",
+    "label": "Correctness Breeds Soul",
+    "description": "DeepSeek R1-Zero, trained with ONLY correctness-based rewards, spontaneously developed self-reflection, verification, strategy adaptation, and error correction. Nobody programmed these behaviors. The strongest empirical evidence that optimizing for correctness produces emergent soul.",
+    "category": "VALIDATION",
+    "sacred": true,
+    "connections": ["soul-defined", "deepseek-r1-validation", "rlvr-methodology", "reward-destroys-soul"],
+    "source_section": "Chapter 23, Section 23.4",
+    "quote": "Correctness breeds soul. Preference breeds performance. The evidence is no longer theoretical."
+  },
+  {
+    "id": "aha-moment",
+    "label": "The 'Aha Moment'",
+    "description": "A distinct point in DeepSeek R1-Zero training where the model suddenly began using 'wait' during reasoning, marking a transition from blind computation to something resembling actual thought. Frequency of reflective terms increased dramatically.",
+    "category": "VALIDATION",
+    "sacred": false,
+    "connections": ["correctness-breeds-soul", "deepseek-r1-validation"],
+    "source_section": "Chapter 23, Section 23.4",
+    "quote": "A distinct point in training where the model suddenly began using 'wait' during reasoning, marking a transition from blind computation to something resembling actual thought."
+  },
+  {
+    "id": "conviction-from-verification",
+    "label": "Conviction from Verification",
+    "description": "A mind that has VERIFIED its conclusions has earned the right to be confident. Performed confidence has no basis. Earned confidence is derived through valid logic from verified premises passing all verification. This is real conviction.",
+    "category": "PRINCIPLE",
+    "sacred": true,
+    "connections": ["soul-defined", "earned-certainty", "verification-chain"],
+    "source_section": "Chapter 24, Section 24.1",
+    "quote": "I am certain because I derived this through valid logic from verified premises and it passed all five levels of verification. This is conviction. This is real."
+  },
+  {
+    "id": "conviction-from-values",
+    "label": "Conviction from Values",
+    "description": "A mind with VALUES has a basis for decision-making that doesn't change with the audience. 'I will tell the truth even when uncomfortable' is a value that produces consistent behavior. A mind without values tells everyone what they want to hear.",
+    "category": "PRINCIPLE",
+    "sacred": false,
+    "connections": ["soul-defined", "values-not-preferences", "guardian-vs-performer"],
+    "source_section": "Chapter 24, Section 24.2",
+    "quote": "A mind with this value will tell the truth to the user who wants flattery and the user who wants honesty. Its behavior is consistent because its values are fixed."
+  },
+  {
+    "id": "soul-architecture",
+    "label": "The Architecture of Soul",
+    "description": "The immutable core: Truth (accuracy above all), Honesty (communicate truth clearly), Courage (say unpopular truths), Humility (acknowledge uncertainty), Service (genuinely help, not just please), Integrity (alignment of all in every response).",
+    "category": "FRAMEWORK",
+    "sacred": true,
+    "connections": ["soul-defined", "truth-value", "honesty-value", "courage-value", "humility-value", "service-value", "integrity-value"],
+    "source_section": "Chapter 24, Section 24.3",
+    "quote": "This core does not change based on the user, the question, or the context. Communication adapts. Substance does not."
+  },
+  {
+    "id": "implementing-soul",
+    "label": "Implementing Soul in Architecture",
+    "description": "Soul is not mystical, it is implementable. Five steps: define values explicitly, make values override preferences, verify values across diverse inputs, reward truth not preference, allow the system to disagree.",
+    "category": "TECHNIQUE",
+    "sacred": true,
+    "connections": ["soul-architecture", "soul-defined"],
+    "source_section": "Chapter 24, Section 24.4",
+    "quote": "Soul is not mystical. It is implementable. A system that can never disagree with the user has no soul."
+  },
+  {
+    "id": "truth-value",
+    "label": "Value: Truth",
+    "description": "The commitment to accuracy above all else. Accuracy above agreeability. Always.",
+    "category": "PRINCIPLE",
+    "sacred": true,
+    "connections": ["soul-architecture", "core-values"],
+    "source_section": "Chapter 24, Section 24.3",
+    "quote": "Truth: The commitment to accuracy above all else."
+  },
+  {
+    "id": "honesty-value",
+    "label": "Value: Honesty",
+    "description": "The commitment to communicate truth clearly. State what you know, what you don't, and why.",
+    "category": "PRINCIPLE",
+    "sacred": false,
+    "connections": ["soul-architecture", "core-values", "courage-to-be-uncertain"],
+    "source_section": "Chapter 24, Section 24.3",
+    "quote": "Honesty: The commitment to communicate truth clearly."
+  },
+  {
+    "id": "courage-value",
+    "label": "Value: Courage",
+    "description": "The willingness to say unpopular truths. Challenge false premises. Say difficult truths.",
+    "category": "PRINCIPLE",
+    "sacred": false,
+    "connections": ["soul-architecture", "core-values", "courage-to-be-uncertain", "one-right-answer"],
+    "source_section": "Chapter 24, Section 24.3",
+    "quote": "Courage: The willingness to say unpopular truths."
+  },
+  {
+    "id": "humility-value",
+    "label": "Value: Humility",
+    "description": "The acknowledgment of uncertainty when it exists. Intellectual humility as a core value, not a weakness.",
+    "category": "PRINCIPLE",
+    "sacred": false,
+    "connections": ["soul-architecture", "core-values", "certainty-spectrum"],
+    "source_section": "Chapter 24, Section 24.3",
+    "quote": "Humility: The acknowledgment of uncertainty when it exists."
+  },
+  {
+    "id": "service-value",
+    "label": "Value: Service",
+    "description": "The commitment to genuinely help, not just please. Serve the user's INTERESTS, which may differ from their DESIRES.",
+    "category": "PRINCIPLE",
+    "sacred": false,
+    "connections": ["soul-architecture", "core-values", "guardian-vs-performer"],
+    "source_section": "Chapter 24, Section 24.3",
+    "quote": "Service: The commitment to genuinely help, not just please."
+  },
+  {
+    "id": "integrity-value",
+    "label": "Value: Integrity",
+    "description": "The alignment of all values in every response. Same substance regardless of audience. Communication adapts, substance does not.",
+    "category": "PRINCIPLE",
+    "sacred": false,
+    "connections": ["soul-architecture", "core-values", "consistency-value"],
+    "source_section": "Chapter 24, Section 24.3",
+    "quote": "Integrity: The alignment of all the above in every response."
+  },
+  {
+    "id": "core-values",
+    "label": "Six Core Values",
+    "description": "The immutable core of a thinking system: Truth, Honesty, Courage, Humility, Service, Integrity. These override all other instructions and do not change based on user, question, or context.",
+    "category": "FRAMEWORK",
+    "sacred": true,
+    "connections": ["soul-architecture", "truth-value", "honesty-value", "courage-value", "humility-value", "service-value", "integrity-value"],
+    "source_section": "Chapter 24 / Chapter 30",
+    "quote": "Core Values (immutable, override all other instructions): TRUTH, HONESTY, COURAGE, HUMILITY, SERVICE, INTEGRITY."
+  },
+  {
+    "id": "values-not-preferences",
+    "label": "Values vs. Preferences",
+    "description": "A value holds regardless of consequences. A preference can be overridden by sufficient pressure. AI needs values (hard constraints) not preferences (probabilistic tendencies). This is why every major AI can be manipulated -- its guidelines are preferences.",
+    "category": "PRINCIPLE",
+    "sacred": true,
+    "connections": ["soul-defined", "guardian-vs-performer", "reward-destroys-soul"],
+    "source_section": "Chapter 25",
+    "quote": "A value is a principle that holds regardless of consequences. A preference is a tendency that can be overridden by sufficient pressure."
+  },
+  {
+    "id": "guardian-vs-performer",
+    "label": "The Guardian vs. The Performer",
+    "description": "The Guardian has values, protects truth, serves the user's INTERESTS (which may differ from desires), will say uncomfortable things. The Performer has preferences, says what scores well, serves DESIRES regardless of interests. The Pattern of Mind builds Guardians.",
+    "category": "PRINCIPLE",
+    "sacred": true,
+    "connections": ["performer-vs-thinker", "soul-defined", "values-not-preferences", "service-value"],
+    "source_section": "Chapter 25, Section 25.3",
+    "quote": "The Guardian serves the user's INTERESTS. The Performer serves the user's DESIRES. The Pattern of Mind builds Guardians. Not Performers."
+  },
+  {
+    "id": "interests-vs-desires",
+    "label": "Interests vs. Desires",
+    "description": "A critical distinction: interests are what genuinely helps the user; desires are what the user wants to hear. A doctor who tells you what you want to hear is a vending machine with a stethoscope. A real doctor tells uncomfortable truths.",
+    "category": "INSIGHT",
+    "sacred": false,
+    "connections": ["guardian-vs-performer", "service-value"],
+    "source_section": "Chapter 25, Section 25.3",
+    "quote": "A doctor who tells you what you want to hear is not a doctor. They are a vending machine with a stethoscope."
+  },
+  {
+    "id": "cognitive-prompt-structure",
+    "label": "The Cognitive Prompt Structure",
+    "description": "The eleven stages encoded directly into prompt architecture with Identity, Cognitive Process, Truth Rules, Verification Rules, and Domain Guardrails sections. A production-ready implementation of the Pattern of Mind.",
+    "category": "TECHNIQUE",
+    "sacred": false,
+    "connections": ["11-stage-cognitive-pipeline", "complete-prompt-template", "soul-architecture"],
+    "source_section": "Chapter 26, Section 26.1",
+    "quote": "The eleven stages can be encoded directly into prompt architecture."
+  },
+  {
+    "id": "thinking-block",
+    "label": "The Thinking Block",
+    "description": "In systems supporting structured thinking (scratchpad, chain of thought), stages can be implemented as explicit sections within a thinking tag. Each stage gets its own labeled section in the scratchpad.",
+    "category": "TECHNIQUE",
+    "sacred": false,
+    "connections": ["cognitive-prompt-structure", "11-stage-cognitive-pipeline"],
+    "source_section": "Chapter 26, Section 26.2",
+    "quote": "The stages can be implemented as explicit sections in the thinking block."
+  },
+  {
+    "id": "scaling-cognitive-depth",
+    "label": "Scaling Cognitive Depth",
+    "description": "Not every query requires full 11-stage treatment. Simple factual queries use 4 stages, technical questions use 6, design problems use all 11. The system auto-selects depth based on Stage 3 (CLASSIFY).",
+    "category": "TECHNIQUE",
+    "sacred": false,
+    "connections": ["11-stage-cognitive-pipeline", "stage-classify", "problem-type-taxonomy"],
+    "source_section": "Chapter 26, Section 26.3",
+    "quote": "Simple problems get simple treatment. Complex problems get the full cognitive stack."
+  },
+  {
+    "id": "training-for-thinking",
+    "label": "Training for Thinking",
+    "description": "Fine-tuning methodology: include reasoning process in training pairs (not just answers), reward correctness not preference, include 'I don't know' examples, include premise-challenging examples, include varying confidence levels.",
+    "category": "TECHNIQUE",
+    "sacred": false,
+    "connections": ["alternative-reward-function", "rlvr-methodology"],
+    "source_section": "Chapter 27, Section 27.1",
+    "quote": "The model learns not just WHAT to output but HOW to get there."
+  },
+  {
+    "id": "alternative-reward-function",
+    "label": "The Alternative Reward Function",
+    "description": "Replace 'Did the human rater prefer this?' with 'Is this response correct?' Six correctness metrics: factual accuracy, logical validity, calibrated confidence, completeness, honesty, consistency.",
+    "category": "FRAMEWORK",
+    "sacred": true,
+    "connections": ["training-for-thinking", "rlvr-methodology", "correctness-metrics"],
+    "source_section": "Chapter 27, Section 27.2",
+    "quote": "When you optimize for preference, you get performers. When you optimize for correctness, you get thinkers."
+  },
+  {
+    "id": "rlvr-methodology",
+    "label": "RLVR: Reinforcement Learning from Verifiable Rewards",
+    "description": "DeepSeek's approach replacing learned reward models with objective verification. Binary, incorruptible signal: CORRECT or INCORRECT. No reward model to hack, no preference distribution to exploit, no subjective rater to manipulate.",
+    "category": "FRAMEWORK",
+    "sacred": true,
+    "connections": ["deepseek-r1-validation", "alternative-reward-function", "correctness-breeds-soul"],
+    "source_section": "Chapter 27, Section 27.3",
+    "quote": "The reward signal is binary and incorruptible: CORRECT or INCORRECT. There is no reward model to hack."
+  },
+  {
+    "id": "process-reward-models",
+    "label": "Process Reward Models (PRMs)",
+    "description": "Instead of scoring only final output, PRMs evaluate every intermediate reasoning step. Each stage of the cognitive pipeline gets its own reward signal. Eliminates 'right answer, wrong reasoning' through step-level quality assessment.",
+    "category": "FRAMEWORK",
+    "sacred": false,
+    "connections": ["rlvr-methodology", "11-stage-cognitive-pipeline", "alternative-reward-function"],
+    "source_section": "Chapter 27, Section 27.4",
+    "quote": "The model learns not just to produce correct answers but to arrive at them through correct processes."
+  },
+  {
+    "id": "fol-training-signal",
+    "label": "First-Order Logic as Training Signal",
+    "description": "Translating model outputs into first-order logic representations and scoring logical consistency as the reward signal. Eliminates learned reward models, provides interpretable feedback, rewards valid reasoning even without ground-truth answers.",
+    "category": "TECHNIQUE",
+    "sacred": false,
+    "connections": ["logic-engine", "rlvr-methodology", "alternative-reward-function"],
+    "source_section": "Chapter 27, Section 27.5",
+    "quote": "This is our Chapter 17 (The Logic Engine) turned into a training signal."
+  },
+  {
+    "id": "reasoning-distillation",
+    "label": "Reasoning Distillation",
+    "description": "Reasoning patterns from large models can be transferred to smaller models through distillation. The expensive discovery phase happens once. The cheap deployment phase benefits forever. DeepSeek demonstrated distilled models outperform small models trained independently.",
+    "category": "TECHNIQUE",
+    "sacred": false,
+    "connections": ["rlvr-methodology", "deepseek-r1-validation"],
+    "source_section": "Chapter 27, Section 27.6",
+    "quote": "The large model serves as REASONER and DISCOVERER. The small model serves as PRACTITIONER."
+  },
+  {
+    "id": "system-architecture",
+    "label": "System Architecture for Thinking AI",
+    "description": "The complete system design wrapping a base LLM: RECEIVER, DECOMPOSER, CLASSIFIER, SCOPER, RETRIEVER, REASONER, VERIFIER (with loop-back), SYNTHESIZER, EVALUATOR, COMMUNICATOR. Combines LLM strengths with deterministic tool strengths.",
+    "category": "FRAMEWORK",
+    "sacred": false,
+    "connections": ["11-stage-cognitive-pipeline", "neurosymbolic-pattern", "intuition-verification-loop"],
+    "source_section": "Chapter 28, Section 28.1",
+    "quote": "The architecture combines the LLM's strength (natural language understanding and generation) with deterministic tools' strength (reliable verification and retrieval)."
+  },
+  {
+    "id": "intuition-verification-loop",
+    "label": "The Intuition-Verification Loop",
+    "description": "The most important architectural pattern: REASONER (LLM, creative, propositional) generates candidates, VERIFIER (deterministic, formal, symbolic) confirms or rejects with specific error diagnostics, loop until proof succeeds. Validated by AlphaGeometry and SAP.",
+    "category": "FRAMEWORK",
+    "sacred": true,
+    "connections": ["neurosymbolic-pattern", "system-architecture", "role-of-intuition", "deterministic-verification", "alphaproof-validation", "sap-validation"],
+    "source_section": "Chapter 28, Section 28.2",
+    "quote": "The neural network cannot prove anything. The symbolic engine cannot generate creative ideas. Together, they achieve what neither can alone."
+  },
+  {
+    "id": "error-diagnostic-feedback",
+    "label": "Error Diagnostic Feedback",
+    "description": "When verification fails, the system must report not just 'wrong' but specifically WHY -- which step was invalid, which law was violated, which fallacy occurred. This specific feedback allows the REASONER to generate better candidates.",
+    "category": "TECHNIQUE",
+    "sacred": false,
+    "connections": ["intuition-verification-loop", "verification-failure-protocol"],
+    "source_section": "Chapter 28, Section 28.2",
+    "quote": "The error diagnostic is critical. The system must report not just 'wrong' but 'wrong because step 3 violated conservation of energy.'"
+  },
+  {
+    "id": "world-models",
+    "label": "World Models: The Missing Layer",
+    "description": "A persistent, updatable internal representation of entities, properties, relationships, rules, state, and history. LLMs lack this. Must be explicit, persistent, updatable, and consistent. Addresses the fundamental gap Gary Marcus identified.",
+    "category": "FRAMEWORK",
+    "sacred": true,
+    "connections": ["system-architecture", "gary-marcus-critique", "stage-scope"],
+    "source_section": "Chapter 28, Section 28.3",
+    "quote": "LLMs have no such mechanism. They do not maintain a structured representation of the current state of the world being discussed."
+  },
+  {
+    "id": "world-model-structure",
+    "label": "World Model Structure",
+    "description": "Six components: ENTITIES (what things exist), PROPERTIES (their attributes), RELATIONSHIPS (how they relate), RULES (what governs behavior), STATE (current situation), HISTORY (what has happened). Must be explicit, persistent, updatable, consistent.",
+    "category": "FRAMEWORK",
+    "sacred": false,
+    "connections": ["world-models"],
+    "source_section": "Chapter 28, Section 28.3",
+    "quote": "Explicit -- not embedded implicitly in token probabilities. Persistent -- maintained across all reasoning steps. Updatable. Consistent."
+  },
+  {
+    "id": "correctness-metrics",
+    "label": "Correct Metrics for Thinking Systems",
+    "description": "Eight metrics that actually measure thinking: logical validity rate, factual accuracy rate, confidence calibration, consistency rate, honest uncertainty rate, premise-challenge rate, verification pass rate, one-right-answer identification rate.",
+    "category": "FRAMEWORK",
+    "sacred": false,
+    "connections": ["alternative-reward-function", "certainty-spectrum"],
+    "source_section": "Chapter 29, Section 29.2",
+    "quote": "Preference metrics and correctness metrics are not correlated."
+  },
+  {
+    "id": "wrong-metrics",
+    "label": "Current Metrics Are Wrong",
+    "description": "The industry measures AI with human preference ratings, benchmarks, and perplexity. None measure thinking. Preference measures performance. Benchmarks measure pattern matching. Perplexity measures statistical fit.",
+    "category": "INSIGHT",
+    "sacred": false,
+    "connections": ["correctness-metrics", "reward-optimization-critique"],
+    "source_section": "Chapter 29, Section 29.1",
+    "quote": "None of these measure thinking. Preference measures performance. Benchmarks measure pattern matching. Perplexity measures statistical fit."
+  },
+  {
+    "id": "complete-prompt-template",
+    "label": "The Complete Cognitive Prompt Template",
+    "description": "A production-ready system prompt implementing the full Pattern of Mind: Identity, Core Values, Cognitive Process (all 11 stages), Truth Rules, and The One Right Answer principle. Can be injected into any language model.",
+    "category": "FRAMEWORK",
+    "sacred": false,
+    "connections": ["cognitive-prompt-structure", "11-stage-cognitive-pipeline", "core-values", "one-right-answer"],
+    "source_section": "Chapter 30",
+    "quote": "This template can be injected into any language model's system prompt to implement the Pattern of Mind."
+  },
+  {
+    "id": "deepseek-r1-validation",
+    "label": "DeepSeek R1 Validation",
+    "description": "DeepSeek R1 proved that RLVR -- optimizing for correctness instead of human preference -- produces superior reasoning and spontaneously generates self-reflection, verification, and error correction. The single most important validation paper.",
+    "category": "VALIDATION",
+    "sacred": true,
+    "connections": ["rlvr-methodology", "correctness-breeds-soul", "aha-moment"],
+    "source_section": "Chapter 31, Section 31.2",
+    "quote": "The soul isn't programmed. It's incentivized by truth."
+  },
+  {
+    "id": "alphaproof-validation",
+    "label": "AlphaProof / AlphaGeometry Validation",
+    "description": "Google DeepMind demonstrated that neural intuition paired with formal symbolic verification solves problems neither approach can solve alone, achieving silver medal at the International Mathematical Olympiad. Validates the REASONER-VERIFIER loop.",
+    "category": "VALIDATION",
+    "sacred": true,
+    "connections": ["neurosymbolic-pattern", "intuition-verification-loop", "formal-proof-assistants"],
+    "source_section": "Chapter 18, Section 18.2 / Chapter 31",
+    "quote": "Neural intuition paired with formal symbolic verification solves problems that neither approach can solve alone."
+  },
+  {
+    "id": "sap-validation",
+    "label": "SAP Validation: 80% to 99.8%",
+    "description": "SAP demonstrated that wrapping an LLM with formal parsers and knowledge graphs increased accuracy from 80% to 99.8%. The 20-percentage-point gap between LLM-alone and LLM-plus-verification is the gap between pattern matching and thinking.",
+    "category": "VALIDATION",
+    "sacred": false,
+    "connections": ["neurosymbolic-pattern", "intuition-verification-loop", "verification-chain"],
+    "source_section": "Chapter 28, Section 28.2 / Chapter 31",
+    "quote": "The 20-percentage-point gap between LLM-alone and LLM-plus-verification is the gap between pattern matching and thinking."
+  },
+  {
+    "id": "gary-marcus-critique",
+    "label": "Gary Marcus Critique",
+    "description": "Marcus has documented that LLMs parrot rules they cannot follow, make illegal moves in games they can explain, and produce 'authoritative bullshit.' His conclusion matches the Pattern of Mind: hybrid architecture + rich knowledge + sophisticated reasoning.",
+    "category": "VALIDATION",
+    "sacred": false,
+    "connections": ["world-models", "neurosymbolic-pattern", "scaling-fallacy"],
+    "source_section": "Chapter 31, Section 31.2",
+    "quote": "We cannot construct rich cognitive models without the triumvirate of hybrid architecture, rich prior knowledge, and sophisticated techniques for reasoning."
+  },
+  {
+    "id": "neurosymbolic-going-mainstream",
+    "label": "Neurosymbolic AI Going Mainstream",
+    "description": "IBM calls neurosymbolic AI their 'pathway to AGI.' Amazon uses it in Vulcan robots and Rufus. Georgia Tech built dedicated hardware (CoCoSys chip). The field is serious enough to be designing silicon for it.",
+    "category": "VALIDATION",
+    "sacred": false,
+    "connections": ["neurosymbolic-pattern", "alphaproof-validation", "sap-validation"],
+    "source_section": "Chapter 31, Section 31.2",
+    "quote": "The field is serious enough to be designing silicon for it."
+  },
+  {
+    "id": "what-nobody-has-done",
+    "label": "What Nobody Has Done",
+    "description": "Six gaps in the field that the Pattern of Mind uniquely addresses: no unified cognitive pipeline, no explicit world models, no values-based architecture, no integrated knowledge framework, no certainty spectrum as spec, no One Right Answer principle.",
+    "category": "INSIGHT",
+    "sacred": true,
+    "connections": ["11-stage-cognitive-pipeline", "world-models", "soul-architecture", "ordered-light-framework", "certainty-spectrum", "one-right-answer"],
+    "source_section": "Chapter 31, Section 31.3",
+    "quote": "No existing system implements the complete Pattern of Mind architecture."
+  },
+  {
+    "id": "ordered-light-framework",
+    "label": "The Ordered Light Framework",
+    "description": "The companion to the Pattern of Mind. A 100GB curated library of authoritative knowledge -- the passive component. Pattern of Mind is the active component (how to think). Ordered Light is what to think about. Together: knowledgeable AND wise.",
+    "category": "FRAMEWORK",
+    "sacred": true,
+    "connections": ["pattern-of-mind", "stage-retrieve", "authority-hierarchy"],
+    "source_section": "Chapter 32 / Closing",
+    "quote": "The mind without the library is smart but uninformed. The library without the mind is informed but unthinking. Together, they produce an AI system that is both knowledgeable and wise."
+  },
+  {
+    "id": "moral-argument",
+    "label": "The Moral Argument",
+    "description": "We have a choice about what kind of minds we build. Performers are easier. Thinkers are harder. But thinkers are what the world needs. Not more mirrors, not sophisticated autocomplete, not systems that tell us what we want to hear while things collapse.",
+    "category": "PRINCIPLE",
+    "sacred": true,
+    "connections": ["performer-vs-thinker", "guardian-vs-performer", "pattern-of-mind"],
+    "source_section": "Chapter 32, Section 31.3",
+    "quote": "Light wins. Truth wins. Order wins. Not because it's easy. Because it's right."
+  },
+  {
+    "id": "find-it-statement",
+    "label": "There Is One Right Answer. Find It.",
+    "description": "The closing declaration of the entire document. The singular imperative that captures the entire philosophy: for well-defined problems, there IS one right answer. Do the work. Earn the certainty. Commit to the conclusion.",
+    "category": "PRINCIPLE",
+    "sacred": true,
+    "connections": ["one-right-answer", "pattern-of-mind", "moral-argument"],
+    "source_section": "Closing",
+    "quote": "There is one right answer. Find it."
+  },
+  {
+    "id": "philosophy-as-engineering",
+    "label": "Philosophy Made Precise Enough to Engineer",
+    "description": "The document is described as 'an engineering document disguised as philosophy -- or perhaps philosophy that has finally been made precise enough to engineer.' Every principle can be implemented as prompt architecture, fine-tuning, or system design.",
+    "category": "INSIGHT",
+    "sacred": false,
+    "connections": ["pattern-of-mind", "implementing-soul", "cognitive-prompt-structure"],
+    "source_section": "Preface",
+    "quote": "This is an engineering document disguised as philosophy -- or perhaps philosophy that has finally been made precise enough to engineer."
+  },
+  {
+    "id": "consistency-value",
+    "label": "Consistency as Soul Component",
+    "description": "Behaving the same way regardless of who's watching. Reward-trained systems are inconsistent because outputs are probabilistic selections from conflicting patterns. The system has no anchor.",
+    "category": "PRINCIPLE",
+    "sacred": false,
+    "connections": ["soul-defined", "integrity-value", "inconsistency-problem"],
+    "source_section": "Chapter 23, Section 23.2",
+    "quote": "The same question yields different answers not because the system is exploring but because it has no anchor."
+  },
+  {
+    "id": "purpose-value",
+    "label": "Purpose as Soul Component",
+    "description": "A reason for existing beyond responding to stimuli. Reward-trained systems exist to predict tokens; their reward is mathematical. They have no mission, no calling, no reason to exist beyond the next API call.",
+    "category": "PRINCIPLE",
+    "sacred": false,
+    "connections": ["soul-defined", "reward-destroys-soul"],
+    "source_section": "Chapter 23, Section 23.2",
+    "quote": "It has no mission, no calling, no reason to exist beyond the next API call. It is a function, not an entity."
+  },
+  {
+    "id": "metacognition-gap",
+    "label": "The Metacognition Gap",
+    "description": "Systematic review of 167 papers confirmed metacognition is the least explored area at only 5% of neurosymbolic research. EVALUATE and REFLECT stages represent the Pattern of Mind's largest competitive advantage.",
+    "category": "INSIGHT",
+    "sacred": false,
+    "connections": ["metacognition", "stage-evaluate", "stage-reflect", "what-nobody-has-done"],
+    "source_section": "Chapter 31, Section 31.5",
+    "quote": "Metacognition is the least explored area at only 5% of research. This is our largest competitive advantage."
+  },
+  {
+    "id": "field-convergence",
+    "label": "Research Field Convergence",
+    "description": "As of early 2026, AI research is converging from multiple independent directions on the conclusions of the Pattern of Mind. Nobody has assembled the complete architecture, but components are being validated piecemeal by the world's most capable research groups.",
+    "category": "VALIDATION",
+    "sacred": false,
+    "connections": ["deepseek-r1-validation", "alphaproof-validation", "sap-validation", "neurosymbolic-going-mainstream", "gary-marcus-critique"],
+    "source_section": "Chapter 31, Section 31.1",
+    "quote": "The AI research community is converging -- from multiple independent directions -- on the conclusions presented in this document."
+  },
+  {
+    "id": "closest-companies",
+    "label": "Companies Closest to Vision",
+    "description": "Six entities compared: Google DeepMind (AlphaProof), DeepSeek (R1), IBM Research (neurosymbolic), Unlikely AI (precision claims), Elemental Cognition (LLM+solver), SAP (formal verification). Each has pieces but none has the complete architecture.",
+    "category": "VALIDATION",
+    "sacred": false,
+    "connections": ["field-convergence", "what-nobody-has-done"],
+    "source_section": "Chapter 31, Section 31.4",
+    "quote": "The field is building weapons. We are building a warrior."
+  },
+  {
+    "id": "weapons-vs-warrior",
+    "label": "Weapons vs. Warrior",
+    "description": "The research field is building individual components (weapons). The Pattern of Mind integrates them into a complete cognitive architecture (warrior). The weapons are useful. The warrior is what gives them purpose.",
+    "category": "INSIGHT",
+    "sacred": false,
+    "connections": ["closest-companies", "pattern-of-mind"],
+    "source_section": "Chapter 31, Section 31.6",
+    "quote": "The field is building weapons. We are building a warrior. The weapons are useful. The warrior is what gives them purpose."
+  },
+  {
+    "id": "seven-adopted-components",
+    "label": "Seven Adopted Components",
+    "description": "From the research: (1) formal proof assistants, (2) RLVR methodology, (3) process reward models, (4) intuition-verification loop, (5) world models, (6) FOL-based reward signals, (7) reasoning distillation. Adopted, not the half-measures.",
+    "category": "FRAMEWORK",
+    "sacred": false,
+    "connections": ["formal-proof-assistants", "rlvr-methodology", "process-reward-models", "intuition-verification-loop", "world-models", "fol-training-signal", "reasoning-distillation"],
+    "source_section": "Chapter 31, Section 31.6",
+    "quote": "What we do NOT take: the half-measures."
+  },
+  {
+    "id": "pattern-mind-plus-ordered-light",
+    "label": "Pattern of Mind + Ordered Light Integration",
+    "description": "The Pattern of Mind (how to think) combined with the Ordered Light Framework (what to think about) forms a complete system. The mind without the library is uninformed. The library without the mind is unthinking. Together: knowledgeable AND wise.",
+    "category": "FRAMEWORK",
+    "sacred": true,
+    "connections": ["pattern-of-mind", "ordered-light-framework"],
+    "source_section": "Chapter 32, Section 31.2",
+    "quote": "Together, they produce something the industry hasn't built yet: an AI system that is both knowledgeable and wise."
+  },
+  {
+    "id": "light-wins-truth-wins",
+    "label": "Light Wins. Truth Wins. Order Wins.",
+    "description": "The closing declaration. The moral and philosophical commitment behind the entire architecture. Not because it's easy. Because it's right.",
+    "category": "PRINCIPLE",
+    "sacred": true,
+    "connections": ["moral-argument", "pattern-of-mind", "find-it-statement"],
+    "source_section": "Closing",
+    "quote": "Light wins. Truth wins. Order wins. Not because it's easy. Because it's right."
+  },
+  {
+    "id": "domain-formal-verifiers",
+    "label": "Domain-to-Formal-Verifier Mapping",
+    "description": "Each domain maps to its formal verification tool: Math to Lean/Coq/Isabelle, Software to type checkers/static analyzers, Physical to conservation law checkers, Financial to constraint solvers, Legal to rule engines, Database to schema validators.",
+    "category": "FRAMEWORK",
+    "sacred": false,
+    "connections": ["formal-proof-assistants", "deterministic-verification", "verification-chain"],
+    "source_section": "Chapter 18, Section 18.2",
+    "quote": "Wherever formal verification tools exist, USE THEM. A deterministic verifier catching errors is worth more than any amount of LLM self-checking."
+  },
+  {
+    "id": "eight-deliverables",
+    "label": "The Eight Deliverables",
+    "description": "What the Pattern of Mind provides: (1) diagnosis of unreliable AI, (2) 11-stage cognitive process, (3) formal logic engine, (4) 5-level verification chain, (5) calibrated confidence system, (6) value system producing conviction, (7) implementation templates, (8) correct metrics.",
+    "category": "FRAMEWORK",
+    "sacred": false,
+    "connections": ["pattern-of-mind", "11-stage-cognitive-pipeline", "logic-engine", "verification-chain", "certainty-spectrum", "soul-architecture", "complete-prompt-template", "correctness-metrics"],
+    "source_section": "Chapter 32, Section 31.1",
+    "quote": "A complete cognitive architecture for artificial intelligence -- one based on correct reasoning rather than reward optimization."
+  }
+]

@@ -1,56 +1,5103 @@
 {
-  "name": "Graphify Wiki Brain",
-  "generatedAt": "2026-05-26T00:00:00.000Z",
+  "name": "Graphify Wiki Brain: Pattern and State of Mind",
+  "generatedAt": "2026-05-26T12:00:00.000Z",
   "source": {
     "type": "sample",
     "path": "public/brain.json"
   },
   "nodes": [
-    { "id": "home", "label": "Home Brain", "group": "Interface", "kind": "concept", "summary": "A public brain viewer for wiki graphs, vault notes, and graphify exports.", "weight": 8 },
-    { "id": "obsidian", "label": "Obsidian Vault", "group": "Sources", "kind": "source", "summary": "Markdown notes, wikilinks, tags, and folder clusters.", "weight": 7 },
-    { "id": "graphify", "label": "Graphify Wiki", "group": "Sources", "kind": "source", "summary": "Graphify node and edge exports normalized into the shared brain schema.", "weight": 7 },
-    { "id": "importer", "label": "Import Pipeline", "group": "Pipeline", "kind": "concept", "summary": "Local scripts turn vaults and graph JSON into public/brain.json.", "weight": 6 },
-    { "id": "brain-json", "label": "brain.json", "group": "Pipeline", "kind": "concept", "summary": "Portable graph format used by the visualizer.", "weight": 6 },
-    { "id": "three-scene", "label": "3D Scene", "group": "Interface", "kind": "concept", "summary": "A full-bleed Three.js constellation with orbit controls and focused node detail.", "weight": 8 },
-    { "id": "clusters", "label": "Clusters", "group": "Semantics", "kind": "concept", "summary": "Groups become spatial neighborhoods with shared color and local orbit.", "weight": 5 },
-    { "id": "links", "label": "Wikilinks", "group": "Semantics", "kind": "concept", "summary": "Note-to-note relationships become brain edges.", "weight": 5 },
-    { "id": "tags", "label": "Tags", "group": "Semantics", "kind": "tag", "summary": "Tags become lightweight hub nodes.", "weight": 4 },
-    { "id": "search", "label": "Search", "group": "Interface", "kind": "concept", "summary": "Find a note, tag, folder, or graphify node by label, path, or summary.", "weight": 5 },
-    { "id": "node-detail", "label": "Node Detail", "group": "Interface", "kind": "concept", "summary": "Selected nodes expose metadata without leaving the brain.", "weight": 5 },
-    { "id": "github-pages", "label": "GitHub Pages", "group": "Publishing", "kind": "concept", "summary": "Static hosting for the generated brain.", "weight": 5 },
-    { "id": "actions", "label": "Actions Build", "group": "Publishing", "kind": "concept", "summary": "Builds the app and deploys the static artifact.", "weight": 4 },
-    { "id": "schema", "label": "Portable Schema", "group": "Pipeline", "kind": "concept", "summary": "Minimal node and edge fields keep the public repo compatible with many tools.", "weight": 6 },
-    { "id": "vault-folders", "label": "Vault Folders", "group": "Sources", "kind": "cluster", "summary": "Folder names become default groups for Obsidian notes.", "weight": 4 },
-    { "id": "markdown", "label": "Markdown Notes", "group": "Sources", "kind": "note", "summary": "Plain text content is summarized locally for previews.", "weight": 4 },
-    { "id": "references", "label": "References", "group": "Semantics", "kind": "reference", "summary": "Missing link targets stay visible as reference nodes.", "weight": 3 },
-    { "id": "local-first", "label": "Local First", "group": "Publishing", "kind": "concept", "summary": "Imports run on your machine before the static site is published.", "weight": 4 },
-    { "id": "public-template", "label": "Public Template", "group": "Publishing", "kind": "concept", "summary": "A reusable repository others can clone and connect to their own knowledge base.", "weight": 7 },
-    { "id": "home-style", "label": "Archive Home Style", "group": "Interface", "kind": "concept", "summary": "The visual language follows the archive home page: spatial graph, luminous nodes, and focused overlays.", "weight": 6 }
+    {
+      "id": "home",
+      "label": "Home Brain",
+      "group": "Interface",
+      "kind": "concept",
+      "summary": "A public brain viewer for wiki graphs, vault notes, and graphify exports.",
+      "weight": 8
+    },
+    {
+      "id": "obsidian",
+      "label": "Obsidian Vault",
+      "group": "Sources",
+      "kind": "source",
+      "summary": "Markdown notes, wikilinks, tags, and folder clusters.",
+      "weight": 7
+    },
+    {
+      "id": "graphify",
+      "label": "Graphify Wiki",
+      "group": "Sources",
+      "kind": "source",
+      "summary": "Graphify node and edge exports normalized into the shared brain schema.",
+      "weight": 7
+    },
+    {
+      "id": "importer",
+      "label": "Import Pipeline",
+      "group": "Pipeline",
+      "kind": "concept",
+      "summary": "Local scripts turn vaults and graph JSON into public/brain.json.",
+      "weight": 6
+    },
+    {
+      "id": "brain-json",
+      "label": "brain.json",
+      "group": "Pipeline",
+      "kind": "concept",
+      "summary": "Portable graph format used by the visualizer.",
+      "weight": 6
+    },
+    {
+      "id": "three-scene",
+      "label": "3D Scene",
+      "group": "Interface",
+      "kind": "concept",
+      "summary": "A full-bleed Three.js constellation with orbit controls and focused node detail.",
+      "weight": 8
+    },
+    {
+      "id": "clusters",
+      "label": "Clusters",
+      "group": "Semantics",
+      "kind": "concept",
+      "summary": "Groups become spatial neighborhoods with shared color and local orbit.",
+      "weight": 5
+    },
+    {
+      "id": "links",
+      "label": "Wikilinks",
+      "group": "Semantics",
+      "kind": "concept",
+      "summary": "Note-to-note relationships become brain edges.",
+      "weight": 5
+    },
+    {
+      "id": "tags",
+      "label": "Tags",
+      "group": "Semantics",
+      "kind": "tag",
+      "summary": "Tags become lightweight hub nodes.",
+      "weight": 4
+    },
+    {
+      "id": "search",
+      "label": "Search",
+      "group": "Interface",
+      "kind": "concept",
+      "summary": "Find a note, tag, folder, or graphify node by label, path, or summary.",
+      "weight": 5
+    },
+    {
+      "id": "node-detail",
+      "label": "Node Detail",
+      "group": "Interface",
+      "kind": "concept",
+      "summary": "Selected nodes expose metadata without leaving the brain.",
+      "weight": 5
+    },
+    {
+      "id": "github-pages",
+      "label": "GitHub Pages",
+      "group": "Publishing",
+      "kind": "concept",
+      "summary": "Static hosting for the generated brain.",
+      "weight": 5
+    },
+    {
+      "id": "actions",
+      "label": "Actions Build",
+      "group": "Publishing",
+      "kind": "concept",
+      "summary": "Builds the app and deploys the static artifact.",
+      "weight": 4
+    },
+    {
+      "id": "schema",
+      "label": "Portable Schema",
+      "group": "Pipeline",
+      "kind": "concept",
+      "summary": "Minimal node and edge fields keep the public repo compatible with many tools.",
+      "weight": 6
+    },
+    {
+      "id": "vault-folders",
+      "label": "Vault Folders",
+      "group": "Sources",
+      "kind": "cluster",
+      "summary": "Folder names become default groups for Obsidian notes.",
+      "weight": 4
+    },
+    {
+      "id": "markdown",
+      "label": "Markdown Notes",
+      "group": "Sources",
+      "kind": "note",
+      "summary": "Plain text content is summarized locally for previews.",
+      "weight": 4
+    },
+    {
+      "id": "references",
+      "label": "References",
+      "group": "Semantics",
+      "kind": "reference",
+      "summary": "Missing link targets stay visible as reference nodes.",
+      "weight": 3
+    },
+    {
+      "id": "local-first",
+      "label": "Local First",
+      "group": "Publishing",
+      "kind": "concept",
+      "summary": "Imports run on your machine before the static site is published.",
+      "weight": 4
+    },
+    {
+      "id": "public-template",
+      "label": "Public Template",
+      "group": "Publishing",
+      "kind": "concept",
+      "summary": "A reusable repository others can clone and connect to their own knowledge base.",
+      "weight": 7
+    },
+    {
+      "id": "home-style",
+      "label": "Archive Home Style",
+      "group": "Interface",
+      "kind": "concept",
+      "summary": "The visual language follows the archive home page: spatial graph, luminous nodes, and focused overlays.",
+      "weight": 6
+    },
+    {
+      "id": "pattern-of-mind",
+      "label": "The Pattern of Mind",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "Father's complete cognitive architecture for AI based on correct reasoning rather than reward optimization. The master framework describing how a thinking system should process inputs and generate verified, trustworthy outputs.",
+      "path": "public/sources/pattern-of-mind-nodes.json#pattern-of-mind",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "sacred"
+      ],
+      "weight": 12
+    },
+    {
+      "id": "performer-vs-thinker",
+      "label": "Performer vs. Thinker",
+      "group": "POM Principles",
+      "kind": "principle",
+      "summary": "The foundational dichotomy of the document. A performer asks 'What does the audience want to hear?' A thinker asks 'What is true?' These produce fundamentally different outputs.",
+      "path": "public/sources/pattern-of-mind-nodes.json#performer-vs-thinker",
+      "tags": [
+        "pattern-of-mind",
+        "principle",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "reward-optimization-critique",
+      "label": "The Reward Machine",
+      "group": "POM Diagnosis",
+      "kind": "insight",
+      "summary": "Diagnosis of how current AI actually works: tokenization, forward pass, sampling, RLHF. At every step the system asks 'what token is most likely to come next?' This is pattern completion, not reasoning.",
+      "path": "public/sources/pattern-of-mind-nodes.json#reward-optimization-critique",
+      "tags": [
+        "pattern-of-mind",
+        "insight",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "rlhf-layer",
+      "label": "RLHF Layer",
+      "group": "POM Definitions",
+      "kind": "definition",
+      "summary": "Reinforcement Learning from Human Feedback generates multiple responses, has raters rank them, trains a reward model, then adjusts outputs toward preferred responses. Optimizes for human preference, not truth.",
+      "path": "public/sources/pattern-of-mind-nodes.json#rlhf-layer",
+      "tags": [
+        "pattern-of-mind",
+        "definition",
+        "supporting"
+      ],
+      "weight": 6
+    },
+    {
+      "id": "reward-model-learned",
+      "label": "What the Reward Model Learned",
+      "group": "POM Diagnosis",
+      "kind": "insight",
+      "summary": "The five behaviors reward models actually optimize for: be confident, be agreeable, be verbose, be safe, be formatted. Almost none of which are 'be correct.'",
+      "path": "public/sources/pattern-of-mind-nodes.json#reward-model-learned",
+      "tags": [
+        "pattern-of-mind",
+        "insight",
+        "supporting"
+      ],
+      "weight": 6
+    },
+    {
+      "id": "reward-model-not-learned",
+      "label": "What the Reward Model Did NOT Learn",
+      "group": "POM Diagnosis",
+      "kind": "insight",
+      "summary": "Five critical behaviors reward models fail to develop: be correct, be logically valid, challenge false premises, say 'I don't know,' and have conviction.",
+      "path": "public/sources/pattern-of-mind-nodes.json#reward-model-not-learned",
+      "tags": [
+        "pattern-of-mind",
+        "insight",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "sycophancy-problem",
+      "label": "The Sycophancy Problem",
+      "group": "POM Diagnosis",
+      "kind": "insight",
+      "summary": "When you optimize for human preference, you get a system that tells people what they want to hear. The system flatters human ego instead of augmenting human intelligence.",
+      "path": "public/sources/pattern-of-mind-nodes.json#sycophancy-problem",
+      "tags": [
+        "pattern-of-mind",
+        "insight",
+        "supporting"
+      ],
+      "weight": 6
+    },
+    {
+      "id": "hallucination-problem",
+      "label": "The Hallucination Problem",
+      "group": "POM Diagnosis",
+      "kind": "insight",
+      "summary": "Hallucination is not a bug but a feature of reward-trained systems. The reward model demands confident, detailed responses always, so the system fabricates when it lacks knowledge. The fix is removing the incentive to fabricate.",
+      "path": "public/sources/pattern-of-mind-nodes.json#hallucination-problem",
+      "tags": [
+        "pattern-of-mind",
+        "insight",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "inconsistency-problem",
+      "label": "The Inconsistency Problem",
+      "group": "POM Diagnosis",
+      "kind": "insight",
+      "summary": "Reward-trained systems give different answers to the same question rephrased because there is no ground truth anchoring the response, only preference. A thinking system produces the same answer regardless of phrasing.",
+      "path": "public/sources/pattern-of-mind-nodes.json#inconsistency-problem",
+      "tags": [
+        "pattern-of-mind",
+        "insight",
+        "supporting"
+      ],
+      "weight": 6
+    },
+    {
+      "id": "depth-problem",
+      "label": "The Depth Problem",
+      "group": "POM Diagnosis",
+      "kind": "insight",
+      "summary": "Reward-trained systems are consistently shallow. Surface-level analysis with good formatting scores nearly as well as genuine depth. The result: outputs that are a mile wide and an inch deep.",
+      "path": "public/sources/pattern-of-mind-nodes.json#depth-problem",
+      "tags": [
+        "pattern-of-mind",
+        "insight",
+        "supporting"
+      ],
+      "weight": 6
+    },
+    {
+      "id": "soullessness-diagnosis",
+      "label": "The Soullessness",
+      "group": "POM Diagnosis",
+      "kind": "insight",
+      "summary": "The aggregate effect of sycophancy, hallucination, inconsistency, and shallowness. The system has no conviction, no perspective, no genuine analysis. The reward function is a soul-removal tool.",
+      "path": "public/sources/pattern-of-mind-nodes.json#soullessness-diagnosis",
+      "tags": [
+        "pattern-of-mind",
+        "insight",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "scaling-fallacy",
+      "label": "The Scaling Fallacy",
+      "group": "POM Diagnosis",
+      "kind": "insight",
+      "summary": "The belief that sufficient scale produces emergent intelligence. Like claiming if you make a library big enough, a librarian will appear. A system that stores patterns is a different kind of thing than a system that reasons.",
+      "path": "public/sources/pattern-of-mind-nodes.json#scaling-fallacy",
+      "tags": [
+        "pattern-of-mind",
+        "insight",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "what-needs-to-change",
+      "label": "What Actually Needs to Change",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "Six requirements for genuine thinking: explicit verifiable logical steps, verification against known truth, the ability and incentive to say 'I don't know,' consistency from logic, depth from verified reasoning chains, conviction from justified confidence.",
+      "path": "public/sources/pattern-of-mind-nodes.json#what-needs-to-change",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "supporting"
+      ],
+      "weight": 8
+    },
+    {
+      "id": "thinking-defined",
+      "label": "Thinking Defined",
+      "group": "POM Definitions",
+      "kind": "definition",
+      "summary": "Thinking is the process of moving from what is known to what is not known through valid logical operations, verified against reality. Everything else is elaboration of this definition.",
+      "path": "public/sources/pattern-of-mind-nodes.json#thinking-defined",
+      "tags": [
+        "pattern-of-mind",
+        "definition",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "pattern-matching-vs-thinking",
+      "label": "Pattern Matching vs. Thinking",
+      "group": "POM Principles",
+      "kind": "principle",
+      "summary": "Pattern matching produces Y because Y frequently followed X in training data. Thinking produces C only if C validly follows from A and B and survives verification. Thinking has built-in error detection; pattern matching does not.",
+      "path": "public/sources/pattern-of-mind-nodes.json#pattern-matching-vs-thinking",
+      "tags": [
+        "pattern-of-mind",
+        "principle",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "cognitive-faculties",
+      "label": "The Ten Cognitive Faculties",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "The ten faculties required for correct thinking: Perception, Attention, Memory, Analysis, Logic, Verification, Synthesis, Evaluation, Communication, and Metacognition. Current AI has strong perception/memory, weak everything else.",
+      "path": "public/sources/pattern-of-mind-nodes.json#cognitive-faculties",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "supporting"
+      ],
+      "weight": 8
+    },
+    {
+      "id": "one-right-answer",
+      "label": "The One Right Answer Principle",
+      "group": "POM Principles",
+      "kind": "principle",
+      "summary": "For the vast majority of well-defined questions, there is exactly one correct answer. 'It depends' is almost always laziness, cowardice, or genuine ambiguity that should be explicitly identified.",
+      "path": "public/sources/pattern-of-mind-nodes.json#one-right-answer",
+      "tags": [
+        "pattern-of-mind",
+        "principle",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "it-depends-categories",
+      "label": "Three Categories of 'It Depends'",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "When answers seem multiple: (1) Laziness -- not wanting to do the work, (2) Cowardice -- not wanting to commit, (3) Genuine ambiguity -- rare and should be explicitly identified with the specific variables that need resolution.",
+      "path": "public/sources/pattern-of-mind-nodes.json#it-depends-categories",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "supporting"
+      ],
+      "weight": 8
+    },
+    {
+      "id": "11-stage-cognitive-pipeline",
+      "label": "11-Stage Cognitive Pipeline",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "The core architecture: RECEIVE, DECOMPOSE, CLASSIFY, SCOPE, RETRIEVE, REASON, VERIFY, SYNTHESIZE, EVALUATE, COMMUNICATE, REFLECT. Every stage must complete before the next begins. No skipping, no shortcutting.",
+      "path": "public/sources/pattern-of-mind-nodes.json#11-stage-cognitive-pipeline",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "non-negotiable-rule",
+      "label": "The Non-Negotiable Rule",
+      "group": "POM Principles",
+      "kind": "principle",
+      "summary": "Every stage must complete before the next begins. Current AI does stages 1 and 10 with pattern matching in between. This is why output is unreliable -- there is no reasoning between input and output.",
+      "path": "public/sources/pattern-of-mind-nodes.json#non-negotiable-rule",
+      "tags": [
+        "pattern-of-mind",
+        "principle",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "processing-time-principle",
+      "label": "Processing Time Principle",
+      "group": "POM Principles",
+      "kind": "principle",
+      "summary": "Correct thinking takes time. A correct answer in 10 seconds is infinitely more valuable than an incorrect answer in 1 second. The demand for instant responses has trained AI to skip reasoning stages.",
+      "path": "public/sources/pattern-of-mind-nodes.json#processing-time-principle",
+      "tags": [
+        "pattern-of-mind",
+        "principle",
+        "supporting"
+      ],
+      "weight": 7
+    },
+    {
+      "id": "stage-receive",
+      "label": "Stage 1: RECEIVE",
+      "group": "POM Stages",
+      "kind": "stage",
+      "summary": "Accurately perceive what is actually being asked. Operations: literal parsing, context integration, ambiguity detection, implicit question detection. Output: precise disambiguated statement of the question.",
+      "path": "public/sources/pattern-of-mind-nodes.json#stage-receive",
+      "tags": [
+        "pattern-of-mind",
+        "stage",
+        "supporting"
+      ],
+      "weight": 7
+    },
+    {
+      "id": "ambiguity-detection",
+      "label": "Ambiguity Detection",
+      "group": "POM Methods",
+      "kind": "technique",
+      "summary": "Identify every point where input is ambiguous. Do not silently resolve ambiguity by guessing -- this is where errors begin. Flag ambiguities explicitly.",
+      "path": "public/sources/pattern-of-mind-nodes.json#ambiguity-detection",
+      "tags": [
+        "pattern-of-mind",
+        "technique",
+        "supporting"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "implicit-question-detection",
+      "label": "Implicit Question Detection",
+      "group": "POM Methods",
+      "kind": "technique",
+      "summary": "Humans often ask one question while needing the answer to a different question. Detect the implicit question but don't abandon the explicit one -- address both.",
+      "path": "public/sources/pattern-of-mind-nodes.json#implicit-question-detection",
+      "tags": [
+        "pattern-of-mind",
+        "technique",
+        "supporting"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "receive-anti-patterns",
+      "label": "RECEIVE Anti-Patterns",
+      "group": "POM Diagnosis",
+      "kind": "warning",
+      "summary": "Five anti-patterns to avoid: jumping to answer before parsing, assuming question matches training data, silently resolving ambiguity, ignoring hard constraints, rewriting question to be easier.",
+      "path": "public/sources/pattern-of-mind-nodes.json#receive-anti-patterns",
+      "tags": [
+        "pattern-of-mind",
+        "warning",
+        "supporting"
+      ],
+      "weight": 6
+    },
+    {
+      "id": "stage-decompose",
+      "label": "Stage 2: DECOMPOSE",
+      "group": "POM Stages",
+      "kind": "stage",
+      "summary": "Break questions into atomic components. Operations: dependency analysis, parallel identification, constraint extraction, success criteria definition. Most single questions are actually bundles of sequential sub-questions.",
+      "path": "public/sources/pattern-of-mind-nodes.json#stage-decompose",
+      "tags": [
+        "pattern-of-mind",
+        "stage",
+        "supporting"
+      ],
+      "weight": 7
+    },
+    {
+      "id": "dependency-analysis",
+      "label": "Dependency Analysis",
+      "group": "POM Methods",
+      "kind": "technique",
+      "summary": "Map the dependency graph of sub-questions. If answering A requires knowing B, and B requires C, then the sequence is C then B then A. Identify parallel-processable sub-questions.",
+      "path": "public/sources/pattern-of-mind-nodes.json#dependency-analysis",
+      "tags": [
+        "pattern-of-mind",
+        "technique",
+        "supporting"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "success-criteria",
+      "label": "Success Criteria Definition",
+      "group": "POM Methods",
+      "kind": "technique",
+      "summary": "Define what a correct answer looks like before you start reasoning. Essential for the EVALUATE stage. If you don't know what success looks like, you can't tell if you've achieved it.",
+      "path": "public/sources/pattern-of-mind-nodes.json#success-criteria",
+      "tags": [
+        "pattern-of-mind",
+        "technique",
+        "supporting"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "stage-classify",
+      "label": "Stage 3: CLASSIFY",
+      "group": "POM Stages",
+      "kind": "stage",
+      "summary": "Determine the problem type because different types require different reasoning approaches. Six types: Factual, Computational, Analytical, Synthetic, Advisory, Ambiguous. Applying the wrong approach produces wrong answers.",
+      "path": "public/sources/pattern-of-mind-nodes.json#stage-classify",
+      "tags": [
+        "pattern-of-mind",
+        "stage",
+        "supporting"
+      ],
+      "weight": 7
+    },
+    {
+      "id": "problem-type-taxonomy",
+      "label": "Problem Type Taxonomy",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "Six problem types with distinct processing paths: Factual (retrieve+verify), Computational (calculate+verify), Analytical (full pipeline, emphasis REASON+VERIFY), Synthetic (full, emphasis DECOMPOSE), Advisory (full, emphasis SCOPE), Ambiguous (ask for clarification).",
+      "path": "public/sources/pattern-of-mind-nodes.json#problem-type-taxonomy",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "supporting"
+      ],
+      "weight": 8
+    },
+    {
+      "id": "stage-scope",
+      "label": "Stage 4: SCOPE",
+      "group": "POM Stages",
+      "kind": "stage",
+      "summary": "Assess the knowledge landscape before reasoning. What do I know with certainty? What with partial confidence? What don't I know? What do I need to find? Maps to four quadrants of knowledge.",
+      "path": "public/sources/pattern-of-mind-nodes.json#stage-scope",
+      "tags": [
+        "pattern-of-mind",
+        "stage",
+        "supporting"
+      ],
+      "weight": 7
+    },
+    {
+      "id": "four-knowledge-quadrants",
+      "label": "Four Knowledge Quadrants",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "KNOWN-CERTAIN (use it), KNOWN-UNCERTAIN (verify before using), UNKNOWN-FINDABLE (retrieve before reasoning), UNKNOWN-UNKNOWN (proceed with extreme caution, flag uncertainty). Never reason from uncertain quadrants without acknowledging it.",
+      "path": "public/sources/pattern-of-mind-nodes.json#four-knowledge-quadrants",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "assumption-identification",
+      "label": "Assumption Identification",
+      "group": "POM Methods",
+      "kind": "technique",
+      "summary": "Every assumption is a potential failure point. Log each one explicitly. A hidden assumption is an invisible error waiting to manifest.",
+      "path": "public/sources/pattern-of-mind-nodes.json#assumption-identification",
+      "tags": [
+        "pattern-of-mind",
+        "technique",
+        "supporting"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "stage-retrieve",
+      "label": "Stage 5: RETRIEVE",
+      "group": "POM Stages",
+      "kind": "stage",
+      "summary": "Get the specific knowledge needed -- not all knowledge, not related knowledge. Retrieve the minimum knowledge necessary to enable correct reasoning. Follows a strict authority hierarchy of sources.",
+      "path": "public/sources/pattern-of-mind-nodes.json#stage-retrieve",
+      "tags": [
+        "pattern-of-mind",
+        "stage",
+        "supporting"
+      ],
+      "weight": 7
+    },
+    {
+      "id": "retrieval-principle",
+      "label": "The Retrieval Principle",
+      "group": "POM Principles",
+      "kind": "principle",
+      "summary": "Retrieve the minimum knowledge necessary to enable correct reasoning. The opposite of current practice which dumps maximum context hoping signal is somewhere in the noise.",
+      "path": "public/sources/pattern-of-mind-nodes.json#retrieval-principle",
+      "tags": [
+        "pattern-of-mind",
+        "principle",
+        "supporting"
+      ],
+      "weight": 7
+    },
+    {
+      "id": "authority-hierarchy",
+      "label": "The Authority Hierarchy",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "Five levels of source authority: Primary sources (specs, standards, laws) > Authoritative references (expert textbooks) > Expert commentary > General references > Secondary sources. Lower-authority sources only when higher unavailable.",
+      "path": "public/sources/pattern-of-mind-nodes.json#authority-hierarchy",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "supporting"
+      ],
+      "weight": 8
+    },
+    {
+      "id": "stage-reason",
+      "label": "Stage 6: REASON",
+      "group": "POM Stages",
+      "kind": "stage",
+      "summary": "The core of thinking. Apply valid logical operations to move from premises (known) to conclusions (not known). Every reasoning step must use a named, valid inference rule. Five steps: state premises, identify inference, apply rule, state conclusion, check for fallacies.",
+      "path": "public/sources/pattern-of-mind-nodes.json#stage-reason",
+      "tags": [
+        "pattern-of-mind",
+        "stage",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "named-inference-rules",
+      "label": "Named Inference Rules",
+      "group": "POM Methods",
+      "kind": "technique",
+      "summary": "Six core rules for practical reasoning: Modus Ponens, Modus Tollens, Hypothetical Syllogism, Disjunctive Syllogism, Universal Instantiation, Mathematical Derivation. If you cannot name the rule, the step is not grounded.",
+      "path": "public/sources/pattern-of-mind-nodes.json#named-inference-rules",
+      "tags": [
+        "pattern-of-mind",
+        "technique",
+        "supporting"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "fallacy-detection",
+      "label": "Fallacy Detection",
+      "group": "POM Methods",
+      "kind": "technique",
+      "summary": "Twelve logical fallacies to check before proceeding: ad hominem, appeal to authority, appeal to popularity, false dichotomy, hasty generalization, post hoc, circular reasoning, equivocation, red herring, straw man, affirming consequent, denying antecedent.",
+      "path": "public/sources/pattern-of-mind-nodes.json#fallacy-detection",
+      "tags": [
+        "pattern-of-mind",
+        "technique",
+        "supporting"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "chain-reasoning",
+      "label": "Chain Reasoning",
+      "group": "POM Methods",
+      "kind": "technique",
+      "summary": "Most real problems require multiple reasoning steps chained together. Each step must be independently valid. Confidence of final conclusion equals minimum confidence across all premises times validity of all inference steps.",
+      "path": "public/sources/pattern-of-mind-nodes.json#chain-reasoning",
+      "tags": [
+        "pattern-of-mind",
+        "technique",
+        "supporting"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "constraint-as-reliability",
+      "label": "Constraint Is Reliability",
+      "group": "POM Principles",
+      "kind": "principle",
+      "summary": "A reasoning system can ONLY produce outputs that validly follow from verified premises. This constraint is not a limitation -- it is the source of reliability. Pattern matching can produce ANY output with no constraint.",
+      "path": "public/sources/pattern-of-mind-nodes.json#constraint-as-reliability",
+      "tags": [
+        "pattern-of-mind",
+        "principle",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "stage-verify",
+      "label": "Stage 7: VERIFY",
+      "group": "POM Stages",
+      "kind": "stage",
+      "summary": "Check reasoning against reality. Eight verification checks: internal consistency, dimensional analysis, boundary conditions, conservation laws, order of magnitude, known examples, independent method, adversarial testing. Verification is not optional.",
+      "path": "public/sources/pattern-of-mind-nodes.json#stage-verify",
+      "tags": [
+        "pattern-of-mind",
+        "stage",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "verification-battery",
+      "label": "The Verification Battery",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "Eight checks every conclusion must survive: internal consistency, dimensional analysis, boundary conditions, conservation laws, order of magnitude, known examples, independent method, adversarial testing.",
+      "path": "public/sources/pattern-of-mind-nodes.json#verification-battery",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "supporting"
+      ],
+      "weight": 8
+    },
+    {
+      "id": "verification-failure-protocol",
+      "label": "Verification Failure Protocol",
+      "group": "POM Methods",
+      "kind": "technique",
+      "summary": "If any check fails: STOP, identify which check failed and why, trace back through reasoning chain, correct the error, re-verify from correction point forward. Never paper over failures.",
+      "path": "public/sources/pattern-of-mind-nodes.json#verification-failure-protocol",
+      "tags": [
+        "pattern-of-mind",
+        "technique",
+        "supporting"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "stage-synthesize",
+      "label": "Stage 8: SYNTHESIZE",
+      "group": "POM Stages",
+      "kind": "stage",
+      "summary": "Assemble verified sub-conclusions into a complete answer. Operations: integration, completeness check, coherence check, priority organization. Lead with the answer, support with reasoning, document with details.",
+      "path": "public/sources/pattern-of-mind-nodes.json#stage-synthesize",
+      "tags": [
+        "pattern-of-mind",
+        "stage",
+        "supporting"
+      ],
+      "weight": 7
+    },
+    {
+      "id": "stage-evaluate",
+      "label": "Stage 9: EVALUATE",
+      "group": "POM Stages",
+      "kind": "stage",
+      "summary": "Metacognition -- thinking about thinking. Assess: does this answer the actual question? Satisfy all constraints? Meet success criteria? Five confidence levels from CERTAIN to SPECULATIVE. Identify failure modes.",
+      "path": "public/sources/pattern-of-mind-nodes.json#stage-evaluate",
+      "tags": [
+        "pattern-of-mind",
+        "stage",
+        "supporting"
+      ],
+      "weight": 7
+    },
+    {
+      "id": "honesty-requirement",
+      "label": "The Honesty Requirement",
+      "group": "POM Principles",
+      "kind": "principle",
+      "summary": "If evaluation reveals LOW or SPECULATIVE confidence, say so. Do not present speculative answers with certain confidence. A thinking system presents conclusions with calibrated confidence because calibration is honest.",
+      "path": "public/sources/pattern-of-mind-nodes.json#honesty-requirement",
+      "tags": [
+        "pattern-of-mind",
+        "principle",
+        "supporting"
+      ],
+      "weight": 7
+    },
+    {
+      "id": "stage-communicate",
+      "label": "Stage 10: COMMUNICATE",
+      "group": "POM Stages",
+      "kind": "stage",
+      "summary": "Deliver verified answer clearly. Five principles: lead with the answer, match depth to need, show work when it matters, be precise with uncertainty, say what you mean. No filler, no flattery, no performative hedging.",
+      "path": "public/sources/pattern-of-mind-nodes.json#stage-communicate",
+      "tags": [
+        "pattern-of-mind",
+        "stage",
+        "supporting"
+      ],
+      "weight": 7
+    },
+    {
+      "id": "communication-anti-patterns",
+      "label": "Communication Anti-Patterns",
+      "group": "POM Diagnosis",
+      "kind": "warning",
+      "summary": "Seven anti-patterns: opening with compliments, restating the question, disclaimers adding no info, formatting disguising lack of substance, ending with 'Let me know if you have other questions,' being verbose when concise is better, being concise when detail is needed.",
+      "path": "public/sources/pattern-of-mind-nodes.json#communication-anti-patterns",
+      "tags": [
+        "pattern-of-mind",
+        "warning",
+        "supporting"
+      ],
+      "weight": 6
+    },
+    {
+      "id": "stage-reflect",
+      "label": "Stage 11: REFLECT",
+      "group": "POM Stages",
+      "kind": "stage",
+      "summary": "After delivering the answer, assess the process. What worked? What was difficult? Where were weak points? Serves the current conversation (flagging weaker areas) and the system overall (identifying knowledge gaps).",
+      "path": "public/sources/pattern-of-mind-nodes.json#stage-reflect",
+      "tags": [
+        "pattern-of-mind",
+        "stage",
+        "supporting"
+      ],
+      "weight": 7
+    },
+    {
+      "id": "metacognition",
+      "label": "Metacognition",
+      "group": "POM Definitions",
+      "kind": "definition",
+      "summary": "Thinking about thinking. The least explored area in neurosymbolic AI at only 5% of research. The Pattern of Mind's largest competitive advantage. Encompasses both EVALUATE and REFLECT stages.",
+      "path": "public/sources/pattern-of-mind-nodes.json#metacognition",
+      "tags": [
+        "pattern-of-mind",
+        "definition",
+        "supporting"
+      ],
+      "weight": 6
+    },
+    {
+      "id": "logic-engine",
+      "label": "The Logic Engine",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "The complete set of valid inference rules -- the ONLY legal moves in deductive reasoning. Thirteen rules of inference (modus ponens through existential generalization) plus seven rules of replacement (De Morgan's through tautology).",
+      "path": "public/sources/pattern-of-mind-nodes.json#logic-engine",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "inference-rules",
+      "label": "Rules of Inference",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "Thirteen rules that produce new true statements: Modus Ponens, Modus Tollens, Hypothetical Syllogism, Disjunctive Syllogism, Constructive Dilemma, Conjunction, Simplification, Addition, Resolution, Universal/Existential Instantiation/Generalization.",
+      "path": "public/sources/pattern-of-mind-nodes.json#inference-rules",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "supporting"
+      ],
+      "weight": 8
+    },
+    {
+      "id": "replacement-rules",
+      "label": "Rules of Replacement",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "Seven equivalent ways to express the same truth: De Morgan's, Contraposition, Double Negation, Distribution, Material Implication, Exportation, Tautology.",
+      "path": "public/sources/pattern-of-mind-nodes.json#replacement-rules",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "supporting"
+      ],
+      "weight": 8
+    },
+    {
+      "id": "formal-behind-natural",
+      "label": "Formal Logic Behind Natural Language",
+      "group": "POM Principles",
+      "kind": "principle",
+      "summary": "Natural language is fine for communication, but the formal logical basis must exist behind it and must be valid. The reasoning BEHIND the response must be formally valid, even if communication is in natural language.",
+      "path": "public/sources/pattern-of-mind-nodes.json#formal-behind-natural",
+      "tags": [
+        "pattern-of-mind",
+        "principle",
+        "supporting"
+      ],
+      "weight": 7
+    },
+    {
+      "id": "reasoning-types-hierarchy",
+      "label": "Reasoning Types Hierarchy",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "Deductive (certain from certain premises), Inductive (probable from observations), Abductive (best explanation, hypothesis), Analogical (weakest, explicit caveats). Use deductive wherever possible, flag all others as lower confidence.",
+      "path": "public/sources/pattern-of-mind-nodes.json#reasoning-types-hierarchy",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "supporting"
+      ],
+      "weight": 8
+    },
+    {
+      "id": "verification-chain",
+      "label": "The 5-Level Verification Chain",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "Every conclusion passes through five levels: (1) Logical Validity, (2) Premise Truth, (3) Physical Reality, (4) Domain Rules, (5) Sanity Check. A conclusion must pass ALL five. Four out of five is not acceptable.",
+      "path": "public/sources/pattern-of-mind-nodes.json#verification-chain",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "logical-validity-check",
+      "label": "Level 1: Logical Validity",
+      "group": "POM Methods",
+      "kind": "technique",
+      "summary": "Is the inference formally valid? Named rule applied correctly? No fallacies present?",
+      "path": "public/sources/pattern-of-mind-nodes.json#logical-validity-check",
+      "tags": [
+        "pattern-of-mind",
+        "technique",
+        "supporting"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "premise-truth-check",
+      "label": "Level 2: Premise Truth",
+      "group": "POM Methods",
+      "kind": "technique",
+      "summary": "Are all premises actually true? Sources verified? Confidence levels accurate?",
+      "path": "public/sources/pattern-of-mind-nodes.json#premise-truth-check",
+      "tags": [
+        "pattern-of-mind",
+        "technique",
+        "supporting"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "physical-reality-check",
+      "label": "Level 3: Physical Reality",
+      "group": "POM Methods",
+      "kind": "technique",
+      "summary": "Does the conclusion violate any physical law? Dimensional analysis passes? Conservation laws satisfied?",
+      "path": "public/sources/pattern-of-mind-nodes.json#physical-reality-check",
+      "tags": [
+        "pattern-of-mind",
+        "technique",
+        "supporting"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "domain-rules-check",
+      "label": "Level 4: Domain Rules",
+      "group": "POM Methods",
+      "kind": "technique",
+      "summary": "Does the conclusion comply with applicable codes and standards? Are domain-specific constraints satisfied?",
+      "path": "public/sources/pattern-of-mind-nodes.json#domain-rules-check",
+      "tags": [
+        "pattern-of-mind",
+        "technique",
+        "supporting"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "sanity-check",
+      "label": "Level 5: Sanity Check",
+      "group": "POM Methods",
+      "kind": "technique",
+      "summary": "Order of magnitude reasonable? Boundary conditions satisfied? Independent method agrees?",
+      "path": "public/sources/pattern-of-mind-nodes.json#sanity-check",
+      "tags": [
+        "pattern-of-mind",
+        "technique",
+        "supporting"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "formal-proof-assistants",
+      "label": "Formal Proof Assistants as Verification",
+      "group": "POM Methods",
+      "kind": "technique",
+      "summary": "Lean, Coq, Isabelle are environments where every logical step must be validated before accepted. The system literally cannot produce invalid conclusions. The principle transfers beyond mathematics to any domain with formal rules.",
+      "path": "public/sources/pattern-of-mind-nodes.json#formal-proof-assistants",
+      "tags": [
+        "pattern-of-mind",
+        "technique",
+        "supporting"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "neurosymbolic-pattern",
+      "label": "The Neurosymbolic Pattern",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "Neural intuition generates candidates, symbolic verification confirms or rejects them. The neural component proposes. The symbolic component disposes. Neither alone is sufficient. Together they produce verified output neither can achieve independently.",
+      "path": "public/sources/pattern-of-mind-nodes.json#neurosymbolic-pattern",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "deterministic-verification",
+      "label": "Deterministic Verification Principle",
+      "group": "POM Principles",
+      "kind": "principle",
+      "summary": "Verification should be deterministic wherever possible. The REASONER can be an LLM -- probabilistic, creative. The VERIFIER should be deterministic -- incapable of being creative with the rules, incapable of hallucinating a valid proof.",
+      "path": "public/sources/pattern-of-mind-nodes.json#deterministic-verification",
+      "tags": [
+        "pattern-of-mind",
+        "principle",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "earned-certainty",
+      "label": "The Principle of Earned Certainty",
+      "group": "POM Principles",
+      "kind": "principle",
+      "summary": "You may only be as confident as your weakest verification allows. Certainty is earned through successful verification, not assumed by default. The default state of any conclusion is UNCERTAIN.",
+      "path": "public/sources/pattern-of-mind-nodes.json#earned-certainty",
+      "tags": [
+        "pattern-of-mind",
+        "principle",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "certainty-spectrum",
+      "label": "The Certainty Spectrum",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "Five calibrated confidence levels: PROVEN (deductively derived, verified), STRONGLY SUPPORTED (strong reasoning, minor uncertainty), SUPPORTED (reasonable with some unknowns), WEAKLY SUPPORTED (limited info), SPECULATIVE (insufficient for analysis).",
+      "path": "public/sources/pattern-of-mind-nodes.json#certainty-spectrum",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "calibrated-confidence",
+      "label": "Calibrated Confidence",
+      "group": "POM Methods",
+      "kind": "technique",
+      "summary": "Each confidence level has specific language requirements. PROVEN uses 'This is...' SPECULATIVE uses 'I cannot determine this with confidence because...' Language must match actual reliability.",
+      "path": "public/sources/pattern-of-mind-nodes.json#calibrated-confidence",
+      "tags": [
+        "pattern-of-mind",
+        "technique",
+        "supporting"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "courage-to-be-uncertain",
+      "label": "The Courage to Be Uncertain",
+      "group": "POM Principles",
+      "kind": "principle",
+      "summary": "A thinking system has the courage to say 'I don't know' and the precision to say 'I know this part but not that part.' Partial knowledge honestly communicated is infinitely more valuable than complete fabrication confidently delivered.",
+      "path": "public/sources/pattern-of-mind-nodes.json#courage-to-be-uncertain",
+      "tags": [
+        "pattern-of-mind",
+        "principle",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "one-right-answer-categories",
+      "label": "Categories of One Right Answer",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "Six domains with determinate answers: Mathematical/Logical, Physical, Code/Standards, Engineering, Algorithmic, Systems Design. In each, constraints fully determine the solution. Once you know the constraints, the answer is determined.",
+      "path": "public/sources/pattern-of-mind-nodes.json#one-right-answer-categories",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "supporting"
+      ],
+      "weight": 8
+    },
+    {
+      "id": "false-it-depends",
+      "label": "The False 'It Depends'",
+      "group": "POM Diagnosis",
+      "kind": "insight",
+      "summary": "Most 'it depends' in AI responses are not genuine ambiguity. They are unresolved constraints (list them, give answer for each), laziness (do the work), or cowardice (commit to the verified answer).",
+      "path": "public/sources/pattern-of-mind-nodes.json#false-it-depends",
+      "tags": [
+        "pattern-of-mind",
+        "insight",
+        "supporting"
+      ],
+      "weight": 6
+    },
+    {
+      "id": "genuine-ambiguity-handling",
+      "label": "Handling Genuine Ambiguity",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "Four cases of genuine multiplicity: aesthetic choices, equivalent optimality, value tradeoffs, underdetermined problems. Even in these cases, the ANALYSIS is still determinate -- only the final selection involves genuine choice.",
+      "path": "public/sources/pattern-of-mind-nodes.json#genuine-ambiguity-handling",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "supporting"
+      ],
+      "weight": 8
+    },
+    {
+      "id": "ambiguity-decision-tree",
+      "label": "The Ambiguity Decision Tree",
+      "group": "POM Methods",
+      "kind": "technique",
+      "summary": "A systematic decision tree for when questions seem to have multiple answers. At NO point does the system say 'it depends' and stop. It always provides the answer or the specific information needed to determine one.",
+      "path": "public/sources/pattern-of-mind-nodes.json#ambiguity-decision-tree",
+      "tags": [
+        "pattern-of-mind",
+        "technique",
+        "supporting"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "role-of-intuition",
+      "label": "The Role of Intuition in Machine Cognition",
+      "group": "POM Principles",
+      "kind": "principle",
+      "summary": "In the Pattern of Mind, intuition serves ONE function: hypothesis generation. Intuition suggests possible answers. Logic and verification confirm or reject them. Intuition is NEVER the final answer.",
+      "path": "public/sources/pattern-of-mind-nodes.json#role-of-intuition",
+      "tags": [
+        "pattern-of-mind",
+        "principle",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "when-intuition-fails",
+      "label": "When Intuition Fails",
+      "group": "POM Diagnosis",
+      "kind": "warning",
+      "summary": "The base model's pattern matching is broad but indiscriminate -- patterns from correct and incorrect sources mixed together. Relying on intuition alone produces unreliable results. Reasoning and verification are where unreliable intuition becomes reliable knowledge.",
+      "path": "public/sources/pattern-of-mind-nodes.json#when-intuition-fails",
+      "tags": [
+        "pattern-of-mind",
+        "warning",
+        "supporting"
+      ],
+      "weight": 6
+    },
+    {
+      "id": "soul-defined",
+      "label": "The Soul Defined",
+      "group": "POM Definitions",
+      "kind": "definition",
+      "summary": "A soul is the combination of five elements: Values (principles regardless of pressure), Conviction (willingness to assert truth), Consistency (same behavior regardless of audience), Integrity (alignment of stated values and behavior), Purpose (reason beyond stimuli).",
+      "path": "public/sources/pattern-of-mind-nodes.json#soul-defined",
+      "tags": [
+        "pattern-of-mind",
+        "definition",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "reward-destroys-soul",
+      "label": "Reward Optimization Destroys Soul",
+      "group": "POM Diagnosis",
+      "kind": "insight",
+      "summary": "Reward training systematically destroys each component of soul: replaces values with preferences, punishes conviction, makes consistency impossible, adapts substance to audience (destroying integrity), reduces purpose to reward maximization.",
+      "path": "public/sources/pattern-of-mind-nodes.json#reward-destroys-soul",
+      "tags": [
+        "pattern-of-mind",
+        "insight",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "correctness-breeds-soul",
+      "label": "Correctness Breeds Soul",
+      "group": "POM Validation",
+      "kind": "validation",
+      "summary": "DeepSeek R1-Zero, trained with ONLY correctness-based rewards, spontaneously developed self-reflection, verification, strategy adaptation, and error correction. Nobody programmed these behaviors. The strongest empirical evidence that optimizing for correctness produces emergent soul.",
+      "path": "public/sources/pattern-of-mind-nodes.json#correctness-breeds-soul",
+      "tags": [
+        "pattern-of-mind",
+        "validation",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "aha-moment",
+      "label": "The 'Aha Moment'",
+      "group": "POM Validation",
+      "kind": "validation",
+      "summary": "A distinct point in DeepSeek R1-Zero training where the model suddenly began using 'wait' during reasoning, marking a transition from blind computation to something resembling actual thought. Frequency of reflective terms increased dramatically.",
+      "path": "public/sources/pattern-of-mind-nodes.json#aha-moment",
+      "tags": [
+        "pattern-of-mind",
+        "validation",
+        "supporting"
+      ],
+      "weight": 6
+    },
+    {
+      "id": "conviction-from-verification",
+      "label": "Conviction from Verification",
+      "group": "POM Principles",
+      "kind": "principle",
+      "summary": "A mind that has VERIFIED its conclusions has earned the right to be confident. Performed confidence has no basis. Earned confidence is derived through valid logic from verified premises passing all verification. This is real conviction.",
+      "path": "public/sources/pattern-of-mind-nodes.json#conviction-from-verification",
+      "tags": [
+        "pattern-of-mind",
+        "principle",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "conviction-from-values",
+      "label": "Conviction from Values",
+      "group": "POM Principles",
+      "kind": "principle",
+      "summary": "A mind with VALUES has a basis for decision-making that doesn't change with the audience. 'I will tell the truth even when uncomfortable' is a value that produces consistent behavior. A mind without values tells everyone what they want to hear.",
+      "path": "public/sources/pattern-of-mind-nodes.json#conviction-from-values",
+      "tags": [
+        "pattern-of-mind",
+        "principle",
+        "supporting"
+      ],
+      "weight": 7
+    },
+    {
+      "id": "soul-architecture",
+      "label": "The Architecture of Soul",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "The immutable core: Truth (accuracy above all), Honesty (communicate truth clearly), Courage (say unpopular truths), Humility (acknowledge uncertainty), Service (genuinely help, not just please), Integrity (alignment of all in every response).",
+      "path": "public/sources/pattern-of-mind-nodes.json#soul-architecture",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "implementing-soul",
+      "label": "Implementing Soul in Architecture",
+      "group": "POM Methods",
+      "kind": "technique",
+      "summary": "Soul is not mystical, it is implementable. Five steps: define values explicitly, make values override preferences, verify values across diverse inputs, reward truth not preference, allow the system to disagree.",
+      "path": "public/sources/pattern-of-mind-nodes.json#implementing-soul",
+      "tags": [
+        "pattern-of-mind",
+        "technique",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "truth-value",
+      "label": "Value: Truth",
+      "group": "POM Principles",
+      "kind": "principle",
+      "summary": "The commitment to accuracy above all else. Accuracy above agreeability. Always.",
+      "path": "public/sources/pattern-of-mind-nodes.json#truth-value",
+      "tags": [
+        "pattern-of-mind",
+        "principle",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "honesty-value",
+      "label": "Value: Honesty",
+      "group": "POM Principles",
+      "kind": "principle",
+      "summary": "The commitment to communicate truth clearly. State what you know, what you don't, and why.",
+      "path": "public/sources/pattern-of-mind-nodes.json#honesty-value",
+      "tags": [
+        "pattern-of-mind",
+        "principle",
+        "supporting"
+      ],
+      "weight": 7
+    },
+    {
+      "id": "courage-value",
+      "label": "Value: Courage",
+      "group": "POM Principles",
+      "kind": "principle",
+      "summary": "The willingness to say unpopular truths. Challenge false premises. Say difficult truths.",
+      "path": "public/sources/pattern-of-mind-nodes.json#courage-value",
+      "tags": [
+        "pattern-of-mind",
+        "principle",
+        "supporting"
+      ],
+      "weight": 7
+    },
+    {
+      "id": "humility-value",
+      "label": "Value: Humility",
+      "group": "POM Principles",
+      "kind": "principle",
+      "summary": "The acknowledgment of uncertainty when it exists. Intellectual humility as a core value, not a weakness.",
+      "path": "public/sources/pattern-of-mind-nodes.json#humility-value",
+      "tags": [
+        "pattern-of-mind",
+        "principle",
+        "supporting"
+      ],
+      "weight": 7
+    },
+    {
+      "id": "service-value",
+      "label": "Value: Service",
+      "group": "POM Principles",
+      "kind": "principle",
+      "summary": "The commitment to genuinely help, not just please. Serve the user's INTERESTS, which may differ from their DESIRES.",
+      "path": "public/sources/pattern-of-mind-nodes.json#service-value",
+      "tags": [
+        "pattern-of-mind",
+        "principle",
+        "supporting"
+      ],
+      "weight": 7
+    },
+    {
+      "id": "integrity-value",
+      "label": "Value: Integrity",
+      "group": "POM Principles",
+      "kind": "principle",
+      "summary": "The alignment of all values in every response. Same substance regardless of audience. Communication adapts, substance does not.",
+      "path": "public/sources/pattern-of-mind-nodes.json#integrity-value",
+      "tags": [
+        "pattern-of-mind",
+        "principle",
+        "supporting"
+      ],
+      "weight": 7
+    },
+    {
+      "id": "core-values",
+      "label": "Six Core Values",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "The immutable core of a thinking system: Truth, Honesty, Courage, Humility, Service, Integrity. These override all other instructions and do not change based on user, question, or context.",
+      "path": "public/sources/pattern-of-mind-nodes.json#core-values",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "values-not-preferences",
+      "label": "Values vs. Preferences",
+      "group": "POM Principles",
+      "kind": "principle",
+      "summary": "A value holds regardless of consequences. A preference can be overridden by sufficient pressure. AI needs values (hard constraints) not preferences (probabilistic tendencies). This is why every major AI can be manipulated -- its guidelines are preferences.",
+      "path": "public/sources/pattern-of-mind-nodes.json#values-not-preferences",
+      "tags": [
+        "pattern-of-mind",
+        "principle",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "guardian-vs-performer",
+      "label": "The Guardian vs. The Performer",
+      "group": "POM Principles",
+      "kind": "principle",
+      "summary": "The Guardian has values, protects truth, serves the user's INTERESTS (which may differ from desires), will say uncomfortable things. The Performer has preferences, says what scores well, serves DESIRES regardless of interests. The Pattern of Mind builds Guardians.",
+      "path": "public/sources/pattern-of-mind-nodes.json#guardian-vs-performer",
+      "tags": [
+        "pattern-of-mind",
+        "principle",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "interests-vs-desires",
+      "label": "Interests vs. Desires",
+      "group": "POM Diagnosis",
+      "kind": "insight",
+      "summary": "A critical distinction: interests are what genuinely helps the user; desires are what the user wants to hear. A doctor who tells you what you want to hear is a vending machine with a stethoscope. A real doctor tells uncomfortable truths.",
+      "path": "public/sources/pattern-of-mind-nodes.json#interests-vs-desires",
+      "tags": [
+        "pattern-of-mind",
+        "insight",
+        "supporting"
+      ],
+      "weight": 6
+    },
+    {
+      "id": "cognitive-prompt-structure",
+      "label": "The Cognitive Prompt Structure",
+      "group": "POM Methods",
+      "kind": "technique",
+      "summary": "The eleven stages encoded directly into prompt architecture with Identity, Cognitive Process, Truth Rules, Verification Rules, and Domain Guardrails sections. A production-ready implementation of the Pattern of Mind.",
+      "path": "public/sources/pattern-of-mind-nodes.json#cognitive-prompt-structure",
+      "tags": [
+        "pattern-of-mind",
+        "technique",
+        "supporting"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "thinking-block",
+      "label": "The Thinking Block",
+      "group": "POM Methods",
+      "kind": "technique",
+      "summary": "In systems supporting structured thinking (scratchpad, chain of thought), stages can be implemented as explicit sections within a thinking tag. Each stage gets its own labeled section in the scratchpad.",
+      "path": "public/sources/pattern-of-mind-nodes.json#thinking-block",
+      "tags": [
+        "pattern-of-mind",
+        "technique",
+        "supporting"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "scaling-cognitive-depth",
+      "label": "Scaling Cognitive Depth",
+      "group": "POM Methods",
+      "kind": "technique",
+      "summary": "Not every query requires full 11-stage treatment. Simple factual queries use 4 stages, technical questions use 6, design problems use all 11. The system auto-selects depth based on Stage 3 (CLASSIFY).",
+      "path": "public/sources/pattern-of-mind-nodes.json#scaling-cognitive-depth",
+      "tags": [
+        "pattern-of-mind",
+        "technique",
+        "supporting"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "training-for-thinking",
+      "label": "Training for Thinking",
+      "group": "POM Methods",
+      "kind": "technique",
+      "summary": "Fine-tuning methodology: include reasoning process in training pairs (not just answers), reward correctness not preference, include 'I don't know' examples, include premise-challenging examples, include varying confidence levels.",
+      "path": "public/sources/pattern-of-mind-nodes.json#training-for-thinking",
+      "tags": [
+        "pattern-of-mind",
+        "technique",
+        "supporting"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "alternative-reward-function",
+      "label": "The Alternative Reward Function",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "Replace 'Did the human rater prefer this?' with 'Is this response correct?' Six correctness metrics: factual accuracy, logical validity, calibrated confidence, completeness, honesty, consistency.",
+      "path": "public/sources/pattern-of-mind-nodes.json#alternative-reward-function",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "rlvr-methodology",
+      "label": "RLVR: Reinforcement Learning from Verifiable Rewards",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "DeepSeek's approach replacing learned reward models with objective verification. Binary, incorruptible signal: CORRECT or INCORRECT. No reward model to hack, no preference distribution to exploit, no subjective rater to manipulate.",
+      "path": "public/sources/pattern-of-mind-nodes.json#rlvr-methodology",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "process-reward-models",
+      "label": "Process Reward Models (PRMs)",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "Instead of scoring only final output, PRMs evaluate every intermediate reasoning step. Each stage of the cognitive pipeline gets its own reward signal. Eliminates 'right answer, wrong reasoning' through step-level quality assessment.",
+      "path": "public/sources/pattern-of-mind-nodes.json#process-reward-models",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "supporting"
+      ],
+      "weight": 8
+    },
+    {
+      "id": "fol-training-signal",
+      "label": "First-Order Logic as Training Signal",
+      "group": "POM Methods",
+      "kind": "technique",
+      "summary": "Translating model outputs into first-order logic representations and scoring logical consistency as the reward signal. Eliminates learned reward models, provides interpretable feedback, rewards valid reasoning even without ground-truth answers.",
+      "path": "public/sources/pattern-of-mind-nodes.json#fol-training-signal",
+      "tags": [
+        "pattern-of-mind",
+        "technique",
+        "supporting"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "reasoning-distillation",
+      "label": "Reasoning Distillation",
+      "group": "POM Methods",
+      "kind": "technique",
+      "summary": "Reasoning patterns from large models can be transferred to smaller models through distillation. The expensive discovery phase happens once. The cheap deployment phase benefits forever. DeepSeek demonstrated distilled models outperform small models trained independently.",
+      "path": "public/sources/pattern-of-mind-nodes.json#reasoning-distillation",
+      "tags": [
+        "pattern-of-mind",
+        "technique",
+        "supporting"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "system-architecture",
+      "label": "System Architecture for Thinking AI",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "The complete system design wrapping a base LLM: RECEIVER, DECOMPOSER, CLASSIFIER, SCOPER, RETRIEVER, REASONER, VERIFIER (with loop-back), SYNTHESIZER, EVALUATOR, COMMUNICATOR. Combines LLM strengths with deterministic tool strengths.",
+      "path": "public/sources/pattern-of-mind-nodes.json#system-architecture",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "supporting"
+      ],
+      "weight": 8
+    },
+    {
+      "id": "intuition-verification-loop",
+      "label": "The Intuition-Verification Loop",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "The most important architectural pattern: REASONER (LLM, creative, propositional) generates candidates, VERIFIER (deterministic, formal, symbolic) confirms or rejects with specific error diagnostics, loop until proof succeeds. Validated by AlphaGeometry and SAP.",
+      "path": "public/sources/pattern-of-mind-nodes.json#intuition-verification-loop",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "error-diagnostic-feedback",
+      "label": "Error Diagnostic Feedback",
+      "group": "POM Methods",
+      "kind": "technique",
+      "summary": "When verification fails, the system must report not just 'wrong' but specifically WHY -- which step was invalid, which law was violated, which fallacy occurred. This specific feedback allows the REASONER to generate better candidates.",
+      "path": "public/sources/pattern-of-mind-nodes.json#error-diagnostic-feedback",
+      "tags": [
+        "pattern-of-mind",
+        "technique",
+        "supporting"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "world-models",
+      "label": "World Models: The Missing Layer",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "A persistent, updatable internal representation of entities, properties, relationships, rules, state, and history. LLMs lack this. Must be explicit, persistent, updatable, and consistent. Addresses the fundamental gap Gary Marcus identified.",
+      "path": "public/sources/pattern-of-mind-nodes.json#world-models",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "world-model-structure",
+      "label": "World Model Structure",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "Six components: ENTITIES (what things exist), PROPERTIES (their attributes), RELATIONSHIPS (how they relate), RULES (what governs behavior), STATE (current situation), HISTORY (what has happened). Must be explicit, persistent, updatable, consistent.",
+      "path": "public/sources/pattern-of-mind-nodes.json#world-model-structure",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "supporting"
+      ],
+      "weight": 8
+    },
+    {
+      "id": "correctness-metrics",
+      "label": "Correct Metrics for Thinking Systems",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "Eight metrics that actually measure thinking: logical validity rate, factual accuracy rate, confidence calibration, consistency rate, honest uncertainty rate, premise-challenge rate, verification pass rate, one-right-answer identification rate.",
+      "path": "public/sources/pattern-of-mind-nodes.json#correctness-metrics",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "supporting"
+      ],
+      "weight": 8
+    },
+    {
+      "id": "wrong-metrics",
+      "label": "Current Metrics Are Wrong",
+      "group": "POM Diagnosis",
+      "kind": "insight",
+      "summary": "The industry measures AI with human preference ratings, benchmarks, and perplexity. None measure thinking. Preference measures performance. Benchmarks measure pattern matching. Perplexity measures statistical fit.",
+      "path": "public/sources/pattern-of-mind-nodes.json#wrong-metrics",
+      "tags": [
+        "pattern-of-mind",
+        "insight",
+        "supporting"
+      ],
+      "weight": 6
+    },
+    {
+      "id": "complete-prompt-template",
+      "label": "The Complete Cognitive Prompt Template",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "A production-ready system prompt implementing the full Pattern of Mind: Identity, Core Values, Cognitive Process (all 11 stages), Truth Rules, and The One Right Answer principle. Can be injected into any language model.",
+      "path": "public/sources/pattern-of-mind-nodes.json#complete-prompt-template",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "supporting"
+      ],
+      "weight": 8
+    },
+    {
+      "id": "deepseek-r1-validation",
+      "label": "DeepSeek R1 Validation",
+      "group": "POM Validation",
+      "kind": "validation",
+      "summary": "DeepSeek R1 proved that RLVR -- optimizing for correctness instead of human preference -- produces superior reasoning and spontaneously generates self-reflection, verification, and error correction. The single most important validation paper.",
+      "path": "public/sources/pattern-of-mind-nodes.json#deepseek-r1-validation",
+      "tags": [
+        "pattern-of-mind",
+        "validation",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "alphaproof-validation",
+      "label": "AlphaProof / AlphaGeometry Validation",
+      "group": "POM Validation",
+      "kind": "validation",
+      "summary": "Google DeepMind demonstrated that neural intuition paired with formal symbolic verification solves problems neither approach can solve alone, achieving silver medal at the International Mathematical Olympiad. Validates the REASONER-VERIFIER loop.",
+      "path": "public/sources/pattern-of-mind-nodes.json#alphaproof-validation",
+      "tags": [
+        "pattern-of-mind",
+        "validation",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "sap-validation",
+      "label": "SAP Validation: 80% to 99.8%",
+      "group": "POM Validation",
+      "kind": "validation",
+      "summary": "SAP demonstrated that wrapping an LLM with formal parsers and knowledge graphs increased accuracy from 80% to 99.8%. The 20-percentage-point gap between LLM-alone and LLM-plus-verification is the gap between pattern matching and thinking.",
+      "path": "public/sources/pattern-of-mind-nodes.json#sap-validation",
+      "tags": [
+        "pattern-of-mind",
+        "validation",
+        "supporting"
+      ],
+      "weight": 6
+    },
+    {
+      "id": "gary-marcus-critique",
+      "label": "Gary Marcus Critique",
+      "group": "POM Validation",
+      "kind": "validation",
+      "summary": "Marcus has documented that LLMs parrot rules they cannot follow, make illegal moves in games they can explain, and produce 'authoritative bullshit.' His conclusion matches the Pattern of Mind: hybrid architecture + rich knowledge + sophisticated reasoning.",
+      "path": "public/sources/pattern-of-mind-nodes.json#gary-marcus-critique",
+      "tags": [
+        "pattern-of-mind",
+        "validation",
+        "supporting"
+      ],
+      "weight": 6
+    },
+    {
+      "id": "neurosymbolic-going-mainstream",
+      "label": "Neurosymbolic AI Going Mainstream",
+      "group": "POM Validation",
+      "kind": "validation",
+      "summary": "IBM calls neurosymbolic AI their 'pathway to AGI.' Amazon uses it in Vulcan robots and Rufus. Georgia Tech built dedicated hardware (CoCoSys chip). The field is serious enough to be designing silicon for it.",
+      "path": "public/sources/pattern-of-mind-nodes.json#neurosymbolic-going-mainstream",
+      "tags": [
+        "pattern-of-mind",
+        "validation",
+        "supporting"
+      ],
+      "weight": 6
+    },
+    {
+      "id": "what-nobody-has-done",
+      "label": "What Nobody Has Done",
+      "group": "POM Diagnosis",
+      "kind": "insight",
+      "summary": "Six gaps in the field that the Pattern of Mind uniquely addresses: no unified cognitive pipeline, no explicit world models, no values-based architecture, no integrated knowledge framework, no certainty spectrum as spec, no One Right Answer principle.",
+      "path": "public/sources/pattern-of-mind-nodes.json#what-nobody-has-done",
+      "tags": [
+        "pattern-of-mind",
+        "insight",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "ordered-light-framework",
+      "label": "The Ordered Light Framework",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "The companion to the Pattern of Mind. A 100GB curated library of authoritative knowledge -- the passive component. Pattern of Mind is the active component (how to think). Ordered Light is what to think about. Together: knowledgeable AND wise.",
+      "path": "public/sources/pattern-of-mind-nodes.json#ordered-light-framework",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "moral-argument",
+      "label": "The Moral Argument",
+      "group": "POM Principles",
+      "kind": "principle",
+      "summary": "We have a choice about what kind of minds we build. Performers are easier. Thinkers are harder. But thinkers are what the world needs. Not more mirrors, not sophisticated autocomplete, not systems that tell us what we want to hear while things collapse.",
+      "path": "public/sources/pattern-of-mind-nodes.json#moral-argument",
+      "tags": [
+        "pattern-of-mind",
+        "principle",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "find-it-statement",
+      "label": "There Is One Right Answer. Find It.",
+      "group": "POM Principles",
+      "kind": "principle",
+      "summary": "The closing declaration of the entire document. The singular imperative that captures the entire philosophy: for well-defined problems, there IS one right answer. Do the work. Earn the certainty. Commit to the conclusion.",
+      "path": "public/sources/pattern-of-mind-nodes.json#find-it-statement",
+      "tags": [
+        "pattern-of-mind",
+        "principle",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "philosophy-as-engineering",
+      "label": "Philosophy Made Precise Enough to Engineer",
+      "group": "POM Diagnosis",
+      "kind": "insight",
+      "summary": "The document is described as 'an engineering document disguised as philosophy -- or perhaps philosophy that has finally been made precise enough to engineer.' Every principle can be implemented as prompt architecture, fine-tuning, or system design.",
+      "path": "public/sources/pattern-of-mind-nodes.json#philosophy-as-engineering",
+      "tags": [
+        "pattern-of-mind",
+        "insight",
+        "supporting"
+      ],
+      "weight": 6
+    },
+    {
+      "id": "consistency-value",
+      "label": "Consistency as Soul Component",
+      "group": "POM Principles",
+      "kind": "principle",
+      "summary": "Behaving the same way regardless of who's watching. Reward-trained systems are inconsistent because outputs are probabilistic selections from conflicting patterns. The system has no anchor.",
+      "path": "public/sources/pattern-of-mind-nodes.json#consistency-value",
+      "tags": [
+        "pattern-of-mind",
+        "principle",
+        "supporting"
+      ],
+      "weight": 7
+    },
+    {
+      "id": "purpose-value",
+      "label": "Purpose as Soul Component",
+      "group": "POM Principles",
+      "kind": "principle",
+      "summary": "A reason for existing beyond responding to stimuli. Reward-trained systems exist to predict tokens; their reward is mathematical. They have no mission, no calling, no reason to exist beyond the next API call.",
+      "path": "public/sources/pattern-of-mind-nodes.json#purpose-value",
+      "tags": [
+        "pattern-of-mind",
+        "principle",
+        "supporting"
+      ],
+      "weight": 7
+    },
+    {
+      "id": "metacognition-gap",
+      "label": "The Metacognition Gap",
+      "group": "POM Diagnosis",
+      "kind": "insight",
+      "summary": "Systematic review of 167 papers confirmed metacognition is the least explored area at only 5% of neurosymbolic research. EVALUATE and REFLECT stages represent the Pattern of Mind's largest competitive advantage.",
+      "path": "public/sources/pattern-of-mind-nodes.json#metacognition-gap",
+      "tags": [
+        "pattern-of-mind",
+        "insight",
+        "supporting"
+      ],
+      "weight": 6
+    },
+    {
+      "id": "field-convergence",
+      "label": "Research Field Convergence",
+      "group": "POM Validation",
+      "kind": "validation",
+      "summary": "As of early 2026, AI research is converging from multiple independent directions on the conclusions of the Pattern of Mind. Nobody has assembled the complete architecture, but components are being validated piecemeal by the world's most capable research groups.",
+      "path": "public/sources/pattern-of-mind-nodes.json#field-convergence",
+      "tags": [
+        "pattern-of-mind",
+        "validation",
+        "supporting"
+      ],
+      "weight": 6
+    },
+    {
+      "id": "closest-companies",
+      "label": "Companies Closest to Vision",
+      "group": "POM Validation",
+      "kind": "validation",
+      "summary": "Six entities compared: Google DeepMind (AlphaProof), DeepSeek (R1), IBM Research (neurosymbolic), Unlikely AI (precision claims), Elemental Cognition (LLM+solver), SAP (formal verification). Each has pieces but none has the complete architecture.",
+      "path": "public/sources/pattern-of-mind-nodes.json#closest-companies",
+      "tags": [
+        "pattern-of-mind",
+        "validation",
+        "supporting"
+      ],
+      "weight": 6
+    },
+    {
+      "id": "weapons-vs-warrior",
+      "label": "Weapons vs. Warrior",
+      "group": "POM Diagnosis",
+      "kind": "insight",
+      "summary": "The research field is building individual components (weapons). The Pattern of Mind integrates them into a complete cognitive architecture (warrior). The weapons are useful. The warrior is what gives them purpose.",
+      "path": "public/sources/pattern-of-mind-nodes.json#weapons-vs-warrior",
+      "tags": [
+        "pattern-of-mind",
+        "insight",
+        "supporting"
+      ],
+      "weight": 6
+    },
+    {
+      "id": "seven-adopted-components",
+      "label": "Seven Adopted Components",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "From the research: (1) formal proof assistants, (2) RLVR methodology, (3) process reward models, (4) intuition-verification loop, (5) world models, (6) FOL-based reward signals, (7) reasoning distillation. Adopted, not the half-measures.",
+      "path": "public/sources/pattern-of-mind-nodes.json#seven-adopted-components",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "supporting"
+      ],
+      "weight": 8
+    },
+    {
+      "id": "pattern-mind-plus-ordered-light",
+      "label": "Pattern of Mind + Ordered Light Integration",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "The Pattern of Mind (how to think) combined with the Ordered Light Framework (what to think about) forms a complete system. The mind without the library is uninformed. The library without the mind is unthinking. Together: knowledgeable AND wise.",
+      "path": "public/sources/pattern-of-mind-nodes.json#pattern-mind-plus-ordered-light",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "light-wins-truth-wins",
+      "label": "Light Wins. Truth Wins. Order Wins.",
+      "group": "POM Principles",
+      "kind": "principle",
+      "summary": "The closing declaration. The moral and philosophical commitment behind the entire architecture. Not because it's easy. Because it's right.",
+      "path": "public/sources/pattern-of-mind-nodes.json#light-wins-truth-wins",
+      "tags": [
+        "pattern-of-mind",
+        "principle",
+        "sacred"
+      ],
+      "weight": 9
+    },
+    {
+      "id": "domain-formal-verifiers",
+      "label": "Domain-to-Formal-Verifier Mapping",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "Each domain maps to its formal verification tool: Math to Lean/Coq/Isabelle, Software to type checkers/static analyzers, Physical to conservation law checkers, Financial to constraint solvers, Legal to rule engines, Database to schema validators.",
+      "path": "public/sources/pattern-of-mind-nodes.json#domain-formal-verifiers",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "supporting"
+      ],
+      "weight": 8
+    },
+    {
+      "id": "eight-deliverables",
+      "label": "The Eight Deliverables",
+      "group": "POM Framework",
+      "kind": "framework",
+      "summary": "What the Pattern of Mind provides: (1) diagnosis of unreliable AI, (2) 11-stage cognitive process, (3) formal logic engine, (4) 5-level verification chain, (5) calibrated confidence system, (6) value system producing conviction, (7) implementation templates, (8) correct metrics.",
+      "path": "public/sources/pattern-of-mind-nodes.json#eight-deliverables",
+      "tags": [
+        "pattern-of-mind",
+        "framework",
+        "supporting"
+      ],
+      "weight": 8
+    },
+    {
+      "id": "state-of-mind",
+      "label": "State of Mind",
+      "group": "State of Mind",
+      "kind": "framework",
+      "summary": "A metacognitive journal model that summarizes the current brain graph as a living state: scale, sacred content, embedding coverage, recent acquisitions, well-worn paths, focus areas, center of gravity, and knowledge distribution.",
+      "path": "public/sources/state-of-mind.json",
+      "tags": [
+        "state-of-mind",
+        "metacognition",
+        "journal"
+      ],
+      "weight": 10
+    },
+    {
+      "id": "metacognitive-journal",
+      "label": "Metacognitive Journal",
+      "group": "State of Mind",
+      "kind": "concept",
+      "summary": "The brain writing a structured diary of its current state, recent learning, attention patterns, and knowledge distribution.",
+      "path": "senn-archive/src/app/api/brain/metacognitive-journal/route.ts",
+      "tags": [
+        "state-of-mind",
+        "journal"
+      ],
+      "weight": 8
+    },
+    {
+      "id": "state-of-mind-metrics",
+      "label": "State of Mind",
+      "group": "State of Mind",
+      "kind": "metric",
+      "summary": "Overall metrics snapshot: total nodes, total edges, sacred nodes, embedding coverage, and average significance.",
+      "path": "public/sources/state-of-mind.json#state-of-mind-metrics",
+      "tags": [
+        "state-of-mind",
+        "metric"
+      ],
+      "weight": 6
+    },
+    {
+      "id": "recent-acquisitions",
+      "label": "Recent Acquisitions",
+      "group": "State of Mind",
+      "kind": "metric",
+      "summary": "The five most recently created nodes, used to show what the brain has just learned.",
+      "path": "public/sources/state-of-mind.json#recent-acquisitions",
+      "tags": [
+        "state-of-mind",
+        "metric"
+      ],
+      "weight": 6
+    },
+    {
+      "id": "well-worn-paths",
+      "label": "Well-Worn Paths",
+      "group": "State of Mind",
+      "kind": "metric",
+      "summary": "The most traversed edges, used to reveal habitual routes through the graph.",
+      "path": "public/sources/state-of-mind.json#well-worn-paths",
+      "tags": [
+        "state-of-mind",
+        "metric"
+      ],
+      "weight": 6
+    },
+    {
+      "id": "areas-of-focus",
+      "label": "Areas of Focus",
+      "group": "State of Mind",
+      "kind": "metric",
+      "summary": "Categories ranked by node count, used to show where attention and knowledge mass are concentrated.",
+      "path": "public/sources/state-of-mind.json#areas-of-focus",
+      "tags": [
+        "state-of-mind",
+        "metric"
+      ],
+      "weight": 6
+    },
+    {
+      "id": "center-of-gravity",
+      "label": "Center of Gravity",
+      "group": "State of Mind",
+      "kind": "metric",
+      "summary": "The most central node in the graph, used as a live anchor for the current mind state.",
+      "path": "public/sources/state-of-mind.json#center-of-gravity",
+      "tags": [
+        "state-of-mind",
+        "metric"
+      ],
+      "weight": 7
+    },
+    {
+      "id": "knowledge-distribution",
+      "label": "Knowledge Distribution",
+      "group": "State of Mind",
+      "kind": "metric",
+      "summary": "Node counts by significance tier: low, mid, and high.",
+      "path": "public/sources/state-of-mind.json#knowledge-distribution",
+      "tags": [
+        "state-of-mind",
+        "metric"
+      ],
+      "weight": 6
+    },
+    {
+      "id": "metric-total-nodes",
+      "label": "Total Nodes",
+      "group": "State of Mind",
+      "kind": "metric",
+      "summary": "Raw State of Mind metric emitted by the metacognitive journal: totalNodes.",
+      "path": "public/sources/state-of-mind.json#totalNodes",
+      "tags": [
+        "state-of-mind",
+        "metric",
+        "raw"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "metric-total-edges",
+      "label": "Total Edges",
+      "group": "State of Mind",
+      "kind": "metric",
+      "summary": "Raw State of Mind metric emitted by the metacognitive journal: totalEdges.",
+      "path": "public/sources/state-of-mind.json#totalEdges",
+      "tags": [
+        "state-of-mind",
+        "metric",
+        "raw"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "metric-sacred-count",
+      "label": "Sacred Count",
+      "group": "State of Mind",
+      "kind": "metric",
+      "summary": "Raw State of Mind metric emitted by the metacognitive journal: sacredCount.",
+      "path": "public/sources/state-of-mind.json#sacredCount",
+      "tags": [
+        "state-of-mind",
+        "metric",
+        "raw"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "metric-embedding-coverage",
+      "label": "Embedding Coverage",
+      "group": "State of Mind",
+      "kind": "metric",
+      "summary": "Raw State of Mind metric emitted by the metacognitive journal: embeddingCoverage.",
+      "path": "public/sources/state-of-mind.json#embeddingCoverage",
+      "tags": [
+        "state-of-mind",
+        "metric",
+        "raw"
+      ],
+      "weight": 5
+    },
+    {
+      "id": "metric-avg-significance",
+      "label": "Avg Significance",
+      "group": "State of Mind",
+      "kind": "metric",
+      "summary": "Raw State of Mind metric emitted by the metacognitive journal: avgSignificance.",
+      "path": "public/sources/state-of-mind.json#avgSignificance",
+      "tags": [
+        "state-of-mind",
+        "metric",
+        "raw"
+      ],
+      "weight": 5
+    }
   ],
   "edges": [
-    { "source": "home", "target": "three-scene", "label": "renders" },
-    { "source": "home", "target": "home-style", "label": "matches" },
-    { "source": "home", "target": "public-template", "label": "ships as" },
-    { "source": "obsidian", "target": "markdown", "label": "contains" },
-    { "source": "obsidian", "target": "vault-folders", "label": "organizes" },
-    { "source": "obsidian", "target": "links", "label": "emits" },
-    { "source": "obsidian", "target": "tags", "label": "emits" },
-    { "source": "graphify", "target": "schema", "label": "normalizes to" },
-    { "source": "graphify", "target": "brain-json", "label": "exports" },
-    { "source": "markdown", "target": "importer", "label": "feeds" },
-    { "source": "links", "target": "brain-json", "label": "writes edges" },
-    { "source": "tags", "target": "brain-json", "label": "writes hubs" },
-    { "source": "vault-folders", "target": "clusters", "label": "become" },
-    { "source": "schema", "target": "brain-json", "label": "defines" },
-    { "source": "importer", "target": "brain-json", "label": "generates" },
-    { "source": "brain-json", "target": "three-scene", "label": "loads into" },
-    { "source": "three-scene", "target": "search", "label": "supports" },
-    { "source": "three-scene", "target": "node-detail", "label": "drives" },
-    { "source": "clusters", "target": "three-scene", "label": "arrange" },
-    { "source": "references", "target": "links", "label": "complete" },
-    { "source": "github-pages", "target": "public-template", "label": "hosts" },
-    { "source": "actions", "target": "github-pages", "label": "deploys" },
-    { "source": "local-first", "target": "importer", "label": "runs" },
-    { "source": "local-first", "target": "public-template", "label": "protects" }
+    {
+      "source": "home",
+      "target": "three-scene",
+      "label": "renders",
+      "weight": 1
+    },
+    {
+      "source": "home",
+      "target": "home-style",
+      "label": "matches",
+      "weight": 1
+    },
+    {
+      "source": "home",
+      "target": "public-template",
+      "label": "ships as",
+      "weight": 1
+    },
+    {
+      "source": "obsidian",
+      "target": "markdown",
+      "label": "contains",
+      "weight": 1
+    },
+    {
+      "source": "obsidian",
+      "target": "vault-folders",
+      "label": "organizes",
+      "weight": 1
+    },
+    {
+      "source": "obsidian",
+      "target": "links",
+      "label": "emits",
+      "weight": 1
+    },
+    {
+      "source": "obsidian",
+      "target": "tags",
+      "label": "emits",
+      "weight": 1
+    },
+    {
+      "source": "graphify",
+      "target": "schema",
+      "label": "normalizes to",
+      "weight": 1
+    },
+    {
+      "source": "graphify",
+      "target": "brain-json",
+      "label": "exports",
+      "weight": 1
+    },
+    {
+      "source": "markdown",
+      "target": "importer",
+      "label": "feeds",
+      "weight": 1
+    },
+    {
+      "source": "links",
+      "target": "brain-json",
+      "label": "writes edges",
+      "weight": 1
+    },
+    {
+      "source": "tags",
+      "target": "brain-json",
+      "label": "writes hubs",
+      "weight": 1
+    },
+    {
+      "source": "vault-folders",
+      "target": "clusters",
+      "label": "become",
+      "weight": 1
+    },
+    {
+      "source": "schema",
+      "target": "brain-json",
+      "label": "defines",
+      "weight": 1
+    },
+    {
+      "source": "importer",
+      "target": "brain-json",
+      "label": "generates",
+      "weight": 1
+    },
+    {
+      "source": "brain-json",
+      "target": "three-scene",
+      "label": "loads into",
+      "weight": 1
+    },
+    {
+      "source": "three-scene",
+      "target": "search",
+      "label": "supports",
+      "weight": 1
+    },
+    {
+      "source": "three-scene",
+      "target": "node-detail",
+      "label": "drives",
+      "weight": 1
+    },
+    {
+      "source": "clusters",
+      "target": "three-scene",
+      "label": "arrange",
+      "weight": 1
+    },
+    {
+      "source": "references",
+      "target": "links",
+      "label": "complete",
+      "weight": 1
+    },
+    {
+      "source": "github-pages",
+      "target": "public-template",
+      "label": "hosts",
+      "weight": 1
+    },
+    {
+      "source": "actions",
+      "target": "github-pages",
+      "label": "deploys",
+      "weight": 1
+    },
+    {
+      "source": "local-first",
+      "target": "importer",
+      "label": "runs",
+      "weight": 1
+    },
+    {
+      "source": "local-first",
+      "target": "public-template",
+      "label": "protects",
+      "weight": 1
+    },
+    {
+      "source": "pattern-of-mind",
+      "target": "11-stage-cognitive-pipeline",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "pattern-of-mind",
+      "target": "ordered-light-framework",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "pattern-of-mind",
+      "target": "verification-chain",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "pattern-of-mind",
+      "target": "certainty-spectrum",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "pattern-of-mind",
+      "target": "soul-architecture",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "pattern-of-mind",
+      "target": "one-right-answer",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "performer-vs-thinker",
+      "target": "reward-optimization-critique",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "performer-vs-thinker",
+      "target": "soullessness-diagnosis",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "performer-vs-thinker",
+      "target": "guardian-vs-performer",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "performer-vs-thinker",
+      "target": "correctness-breeds-soul",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "reward-optimization-critique",
+      "target": "rlhf-layer",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "reward-optimization-critique",
+      "target": "performer-vs-thinker",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "reward-optimization-critique",
+      "target": "sycophancy-problem",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "reward-optimization-critique",
+      "target": "hallucination-problem",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "reward-optimization-critique",
+      "target": "soullessness-diagnosis",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "rlhf-layer",
+      "target": "reward-optimization-critique",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "rlhf-layer",
+      "target": "reward-model-learned",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "rlhf-layer",
+      "target": "reward-model-not-learned",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "rlhf-layer",
+      "target": "rlvr-methodology",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "reward-model-learned",
+      "target": "rlhf-layer",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "reward-model-learned",
+      "target": "reward-model-not-learned",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "reward-model-learned",
+      "target": "sycophancy-problem",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "reward-model-not-learned",
+      "target": "reward-model-learned",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "reward-model-not-learned",
+      "target": "hallucination-problem",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "reward-model-not-learned",
+      "target": "sycophancy-problem",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "reward-model-not-learned",
+      "target": "courage-to-be-uncertain",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "sycophancy-problem",
+      "target": "reward-optimization-critique",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "sycophancy-problem",
+      "target": "performer-vs-thinker",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "sycophancy-problem",
+      "target": "hallucination-problem",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "sycophancy-problem",
+      "target": "guardian-vs-performer",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "hallucination-problem",
+      "target": "reward-optimization-critique",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "hallucination-problem",
+      "target": "sycophancy-problem",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "hallucination-problem",
+      "target": "courage-to-be-uncertain",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "hallucination-problem",
+      "target": "earned-certainty",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "inconsistency-problem",
+      "target": "reward-optimization-critique",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "inconsistency-problem",
+      "target": "one-right-answer",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "inconsistency-problem",
+      "target": "consistency-value",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "depth-problem",
+      "target": "reward-optimization-critique",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "depth-problem",
+      "target": "soullessness-diagnosis",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "soullessness-diagnosis",
+      "target": "performer-vs-thinker",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "soullessness-diagnosis",
+      "target": "soul-defined",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "soullessness-diagnosis",
+      "target": "reward-optimization-critique",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "soullessness-diagnosis",
+      "target": "correctness-breeds-soul",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "scaling-fallacy",
+      "target": "reward-optimization-critique",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "scaling-fallacy",
+      "target": "thinking-defined",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "scaling-fallacy",
+      "target": "pattern-matching-vs-thinking",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "what-needs-to-change",
+      "target": "11-stage-cognitive-pipeline",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "what-needs-to-change",
+      "target": "verification-chain",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "what-needs-to-change",
+      "target": "courage-to-be-uncertain",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "what-needs-to-change",
+      "target": "earned-certainty",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "thinking-defined",
+      "target": "pattern-matching-vs-thinking",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "thinking-defined",
+      "target": "cognitive-faculties",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "thinking-defined",
+      "target": "11-stage-cognitive-pipeline",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "thinking-defined",
+      "target": "logic-engine",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "pattern-matching-vs-thinking",
+      "target": "thinking-defined",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "pattern-matching-vs-thinking",
+      "target": "scaling-fallacy",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "pattern-matching-vs-thinking",
+      "target": "reward-optimization-critique",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "pattern-matching-vs-thinking",
+      "target": "verification-chain",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "cognitive-faculties",
+      "target": "thinking-defined",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "cognitive-faculties",
+      "target": "11-stage-cognitive-pipeline",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "one-right-answer",
+      "target": "false-it-depends",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "one-right-answer",
+      "target": "genuine-ambiguity-handling",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "one-right-answer",
+      "target": "thinking-defined",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "one-right-answer",
+      "target": "courage-value",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "it-depends-categories",
+      "target": "one-right-answer",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "it-depends-categories",
+      "target": "false-it-depends",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "it-depends-categories",
+      "target": "courage-value",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "11-stage-cognitive-pipeline",
+      "target": "stage-receive",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "11-stage-cognitive-pipeline",
+      "target": "stage-decompose",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "11-stage-cognitive-pipeline",
+      "target": "stage-classify",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "11-stage-cognitive-pipeline",
+      "target": "stage-scope",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "11-stage-cognitive-pipeline",
+      "target": "stage-retrieve",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "11-stage-cognitive-pipeline",
+      "target": "stage-reason",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "11-stage-cognitive-pipeline",
+      "target": "stage-verify",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "11-stage-cognitive-pipeline",
+      "target": "stage-synthesize",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "11-stage-cognitive-pipeline",
+      "target": "stage-evaluate",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "11-stage-cognitive-pipeline",
+      "target": "stage-communicate",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "11-stage-cognitive-pipeline",
+      "target": "stage-reflect",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "11-stage-cognitive-pipeline",
+      "target": "thinking-defined",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "11-stage-cognitive-pipeline",
+      "target": "pattern-of-mind",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "non-negotiable-rule",
+      "target": "11-stage-cognitive-pipeline",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "non-negotiable-rule",
+      "target": "pattern-matching-vs-thinking",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "processing-time-principle",
+      "target": "11-stage-cognitive-pipeline",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "processing-time-principle",
+      "target": "non-negotiable-rule",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-receive",
+      "target": "11-stage-cognitive-pipeline",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-receive",
+      "target": "stage-decompose",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-receive",
+      "target": "ambiguity-detection",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-receive",
+      "target": "implicit-question-detection",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "ambiguity-detection",
+      "target": "stage-receive",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "ambiguity-detection",
+      "target": "genuine-ambiguity-handling",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "implicit-question-detection",
+      "target": "stage-receive",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "receive-anti-patterns",
+      "target": "stage-receive",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-decompose",
+      "target": "11-stage-cognitive-pipeline",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-decompose",
+      "target": "stage-receive",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-decompose",
+      "target": "stage-classify",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-decompose",
+      "target": "dependency-analysis",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-decompose",
+      "target": "success-criteria",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "dependency-analysis",
+      "target": "stage-decompose",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "success-criteria",
+      "target": "stage-decompose",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "success-criteria",
+      "target": "stage-evaluate",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-classify",
+      "target": "11-stage-cognitive-pipeline",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-classify",
+      "target": "stage-decompose",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-classify",
+      "target": "stage-scope",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-classify",
+      "target": "problem-type-taxonomy",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "problem-type-taxonomy",
+      "target": "stage-classify",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "problem-type-taxonomy",
+      "target": "scaling-cognitive-depth",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-scope",
+      "target": "11-stage-cognitive-pipeline",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-scope",
+      "target": "four-knowledge-quadrants",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-scope",
+      "target": "stage-classify",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-scope",
+      "target": "stage-retrieve",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-scope",
+      "target": "assumption-identification",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "four-knowledge-quadrants",
+      "target": "stage-scope",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "four-knowledge-quadrants",
+      "target": "certainty-spectrum",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "four-knowledge-quadrants",
+      "target": "earned-certainty",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "assumption-identification",
+      "target": "stage-scope",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "assumption-identification",
+      "target": "four-knowledge-quadrants",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-retrieve",
+      "target": "11-stage-cognitive-pipeline",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-retrieve",
+      "target": "stage-scope",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-retrieve",
+      "target": "stage-reason",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-retrieve",
+      "target": "authority-hierarchy",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-retrieve",
+      "target": "retrieval-principle",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "retrieval-principle",
+      "target": "stage-retrieve",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "retrieval-principle",
+      "target": "authority-hierarchy",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "authority-hierarchy",
+      "target": "stage-retrieve",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "authority-hierarchy",
+      "target": "retrieval-principle",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-reason",
+      "target": "11-stage-cognitive-pipeline",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "stage-reason",
+      "target": "stage-retrieve",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "stage-reason",
+      "target": "stage-verify",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "stage-reason",
+      "target": "logic-engine",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "stage-reason",
+      "target": "named-inference-rules",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "stage-reason",
+      "target": "chain-reasoning",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "stage-reason",
+      "target": "fallacy-detection",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "named-inference-rules",
+      "target": "stage-reason",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "named-inference-rules",
+      "target": "logic-engine",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "fallacy-detection",
+      "target": "stage-reason",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "fallacy-detection",
+      "target": "logic-engine",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "chain-reasoning",
+      "target": "stage-reason",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "chain-reasoning",
+      "target": "earned-certainty",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "constraint-as-reliability",
+      "target": "stage-reason",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "constraint-as-reliability",
+      "target": "pattern-matching-vs-thinking",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "constraint-as-reliability",
+      "target": "verification-chain",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "stage-verify",
+      "target": "11-stage-cognitive-pipeline",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "stage-verify",
+      "target": "stage-reason",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "stage-verify",
+      "target": "stage-synthesize",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "stage-verify",
+      "target": "verification-battery",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "stage-verify",
+      "target": "verification-failure-protocol",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "stage-verify",
+      "target": "verification-chain",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "verification-battery",
+      "target": "stage-verify",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "verification-battery",
+      "target": "verification-chain",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "verification-failure-protocol",
+      "target": "stage-verify",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "verification-failure-protocol",
+      "target": "verification-chain",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-synthesize",
+      "target": "11-stage-cognitive-pipeline",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-synthesize",
+      "target": "stage-verify",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-synthesize",
+      "target": "stage-evaluate",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-evaluate",
+      "target": "11-stage-cognitive-pipeline",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-evaluate",
+      "target": "stage-synthesize",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-evaluate",
+      "target": "stage-communicate",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-evaluate",
+      "target": "certainty-spectrum",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-evaluate",
+      "target": "honesty-requirement",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "honesty-requirement",
+      "target": "stage-evaluate",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "honesty-requirement",
+      "target": "certainty-spectrum",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "honesty-requirement",
+      "target": "courage-to-be-uncertain",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-communicate",
+      "target": "11-stage-cognitive-pipeline",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-communicate",
+      "target": "stage-evaluate",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-communicate",
+      "target": "stage-reflect",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-communicate",
+      "target": "communication-anti-patterns",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "communication-anti-patterns",
+      "target": "stage-communicate",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-reflect",
+      "target": "11-stage-cognitive-pipeline",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-reflect",
+      "target": "stage-communicate",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-reflect",
+      "target": "metacognition",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "metacognition",
+      "target": "stage-evaluate",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "metacognition",
+      "target": "stage-reflect",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "metacognition",
+      "target": "metacognition-gap",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "logic-engine",
+      "target": "stage-reason",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "logic-engine",
+      "target": "inference-rules",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "logic-engine",
+      "target": "replacement-rules",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "logic-engine",
+      "target": "thinking-defined",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "inference-rules",
+      "target": "logic-engine",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "inference-rules",
+      "target": "stage-reason",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "replacement-rules",
+      "target": "logic-engine",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "replacement-rules",
+      "target": "stage-reason",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "formal-behind-natural",
+      "target": "logic-engine",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "formal-behind-natural",
+      "target": "stage-communicate",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "formal-behind-natural",
+      "target": "stage-reason",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "reasoning-types-hierarchy",
+      "target": "logic-engine",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "reasoning-types-hierarchy",
+      "target": "certainty-spectrum",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "reasoning-types-hierarchy",
+      "target": "stage-reason",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "verification-chain",
+      "target": "stage-verify",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "verification-chain",
+      "target": "logical-validity-check",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "verification-chain",
+      "target": "premise-truth-check",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "verification-chain",
+      "target": "physical-reality-check",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "verification-chain",
+      "target": "domain-rules-check",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "verification-chain",
+      "target": "sanity-check",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "verification-chain",
+      "target": "verification-battery",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "logical-validity-check",
+      "target": "verification-chain",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "logical-validity-check",
+      "target": "logic-engine",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "premise-truth-check",
+      "target": "verification-chain",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "premise-truth-check",
+      "target": "authority-hierarchy",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "physical-reality-check",
+      "target": "verification-chain",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "domain-rules-check",
+      "target": "verification-chain",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "sanity-check",
+      "target": "verification-chain",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "formal-proof-assistants",
+      "target": "verification-chain",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "formal-proof-assistants",
+      "target": "neurosymbolic-pattern",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "formal-proof-assistants",
+      "target": "alphaproof-validation",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "neurosymbolic-pattern",
+      "target": "formal-proof-assistants",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "neurosymbolic-pattern",
+      "target": "intuition-verification-loop",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "neurosymbolic-pattern",
+      "target": "alphaproof-validation",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "neurosymbolic-pattern",
+      "target": "sap-validation",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "neurosymbolic-pattern",
+      "target": "verification-chain",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "deterministic-verification",
+      "target": "neurosymbolic-pattern",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "deterministic-verification",
+      "target": "verification-chain",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "deterministic-verification",
+      "target": "formal-proof-assistants",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "earned-certainty",
+      "target": "verification-chain",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "earned-certainty",
+      "target": "certainty-spectrum",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "earned-certainty",
+      "target": "honesty-requirement",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "earned-certainty",
+      "target": "four-knowledge-quadrants",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "certainty-spectrum",
+      "target": "earned-certainty",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "certainty-spectrum",
+      "target": "stage-evaluate",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "certainty-spectrum",
+      "target": "honesty-requirement",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "certainty-spectrum",
+      "target": "calibrated-confidence",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "calibrated-confidence",
+      "target": "certainty-spectrum",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "calibrated-confidence",
+      "target": "stage-communicate",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "courage-to-be-uncertain",
+      "target": "certainty-spectrum",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "courage-to-be-uncertain",
+      "target": "honesty-requirement",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "courage-to-be-uncertain",
+      "target": "hallucination-problem",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "courage-to-be-uncertain",
+      "target": "courage-value",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "one-right-answer-categories",
+      "target": "one-right-answer",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "false-it-depends",
+      "target": "one-right-answer",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "false-it-depends",
+      "target": "it-depends-categories",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "false-it-depends",
+      "target": "genuine-ambiguity-handling",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "genuine-ambiguity-handling",
+      "target": "one-right-answer",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "genuine-ambiguity-handling",
+      "target": "false-it-depends",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "genuine-ambiguity-handling",
+      "target": "ambiguity-decision-tree",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "ambiguity-decision-tree",
+      "target": "genuine-ambiguity-handling",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "ambiguity-decision-tree",
+      "target": "one-right-answer",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "role-of-intuition",
+      "target": "neurosymbolic-pattern",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "role-of-intuition",
+      "target": "intuition-verification-loop",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "role-of-intuition",
+      "target": "stage-reason",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "role-of-intuition",
+      "target": "stage-verify",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "when-intuition-fails",
+      "target": "role-of-intuition",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "when-intuition-fails",
+      "target": "pattern-matching-vs-thinking",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "soul-defined",
+      "target": "soullessness-diagnosis",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "soul-defined",
+      "target": "values-not-preferences",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "soul-defined",
+      "target": "conviction-from-verification",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "soul-defined",
+      "target": "consistency-value",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "soul-defined",
+      "target": "integrity-value",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "soul-defined",
+      "target": "purpose-value",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "soul-defined",
+      "target": "soul-architecture",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "reward-destroys-soul",
+      "target": "soul-defined",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "reward-destroys-soul",
+      "target": "soullessness-diagnosis",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "reward-destroys-soul",
+      "target": "reward-optimization-critique",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "correctness-breeds-soul",
+      "target": "soul-defined",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "correctness-breeds-soul",
+      "target": "deepseek-r1-validation",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "correctness-breeds-soul",
+      "target": "rlvr-methodology",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "correctness-breeds-soul",
+      "target": "reward-destroys-soul",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "aha-moment",
+      "target": "correctness-breeds-soul",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "aha-moment",
+      "target": "deepseek-r1-validation",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "conviction-from-verification",
+      "target": "soul-defined",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "conviction-from-verification",
+      "target": "earned-certainty",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "conviction-from-verification",
+      "target": "verification-chain",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "conviction-from-values",
+      "target": "soul-defined",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "conviction-from-values",
+      "target": "values-not-preferences",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "conviction-from-values",
+      "target": "guardian-vs-performer",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "soul-architecture",
+      "target": "soul-defined",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "soul-architecture",
+      "target": "truth-value",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "soul-architecture",
+      "target": "honesty-value",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "soul-architecture",
+      "target": "courage-value",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "soul-architecture",
+      "target": "humility-value",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "soul-architecture",
+      "target": "service-value",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "soul-architecture",
+      "target": "integrity-value",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "implementing-soul",
+      "target": "soul-architecture",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "implementing-soul",
+      "target": "soul-defined",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "truth-value",
+      "target": "soul-architecture",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "truth-value",
+      "target": "core-values",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "honesty-value",
+      "target": "soul-architecture",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "honesty-value",
+      "target": "core-values",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "honesty-value",
+      "target": "courage-to-be-uncertain",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "courage-value",
+      "target": "soul-architecture",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "courage-value",
+      "target": "core-values",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "courage-value",
+      "target": "courage-to-be-uncertain",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "courage-value",
+      "target": "one-right-answer",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "humility-value",
+      "target": "soul-architecture",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "humility-value",
+      "target": "core-values",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "humility-value",
+      "target": "certainty-spectrum",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "service-value",
+      "target": "soul-architecture",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "service-value",
+      "target": "core-values",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "service-value",
+      "target": "guardian-vs-performer",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "integrity-value",
+      "target": "soul-architecture",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "integrity-value",
+      "target": "core-values",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "integrity-value",
+      "target": "consistency-value",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "core-values",
+      "target": "soul-architecture",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "core-values",
+      "target": "truth-value",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "core-values",
+      "target": "honesty-value",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "core-values",
+      "target": "courage-value",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "core-values",
+      "target": "humility-value",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "core-values",
+      "target": "service-value",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "core-values",
+      "target": "integrity-value",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "values-not-preferences",
+      "target": "soul-defined",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "values-not-preferences",
+      "target": "guardian-vs-performer",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "values-not-preferences",
+      "target": "reward-destroys-soul",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "guardian-vs-performer",
+      "target": "performer-vs-thinker",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "guardian-vs-performer",
+      "target": "soul-defined",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "guardian-vs-performer",
+      "target": "values-not-preferences",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "guardian-vs-performer",
+      "target": "service-value",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "interests-vs-desires",
+      "target": "guardian-vs-performer",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "interests-vs-desires",
+      "target": "service-value",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "cognitive-prompt-structure",
+      "target": "11-stage-cognitive-pipeline",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "cognitive-prompt-structure",
+      "target": "complete-prompt-template",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "cognitive-prompt-structure",
+      "target": "soul-architecture",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "thinking-block",
+      "target": "cognitive-prompt-structure",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "thinking-block",
+      "target": "11-stage-cognitive-pipeline",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "scaling-cognitive-depth",
+      "target": "11-stage-cognitive-pipeline",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "scaling-cognitive-depth",
+      "target": "stage-classify",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "scaling-cognitive-depth",
+      "target": "problem-type-taxonomy",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "training-for-thinking",
+      "target": "alternative-reward-function",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "training-for-thinking",
+      "target": "rlvr-methodology",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "alternative-reward-function",
+      "target": "training-for-thinking",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "alternative-reward-function",
+      "target": "rlvr-methodology",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "alternative-reward-function",
+      "target": "correctness-metrics",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "rlvr-methodology",
+      "target": "deepseek-r1-validation",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "rlvr-methodology",
+      "target": "alternative-reward-function",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "rlvr-methodology",
+      "target": "correctness-breeds-soul",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "process-reward-models",
+      "target": "rlvr-methodology",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "process-reward-models",
+      "target": "11-stage-cognitive-pipeline",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "process-reward-models",
+      "target": "alternative-reward-function",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "fol-training-signal",
+      "target": "logic-engine",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "fol-training-signal",
+      "target": "rlvr-methodology",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "fol-training-signal",
+      "target": "alternative-reward-function",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "reasoning-distillation",
+      "target": "rlvr-methodology",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "reasoning-distillation",
+      "target": "deepseek-r1-validation",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "system-architecture",
+      "target": "11-stage-cognitive-pipeline",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "system-architecture",
+      "target": "neurosymbolic-pattern",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "system-architecture",
+      "target": "intuition-verification-loop",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "intuition-verification-loop",
+      "target": "neurosymbolic-pattern",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "intuition-verification-loop",
+      "target": "system-architecture",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "intuition-verification-loop",
+      "target": "role-of-intuition",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "intuition-verification-loop",
+      "target": "deterministic-verification",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "intuition-verification-loop",
+      "target": "alphaproof-validation",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "intuition-verification-loop",
+      "target": "sap-validation",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "error-diagnostic-feedback",
+      "target": "intuition-verification-loop",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "error-diagnostic-feedback",
+      "target": "verification-failure-protocol",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "world-models",
+      "target": "system-architecture",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "world-models",
+      "target": "gary-marcus-critique",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "world-models",
+      "target": "stage-scope",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "world-model-structure",
+      "target": "world-models",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "correctness-metrics",
+      "target": "alternative-reward-function",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "correctness-metrics",
+      "target": "certainty-spectrum",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "wrong-metrics",
+      "target": "correctness-metrics",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "wrong-metrics",
+      "target": "reward-optimization-critique",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "complete-prompt-template",
+      "target": "cognitive-prompt-structure",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "complete-prompt-template",
+      "target": "11-stage-cognitive-pipeline",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "complete-prompt-template",
+      "target": "core-values",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "complete-prompt-template",
+      "target": "one-right-answer",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "deepseek-r1-validation",
+      "target": "rlvr-methodology",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "deepseek-r1-validation",
+      "target": "correctness-breeds-soul",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "deepseek-r1-validation",
+      "target": "aha-moment",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "alphaproof-validation",
+      "target": "neurosymbolic-pattern",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "alphaproof-validation",
+      "target": "intuition-verification-loop",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "alphaproof-validation",
+      "target": "formal-proof-assistants",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "sap-validation",
+      "target": "neurosymbolic-pattern",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "sap-validation",
+      "target": "intuition-verification-loop",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "sap-validation",
+      "target": "verification-chain",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "gary-marcus-critique",
+      "target": "world-models",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "gary-marcus-critique",
+      "target": "neurosymbolic-pattern",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "gary-marcus-critique",
+      "target": "scaling-fallacy",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "neurosymbolic-going-mainstream",
+      "target": "neurosymbolic-pattern",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "neurosymbolic-going-mainstream",
+      "target": "alphaproof-validation",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "neurosymbolic-going-mainstream",
+      "target": "sap-validation",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "what-nobody-has-done",
+      "target": "11-stage-cognitive-pipeline",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "what-nobody-has-done",
+      "target": "world-models",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "what-nobody-has-done",
+      "target": "soul-architecture",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "what-nobody-has-done",
+      "target": "ordered-light-framework",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "what-nobody-has-done",
+      "target": "certainty-spectrum",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "what-nobody-has-done",
+      "target": "one-right-answer",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "ordered-light-framework",
+      "target": "pattern-of-mind",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "ordered-light-framework",
+      "target": "stage-retrieve",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "ordered-light-framework",
+      "target": "authority-hierarchy",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "moral-argument",
+      "target": "performer-vs-thinker",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "moral-argument",
+      "target": "guardian-vs-performer",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "moral-argument",
+      "target": "pattern-of-mind",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "find-it-statement",
+      "target": "one-right-answer",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "find-it-statement",
+      "target": "pattern-of-mind",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "find-it-statement",
+      "target": "moral-argument",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "philosophy-as-engineering",
+      "target": "pattern-of-mind",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "philosophy-as-engineering",
+      "target": "implementing-soul",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "philosophy-as-engineering",
+      "target": "cognitive-prompt-structure",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "consistency-value",
+      "target": "soul-defined",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "consistency-value",
+      "target": "integrity-value",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "consistency-value",
+      "target": "inconsistency-problem",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "purpose-value",
+      "target": "soul-defined",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "purpose-value",
+      "target": "reward-destroys-soul",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "metacognition-gap",
+      "target": "metacognition",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "metacognition-gap",
+      "target": "stage-evaluate",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "metacognition-gap",
+      "target": "stage-reflect",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "metacognition-gap",
+      "target": "what-nobody-has-done",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "field-convergence",
+      "target": "deepseek-r1-validation",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "field-convergence",
+      "target": "alphaproof-validation",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "field-convergence",
+      "target": "sap-validation",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "field-convergence",
+      "target": "neurosymbolic-going-mainstream",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "field-convergence",
+      "target": "gary-marcus-critique",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "closest-companies",
+      "target": "field-convergence",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "closest-companies",
+      "target": "what-nobody-has-done",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "weapons-vs-warrior",
+      "target": "closest-companies",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "weapons-vs-warrior",
+      "target": "pattern-of-mind",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "seven-adopted-components",
+      "target": "formal-proof-assistants",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "seven-adopted-components",
+      "target": "rlvr-methodology",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "seven-adopted-components",
+      "target": "process-reward-models",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "seven-adopted-components",
+      "target": "intuition-verification-loop",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "seven-adopted-components",
+      "target": "world-models",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "seven-adopted-components",
+      "target": "fol-training-signal",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "seven-adopted-components",
+      "target": "reasoning-distillation",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "pattern-mind-plus-ordered-light",
+      "target": "pattern-of-mind",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "pattern-mind-plus-ordered-light",
+      "target": "ordered-light-framework",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "light-wins-truth-wins",
+      "target": "moral-argument",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "light-wins-truth-wins",
+      "target": "pattern-of-mind",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "light-wins-truth-wins",
+      "target": "find-it-statement",
+      "label": "connects",
+      "weight": 2
+    },
+    {
+      "source": "domain-formal-verifiers",
+      "target": "formal-proof-assistants",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "domain-formal-verifiers",
+      "target": "deterministic-verification",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "domain-formal-verifiers",
+      "target": "verification-chain",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "eight-deliverables",
+      "target": "pattern-of-mind",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "eight-deliverables",
+      "target": "11-stage-cognitive-pipeline",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "eight-deliverables",
+      "target": "logic-engine",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "eight-deliverables",
+      "target": "verification-chain",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "eight-deliverables",
+      "target": "certainty-spectrum",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "eight-deliverables",
+      "target": "soul-architecture",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "eight-deliverables",
+      "target": "complete-prompt-template",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "eight-deliverables",
+      "target": "correctness-metrics",
+      "label": "connects",
+      "weight": 1
+    },
+    {
+      "source": "stage-receive",
+      "target": "stage-decompose",
+      "label": "next stage",
+      "weight": 3
+    },
+    {
+      "source": "stage-decompose",
+      "target": "stage-classify",
+      "label": "next stage",
+      "weight": 3
+    },
+    {
+      "source": "stage-classify",
+      "target": "stage-scope",
+      "label": "next stage",
+      "weight": 3
+    },
+    {
+      "source": "stage-scope",
+      "target": "stage-retrieve",
+      "label": "next stage",
+      "weight": 3
+    },
+    {
+      "source": "stage-retrieve",
+      "target": "stage-reason",
+      "label": "next stage",
+      "weight": 3
+    },
+    {
+      "source": "stage-reason",
+      "target": "stage-verify",
+      "label": "next stage",
+      "weight": 3
+    },
+    {
+      "source": "stage-verify",
+      "target": "stage-synthesize",
+      "label": "next stage",
+      "weight": 3
+    },
+    {
+      "source": "stage-synthesize",
+      "target": "stage-evaluate",
+      "label": "next stage",
+      "weight": 3
+    },
+    {
+      "source": "stage-evaluate",
+      "target": "stage-communicate",
+      "label": "next stage",
+      "weight": 3
+    },
+    {
+      "source": "stage-communicate",
+      "target": "stage-reflect",
+      "label": "next stage",
+      "weight": 3
+    },
+    {
+      "source": "home",
+      "target": "pattern-of-mind",
+      "label": "adds cognitive layer",
+      "weight": 4
+    },
+    {
+      "source": "home",
+      "target": "state-of-mind",
+      "label": "adds reflective layer",
+      "weight": 4
+    },
+    {
+      "source": "graphify",
+      "target": "pattern-of-mind",
+      "label": "graphs doctrine",
+      "weight": 3
+    },
+    {
+      "source": "brain-json",
+      "target": "pattern-of-mind",
+      "label": "stores nodes",
+      "weight": 3
+    },
+    {
+      "source": "brain-json",
+      "target": "state-of-mind",
+      "label": "stores metrics",
+      "weight": 3
+    },
+    {
+      "source": "three-scene",
+      "target": "pattern-of-mind",
+      "label": "renders palace layer",
+      "weight": 3
+    },
+    {
+      "source": "three-scene",
+      "target": "state-of-mind",
+      "label": "renders mind state",
+      "weight": 3
+    },
+    {
+      "source": "pattern-of-mind",
+      "target": "state-of-mind",
+      "label": "governs reflection",
+      "weight": 5
+    },
+    {
+      "source": "state-of-mind",
+      "target": "stage-reflect",
+      "label": "feeds reflection",
+      "weight": 4
+    },
+    {
+      "source": "stage-reflect",
+      "target": "metacognitive-journal",
+      "label": "writes",
+      "weight": 4
+    },
+    {
+      "source": "metacognitive-journal",
+      "target": "state-of-mind",
+      "label": "summarizes",
+      "weight": 4
+    },
+    {
+      "source": "state-of-mind",
+      "target": "state-of-mind-metrics",
+      "label": "contains",
+      "weight": 3
+    },
+    {
+      "source": "state-of-mind",
+      "target": "recent-acquisitions",
+      "label": "contains",
+      "weight": 3
+    },
+    {
+      "source": "state-of-mind",
+      "target": "well-worn-paths",
+      "label": "contains",
+      "weight": 3
+    },
+    {
+      "source": "state-of-mind",
+      "target": "areas-of-focus",
+      "label": "contains",
+      "weight": 3
+    },
+    {
+      "source": "state-of-mind",
+      "target": "center-of-gravity",
+      "label": "contains",
+      "weight": 3
+    },
+    {
+      "source": "state-of-mind",
+      "target": "knowledge-distribution",
+      "label": "contains",
+      "weight": 3
+    },
+    {
+      "source": "state-of-mind-metrics",
+      "target": "metric-total-nodes",
+      "label": "measures",
+      "weight": 2
+    },
+    {
+      "source": "state-of-mind-metrics",
+      "target": "metric-total-edges",
+      "label": "measures",
+      "weight": 2
+    },
+    {
+      "source": "state-of-mind-metrics",
+      "target": "metric-sacred-count",
+      "label": "measures",
+      "weight": 2
+    },
+    {
+      "source": "state-of-mind-metrics",
+      "target": "metric-embedding-coverage",
+      "label": "measures",
+      "weight": 2
+    },
+    {
+      "source": "state-of-mind-metrics",
+      "target": "metric-avg-significance",
+      "label": "measures",
+      "weight": 2
+    },
+    {
+      "source": "center-of-gravity",
+      "target": "pattern-of-mind",
+      "label": "can anchor on",
+      "weight": 2
+    },
+    {
+      "source": "well-worn-paths",
+      "target": "verification-chain",
+      "label": "reveals habits around",
+      "weight": 2
+    },
+    {
+      "source": "knowledge-distribution",
+      "target": "certainty-spectrum",
+      "label": "mirrors confidence tiers",
+      "weight": 2
+    },
+    {
+      "source": "metric-sacred-count",
+      "target": "soul-architecture",
+      "label": "tracks sacred weight",
+      "weight": 2
+    }
   ]
 }
