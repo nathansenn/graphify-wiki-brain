@@ -1,0 +1,27 @@
+{
+  "id": "brain-design-public-core",
+  "label": "Public Brain Design Core",
+  "sourceRole": "The brain is an index over sources, not the source of truth.",
+  "contracts": [
+    "SourceRef",
+    "BrainNode",
+    "RelationEdge",
+    "GoalSpec",
+    "PipelineTrace",
+    "GuardianFinding"
+  ],
+  "rankingSignals": [
+    "intent fit",
+    "source authority",
+    "relationship fit",
+    "evidence strength",
+    "freshness",
+    "successful usage",
+    "centrality",
+    "access fit",
+    "corruption risk",
+    "staleness penalty"
+  ],
+  "relationRule": "Multiple edges between the same two nodes are allowed when each edge has a different relationship reason and score.",
+  "maintenanceRule": "Reanimate from source registry, compare with current graph, quarantine bad paths, preserve audit history, then regenerate exports."
+}

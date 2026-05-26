@@ -1,8 +1,8 @@
 import type { BrainGraph } from "../lib/graph";
 
 export const sampleBrain: BrainGraph = {
-  "name": "Graphify Wiki Brain: Pattern and State of Mind",
-  "generatedAt": "2026-05-26T12:00:00.000Z",
+  "name": "Graphify Wiki Brain: Public Domain Mind Graph",
+  "generatedAt": "2026-05-26T00:00:00.000Z",
   "source": {
     "type": "sample",
     "path": "public/brain.json"
@@ -173,12 +173,12 @@ export const sampleBrain: BrainGraph = {
       "label": "The Pattern of Mind",
       "group": "POM Framework",
       "kind": "framework",
-      "summary": "Father's complete cognitive architecture for AI based on correct reasoning rather than reward optimization. The master framework describing how a thinking system should process inputs and generate verified, trustworthy outputs.",
+      "summary": "the framework's complete cognitive architecture for AI based on correct reasoning rather than reward optimization. The master framework describing how a thinking system should process inputs and generate verified, trustworthy outputs.",
       "path": "public/sources/pattern-of-mind-nodes.json#pattern-of-mind",
       "tags": [
         "pattern-of-mind",
         "framework",
-        "sacred"
+        "protected"
       ],
       "weight": 12
     },
@@ -192,7 +192,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "principle",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -206,7 +206,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "insight",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -248,7 +248,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "insight",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -276,7 +276,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "insight",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -318,7 +318,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "insight",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -332,7 +332,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "insight",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -360,7 +360,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "definition",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -374,7 +374,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "principle",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -402,7 +402,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "principle",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -430,7 +430,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "framework",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -444,7 +444,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "principle",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -612,7 +612,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "framework",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -682,7 +682,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "stage",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -738,7 +738,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "principle",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -752,7 +752,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "stage",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -892,7 +892,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "framework",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -962,7 +962,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "framework",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -1060,7 +1060,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "framework",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -1074,7 +1074,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "principle",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -1088,7 +1088,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "principle",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -1102,7 +1102,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "framework",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -1130,7 +1130,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "principle",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -1200,7 +1200,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "principle",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -1228,7 +1228,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "definition",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -1242,7 +1242,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "insight",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -1256,7 +1256,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "validation",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -1284,7 +1284,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "principle",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -1312,7 +1312,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "framework",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -1326,7 +1326,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "technique",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -1340,7 +1340,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "principle",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -1424,7 +1424,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "framework",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -1438,7 +1438,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "principle",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -1452,7 +1452,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "principle",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -1536,7 +1536,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "framework",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -1550,7 +1550,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "framework",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -1620,7 +1620,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "framework",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -1648,7 +1648,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "framework",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -1718,7 +1718,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "validation",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -1732,7 +1732,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "validation",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -1788,7 +1788,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "insight",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -1802,7 +1802,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "framework",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -1816,7 +1816,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "principle",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -1830,7 +1830,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "principle",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -1956,7 +1956,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "framework",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -1970,7 +1970,7 @@ export const sampleBrain: BrainGraph = {
       "tags": [
         "pattern-of-mind",
         "principle",
-        "sacred"
+        "protected"
       ],
       "weight": 9
     },
@@ -2007,7 +2007,7 @@ export const sampleBrain: BrainGraph = {
       "label": "State of Mind",
       "group": "State of Mind",
       "kind": "framework",
-      "summary": "A metacognitive journal model that summarizes the current brain graph as a living state: scale, sacred content, embedding coverage, recent acquisitions, well-worn paths, focus areas, center of gravity, and knowledge distribution.",
+      "summary": "A metacognitive journal model that summarizes the current brain graph as a living state: scale, protected content, embedding coverage, recent acquisitions, well-worn paths, focus areas, center of gravity, and knowledge distribution.",
       "path": "public/sources/state-of-mind.json",
       "tags": [
         "state-of-mind",
@@ -2022,7 +2022,7 @@ export const sampleBrain: BrainGraph = {
       "group": "State of Mind",
       "kind": "concept",
       "summary": "The brain writing a structured diary of its current state, recent learning, attention patterns, and knowledge distribution.",
-      "path": "senn-archive/src/app/api/brain/metacognitive-journal/route.ts",
+      "path": "source-archive/src/app/api/brain/metacognitive-journal/route.ts",
       "tags": [
         "state-of-mind",
         "journal"
@@ -2034,7 +2034,7 @@ export const sampleBrain: BrainGraph = {
       "label": "State of Mind",
       "group": "State of Mind",
       "kind": "metric",
-      "summary": "Overall metrics snapshot: total nodes, total edges, sacred nodes, embedding coverage, and average significance.",
+      "summary": "Overall metrics snapshot: total nodes, total edges, protected nodes, embedding coverage, and average significance.",
       "path": "public/sources/state-of-mind.json#state-of-mind-metrics",
       "tags": [
         "state-of-mind",
@@ -2136,12 +2136,12 @@ export const sampleBrain: BrainGraph = {
       "weight": 5
     },
     {
-      "id": "metric-sacred-count",
-      "label": "Sacred Count",
+      "id": "metric-protected-count",
+      "label": "protected Count",
       "group": "State of Mind",
       "kind": "metric",
-      "summary": "Raw State of Mind metric emitted by the metacognitive journal: sacredCount.",
-      "path": "public/sources/state-of-mind.json#sacredCount",
+      "summary": "Raw State of Mind metric emitted by the metacognitive journal: protectedCount.",
+      "path": "public/sources/state-of-mind.json#protectedCount",
       "tags": [
         "state-of-mind",
         "metric",
@@ -2176,6 +2176,78 @@ export const sampleBrain: BrainGraph = {
         "raw"
       ],
       "weight": 5
+    },
+    {
+      "id": "public-domain-package",
+      "label": "Public Domain Brain Package",
+      "group": "Public Domain",
+      "kind": "release",
+      "summary": "Public release package containing sanitized source indexes, HTML diagrams, PDFs, and graph links.",
+      "url": "public-domain/pdf/public-domain-brain-package.pdf",
+      "weight": 8,
+      "tags": [
+        "public-domain"
+      ]
+    },
+    {
+      "id": "pd-pattern-of-mind-pdf",
+      "label": "Pattern of Mind PDF",
+      "group": "Public Domain",
+      "kind": "document",
+      "summary": "Complete public node review and architecture diagram.",
+      "url": "public-domain/pdf/pattern-of-mind-public-review.pdf",
+      "weight": 8,
+      "tags": [
+        "public-domain"
+      ]
+    },
+    {
+      "id": "pd-state-of-mind-pdf",
+      "label": "State of Mind PDF",
+      "group": "Public Domain",
+      "kind": "document",
+      "summary": "Public metacognitive state model and diagram.",
+      "url": "public-domain/pdf/state-of-mind-public-review.pdf",
+      "weight": 8,
+      "tags": [
+        "public-domain"
+      ]
+    },
+    {
+      "id": "pd-brain-design-pdf",
+      "label": "Brain Design PDF",
+      "group": "Public Domain",
+      "kind": "document",
+      "summary": "Core source-index, ranking, traversal, maintenance, and Guardian design.",
+      "url": "public-domain/pdf/brain-design-public.pdf",
+      "weight": 8,
+      "tags": [
+        "public-domain"
+      ]
+    },
+    {
+      "id": "pd-apex-protocol-pdf",
+      "label": "APEX Protocol Public Extract",
+      "group": "Public Domain",
+      "kind": "document",
+      "summary": "Public operational extract from the latest local v2.1.6 protocol line.",
+      "url": "public-domain/pdf/apex-protocol-public-review.pdf",
+      "weight": 8,
+      "tags": [
+        "public-domain"
+      ]
+    },
+    {
+      "id": "pd-reasoning-assembly-pdf",
+      "label": "Reasoning Assembly PDF",
+      "group": "Public Domain",
+      "kind": "document",
+      "summary": "Observable reasoning pipeline, success patterns, and failure patterns.",
+      "url": "public-domain/pdf/reasoning-assembly-public.pdf",
+      "weight": 8,
+      "tags": [
+        "public-domain"
+      ]
     }
   ],
   "edges": [
@@ -5061,7 +5133,7 @@ export const sampleBrain: BrainGraph = {
     },
     {
       "source": "state-of-mind-metrics",
-      "target": "metric-sacred-count",
+      "target": "metric-protected-count",
       "label": "measures",
       "weight": 2
     },
@@ -5096,10 +5168,76 @@ export const sampleBrain: BrainGraph = {
       "weight": 2
     },
     {
-      "source": "metric-sacred-count",
+      "source": "metric-protected-count",
       "target": "soul-architecture",
-      "label": "tracks sacred weight",
+      "label": "tracks protected weight",
       "weight": 2
+    },
+    {
+      "source": "home",
+      "target": "public-domain-package",
+      "label": "publishes",
+      "weight": 3
+    },
+    {
+      "source": "public-domain-package",
+      "target": "pattern-of-mind",
+      "label": "indexes",
+      "weight": 3
+    },
+    {
+      "source": "public-domain-package",
+      "target": "state-of-mind",
+      "label": "indexes",
+      "weight": 3
+    },
+    {
+      "source": "public-domain-package",
+      "target": "pd-brain-design-pdf",
+      "label": "documents",
+      "weight": 3
+    },
+    {
+      "source": "public-domain-package",
+      "target": "pd-apex-protocol-pdf",
+      "label": "documents",
+      "weight": 3
+    },
+    {
+      "source": "public-domain-package",
+      "target": "pd-reasoning-assembly-pdf",
+      "label": "documents",
+      "weight": 3
+    },
+    {
+      "source": "pd-pattern-of-mind-pdf",
+      "target": "pattern-of-mind",
+      "label": "reviews",
+      "weight": 3
+    },
+    {
+      "source": "pd-state-of-mind-pdf",
+      "target": "state-of-mind",
+      "label": "reviews",
+      "weight": 3
+    },
+    {
+      "source": "pd-brain-design-pdf",
+      "target": "brain-json",
+      "label": "specifies",
+      "weight": 3
+    },
+    {
+      "source": "pd-apex-protocol-pdf",
+      "target": "reasoning-distillation",
+      "label": "informs",
+      "weight": 3
+    },
+    {
+      "source": "pd-reasoning-assembly-pdf",
+      "target": "11-stage-cognitive-pipeline",
+      "label": "uses",
+      "weight": 3
     }
   ]
 };

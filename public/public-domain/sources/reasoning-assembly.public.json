@@ -1,0 +1,32 @@
+{
+  "id": "public-reasoning-assembly",
+  "label": "Observable Reasoning and Assembly Chain",
+  "note": "This package records observable path choices and outcomes, not hidden internal reasoning.",
+  "pipeline": [
+    "Receive",
+    "Decompose",
+    "Classify",
+    "Scope",
+    "Retrieve",
+    "Reason",
+    "Verify",
+    "Synthesize",
+    "Evaluate",
+    "Communicate",
+    "Reflect"
+  ],
+  "workedPatterns": [
+    "Start from public graph data before archive material.",
+    "Use stable ids for every node and relation.",
+    "Prefer public summaries over raw restricted transcripts.",
+    "Generate PDFs from local HTML so diagrams and text remain reproducible.",
+    "Run non-public-reference scans before publishing."
+  ],
+  "failedPatternsToAvoid": [
+    "Copying local absolute paths into public docs.",
+    "Importing identity canon into a public technical graph.",
+    "Flattening all relations into one generic edge.",
+    "Treating display strength as traversal truth.",
+    "Publishing non-public operational commands or credentials."
+  ]
+}

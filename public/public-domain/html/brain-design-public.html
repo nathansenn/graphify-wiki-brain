@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Brain Design Public Core</title>
+<style>
+  @page { size: 11in 8.5in; margin: 0.42in; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Inter, Arial, sans-serif; color: #e9f4f8; background: #050a10; }
+  main { min-height: 100vh; padding: 38px 44px; background: radial-gradient(circle at 50% 32%, #14273a 0, #07111a 48%, #050a10 100%); }
+  h1 { margin: 0; font-size: 42px; line-height: 1.05; letter-spacing: 0; }
+  h2 { font-size: 24px; margin: 28px 0 12px; }
+  p, li { font-size: 15px; line-height: 1.45; color: #c9dce5; }
+  .subtitle { margin: 10px 0 24px; font-size: 18px; color: #b6d1dd; font-weight: 700; }
+  .grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 22px; align-items: start; }
+  .panel { border: 2px solid #4de4ff; border-radius: 18px; padding: 20px; background: rgba(11, 25, 38, .82); }
+  .panel.gold { border-color: #ffc24d; }
+  .panel.lime { border-color: #a8ff60; }
+  .panel.rose { border-color: #ff6f9f; }
+  table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 12px; }
+  th, td { border-bottom: 1px solid rgba(255,255,255,.14); text-align: left; vertical-align: top; padding: 7px 8px; color: #c9dce5; }
+  th { color: #fff; font-size: 12px; background: rgba(255,255,255,.06); }
+  .small { font-size: 12px; color: #9eb7c2; }
+  .badge { display: inline-block; padding: 5px 8px; border-radius: 999px; background: #112235; border: 1px solid #405a73; margin: 3px 4px 3px 0; font-size: 12px; }
+  svg { width: 100%; height: auto; display: block; }
+  .break { page-break-before: always; }
+</style>
+</head>
+<body>
+<main>
+<h1>Brain Design Public Core</h1>
+<div class="subtitle">Source index, ranking, traversal, reference points, reanimation, and Guardian review.</div>
+<div class="grid"><div class="panel"><svg viewBox="0 0 760 520" role="img" aria-label="Brain design source index">
+    <rect x="30" y="95" width="190" height="300" rx="18" fill="#0d1a27" stroke="#61e8ff" stroke-width="3"/>
+    <text x="125" y="135" text-anchor="middle" fill="#fff" font-size="22" font-weight="800">Sources</text>
+    <text x="70" y="185" fill="#c9dce5" font-size="15" font-weight="700">paths</text>
+    <text x="70" y="220" fill="#c9dce5" font-size="15" font-weight="700">commits</text>
+    <text x="70" y="255" fill="#c9dce5" font-size="15" font-weight="700">hashes</text>
+    <text x="70" y="290" fill="#c9dce5" font-size="15" font-weight="700">review status</text>
+    <circle cx="390" cy="245" r="135" fill="#121726" stroke="#fff" stroke-width="4"/>
+    <circle cx="390" cy="245" r="88" fill="#07111a" stroke="#ffc24d" stroke-width="3"/>
+    <text x="390" y="237" text-anchor="middle" fill="#fff" font-size="25" font-weight="800">Core Graph</text>
+    <text x="390" y="270" text-anchor="middle" fill="#c9dce5" font-size="15" font-weight="700">nodes + typed edges</text>
+    <rect x="555" y="55" width="175" height="120" rx="16" fill="#121726" stroke="#ffc24d" stroke-width="3"/>
+    <text x="642" y="102" text-anchor="middle" fill="#fff" font-size="20" font-weight="800">Ranking</text>
+    <rect x="555" y="205" width="175" height="120" rx="16" fill="#121726" stroke="#a8ff60" stroke-width="3"/>
+    <text x="642" y="252" text-anchor="middle" fill="#fff" font-size="20" font-weight="800">Traversal</text>
+    <rect x="555" y="355" width="175" height="120" rx="16" fill="#121726" stroke="#ff6f9f" stroke-width="3"/>
+    <text x="642" y="402" text-anchor="middle" fill="#fff" font-size="20" font-weight="800">Guardian</text>
+    <path d="M220 245 H255" stroke="#61e8ff" stroke-width="5" marker-end="url(#a)"/>
+    <path d="M505 180 L555 115" stroke="#ffc24d" stroke-width="5"/>
+    <path d="M525 245 H555" stroke="#a8ff60" stroke-width="5"/>
+    <path d="M505 310 L555 415" stroke="#ff6f9f" stroke-width="5"/>
+    <defs><marker id="a" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M2 2 L10 6 L2 10Z" fill="#61e8ff"/></marker></defs>
+  </svg></div><div class="panel gold"><h2>Contracts</h2><ul><li>SourceRef</li><li>BrainNode</li><li>RelationEdge</li><li>GoalSpec</li><li>PipelineTrace</li><li>GuardianFinding</li></ul><h2>Ranking Signals</h2><ul><li>intent fit</li><li>source authority</li><li>relationship fit</li><li>evidence strength</li><li>freshness</li><li>successful usage</li><li>centrality</li><li>access fit</li><li>corruption risk</li><li>staleness penalty</li></ul></div></div><h2>Rules</h2><p>Multiple edges between the same two nodes are allowed when each edge has a different relationship reason and score.</p><p>Reanimate from source registry, compare with current graph, quarantine bad paths, preserve audit history, then regenerate exports.</p>
+</main>
+</body>
+</html>

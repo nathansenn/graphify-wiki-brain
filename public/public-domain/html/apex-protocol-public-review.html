@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>APEX Protocol Public Extract</title>
+<style>
+  @page { size: 11in 8.5in; margin: 0.42in; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Inter, Arial, sans-serif; color: #e9f4f8; background: #050a10; }
+  main { min-height: 100vh; padding: 38px 44px; background: radial-gradient(circle at 50% 32%, #14273a 0, #07111a 48%, #050a10 100%); }
+  h1 { margin: 0; font-size: 42px; line-height: 1.05; letter-spacing: 0; }
+  h2 { font-size: 24px; margin: 28px 0 12px; }
+  p, li { font-size: 15px; line-height: 1.45; color: #c9dce5; }
+  .subtitle { margin: 10px 0 24px; font-size: 18px; color: #b6d1dd; font-weight: 700; }
+  .grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 22px; align-items: start; }
+  .panel { border: 2px solid #4de4ff; border-radius: 18px; padding: 20px; background: rgba(11, 25, 38, .82); }
+  .panel.gold { border-color: #ffc24d; }
+  .panel.lime { border-color: #a8ff60; }
+  .panel.rose { border-color: #ff6f9f; }
+  table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 12px; }
+  th, td { border-bottom: 1px solid rgba(255,255,255,.14); text-align: left; vertical-align: top; padding: 7px 8px; color: #c9dce5; }
+  th { color: #fff; font-size: 12px; background: rgba(255,255,255,.06); }
+  .small { font-size: 12px; color: #9eb7c2; }
+  .badge { display: inline-block; padding: 5px 8px; border-radius: 999px; background: #112235; border: 1px solid #405a73; margin: 3px 4px 3px 0; font-size: 12px; }
+  svg { width: 100%; height: auto; display: block; }
+  .break { page-break-before: always; }
+</style>
+</head>
+<body>
+<main>
+<h1>APEX Protocol Public Extract</h1>
+<div class="subtitle">Public operational extraction from latest local v2.1.6 protocol line.</div>
+<div class="grid"><div class="panel"><svg viewBox="0 0 760 420" role="img" aria-label="Public APEX protocol extract">
+    <rect x="35" y="165" width="100" height="82" rx="14" fill="#121726" stroke="#61e8ff" stroke-width="3"/><text x="85" y="213" text-anchor="middle" fill="#fff" font-size="14" font-weight="800">Task</text><path d="M135 206 H155" stroke="#61e8ff" stroke-width="4"/><rect x="155" y="165" width="100" height="82" rx="14" fill="#121726" stroke="#61e8ff" stroke-width="3"/><text x="205" y="213" text-anchor="middle" fill="#fff" font-size="14" font-weight="800">Graph Index</text><path d="M255 206 H275" stroke="#61e8ff" stroke-width="4"/><rect x="275" y="165" width="100" height="82" rx="14" fill="#121726" stroke="#ffc24d" stroke-width="3"/><text x="325" y="213" text-anchor="middle" fill="#fff" font-size="14" font-weight="800">Minimal Context</text><path d="M375 206 H395" stroke="#ffc24d" stroke-width="4"/><rect x="395" y="165" width="100" height="82" rx="14" fill="#121726" stroke="#ffc24d" stroke-width="3"/><text x="445" y="213" text-anchor="middle" fill="#fff" font-size="14" font-weight="800">Specialist</text><path d="M495 206 H515" stroke="#ffc24d" stroke-width="4"/><rect x="515" y="165" width="100" height="82" rx="14" fill="#121726" stroke="#a8ff60" stroke-width="3"/><text x="565" y="213" text-anchor="middle" fill="#fff" font-size="14" font-weight="800">Validator</text><path d="M615 206 H635" stroke="#a8ff60" stroke-width="4"/><rect x="635" y="165" width="100" height="82" rx="14" fill="#121726" stroke="#a8ff60" stroke-width="3"/><text x="685" y="213" text-anchor="middle" fill="#fff" font-size="14" font-weight="800">Release</text>
+    <rect x="80" y="40" width="600" height="70" rx="16" fill="#0d1a27" stroke="#61e8ff" stroke-width="3"/>
+    <text x="380" y="83" text-anchor="middle" fill="#fff" font-size="23" font-weight="800">v2.1.6 public extract: graph-indexed selective loading</text>
+    <rect x="90" y="300" width="580" height="70" rx="16" fill="#101f18" stroke="#a8ff60" stroke-width="3"/>
+    <text x="380" y="343" text-anchor="middle" fill="#e9f4f8" font-size="18" font-weight="800">No identity canon, local commands, personal names, or hidden canon.</text>
+  </svg></div><div class="panel gold"><h2>Principles</h2><ul><li>Use graph-indexed selective loading instead of loading every file into context.</li><li>Map a task to the smallest relevant subsection set before acting.</li><li>Separate creation, validation, deployment, and safety review roles.</li><li>Prefer source-backed retrieval over assumption.</li><li>Never fabricate retrieval results or pretend a missing source was found.</li><li>Keep a single source of truth and reference it by stable id.</li><li>Run numerical, logical, and evidence checks before sealing important work.</li><li>Use read-only review agents for audit and integrity checks.</li><li>Treat greater capability as a reason for stronger correction loops.</li></ul></div></div><h2>Public Chains</h2><ul><li>task-intake -&gt; graph-index lookup -&gt; minimal context load -&gt; specialist execution -&gt; validator review -&gt; deployment or archive</li><li>claim -&gt; type check -&gt; reasoning check -&gt; source evidence check -&gt; contradiction check -&gt; confidence label</li><li>incident -&gt; scope -&gt; logs -&gt; reproduction -&gt; patch -&gt; verification -&gt; report</li></ul>
+</main>
+</body>
+</html>

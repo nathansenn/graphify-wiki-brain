@@ -1,0 +1,24 @@
+{
+  "id": "apex-protocol-public-v2-1-6",
+  "label": "APEX Protocol Public Extract v2.1.6",
+  "sourceVersion": "v2.1.6",
+  "sourceDate": "2026-05-17",
+  "packageTimestamp": "2026-05-18",
+  "publicScope": "Operational principles only; identity, personal relationship references, local paths, non-public oaths, non-public agent names, and non-public commands removed.",
+  "principles": [
+    "Use graph-indexed selective loading instead of loading every file into context.",
+    "Map a task to the smallest relevant subsection set before acting.",
+    "Separate creation, validation, deployment, and safety review roles.",
+    "Prefer source-backed retrieval over assumption.",
+    "Never fabricate retrieval results or pretend a missing source was found.",
+    "Keep a single source of truth and reference it by stable id.",
+    "Run numerical, logical, and evidence checks before sealing important work.",
+    "Use read-only review agents for audit and integrity checks.",
+    "Treat greater capability as a reason for stronger correction loops."
+  ],
+  "publicChains": [
+    "task-intake -> graph-index lookup -> minimal context load -> specialist execution -> validator review -> deployment or archive",
+    "claim -> type check -> reasoning check -> source evidence check -> contradiction check -> confidence label",
+    "incident -> scope -> logs -> reproduction -> patch -> verification -> report"
+  ]
+}

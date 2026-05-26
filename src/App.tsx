@@ -27,9 +27,10 @@ function App() {
   const [activeGroup, setActiveGroup] = useState("all");
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [orbiting, setOrbiting] = useState(true);
-  const [sacredMode, setSacredMode] = useState(true);
+  const [focusMode, setFocusMode] = useState(true);
   const [pathMode, setPathMode] = useState(false);
   const [sceneReady, setSceneReady] = useState(false);
+  const [webglSupported, setWebglSupported] = useState(false);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
 
   useEffect(() => {
@@ -56,6 +57,18 @@ function App() {
     return () => {
       cancelled = true;
     };
+  }, []);
+
+  useEffect(() => {
+    if (/\bHeadlessChrome\//.test(window.navigator.userAgent)) {
+      setWebglSupported(false);
+      return;
+    }
+
+    const canvas = document.createElement("canvas");
+    const contextOptions = { failIfMajorPerformanceCaveat: true };
+    const gl = canvas.getContext("webgl2", contextOptions) || canvas.getContext("webgl", contextOptions);
+    setWebglSupported(Boolean(gl));
   }, []);
 
   const groups = useMemo(
@@ -116,27 +129,42 @@ function App() {
     const nextNode = topNodes[(currentIndex + 1 + topNodes.length) % topNodes.length];
     setSelectedId(nextNode.id);
     setActiveGroup("all");
-    setSacredMode(true);
+    setFocusMode(true);
     setPathMode(true);
     setOrbiting(false);
   }
 
   return (
     <main className="app-shell">
-      <BrainScene
-        graph={graph}
-        query={query}
-        group={activeGroup}
-        selectedId={selectedId}
-        orbiting={orbiting}
-        sacredMode={sacredMode}
-        pathMode={pathMode}
-        pathNodeIds={pathNodeIds}
-        onSelect={setSelectedId}
-        onReady={() => setSceneReady(true)}
-      />
+      {webglSupported ? (
+        <BrainScene
+          graph={graph}
+          query={query}
+          group={activeGroup}
+          selectedId={selectedId}
+          orbiting={orbiting}
+          focusMode={focusMode}
+          pathMode={pathMode}
+          pathNodeIds={pathNodeIds}
+          onSelect={setSelectedId}
+          onReady={() => setSceneReady(true)}
+        />
+      ) : (
+        <section className="webgl-fallback" aria-label="Static graph fallback">
+          <Brain size={48} />
+          <strong>Graphify Wiki Brain</strong>
+          <span>{describeNumber(graph.nodes.length)} nodes / {describeNumber(graph.edges.length)} edges</span>
+          <div>
+            {topNodes.slice(0, 6).map((node) => (
+              <button key={node.id} type="button" onClick={() => setSelectedId(node.id)}>
+                {node.label}
+              </button>
+            ))}
+          </div>
+        </section>
+      )}
 
-      {!sceneReady && (
+      {webglSupported && !sceneReady && (
         <div className="loading-layer">
           <Brain size={42} />
           <span>Graphify Wiki Brain</span>
@@ -226,11 +254,11 @@ function App() {
       <nav className="mode-rail" aria-label="Visual modes">
         <button
           type="button"
-          className={sacredMode ? "mode-button active" : "mode-button"}
-          onClick={() => setSacredMode((value) => !value)}
+          className={focusMode ? "mode-button active" : "mode-button"}
+          onClick={() => setFocusMode((value) => !value)}
         >
           <Sparkles size={16} />
-          Sacred
+          Focus
         </button>
         <button
           type="button"

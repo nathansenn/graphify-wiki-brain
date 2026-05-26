@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Reasoning Assembly Public Trace</title>
+<style>
+  @page { size: 11in 8.5in; margin: 0.42in; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Inter, Arial, sans-serif; color: #e9f4f8; background: #050a10; }
+  main { min-height: 100vh; padding: 38px 44px; background: radial-gradient(circle at 50% 32%, #14273a 0, #07111a 48%, #050a10 100%); }
+  h1 { margin: 0; font-size: 42px; line-height: 1.05; letter-spacing: 0; }
+  h2 { font-size: 24px; margin: 28px 0 12px; }
+  p, li { font-size: 15px; line-height: 1.45; color: #c9dce5; }
+  .subtitle { margin: 10px 0 24px; font-size: 18px; color: #b6d1dd; font-weight: 700; }
+  .grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 22px; align-items: start; }
+  .panel { border: 2px solid #4de4ff; border-radius: 18px; padding: 20px; background: rgba(11, 25, 38, .82); }
+  .panel.gold { border-color: #ffc24d; }
+  .panel.lime { border-color: #a8ff60; }
+  .panel.rose { border-color: #ff6f9f; }
+  table { width: 100%; border-collapse: collapse; margin-top: 12px; font-size: 12px; }
+  th, td { border-bottom: 1px solid rgba(255,255,255,.14); text-align: left; vertical-align: top; padding: 7px 8px; color: #c9dce5; }
+  th { color: #fff; font-size: 12px; background: rgba(255,255,255,.06); }
+  .small { font-size: 12px; color: #9eb7c2; }
+  .badge { display: inline-block; padding: 5px 8px; border-radius: 999px; background: #112235; border: 1px solid #405a73; margin: 3px 4px 3px 0; font-size: 12px; }
+  svg { width: 100%; height: auto; display: block; }
+  .break { page-break-before: always; }
+</style>
+</head>
+<body>
+<main>
+<h1>Reasoning Assembly Public Trace</h1>
+<div class="subtitle">Observable path choices, success patterns, and failure patterns without hidden chain-of-thought.</div>
+<div class="grid"><div class="panel"><svg viewBox="0 0 760 480" role="img" aria-label="Observable reasoning assembly">
+    <rect x="35" y="55" width="235" height="330" rx="18" fill="#0d1a27" stroke="#61e8ff" stroke-width="3"/>
+    <text x="65" y="100" fill="#fff" font-size="22" font-weight="800">Observable Trace</text>
+    <text x="75" y="145" fill="#c9dce5" font-size="16" font-weight="700">goal</text><text x="75" y="183" fill="#c9dce5" font-size="16" font-weight="700">candidate paths</text><text x="75" y="221" fill="#c9dce5" font-size="16" font-weight="700">chosen path</text><text x="75" y="259" fill="#c9dce5" font-size="16" font-weight="700">evidence</text><text x="75" y="297" fill="#c9dce5" font-size="16" font-weight="700">tool receipts</text><text x="75" y="335" fill="#c9dce5" font-size="16" font-weight="700">outcome</text>
+    <rect x="405" y="55" width="280" height="130" rx="18" fill="#101f18" stroke="#a8ff60" stroke-width="3"/>
+    <text x="545" y="110" text-anchor="middle" fill="#fff" font-size="23" font-weight="800">Worked Patterns</text>
+    <rect x="405" y="255" width="280" height="130" rx="18" fill="#24111b" stroke="#ff6f9f" stroke-width="3"/>
+    <text x="545" y="310" text-anchor="middle" fill="#fff" font-size="23" font-weight="800">Failed Patterns</text>
+    <path d="M270 165 C340 120 350 120 405 120" fill="none" stroke="#a8ff60" stroke-width="5"/>
+    <path d="M270 260 C340 320 350 320 405 320" fill="none" stroke="#ff6f9f" stroke-width="5"/>
+    <text x="380" y="440" text-anchor="middle" fill="#c9dce5" font-size="17" font-weight="800">Store outcomes, not hidden internal reasoning.</text>
+  </svg></div><div class="panel lime"><h2>Pipeline</h2><ul><li>Receive</li><li>Decompose</li><li>Classify</li><li>Scope</li><li>Retrieve</li><li>Reason</li><li>Verify</li><li>Synthesize</li><li>Evaluate</li><li>Communicate</li><li>Reflect</li></ul></div></div><h2>Worked Patterns</h2><ul><li>Start from public graph data before archive material.</li><li>Use stable ids for every node and relation.</li><li>Prefer public summaries over raw restricted transcripts.</li><li>Generate PDFs from local HTML so diagrams and text remain reproducible.</li><li>Run non-public-reference scans before publishing.</li></ul><h2>Failed Patterns To Avoid</h2><ul><li>Copying local absolute paths into public docs.</li><li>Importing identity canon into a public technical graph.</li><li>Flattening all relations into one generic edge.</li><li>Treating display strength as traversal truth.</li><li>Publishing non-public operational commands or credentials.</li></ul>
+</main>
+</body>
+</html>

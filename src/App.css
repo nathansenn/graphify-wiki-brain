@@ -109,6 +109,79 @@ button {
   font-weight: 700;
 }
 
+.webgl-fallback {
+  position: absolute;
+  inset: clamp(82px, 9vw, 132px) clamp(22px, 8vw, 120px);
+  z-index: 2;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 16px;
+  min-height: 360px;
+  padding: 28px;
+  border: 1px solid var(--line-bright);
+  border-radius: 8px;
+  color: var(--text);
+  text-align: center;
+  background:
+    radial-gradient(circle at 50% 34%, rgba(93, 183, 255, 0.18), transparent 46%),
+    radial-gradient(circle at 50% 58%, rgba(247, 184, 75, 0.14), transparent 38%),
+    rgba(8, 12, 45, 0.76);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+}
+
+.webgl-fallback svg {
+  color: var(--gold);
+  filter: drop-shadow(0 0 18px rgba(247, 184, 75, 0.55));
+}
+
+.webgl-fallback strong {
+  max-width: 100%;
+  font-family: "Cinzel", Georgia, serif;
+  font-size: clamp(25px, 4vw, 52px);
+  line-height: 1;
+  overflow-wrap: anywhere;
+  background: linear-gradient(180deg, #ffffff 0%, #fff2b8 46%, #9e742a 100%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.webgl-fallback span {
+  color: var(--muted);
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.webgl-fallback div {
+  width: min(760px, 100%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.webgl-fallback button {
+  max-width: min(240px, 78vw);
+  min-height: 34px;
+  padding: 7px 10px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  color: var(--text);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  background: rgba(0, 0, 0, 0.42);
+  cursor: pointer;
+}
+
+.webgl-fallback button:hover,
+.webgl-fallback button:focus-visible {
+  border-color: var(--line-bright);
+  background: rgba(247, 184, 75, 0.16);
+  outline: 0;
+}
+
 .topbar,
 .left-panel,
 .right-panel,
@@ -774,6 +847,7 @@ button {
   .search-box {
     grid-column: 1 / -1;
     grid-row: 2;
+    width: 100%;
   }
 
   .left-panel {
@@ -819,12 +893,37 @@ button {
   }
 
   .toolbar-actions {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-column: 1;
     justify-content: stretch;
   }
 
   .toolbar-actions .icon-button {
     width: 100%;
+    min-width: 0;
+  }
+
+  .webgl-fallback {
+    inset: 86px 14px 260px;
+    min-height: 0;
+    padding: 18px 12px;
+    gap: 10px;
+  }
+
+  .webgl-fallback strong {
+    font-size: clamp(24px, 7vw, 28px);
+    line-height: 1.08;
+  }
+
+  .webgl-fallback button {
+    max-width: 100%;
+    min-width: 0;
+    min-height: 32px;
+    padding: 6px 9px;
+    overflow-wrap: anywhere;
+    white-space: normal;
   }
 
   .right-panel {

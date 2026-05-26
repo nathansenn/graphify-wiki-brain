@@ -1,34 +1,30 @@
 # Mind Graph Sources
 
-This repo now includes two local archive-derived source bundles under `public/sources/`.
+This repository includes public-domain source bundles under `public/sources/` and a complete public-domain release package under `public/public-domain/`.
 
 ## Pattern of Mind
 
-- Source file: `public/sources/pattern-of-mind-nodes.json`
-- Original local source: `/Users/commander/Studio7/AGI/LUCY/workspace/pattern-of-mind-nodes.json`
-- Source document described by the mining report: `The Pattern of Mind: A Cognitive Architecture for Artificial Intelligence Based on Correct Reasoning, Not Reward Optimization`
-- Mining report: `/Users/commander/Studio7/AGI/ALEXANDREA/library/catalog/projects/gold/architecture/pattern-of-mind-mining-report.md`
+- Public source file: `public/sources/pattern-of-mind-nodes.json`
+- Public-domain complete source index: `public/public-domain/sources/pattern-of-mind.public.json`
+- Public review PDF: `public/public-domain/pdf/pattern-of-mind-public-review.pdf`
 
-The graph imports all 131 extracted Pattern of Mind nodes, including the 11-stage cognitive pipeline, verification chain, certainty spectrum, soul architecture, core values, techniques, warnings, and validation nodes.
+The graph imports 131 sanitized Pattern of Mind nodes, including the 11-stage cognitive pipeline, verification chain, certainty spectrum, reasoning techniques, warnings, validation nodes, and implementation nodes.
 
 ## State of Mind
 
-- Source file: `public/sources/state-of-mind.json`
-- Original local source: `/Users/commander/Studio7/AGI/senn-archive/src/app/api/brain/metacognitive-journal/route.ts`
-- Reference source: `/Users/commander/Studio7/AGI/senn-archive-reference/src/app/api/brain/metacognitive-journal/route.ts`
+- Public source file: `public/sources/state-of-mind.json`
+- Public-domain complete source index: `public/public-domain/sources/state-of-mind.public.json`
+- Public review PDF: `public/public-domain/pdf/state-of-mind-public-review.pdf`
 
-The graph adds the State of Mind model from the metacognitive journal API: overall brain metrics, recent acquisitions, well-worn paths, areas of focus, center of gravity, and knowledge distribution.
+The graph adds the State of Mind model as a public metacognitive index: overall graph metrics, recent acquisitions, well-worn paths, focus areas, center of gravity, and knowledge distribution.
+
+## Brain Design, APEX Protocol, And Reasoning Assembly
+
+- Brain design PDF: `public/public-domain/pdf/brain-design-public.pdf`
+- APEX public extract PDF: `public/public-domain/pdf/apex-protocol-public-review.pdf`
+- Reasoning assembly PDF: `public/public-domain/pdf/reasoning-assembly-public.pdf`
+- Combined package PDF: `public/public-domain/pdf/public-domain-brain-package.pdf`
 
 ## Graph Links
 
-The imported mind layer is connected into the existing public brain through:
-
-- `home -> pattern-of-mind`
-- `home -> state-of-mind`
-- `graphify -> pattern-of-mind`
-- `brain-json -> pattern-of-mind`
-- `brain-json -> state-of-mind`
-- `three-scene -> pattern-of-mind`
-- `three-scene -> state-of-mind`
-- `pattern-of-mind -> state-of-mind`
-- `stage-reflect -> metacognitive-journal`
+The public-domain package is connected into `public/brain.json` through the `public-domain-package` node and document nodes for each generated PDF.
