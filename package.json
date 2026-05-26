@@ -3,12 +3,7 @@
   "private": false,
   "version": "0.1.0",
   "description": "Public Three.js brain viewer for Graphify wiki JSON and Obsidian vault exports.",
-  "license": "MIT",
-  "homepage": "https://nathansenn.github.io/graphify-wiki-brain/",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nathansenn/graphify-wiki-brain.git"
-  },
+  "license": "CC0-1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",

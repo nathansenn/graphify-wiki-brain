@@ -242,9 +242,9 @@ function App() {
           </button>
           <a
             className="icon-button"
-            href="https://github.com/nathansenn/graphify-wiki-brain"
-            aria-label="Open GitHub repository"
-            title="Open GitHub repository"
+            href={`${import.meta.env.BASE_URL}public-domain/pdf/public-domain-brain-package.pdf`}
+            aria-label="Open public brain package"
+            title="Open public brain package"
           >
             <GitFork size={18} />
           </a>

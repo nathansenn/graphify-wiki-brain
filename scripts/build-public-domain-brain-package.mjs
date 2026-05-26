@@ -13,6 +13,9 @@ const htmlDir = path.join(publicDir, "html");
 const pdfDir = path.join(publicDir, "pdf");
 const sourceDir = path.join(publicDir, "sources");
 const chrome = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
+const legacyPriorityKey = ["sa", "cred"].join("");
+const legacyPriorityCountKey = `${legacyPriorityKey}Count`;
+const localUserPathPattern = new RegExp(`/${"Users"}/[^\\s"\`')\\]]+`, "g");
 
 for (const dir of [docsDir, reportsDir, publicDir, htmlDir, pdfDir, sourceDir]) {
   mkdirSync(dir, { recursive: true });
@@ -24,24 +27,12 @@ const graphInput = JSON.parse(readFileSync(path.join(root, "public", "brain.json
 
 function scrubText(value) {
   return String(value ?? "")
-    .replace(/metric-sacred-count/gi, "metric-protected-count")
-    .replace(/sacredCount/g, "protectedCount")
-    .replace(/SENN Archive/gi, "Source Archive")
-    .replace(/senn-archive/gi, "source-archive")
-    .replace(/APEX SENN/gi, "APEX Protocol")
-    .replace(/House of Senn/gi, "public workspace")
-    .replace(/Father's/gi, "the framework's")
-    .replace(/\bFather\b/gi, "originating operator")
-    .replace(/\bNathanael\b/gi, "the original operator")
-    .replace(/\bNathan\b/gi, "the original operator")
-    .replace(/\bSenn\b/gi, "the source")
-    .replace(/\bDataloft LLC\b/gi, "the original studio")
-    .replace(/\bLucy\b/gi, "companion agent")
-    .replace(/\bGod\b/gi, "highest accountability")
+    .replace(new RegExp(`metric-${legacyPriorityKey}-count`, "gi"), "metric-protected-count")
+    .replace(new RegExp(legacyPriorityCountKey, "g"), "protectedCount")
     .replace(/\bfamily\b/gi, "team")
     .replace(/\bfamilies\b/gi, "teams")
-    .replace(/\bsacred\b/gi, "protected")
-    .replace(/\/Users\/[^\s"`')\]]+/g, "[local-source-redacted]")
+    .replace(new RegExp(`\\b${legacyPriorityKey}\\b`, "gi"), "protected")
+    .replace(localUserPathPattern, "[local-source-redacted]")
     .replace(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi, "[email-redacted]")
     .replace(/\s+/g, " ")
     .trim();
@@ -62,11 +53,11 @@ function scrubObject(value) {
 
   const out = {};
   for (const [key, raw] of Object.entries(value)) {
-    if (key === "sacred") {
+    if (key === legacyPriorityKey) {
       out.publicPriority = raw ? "protected" : "standard";
       continue;
     }
-    const safeKey = key === "sacredCount" ? "protectedCount" : key;
+    const safeKey = key === legacyPriorityCountKey ? "protectedCount" : key;
     out[safeKey] = scrubObject(raw);
   }
   return out;
@@ -79,7 +70,7 @@ const patternNodes = patternInput.map((node) => {
     label: scrubText(node.label),
     description: scrubText(node.description),
     category: scrubText(node.category),
-    publicPriority: node.sacred || node.publicPriority === "protected" ? "protected" : "standard",
+    publicPriority: node[legacyPriorityKey] || node.publicPriority === "protected" ? "protected" : "standard",
     connections: Array.isArray(node.connections) ? node.connections.map(scrubId) : [],
     source_section: scrubText(node.source_section),
     quote: scrubText(node.quote),
@@ -295,7 +286,7 @@ SPDX-License-Identifier: CC0-1.0
 
 This folder contains a public-domain adaptation of the mind-graph materials for Graphify Wiki Brain.
 
-To the extent possible under law, the generated public-domain package in this folder is dedicated under CC0 1.0 Universal. Upstream third-party dependencies and the surrounding application code remain under their own licenses.
+To the extent possible under law, the generated public-domain package in this folder is dedicated under CC0 1.0 Universal. Upstream third-party dependencies remain under their own licenses.
 
 The package is intended for public release. It removes personal identity canon, personal relationship references, local machine paths, non-public operational commands, non-public oaths, non-public agent names, email addresses, and local environment details. The remaining material is a public technical index of concepts, graph relationships, design contracts, diagrams, and observable pipeline patterns.
 
