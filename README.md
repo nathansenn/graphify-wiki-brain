@@ -22,6 +22,22 @@ Regenerate the sanitized package with:
 node scripts/build-public-domain-brain-package.mjs
 ```
 
+## Full Public Books
+
+Full book artifacts live in `public/books/` and are mapped into `public/brain.json`.
+
+- `public/books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html`
+- `public/books/the-witness/the-witness.html`
+- `public/books/the-examined-mind/The_Examined_Mind.docx`
+- `public/books/the-examined-mind/the-examined-mind.html`
+- `public/books/books.manifest.json`
+
+After regenerating the public-domain package, remap the full books with:
+
+```bash
+npm run map:books
+```
+
 ## Run
 
 ```bash

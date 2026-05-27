@@ -10,6 +10,17 @@ This repository includes public-domain source bundles under `public/sources/` an
 
 The graph imports 131 sanitized Pattern of Mind nodes, including the 11-stage cognitive pipeline, verification chain, certainty spectrum, reasoning techniques, warnings, validation nodes, and implementation nodes.
 
+## Full Public Books
+
+Full book copies are stored under `public/books/` and indexed by `public/books/books.manifest.json`.
+
+- Pattern of Mind full HTML: `public/books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html`
+- The Witness full HTML: `public/books/the-witness/the-witness.html`
+- The Examined Mind original DOCX: `public/books/the-examined-mind/The_Examined_Mind.docx`
+- The Examined Mind generated reader HTML and TXT: `public/books/the-examined-mind/the-examined-mind.html`, `public/books/the-examined-mind/the-examined-mind.txt`
+
+Run `npm run map:books` after public package regeneration to reattach the full book manifest, book nodes, section headings, and concept mappings to `public/brain.json`.
+
 ## State of Mind
 
 - Public source file: `public/sources/state-of-mind.json`

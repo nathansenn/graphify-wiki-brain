@@ -20,6 +20,16 @@ import { computeDegrees, describeNumber, groupColor, sanitizeGraph } from "./lib
 
 const DATA_URL = `${import.meta.env.BASE_URL}brain.json`;
 
+function detectWebglSupport() {
+  if (typeof window === "undefined" || typeof document === "undefined") return false;
+  if (/\bHeadlessChrome\//.test(window.navigator.userAgent)) return false;
+
+  const canvas = document.createElement("canvas");
+  const contextOptions = { failIfMajorPerformanceCaveat: true };
+  const gl = canvas.getContext("webgl2", contextOptions) || canvas.getContext("webgl", contextOptions);
+  return Boolean(gl);
+}
+
 function App() {
   const [graph, setGraph] = useState<BrainGraph>(sampleBrain);
   const [sourceLabel, setSourceLabel] = useState("sample brain");
@@ -30,7 +40,7 @@ function App() {
   const [focusMode, setFocusMode] = useState(true);
   const [pathMode, setPathMode] = useState(false);
   const [sceneReady, setSceneReady] = useState(false);
-  const [webglSupported, setWebglSupported] = useState(false);
+  const [webglSupported] = useState(detectWebglSupport);
   const fileInputRef = useRef<HTMLInputElement | null>(null);
 
   useEffect(() => {
@@ -57,18 +67,6 @@ function App() {
     return () => {
       cancelled = true;
     };
-  }, []);
-
-  useEffect(() => {
-    if (/\bHeadlessChrome\//.test(window.navigator.userAgent)) {
-      setWebglSupported(false);
-      return;
-    }
-
-    const canvas = document.createElement("canvas");
-    const contextOptions = { failIfMajorPerformanceCaveat: true };
-    const gl = canvas.getContext("webgl2", contextOptions) || canvas.getContext("webgl", contextOptions);
-    setWebglSupported(Boolean(gl));
   }, []);
 
   const groups = useMemo(

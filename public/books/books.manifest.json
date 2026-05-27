@@ -1,0 +1,92 @@
+{
+  "generatedAt": "2026-05-27T05:30:43.139Z",
+  "license": "CC0-1.0",
+  "note": "Full public book artifacts provided for this repo. Original files are preserved alongside any generated reader copies.",
+  "books": [
+    {
+      "id": "pattern-of-mind-full",
+      "title": "The Pattern of Mind: Full Book",
+      "shortTitle": "Pattern of Mind",
+      "mainUrl": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html",
+      "summary": "Full HTML book for the Pattern of Mind cognitive architecture, mapped into section and chapter nodes.",
+      "tags": [
+        "full-book",
+        "pattern-of-mind",
+        "cognitive-architecture"
+      ],
+      "assets": [
+        {
+          "role": "full-html",
+          "format": "html",
+          "path": "public/books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html",
+          "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html",
+          "bytes": 6021578,
+          "sha256": "737044fc106480e680603a40482c4ace9aa1169ca6938e2845967e68a57f0482"
+        }
+      ]
+    },
+    {
+      "id": "the-witness",
+      "title": "The Witness",
+      "shortTitle": "The Witness",
+      "mainUrl": "books/the-witness/the-witness.html",
+      "summary": "Full HTML book connecting the safety question, correctability, and the body of work around the mind architecture.",
+      "tags": [
+        "full-book",
+        "witness",
+        "safety",
+        "correctability"
+      ],
+      "assets": [
+        {
+          "role": "full-html",
+          "format": "html",
+          "path": "public/books/the-witness/the-witness.html",
+          "url": "books/the-witness/the-witness.html",
+          "bytes": 41878,
+          "sha256": "dca1738c5e6214ab57534f15a602aa2af96739e555e87cc84bc393ae4bbabcbe"
+        }
+      ]
+    },
+    {
+      "id": "the-examined-mind",
+      "title": "The Examined Mind",
+      "shortTitle": "Examined Mind",
+      "mainUrl": "books/the-examined-mind/The_Examined_Mind.docx",
+      "readerUrl": "books/the-examined-mind/the-examined-mind.html",
+      "summary": "Full DOCX manual for proper thinking, with generated TXT and HTML reader copies for public browsing.",
+      "tags": [
+        "full-book",
+        "examined-mind",
+        "proper-thinking",
+        "cognitive-faculties"
+      ],
+      "assets": [
+        {
+          "role": "original-docx",
+          "format": "docx",
+          "path": "public/books/the-examined-mind/The_Examined_Mind.docx",
+          "url": "books/the-examined-mind/The_Examined_Mind.docx",
+          "bytes": 43539,
+          "sha256": "2beb770aec42af1259374d0081c996ea7280130b871ff01f91f8394614b24412"
+        },
+        {
+          "role": "reader-html",
+          "format": "html",
+          "path": "public/books/the-examined-mind/the-examined-mind.html",
+          "url": "books/the-examined-mind/the-examined-mind.html",
+          "bytes": 90026,
+          "sha256": "e5c5be29e273284b0ac16ea28dd8370be107e6c6adeaf18be4e53793fcdbd739"
+        },
+        {
+          "role": "reader-text",
+          "format": "txt",
+          "path": "public/books/the-examined-mind/the-examined-mind.txt",
+          "url": "books/the-examined-mind/the-examined-mind.txt",
+          "bytes": 76832,
+          "sha256": "f1288e85cd7d4964b4e1f2fefad8ab6c6cb33bbfc082df37d683849fa674ff71"
+        }
+      ]
+    }
+  ]
+}
