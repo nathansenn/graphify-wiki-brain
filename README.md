@@ -6,6 +6,8 @@ The repo is intentionally static: import runs locally, writes `public/brain.json
 
 The default graph now includes the archive-derived Pattern of Mind and State of Mind layers. Provenance and source notes live in `docs/mind-graph-sources.md`.
 
+![Graphify Wiki Brain updated node graph](public/public-domain/screenshots/graphify-wiki-brain-updated-node-graph.png)
+
 ## Public Domain Package
 
 The public-safe release package lives in `docs/public-domain/` and `public/public-domain/`.
