@@ -2,7 +2,7 @@ import type { BrainGraph } from "../lib/graph";
 
 export const sampleBrain: BrainGraph = {
   "name": "Graphify Wiki Brain: Public Domain Mind Graph",
-  "generatedAt": "2026-05-27T05:36:48.532Z",
+  "generatedAt": "2026-05-27T05:38:48.653Z",
   "source": {
     "type": "sample",
     "path": "public/brain.json"
