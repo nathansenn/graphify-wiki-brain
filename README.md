@@ -15,6 +15,7 @@ The public-safe release package lives in `docs/public-domain/` and `public/publi
 - PDF exports: `public/public-domain/pdf/`
 - JSON source indexes: `public/public-domain/sources/`
 - Smoke-test screenshots: `public/public-domain/screenshots/graphify-wiki-brain-public-smoke.png`, `public/public-domain/screenshots/graphify-wiki-brain-public-narrow.png`
+- Home page capture: `public/public-domain/screenshots/graphify-wiki-brain-home-links.png`
 
 Regenerate the sanitized package with:
 
