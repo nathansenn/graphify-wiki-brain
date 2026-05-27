@@ -1,0 +1,39 @@
+{
+  "generatedAt": "2026-05-27T05:36:48.611Z",
+  "graph": {
+    "name": "Graphify Wiki Brain: Public Domain Mind Graph",
+    "nodeCount": 554,
+    "edgeCount": 1051,
+    "groups": [
+      "Examined Mind Structure",
+      "Full Book Assets",
+      "Full Books",
+      "Interface",
+      "POM Definitions",
+      "POM Diagnosis",
+      "POM Framework",
+      "POM Methods",
+      "POM Principles",
+      "POM Stages",
+      "POM Validation",
+      "Pattern of Mind Structure",
+      "Pipeline",
+      "Public Domain",
+      "Publishing",
+      "Semantics",
+      "Sources",
+      "State of Mind",
+      "The Witness Structure"
+    ]
+  },
+  "books": {
+    "count": 3,
+    "nodeIds": [
+      "book:pattern-of-mind-full",
+      "book:the-witness",
+      "book:the-examined-mind"
+    ],
+    "sectionNodeCount": 375,
+    "assetNodeCount": 5
+  }
+}

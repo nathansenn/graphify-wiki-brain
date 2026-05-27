@@ -1,0 +1,29 @@
+{
+  "generatedAt": "2026-05-27T05:36:48.611Z",
+  "version": "1",
+  "license": "CC0-1.0",
+  "name": "Graphify Wiki Brain API",
+  "description": "Static JSON API for the public brain graph, full book manifest, and graph summary.",
+  "endpoints": [
+    {
+      "path": "api/index.json",
+      "method": "GET",
+      "description": "API discovery document."
+    },
+    {
+      "path": "api/brain.json",
+      "method": "GET",
+      "description": "Complete brain graph with nodes and edges."
+    },
+    {
+      "path": "api/books.json",
+      "method": "GET",
+      "description": "Full public book manifest with asset metadata and graph node ids."
+    },
+    {
+      "path": "api/summary.json",
+      "method": "GET",
+      "description": "Compact counts for graph and book resources."
+    }
+  ]
+}

@@ -21,6 +21,17 @@ Full book copies are stored under `public/books/` and indexed by `public/books/b
 
 Run `npm run map:books` after public package regeneration to reattach the full book manifest, book nodes, section headings, and concept mappings to `public/brain.json`.
 
+## Static API
+
+The static API layer is generated under `public/api/`.
+
+- API discovery: `public/api/index.json`
+- Complete graph: `public/api/brain.json`
+- Full book manifest: `public/api/books.json`
+- Compact counts: `public/api/summary.json`
+
+The frontend loads graph data through `src/api/brainApi.ts`, which calls `api/brain.json` and falls back to `brain.json` if needed.
+
 ## State of Mind
 
 - Public source file: `public/sources/state-of-mind.json`

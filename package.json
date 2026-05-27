@@ -12,6 +12,7 @@
     "preview": "vite preview",
     "import:obsidian": "node scripts/import-obsidian.mjs",
     "import:graphify": "node scripts/import-graphify.mjs",
+    "build:api": "node scripts/build-public-api.mjs",
     "map:books": "node scripts/map-public-books.mjs",
     "validate:data": "node scripts/validate-brain.mjs"
   },

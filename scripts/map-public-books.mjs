@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import { createHash } from "node:crypto";
+import { execFileSync } from "node:child_process";
 import { existsSync, readFileSync, statSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -393,5 +394,7 @@ writeFileSync(
     2,
   )};\n`,
 );
+
+execFileSync(process.execPath, [path.join(root, "scripts", "build-public-api.mjs")], { stdio: "inherit" });
 
 console.log(`Mapped ${books.length} full books into ${updatedGraph.nodes.length} nodes and ${updatedGraph.edges.length} edges.`);

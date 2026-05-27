@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import {
   Brain,
+  BookOpen,
   Flame,
   GitFork,
   LocateFixed,
@@ -12,13 +13,12 @@ import {
   Upload,
   X,
 } from "lucide-react";
+import { fetchBooks, fetchBrainGraph } from "./api/brainApi";
 import BrainScene from "./components/BrainScene";
 import { sampleBrain } from "./data/sampleBrain";
 import "./App.css";
 import type { BrainGraph, BrainNode } from "./lib/graph";
 import { computeDegrees, describeNumber, groupColor, sanitizeGraph } from "./lib/graph";
-
-const DATA_URL = `${import.meta.env.BASE_URL}brain.json`;
 
 function detectWebglSupport() {
   if (typeof window === "undefined" || typeof document === "undefined") return false;
@@ -33,6 +33,7 @@ function detectWebglSupport() {
 function App() {
   const [graph, setGraph] = useState<BrainGraph>(sampleBrain);
   const [sourceLabel, setSourceLabel] = useState("sample brain");
+  const [bookCount, setBookCount] = useState(0);
   const [query, setQuery] = useState("");
   const [activeGroup, setActiveGroup] = useState("all");
   const [selectedId, setSelectedId] = useState<string | null>(null);
@@ -48,17 +49,17 @@ function App() {
 
     async function loadGraph() {
       try {
-        const response = await fetch(DATA_URL, { cache: "no-cache" });
-        if (!response.ok) throw new Error(`HTTP ${response.status}`);
-        const data = sanitizeGraph(await response.json(), "brain.json");
+        const [{ graph: data, sourcePath }, books] = await Promise.all([fetchBrainGraph(), fetchBooks()]);
         if (!cancelled && data.nodes.length > 0) {
           setGraph(data);
-          setSourceLabel(data.source?.path || "brain.json");
+          setSourceLabel(sourcePath);
+          setBookCount(books.count);
         }
       } catch {
         if (!cancelled) {
           setGraph(sampleBrain);
           setSourceLabel("sample brain");
+          setBookCount(0);
         }
       }
     }
@@ -246,6 +247,14 @@ function App() {
           >
             <GitFork size={18} />
           </a>
+          <a
+            className="icon-button"
+            href={`${import.meta.env.BASE_URL}api/index.json`}
+            aria-label="Open public API index"
+            title="Open public API index"
+          >
+            <BookOpen size={18} />
+          </a>
         </div>
       </header>
 
@@ -277,7 +286,7 @@ function App() {
           <Stat label="Nodes" value={describeNumber(stats.nodes)} />
           <Stat label="Edges" value={describeNumber(stats.edges)} />
           <Stat label="Groups" value={describeNumber(stats.groups)} />
-          <Stat label="Hubs" value={describeNumber(stats.hubs)} />
+          <Stat label="Books" value={describeNumber(bookCount)} />
         </div>
 
         <div className="group-list" role="list" aria-label="Group filter">

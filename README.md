@@ -38,6 +38,21 @@ After regenerating the public-domain package, remap the full books with:
 npm run map:books
 ```
 
+## Static API
+
+The public API layer is served as static JSON from `public/api/`.
+
+- `public/api/index.json` - endpoint discovery
+- `public/api/brain.json` - complete graph payload
+- `public/api/books.json` - full book manifest with graph node ids
+- `public/api/summary.json` - compact graph and book counts
+
+Refresh only the API files with:
+
+```bash
+npm run build:api
+```
+
 ## Run
 
 ```bash

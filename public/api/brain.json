@@ -1,11 +1,9 @@
-import type { BrainGraph } from "../lib/graph";
-
-export const sampleBrain: BrainGraph = {
+{
   "name": "Graphify Wiki Brain: Public Domain Mind Graph",
   "generatedAt": "2026-05-27T05:36:48.532Z",
   "source": {
-    "type": "sample",
-    "path": "public/brain.json"
+    "type": "json",
+    "path": "api/brain.json"
   },
   "nodes": [
     {
@@ -14327,4 +14325,4 @@ export const sampleBrain: BrainGraph = {
       "weight": 2
     }
   ]
-};
+}

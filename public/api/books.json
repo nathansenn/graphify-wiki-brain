@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-05-27T05:36:48.532Z",
-  "license": "CC0-1.0",
-  "note": "Full public book artifacts provided for this repo. Original files are preserved alongside any generated reader copies.",
+  "generatedAt": "2026-05-27T05:36:48.611Z",
+  "source": "public/books/books.manifest.json",
+  "count": 3,
   "books": [
     {
       "id": "pattern-of-mind-full",
@@ -23,6 +23,12 @@
           "bytes": 6021578,
           "sha256": "737044fc106480e680603a40482c4ace9aa1169ca6938e2845967e68a57f0482"
         }
+      ],
+      "graphNodeId": "book:pattern-of-mind-full",
+      "graphUrl": "api/brain.json",
+      "sectionCount": 245,
+      "assetNodeIds": [
+        "book-asset:pattern-of-mind-full:full-html"
       ]
     },
     {
@@ -46,6 +52,12 @@
           "bytes": 41878,
           "sha256": "dca1738c5e6214ab57534f15a602aa2af96739e555e87cc84bc393ae4bbabcbe"
         }
+      ],
+      "graphNodeId": "book:the-witness",
+      "graphUrl": "api/brain.json",
+      "sectionCount": 26,
+      "assetNodeIds": [
+        "book-asset:the-witness:full-html"
       ]
     },
     {
@@ -86,6 +98,14 @@
           "bytes": 76832,
           "sha256": "f1288e85cd7d4964b4e1f2fefad8ab6c6cb33bbfc082df37d683849fa674ff71"
         }
+      ],
+      "graphNodeId": "book:the-examined-mind",
+      "graphUrl": "api/brain.json",
+      "sectionCount": 104,
+      "assetNodeIds": [
+        "book-asset:the-examined-mind:original-docx",
+        "book-asset:the-examined-mind:reader-html",
+        "book-asset:the-examined-mind:reader-text"
       ]
     }
   ]
