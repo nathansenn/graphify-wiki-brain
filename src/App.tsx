@@ -2,6 +2,9 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import {
   Brain,
   BookOpen,
+  Database,
+  ExternalLink,
+  FileText,
   Flame,
   GitFork,
   LocateFixed,
@@ -29,6 +32,29 @@ function detectWebglSupport() {
   const gl = canvas.getContext("webgl2", contextOptions) || canvas.getContext("webgl", contextOptions);
   return Boolean(gl);
 }
+
+const homeLinks = [
+  {
+    label: "Pattern of Mind",
+    href: "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html",
+    icon: BookOpen,
+  },
+  {
+    label: "The Witness",
+    href: "books/the-witness/the-witness.html",
+    icon: FileText,
+  },
+  {
+    label: "Examined Mind",
+    href: "books/the-examined-mind/the-examined-mind.html",
+    icon: BookOpen,
+  },
+  {
+    label: "API Index",
+    href: "api/index.json",
+    icon: Database,
+  },
+];
 
 function App() {
   const [graph, setGraph] = useState<BrainGraph>(sampleBrain);
@@ -349,6 +375,27 @@ function App() {
       {selectedNode && (
         <aside className="right-panel" aria-label="Node detail">
           <NodeDetail node={selectedNode} degree={degrees.get(selectedNode.id) ?? 0} />
+        </aside>
+      )}
+
+      {!selectedNode && (
+        <aside className="home-links-panel" aria-label="Public links">
+          <div className="home-links-header">
+            <strong>Full Books</strong>
+            <span>{describeNumber(bookCount)} live</span>
+          </div>
+          <div className="home-link-list">
+            {homeLinks.map((link) => {
+              const Icon = link.icon;
+              return (
+                <a key={link.href} href={`${import.meta.env.BASE_URL}${link.href}`} target="_blank" rel="noreferrer">
+                  <Icon size={16} aria-hidden />
+                  <span>{link.label}</span>
+                  <ExternalLink size={14} aria-hidden />
+                </a>
+              );
+            })}
+          </div>
         </aside>
       )}
     </main>

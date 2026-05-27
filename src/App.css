@@ -185,6 +185,7 @@ button {
 .topbar,
 .left-panel,
 .right-panel,
+.home-links-panel,
 .legend-panel,
 .mode-rail {
   position: absolute;
@@ -404,6 +405,78 @@ button {
   border-radius: 4px;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.54);
+}
+
+.home-links-panel {
+  right: 20px;
+  top: 84px;
+  width: min(300px, calc(100vw - 40px));
+  display: grid;
+  gap: 10px;
+  padding: 12px;
+  border-color: rgba(240, 200, 80, 0.18);
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.home-links-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.home-links-header strong {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.home-links-header span {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.home-link-list {
+  display: grid;
+  gap: 7px;
+}
+
+.home-link-list a {
+  min-height: 34px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 9px;
+  border: 1px solid rgba(240, 200, 80, 0.14);
+  border-radius: 4px;
+  color: var(--text);
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.42);
+}
+
+.home-link-list a:hover,
+.home-link-list a:focus-visible {
+  border-color: var(--line-bright);
+  background: rgba(247, 184, 75, 0.12);
+  outline: 0;
+}
+
+.home-link-list svg:first-child {
+  color: var(--gold);
+}
+
+.home-link-list svg:last-child {
+  color: var(--muted);
+}
+
+.home-link-list span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 .mode-rail {
@@ -871,6 +944,12 @@ button {
     height: min(330px, calc(100svh - 318px));
   }
 
+  .home-links-panel {
+    top: 116px;
+    right: 12px;
+    width: min(300px, calc(100vw - 24px));
+  }
+
   .legend-panel {
     display: none;
   }
@@ -895,7 +974,7 @@ button {
   .toolbar-actions {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     grid-column: 1;
     justify-content: stretch;
   }
@@ -928,6 +1007,28 @@ button {
 
   .right-panel {
     display: none;
+  }
+
+  .home-links-panel {
+    top: 118px;
+    right: 10px;
+    left: 10px;
+    width: auto;
+    padding: 10px;
+  }
+
+  .home-link-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .home-link-list a {
+    min-height: 38px;
+    gap: 7px;
+    padding: 7px;
+  }
+
+  .home-link-list span {
+    font-size: 11px;
   }
 
   .left-panel {
