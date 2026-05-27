@@ -6,18 +6,20 @@ The repo is intentionally static: import runs locally, writes `public/brain.json
 
 The default graph now includes the archive-derived Pattern of Mind and State of Mind layers. Provenance and source notes live in `docs/mind-graph-sources.md`.
 
-![Graphify Wiki Brain updated node graph](public/public-domain/screenshots/graphify-wiki-brain-updated-node-graph.png)
+[![Graphify Wiki Brain updated node graph](public/public-domain/screenshots/graphify-wiki-brain-updated-node-graph.png)](public/public-domain/screenshots/graphify-wiki-brain-updated-node-graph.png)
+
+[Open the updated node graph capture](public/public-domain/screenshots/graphify-wiki-brain-updated-node-graph.png)
 
 ## Public Domain Package
 
 The public-safe release package lives in `docs/public-domain/` and `public/public-domain/`.
 
-- Markdown reports: `docs/public-domain/reports/`
-- HTML diagrams: `public/public-domain/html/`
-- PDF exports: `public/public-domain/pdf/`
-- JSON source indexes: `public/public-domain/sources/`
-- Smoke-test screenshots: `public/public-domain/screenshots/graphify-wiki-brain-public-smoke.png`, `public/public-domain/screenshots/graphify-wiki-brain-public-narrow.png`
-- Updated node graph capture: `public/public-domain/screenshots/graphify-wiki-brain-updated-node-graph.png`
+- [Markdown reports](docs/public-domain/reports/)
+- [HTML diagrams](public/public-domain/html/)
+- [PDF exports](public/public-domain/pdf/)
+- [JSON source indexes](public/public-domain/sources/)
+- Smoke-test screenshots: [desktop](public/public-domain/screenshots/graphify-wiki-brain-public-smoke.png), [narrow](public/public-domain/screenshots/graphify-wiki-brain-public-narrow.png)
+- [Updated node graph capture](public/public-domain/screenshots/graphify-wiki-brain-updated-node-graph.png)
 
 Regenerate the sanitized package with:
 
@@ -29,11 +31,11 @@ node scripts/build-public-domain-brain-package.mjs
 
 Full book artifacts live in `public/books/` and are mapped into `public/brain.json`.
 
-- `public/books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html`
-- `public/books/the-witness/the-witness.html`
-- `public/books/the-examined-mind/The_Examined_Mind.docx`
-- `public/books/the-examined-mind/the-examined-mind.html`
-- `public/books/books.manifest.json`
+- [The Pattern of Mind full HTML](public/books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html)
+- [The Witness full HTML](public/books/the-witness/the-witness.html)
+- [The Examined Mind original DOCX](public/books/the-examined-mind/The_Examined_Mind.docx)
+- [The Examined Mind reader HTML](public/books/the-examined-mind/the-examined-mind.html)
+- [Full book manifest](public/books/books.manifest.json)
 
 After regenerating the public-domain package, remap the full books with:
 
@@ -45,10 +47,10 @@ npm run map:books
 
 The public API layer is served as static JSON from `public/api/`.
 
-- `public/api/index.json` - endpoint discovery
-- `public/api/brain.json` - complete graph payload
-- `public/api/books.json` - full book manifest with graph node ids
-- `public/api/summary.json` - compact graph and book counts
+- [Endpoint discovery](public/api/index.json)
+- [Complete graph payload](public/api/brain.json)
+- [Full book manifest with graph node ids](public/api/books.json)
+- [Compact graph and book counts](public/api/summary.json)
 
 Refresh only the API files with:
 
