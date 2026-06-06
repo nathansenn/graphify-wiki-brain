@@ -6,6 +6,8 @@ This repo is intentionally static. You build or import a graph locally, write `p
 
 The default graph includes the archive-derived Pattern of Mind and State of Mind layers. Provenance and source notes live in [docs/mind-graph-sources.md](docs/mind-graph-sources.md).
 
+> **AUKS redesign (in progress):** a detailed, public AUKS brain that carries the full senn-archive node/edge schema, source-linked nodes, relational connections, and multi-identity agents with shared-memory settings. See the design spec in [docs/auks-public-brain-design.md](docs/auks-public-brain-design.md), the machine schema in [schema/auks-brain.schema.json](schema/auks-brain.schema.json), TypeScript types in [src/types/auks.ts](src/types/auks.ts), and a worked example in [public/examples/auks-example-brain.json](public/examples/auks-example-brain.json).
+
 [![Graphify Wiki Brain updated node graph](public/public-domain/screenshots/graphify-wiki-brain-updated-node-graph.png)](public/public-domain/screenshots/graphify-wiki-brain-updated-node-graph.png)
 
 [Open the updated node graph capture](public/public-domain/screenshots/graphify-wiki-brain-updated-node-graph.png)

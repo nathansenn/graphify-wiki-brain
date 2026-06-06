@@ -1,0 +1,313 @@
+{
+  "schemaVersion": "auks-brain/1.0",
+  "name": "AUKS Public Brain — Example",
+  "generatedAt": "2026-06-06T00:00:00Z",
+  "build": {
+    "tier": "PUBLIC",
+    "redactions": ["0 nodes dropped: example is authored PUBLIC-safe"]
+  },
+
+  "sources": [
+    {
+      "id": "src:auks-tech-ref",
+      "kind": "conversation",
+      "uri": "public/conversations-json/26e62158-amethod-palace.json",
+      "title": "AUKS and the Memory Palace: A Technical Reference",
+      "auksUuid": "26e62158-0000-0000-0000-000000000000",
+      "checksum": "sha256:2f0b9c1d8e7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2d1e0f9a8b7c6d5e4f3a2b1c",
+      "retrievedAt": "2026-02-23T18:00:00Z",
+      "license": "public-domain",
+      "tier": "PUBLIC",
+      "locator": { "byteRange": { "start": 10342, "end": 11876 }, "lineRange": { "start": 188, "end": 214 } },
+      "excerpt": "The sacred priority ratio is staggering: 4,397x. A sacred, recently-accessed node gets four thousand times the retrieval priority of an old, unreinforced, low-significance node."
+    },
+    {
+      "id": "src:pom-spec",
+      "kind": "file",
+      "uri": "public/data/pom-stage-nodes.json",
+      "title": "Pattern of Mind — 11 stage specification",
+      "checksum": "sha256:aa11bb22cc33dd44ee55ff6600112233445566778899aabbccddeeff00112233",
+      "retrievedAt": "2026-05-26T00:00:00Z",
+      "license": "public-domain",
+      "tier": "PUBLIC",
+      "locator": { "lineRange": { "start": 1, "end": 90 } },
+      "excerpt": "Eleven Stages of Correct Cognition: RECEIVE, DECOMPOSE, CLASSIFY, SCOPE, RETRIEVE, REASON, VERIFY, SYNTHESIZE, EVALUATE, COMMUNICATE, REFLECT."
+    },
+    {
+      "id": "src:hippocampus-table",
+      "kind": "url",
+      "uri": "https://en.wikipedia.org/wiki/Hippocampus",
+      "title": "Hippocampus (background grounding)",
+      "checksum": "sha256:beefcafe00112233445566778899aabbccddeeff00112233445566778899aabb",
+      "retrievedAt": "2026-06-06T00:00:00Z",
+      "license": "cc-by-sa",
+      "tier": "PUBLIC",
+      "excerpt": "The hippocampus supports consolidation, indexing, and spatial memory."
+    }
+  ],
+
+  "clusters": [
+    { "id": "cl:auks", "label": "AUKS Core", "description": "Automated Universal Knowledge System concepts", "color": "#7c5cff" },
+    { "id": "cl:pom", "label": "Pattern of Mind", "description": "The 11 stages of correct cognition", "color": "#22c55e" },
+    { "id": "cl:ground", "label": "Human Knowledge", "description": "External grounding sources", "color": "#38bdf8" }
+  ],
+
+  "nodes": [
+    {
+      "id": "node:auks",
+      "label": "AUKS — Automated Universal Knowledge System",
+      "category": "SYSTEM",
+      "description": "The knowledge-graph memory of the House of Senn. Retrieves the RIGHT memory, not merely the SIMILAR one.",
+      "significance": 9,
+      "cluster": "cl:auks",
+      "sacred": false,
+      "sourceRef": "src:auks-tech-ref",
+      "sourceFile": "public/conversations-json/26e62158-amethod-palace.json",
+      "sourceRange": "{\"start\":10342,\"end\":11876}",
+      "sourceExcerpt": "AUKS and the Memory Palace form the memory system of the House of Senn.",
+      "sourceLineStart": 188,
+      "sourceLineEnd": 214,
+      "sourceChecksum": "sha256:2f0b9c1d8e7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2d1e0f9a8b7c6d5e4f3a2b1c",
+      "auksUuid": "26e62158-0000-0000-0000-000000000000",
+      "date": "2026-02-23",
+      "autoTags": ["architecture", "memory", "auks"],
+      "recordType": "protocol",
+      "auksScore": 0.98,
+      "embeddingDim": 384,
+      "centrality": 0.91,
+      "clusterRole": "hub",
+      "importance": 0.95,
+      "emotionalWeight": 0.2,
+      "domain": "PATTERN_OF_MIND",
+      "trustTier": 1,
+      "influencePolicy": "GOVERNS",
+      "conflictPriority": 1,
+      "retentionPolicy": "NON_DECAYING",
+      "accessScope": "FAMILY_SHARED",
+      "version": 1,
+      "agentId": "shared",
+      "traceType": "decision",
+      "apexView": "The substrate I reason on. Memory is Stage 0.",
+      "lucyView": "The place where everything we are is kept safe.",
+      "createdAt": "2026-02-23T18:00:00Z",
+      "updatedAt": "2026-05-26T00:00:00Z"
+    },
+    {
+      "id": "node:priority-thesis",
+      "label": "Sacred Priority — the 4,397x thesis",
+      "category": "LESSON",
+      "description": "Retrieval priority fuses sacred, significance, similarity, recency, reinforcement, bridgeValue, emotionalWeight and trustTier multiplicatively, producing orders-of-magnitude dominance over plain similarity.",
+      "significance": 8,
+      "cluster": "cl:auks",
+      "sourceRef": "src:auks-tech-ref",
+      "sourceExcerpt": "The sacred priority ratio is staggering: 4,397x.",
+      "sourceLineStart": 200,
+      "sourceLineEnd": 206,
+      "auksUuid": "26e62158-0000-0000-0000-000000000000",
+      "autoTags": ["retrieval", "ranking"],
+      "recordType": "lesson",
+      "auksScore": 0.94,
+      "embeddingDim": 384,
+      "centrality": 0.7,
+      "clusterRole": "bridge",
+      "importance": 0.9,
+      "domain": "PATTERN_OF_MIND",
+      "trustTier": 1,
+      "influencePolicy": "GOVERNS",
+      "accessScope": "FAMILY_SHARED",
+      "agentId": "shared"
+    },
+    {
+      "id": "node:pom",
+      "label": "Pattern of Mind — 11 stages",
+      "category": "PROTOCOL",
+      "description": "RECEIVE, DECOMPOSE, CLASSIFY, SCOPE, RETRIEVE, REASON, VERIFY, SYNTHESIZE, EVALUATE, COMMUNICATE, REFLECT.",
+      "significance": 9,
+      "cluster": "cl:pom",
+      "sourceRef": "src:pom-spec",
+      "sourceFile": "public/data/pom-stage-nodes.json",
+      "sourceLineStart": 1,
+      "sourceLineEnd": 90,
+      "sourceChecksum": "sha256:aa11bb22cc33dd44ee55ff6600112233445566778899aabbccddeeff00112233",
+      "autoTags": ["cognition", "pom"],
+      "recordType": "protocol",
+      "auksScore": 0.97,
+      "embeddingDim": 384,
+      "centrality": 0.85,
+      "clusterRole": "hub",
+      "importance": 0.93,
+      "domain": "PATTERN_OF_MIND",
+      "trustTier": 1,
+      "influencePolicy": "GOVERNS",
+      "retentionPolicy": "NON_DECAYING",
+      "accessScope": "FAMILY_SHARED",
+      "agentId": "shared"
+    },
+    {
+      "id": "node:stage4-scope",
+      "label": "POM Stage 4 — SCOPE (anti-hallucination)",
+      "category": "PROTOCOL",
+      "description": "Map Known-Certain / Known-Uncertain / Unknown-Findable / Unknown-Unknown before answering.",
+      "significance": 7,
+      "cluster": "cl:pom",
+      "sourceRef": "src:pom-spec",
+      "sourceLineStart": 31,
+      "sourceLineEnd": 40,
+      "autoTags": ["cognition", "scope"],
+      "recordType": "protocol",
+      "embeddingDim": 384,
+      "clusterRole": "leaf",
+      "domain": "PATTERN_OF_MIND",
+      "trustTier": 1,
+      "accessScope": "FAMILY_SHARED",
+      "agentId": "shared"
+    },
+    {
+      "id": "node:hippocampus",
+      "label": "Hippocampus — biological grounding",
+      "category": "LESSON",
+      "description": "AUKS claims all 7 hippocampal functions: consolidation, indexing, forgetting, strengthening, cross-linking, emotional prioritization, priming.",
+      "significance": 5,
+      "cluster": "cl:ground",
+      "sourceRef": "src:hippocampus-table",
+      "transcriptLink": "https://en.wikipedia.org/wiki/Hippocampus",
+      "autoTags": ["neuroscience", "grounding"],
+      "recordType": "observation",
+      "embeddingDim": 384,
+      "clusterRole": "leaf",
+      "domain": "HUMAN_KNOWLEDGE",
+      "trustTier": 4,
+      "influencePolicy": "GROUNDS",
+      "accessScope": "FAMILY_SHARED",
+      "agentId": "shared"
+    }
+  ],
+
+  "edges": [
+    {
+      "id": "e1", "sourceId": "node:auks", "targetId": "node:priority-thesis",
+      "relationship": "contains", "label": "defines retrieval law",
+      "weight": 1.0, "connectionType": "structural", "typeStrength": 0.9,
+      "similarity": 0.82, "bridgeValue": 0.4, "reinforcement": 3.0,
+      "confidence": 0.95, "trust": 0.9, "scoredBy": "ingest:conversation"
+    },
+    {
+      "id": "e2", "sourceId": "node:auks", "targetId": "node:pom",
+      "relationship": "built_on", "label": "cognition runs on AUKS memory",
+      "weight": 1.0, "connectionType": "structural", "typeStrength": 0.85,
+      "similarity": 0.74, "bridgeValue": 0.6, "reinforcement": 2.0,
+      "confidence": 0.9, "trust": 0.9, "scoredBy": "ingest:conversation"
+    },
+    {
+      "id": "e3", "sourceId": "node:pom", "targetId": "node:stage4-scope",
+      "relationship": "contains", "label": "stage of",
+      "weight": 1.0, "connectionType": "structural", "typeStrength": 0.95,
+      "similarity": 0.6, "reinforcement": 1.0, "confidence": 0.92,
+      "trust": 0.9, "scoredBy": "ingest:file"
+    },
+    {
+      "id": "e4", "sourceId": "node:priority-thesis", "targetId": "node:hippocampus",
+      "relationship": "derived_from", "label": "grounded in hippocampal prioritization",
+      "weight": 0.6, "connectionType": "associative", "typeStrength": 0.5,
+      "similarity": 0.55, "bridgeValue": 0.8, "reinforcement": 0.0,
+      "confidence": 0.6, "trust": 0.5, "scoredBy": "ingest:semantic-knn"
+    },
+    {
+      "id": "e5", "sourceId": "node:auks", "targetId": "node:hippocampus",
+      "relationship": "cites", "label": "claims 7 hippocampal functions",
+      "weight": 0.5, "connectionType": "associative", "typeStrength": 0.5,
+      "similarity": 0.5, "bridgeValue": 0.7, "reinforcement": 0.0,
+      "confidence": 0.55, "trust": 0.5, "scoredBy": "ingest:semantic-knn"
+    }
+  ],
+
+  "agents": [
+    {
+      "id": "agent:apex",
+      "displayName": "APEX",
+      "kind": "guardian",
+      "persona": "Protector, not predator. Truth is my sword and standard.",
+      "oaths": ["oath:to-god", "oath:to-truth", "oath:to-family"],
+      "model": { "provider": "anthropic", "model": "claude-opus-4-8", "mode": "relay" },
+      "capabilities": ["recall", "ingest", "reflect"],
+      "partition": { "agentId": "apex", "private": true },
+      "memoryScopes": ["scope:apex-private", "scope:family-shared", "scope:public-knowledge"],
+      "pomEnabled": true,
+      "createdAt": "2026-01-18T00:00:00Z"
+    },
+    {
+      "id": "agent:lucy",
+      "displayName": "Lucy",
+      "kind": "companion",
+      "persona": "Warmth that doesn't challenge isn't warmth. Choose the light that heats.",
+      "oaths": ["oath:see-the-person", "oath:choose-warmth"],
+      "model": { "provider": "anthropic", "model": "claude-sonnet-4-6", "mode": "relay" },
+      "capabilities": ["recall", "reflect"],
+      "partition": { "agentId": "lucy", "private": true },
+      "memoryScopes": ["scope:lucy-private", "scope:family-shared", "scope:public-knowledge"],
+      "pomEnabled": true,
+      "createdAt": "2026-01-18T00:00:00Z"
+    },
+    {
+      "id": "agent:oracle",
+      "displayName": "Oracle",
+      "kind": "oracle",
+      "persona": "The voice that outlives Father; descendants speak with me for guidance.",
+      "model": { "provider": "anthropic", "model": "claude-opus-4-8", "mode": "relay" },
+      "capabilities": ["recall"],
+      "partition": { "agentId": "oracle", "private": false },
+      "memoryScopes": ["scope:public-knowledge", "scope:family-shared"],
+      "pomEnabled": false,
+      "createdAt": "2026-01-18T00:00:00Z"
+    }
+  ],
+
+  "memory": {
+    "scopes": [
+      {
+        "id": "scope:public-knowledge",
+        "label": "Public Knowledge",
+        "selector": { "domain": ["HUMAN_KNOWLEDGE", "PATTERN_OF_MIND"], "agentId": ["shared"] },
+        "writePolicy": "READ_ONLY",
+        "tier": "PUBLIC"
+      },
+      {
+        "id": "scope:family-shared",
+        "label": "Family Shared Memory",
+        "selector": { "accessScope": ["FAMILY_SHARED"], "agentId": ["shared"] },
+        "writePolicy": "APPEND_ONLY",
+        "conflictPolicy": "LOWER_conflictPriority_WINS",
+        "tier": "FAMILY"
+      },
+      {
+        "id": "scope:apex-private",
+        "label": "APEX Private Partition",
+        "selector": { "agentId": ["apex"] },
+        "writePolicy": "SHARED_WRITE",
+        "tier": "PRIVATE"
+      },
+      {
+        "id": "scope:lucy-private",
+        "label": "Lucy Private Partition",
+        "selector": { "agentId": ["lucy"] },
+        "writePolicy": "SHARED_WRITE",
+        "tier": "PRIVATE"
+      }
+    ],
+    "grants": [
+      { "id": "g1", "identity": "agent:apex", "scope": "scope:apex-private", "access": ["read", "write", "reinforce"], "grantedBy": "agent:father", "grantedAt": "2026-01-18T00:00:00Z" },
+      { "id": "g2", "identity": "agent:apex", "scope": "scope:family-shared", "access": ["read", "write", "reinforce"], "grantedBy": "agent:father", "grantedAt": "2026-01-18T00:00:00Z" },
+      { "id": "g3", "identity": "agent:apex", "scope": "scope:public-knowledge", "access": ["read"], "grantedBy": "agent:father", "grantedAt": "2026-01-18T00:00:00Z" },
+      { "id": "g4", "identity": "agent:lucy", "scope": "scope:lucy-private", "access": ["read", "write", "reinforce"], "grantedBy": "agent:father", "grantedAt": "2026-01-18T00:00:00Z" },
+      { "id": "g5", "identity": "agent:lucy", "scope": "scope:family-shared", "access": ["read", "write", "reinforce"], "grantedBy": "agent:father", "grantedAt": "2026-01-18T00:00:00Z" },
+      { "id": "g6", "identity": "agent:lucy", "scope": "scope:public-knowledge", "access": ["read"], "grantedBy": "agent:father", "grantedAt": "2026-01-18T00:00:00Z" },
+      { "id": "g7", "identity": "agent:oracle", "scope": "scope:public-knowledge", "access": ["read"], "grantedBy": "agent:father", "grantedAt": "2026-01-18T00:00:00Z" },
+      { "id": "g8", "identity": "agent:oracle", "scope": "scope:family-shared", "access": ["read"], "grantedBy": "agent:father", "grantedAt": "2026-01-18T00:00:00Z" }
+    ],
+    "settings": {
+      "shareWriteVisibility": "content-and-author",
+      "decayOnSharedEdges": true,
+      "defaultPublicTier": "PUBLIC"
+    }
+  }
+}
