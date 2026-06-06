@@ -474,6 +474,8 @@ Three tiers, strictly nested: **PUBLIC ⊂ FAMILY ⊂ PRIVATE**.
 
 ## 12. Backend API surface (service mode)
 
+> **Full API design:** [`docs/auks-public-brain-api.md`](auks-public-brain-api.md) (23 sections — auth, tiers, errors, pagination, every endpoint with examples) and the machine spec [`schema/auks-brain-api.openapi.yaml`](../schema/auks-brain-api.openapi.yaml) (OpenAPI 3.1, 36 paths). The table below is the at-a-glance summary.
+
 REST + SSE; a curated subset mirroring senn-archive concepts.
 
 | Method | Route | Purpose |
