@@ -1,0 +1,910 @@
+openapi: 3.1.0
+info:
+  title: AUKS Public Brain API
+  version: "1.0.0"
+  description: >-
+    Backend API for the AUKS Public Brain (service mode): source digestion,
+    full-schema source-linked nodes + relational edges, AUKS priority recall,
+    multi-identity agents, shared-memory scopes/grants, and tiered (public-safe)
+    serialization. Prose: docs/auks-public-brain-api.md. Data objects conform to
+    schema/auks-brain.schema.json.
+  license:
+    name: See repository LICENSE
+servers:
+  - url: https://{host}/v1
+    variables:
+      host: { default: brain.example.com }
+
+security:
+  - bearerAuth: []
+  - {}   # public (read-only PUBLIC tier)
+
+tags:
+  - { name: sources }
+  - { name: nodes }
+  - { name: edges }
+  - { name: clusters }
+  - { name: ingestion }
+  - { name: recall }
+  - { name: agents }
+  - { name: memory }
+  - { name: build }
+  - { name: events }
+  - { name: audit }
+  - { name: ops }
+
+paths:
+  /sources:
+    get:
+      tags: [sources]
+      summary: List sources
+      parameters:
+        - { $ref: '#/components/parameters/limit' }
+        - { $ref: '#/components/parameters/cursor' }
+        - { name: kind, in: query, schema: { type: string } }
+        - { name: license, in: query, schema: { type: string } }
+        - { name: tier, in: query, schema: { $ref: '#/components/schemas/Tier' } }
+        - { name: q, in: query, schema: { type: string } }
+      responses:
+        '200': { $ref: '#/components/responses/SourceList' }
+    post:
+      tags: [sources]
+      summary: Register a source
+      requestBody:
+        required: true
+        content: { application/json: { schema: { $ref: '#/components/schemas/Source' } } }
+      responses:
+        '201': { description: Created, content: { application/json: { schema: { $ref: '#/components/schemas/Source' } } } }
+        '422': { $ref: '#/components/responses/Problem' }
+  /sources/{id}:
+    parameters: [ { $ref: '#/components/parameters/id' } ]
+    get:
+      tags: [sources]
+      summary: Get a source (provenance drawer)
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { $ref: '#/components/schemas/Source' } } } }
+        '404': { $ref: '#/components/responses/Problem' }
+
+  /nodes:
+    get:
+      tags: [nodes]
+      summary: List / query nodes (tier-filtered)
+      parameters:
+        - { $ref: '#/components/parameters/limit' }
+        - { $ref: '#/components/parameters/cursor' }
+        - { name: domain, in: query, schema: { $ref: '#/components/schemas/Domain' } }
+        - { name: trustTier, in: query, schema: { type: integer, minimum: 1, maximum: 4 } }
+        - { name: cluster, in: query, schema: { type: string } }
+        - { name: agentId, in: query, schema: { type: string } }
+        - { name: category, in: query, schema: { type: string } }
+        - { name: tag, in: query, schema: { type: string } }
+        - { name: q, in: query, schema: { type: string } }
+        - { name: sort, in: query, schema: { type: string, example: -importance } }
+        - { name: fields, in: query, schema: { type: string } }
+        - { name: include, in: query, schema: { type: string, example: source,edges,embedding } }
+      responses:
+        '200': { $ref: '#/components/responses/NodeList' }
+    post:
+      tags: [nodes]
+      summary: Create a node (provenance required for FAMILY/PUBLIC)
+      parameters: [ { $ref: '#/components/parameters/idempotencyKey' } ]
+      requestBody:
+        required: true
+        content: { application/json: { schema: { $ref: '#/components/schemas/Node' } } }
+      responses:
+        '201': { description: Created, content: { application/json: { schema: { $ref: '#/components/schemas/Node' } } } }
+        '403': { $ref: '#/components/responses/Problem' }
+        '422': { $ref: '#/components/responses/Problem' }
+  /nodes/{id}:
+    parameters: [ { $ref: '#/components/parameters/id' } ]
+    get:
+      tags: [nodes]
+      summary: Get a node
+      parameters: [ { name: include, in: query, schema: { type: string } } ]
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { $ref: '#/components/schemas/Node' } } } }
+        '404': { $ref: '#/components/responses/Problem' }
+    patch:
+      tags: [nodes]
+      summary: Update a node (optimistic concurrency via If-Match)
+      parameters: [ { name: If-Match, in: header, schema: { type: string } } ]
+      requestBody:
+        required: true
+        content: { application/json: { schema: { $ref: '#/components/schemas/Node' } } }
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { $ref: '#/components/schemas/Node' } } } }
+        '409': { $ref: '#/components/responses/Problem' }
+    delete:
+      tags: [nodes]
+      summary: Delete a node (soft by default; hard=true is father-only)
+      parameters: [ { name: hard, in: query, schema: { type: boolean, default: false } } ]
+      responses:
+        '204': { description: Deleted }
+        '403': { $ref: '#/components/responses/Problem' }
+  /nodes/{id}/source:
+    parameters: [ { $ref: '#/components/parameters/id' } ]
+    get:
+      tags: [nodes]
+      summary: Resolved provenance + checksum-drift status
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  source: { $ref: '#/components/schemas/Source' }
+                  locator: { $ref: '#/components/schemas/Locator' }
+                  drift: { type: string, enum: [fresh, drifted, unknown] }
+  /nodes/{id}/edges:
+    parameters: [ { $ref: '#/components/parameters/id' } ]
+    get:
+      tags: [nodes]
+      summary: Edges incident to a node
+      parameters:
+        - { name: direction, in: query, schema: { type: string, enum: [in, out, both], default: both } }
+        - { name: relationship, in: query, schema: { type: string } }
+        - { name: minWeight, in: query, schema: { type: number } }
+      responses:
+        '200': { $ref: '#/components/responses/EdgeList' }
+  /nodes/{id}/neighbors:
+    parameters: [ { $ref: '#/components/parameters/id' } ]
+    get:
+      tags: [nodes]
+      summary: 1-hop neighborhood (nodes + edges)
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  nodes: { type: array, items: { $ref: '#/components/schemas/Node' } }
+                  edges: { type: array, items: { $ref: '#/components/schemas/Edge' } }
+  /nodes/{id}/history:
+    parameters: [ { $ref: '#/components/parameters/id' } ]
+    get:
+      tags: [audit]
+      summary: Field-level change history for a node
+      responses:
+        '200': { $ref: '#/components/responses/HistoryList' }
+
+  /edges:
+    get:
+      tags: [edges]
+      summary: List edges (visible only if both endpoints are)
+      parameters:
+        - { $ref: '#/components/parameters/limit' }
+        - { $ref: '#/components/parameters/cursor' }
+        - { name: sourceId, in: query, schema: { type: string } }
+        - { name: targetId, in: query, schema: { type: string } }
+        - { name: relationship, in: query, schema: { type: string } }
+        - { name: bondType, in: query, schema: { type: string } }
+        - { name: minWeight, in: query, schema: { type: number } }
+        - { name: minTrust, in: query, schema: { type: number } }
+      responses:
+        '200': { $ref: '#/components/responses/EdgeList' }
+    post:
+      tags: [edges]
+      summary: Create a relational connection
+      requestBody:
+        required: true
+        content: { application/json: { schema: { $ref: '#/components/schemas/Edge' } } }
+      responses:
+        '201': { description: Created, content: { application/json: { schema: { $ref: '#/components/schemas/Edge' } } } }
+        '422': { $ref: '#/components/responses/Problem' }
+  /edges/{id}:
+    parameters: [ { $ref: '#/components/parameters/id' } ]
+    get:
+      tags: [edges]
+      summary: Get an edge
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { $ref: '#/components/schemas/Edge' } } } }
+        '404': { $ref: '#/components/responses/Problem' }
+    patch:
+      tags: [edges]
+      summary: Update an edge (bondType change is audited)
+      requestBody:
+        required: true
+        content: { application/json: { schema: { $ref: '#/components/schemas/Edge' } } }
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { $ref: '#/components/schemas/Edge' } } } }
+    delete:
+      tags: [edges]
+      summary: Delete an edge
+      responses:
+        '204': { description: Deleted }
+  /edges/{id}/reinforce:
+    parameters: [ { $ref: '#/components/parameters/id' } ]
+    post:
+      tags: [edges]
+      summary: Reinforce an edge (the "remember" signal)
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                amount: { type: number, default: 1.0 }
+                reason: { type: string }
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { $ref: '#/components/schemas/Edge' } } } }
+        '403': { $ref: '#/components/responses/Problem' }
+
+  /clusters:
+    get:
+      tags: [clusters]
+      summary: List clusters
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data: { type: array, items: { $ref: '#/components/schemas/Cluster' } }
+    post:
+      tags: [clusters]
+      summary: Create a cluster
+      requestBody:
+        required: true
+        content: { application/json: { schema: { $ref: '#/components/schemas/Cluster' } } }
+      responses:
+        '201': { description: Created, content: { application/json: { schema: { $ref: '#/components/schemas/Cluster' } } } }
+
+  /connectors:
+    get:
+      tags: [ingestion]
+      summary: List ingestion connectors and their options
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        name: { type: string }
+                        options: { type: object, additionalProperties: true }
+  /ingest:
+    post:
+      tags: [ingestion]
+      summary: Start a digestion job (async)
+      parameters: [ { $ref: '#/components/parameters/idempotencyKey' } ]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [connector, options]
+              properties:
+                connector: { type: string, enum: [file, obsidian, graphify, conversation, url, pdf, rss, api] }
+                options: { type: object, additionalProperties: true }
+                tier: { $ref: '#/components/schemas/Tier' }
+                dryRun: { type: boolean, default: false }
+      responses:
+        '202': { $ref: '#/components/responses/IngestJob' }
+        '400': { $ref: '#/components/responses/Problem' }
+  /ingest/jobs/{id}:
+    parameters: [ { $ref: '#/components/parameters/id' } ]
+    get:
+      tags: [ingestion]
+      summary: Ingestion job status
+      responses:
+        '200': { $ref: '#/components/responses/IngestJob' }
+        '404': { $ref: '#/components/responses/Problem' }
+  /ingest/jobs/{id}/events:
+    parameters: [ { $ref: '#/components/parameters/id' } ]
+    get:
+      tags: [ingestion]
+      summary: Ingestion progress (SSE)
+      responses:
+        '200': { $ref: '#/components/responses/EventStream' }
+
+  /recall:
+    post:
+      tags: [recall]
+      summary: AUKS priority retrieval (right memory, not similar)
+      parameters: [ { name: reinforce, in: query, schema: { type: boolean, default: true } } ]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [query]
+              properties:
+                query: { type: string }
+                asIdentity: { type: string }
+                topK: { type: integer, default: 10, maximum: 200 }
+                filters:
+                  type: object
+                  properties:
+                    domain: { type: array, items: { $ref: '#/components/schemas/Domain' } }
+                    minTrustTier: { type: integer, minimum: 1, maximum: 4 }
+                    cluster: { type: string }
+                    tag: { type: string }
+                include: { type: array, items: { type: string, enum: [source, why, embedding] } }
+      responses:
+        '200':
+          description: Ranked results
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        node: { $ref: '#/components/schemas/Node' }
+                        priority: { type: number }
+                        scores: { type: object, additionalProperties: { type: number } }
+                        why: { type: string }
+                        source: { $ref: '#/components/schemas/Source' }
+                  ranking:
+                    type: object
+                    properties:
+                      formula: { type: string, example: auks-priority/1.0 }
+                      tier: { $ref: '#/components/schemas/Tier' }
+  /search:
+    get:
+      tags: [recall]
+      summary: Similarity-only search (not priority-ranked)
+      parameters:
+        - { name: q, in: query, required: true, schema: { type: string } }
+        - { $ref: '#/components/parameters/limit' }
+      responses:
+        '200': { $ref: '#/components/responses/NodeList' }
+
+  /agents:
+    get:
+      tags: [agents]
+      summary: List identities
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data: { type: array, items: { $ref: '#/components/schemas/AgentIdentity' } }
+    post:
+      tags: [agents]
+      summary: Register an identity (father only)
+      requestBody:
+        required: true
+        content: { application/json: { schema: { $ref: '#/components/schemas/AgentIdentity' } } }
+      responses:
+        '201': { description: Created, content: { application/json: { schema: { $ref: '#/components/schemas/AgentIdentity' } } } }
+        '403': { $ref: '#/components/responses/Problem' }
+  /agents/{id}:
+    parameters: [ { $ref: '#/components/parameters/id' } ]
+    get:
+      tags: [agents]
+      summary: Get an identity
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { $ref: '#/components/schemas/AgentIdentity' } } } }
+        '404': { $ref: '#/components/responses/Problem' }
+    patch:
+      tags: [agents]
+      summary: Update an identity (father only)
+      requestBody:
+        required: true
+        content: { application/json: { schema: { $ref: '#/components/schemas/AgentIdentity' } } }
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { $ref: '#/components/schemas/AgentIdentity' } } } }
+    delete:
+      tags: [agents]
+      summary: Delete an identity (father only)
+      responses:
+        '204': { description: Deleted }
+  /agents/{id}/state:
+    parameters: [ { $ref: '#/components/parameters/id' } ]
+    get:
+      tags: [agents]
+      summary: Per-identity mutable state
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  identity: { type: string }
+                  lastBootstrapAt: { type: string, format: date-time }
+                  workingSet: { type: array, items: { type: string } }
+                  counters: { type: object, additionalProperties: { type: integer } }
+  /agents/{id}/chat:
+    parameters: [ { $ref: '#/components/parameters/id' } ]
+    post:
+      tags: [agents]
+      summary: Run one identity turn through the relay (SSE-capable)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [message]
+              properties:
+                message: { type: string }
+                stream: { type: boolean, default: false }
+                recall:
+                  type: object
+                  properties:
+                    topK: { type: integer }
+                    filters: { type: object, additionalProperties: true }
+                writeBack: { type: boolean, default: false }
+                providerKey: { type: string, description: "BYO provider key; never stored" }
+      responses:
+        '200':
+          description: Reply (JSON) or SSE stream when stream=true
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  reply: { type: string }
+                  usedNodes: { type: array, items: { type: string } }
+                  rounds: { type: integer }
+                  verifierScore: { type: integer }
+                  wrote: { type: array, items: { type: string } }
+            text/event-stream:
+              schema: { type: string }
+
+  /memory/scopes:
+    get:
+      tags: [memory]
+      summary: List memory scopes
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data: { type: array, items: { $ref: '#/components/schemas/MemoryScope' } }
+    post:
+      tags: [memory]
+      summary: Define a memory scope (father only)
+      requestBody:
+        required: true
+        content: { application/json: { schema: { $ref: '#/components/schemas/MemoryScope' } } }
+      responses:
+        '201': { description: Created, content: { application/json: { schema: { $ref: '#/components/schemas/MemoryScope' } } } }
+  /memory/scopes/{id}:
+    parameters: [ { $ref: '#/components/parameters/id' } ]
+    get:
+      tags: [memory]
+      summary: Get a scope
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { $ref: '#/components/schemas/MemoryScope' } } } }
+    patch:
+      tags: [memory]
+      summary: Update a scope (father only)
+      requestBody:
+        required: true
+        content: { application/json: { schema: { $ref: '#/components/schemas/MemoryScope' } } }
+      responses:
+        '200': { description: OK, content: { application/json: { schema: { $ref: '#/components/schemas/MemoryScope' } } } }
+    delete:
+      tags: [memory]
+      summary: Delete a scope (father only)
+      responses:
+        '204': { description: Deleted }
+  /memory/grants:
+    get:
+      tags: [memory]
+      summary: List grants (the sharing matrix)
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data: { type: array, items: { $ref: '#/components/schemas/MemoryGrant' } }
+    post:
+      tags: [memory]
+      summary: Grant a scope to an identity (father only)
+      requestBody:
+        required: true
+        content: { application/json: { schema: { $ref: '#/components/schemas/MemoryGrant' } } }
+      responses:
+        '201': { description: Created, content: { application/json: { schema: { $ref: '#/components/schemas/MemoryGrant' } } } }
+  /memory/grants/{id}:
+    parameters: [ { $ref: '#/components/parameters/id' } ]
+    delete:
+      tags: [memory]
+      summary: Revoke a grant (father only)
+      responses:
+        '204': { description: Revoked }
+  /memory/matrix:
+    get:
+      tags: [memory]
+      summary: Rendered sharing matrix (identities x scopes)
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  identities: { type: array, items: { type: string } }
+                  scopes: { type: array, items: { type: string } }
+                  cells: { type: object, additionalProperties: true }
+  /memory/resolve:
+    post:
+      tags: [memory]
+      summary: What can an identity see/do?
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [identity, action]
+              properties:
+                identity: { type: string }
+                action: { type: string, enum: [read, write, reinforce] }
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  reachableScopes: { type: array, items: { type: string } }
+                  nodeCount: { type: integer }
+                  deniedScopes: { type: array, items: { type: string } }
+                  effectiveTier: { $ref: '#/components/schemas/Tier' }
+
+  /build:
+    post:
+      tags: [build]
+      summary: Start a tiered serialization (redaction chokepoint)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [tier]
+              properties:
+                tier: { $ref: '#/components/schemas/Tier' }
+                include: { type: array, items: { type: string, enum: [agents, memory] } }
+                name: { type: string }
+      responses:
+        '202':
+          description: Accepted
+          content:
+            application/json:
+              schema: { type: object, properties: { jobId: { type: string } } }
+  /build/jobs/{id}:
+    parameters: [ { $ref: '#/components/parameters/id' } ]
+    get:
+      tags: [build]
+      summary: Build job status
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  jobId: { type: string }
+                  status: { type: string, enum: [queued, running, succeeded, failed] }
+                  redactions: { type: array, items: { type: string } }
+  /build/jobs/{id}/artifact:
+    parameters: [ { $ref: '#/components/parameters/id' } ]
+    get:
+      tags: [build]
+      summary: Download the serialized AuksBrain document
+      responses:
+        '200':
+          description: A portable brain document (conforms to auks-brain.schema.json)
+          content:
+            application/json:
+              schema: { type: object }
+
+  /events:
+    get:
+      tags: [events]
+      summary: Live brain events (SSE, tier-filtered, Last-Event-ID replay)
+      parameters:
+        - { name: types, in: query, schema: { type: string } }
+        - { name: Last-Event-ID, in: header, schema: { type: string } }
+      responses:
+        '200': { $ref: '#/components/responses/EventStream' }
+
+  /audit:
+    get:
+      tags: [audit]
+      summary: High-level audit log
+      parameters:
+        - { name: actor, in: query, schema: { type: string } }
+        - { name: entityType, in: query, schema: { type: string } }
+        - { name: action, in: query, schema: { type: string } }
+        - { name: since, in: query, schema: { type: string, format: date-time } }
+        - { $ref: '#/components/parameters/limit' }
+        - { $ref: '#/components/parameters/cursor' }
+      responses:
+        '200': { $ref: '#/components/responses/HistoryList' }
+
+  /health:
+    get: { tags: [ops], summary: Liveness/readiness, security: [{}], responses: { '200': { description: OK }, '503': { $ref: '#/components/responses/Problem' } } }
+  /stats:
+    get: { tags: [ops], summary: Counts and coverage, responses: { '200': { description: OK, content: { application/json: { schema: { type: object, additionalProperties: true } } } } } }
+  /capabilities:
+    get: { tags: [ops], summary: Feature flags and limits, security: [{}], responses: { '200': { description: OK, content: { application/json: { schema: { type: object, additionalProperties: true } } } } } }
+
+components:
+  securitySchemes:
+    bearerAuth: { type: http, scheme: bearer, description: "API key mapped to an AgentIdentity; role=father unlocks sacred writes, grants, PRIVATE tier." }
+
+  parameters:
+    id: { name: id, in: path, required: true, schema: { type: string } }
+    limit: { name: limit, in: query, schema: { type: integer, default: 50, maximum: 500 } }
+    cursor: { name: cursor, in: query, schema: { type: string } }
+    idempotencyKey: { name: Idempotency-Key, in: header, schema: { type: string } }
+
+  responses:
+    Problem:
+      description: Error (RFC 9457)
+      content: { application/problem+json: { schema: { $ref: '#/components/schemas/Problem' } } }
+    EventStream:
+      description: Server-Sent Events stream
+      content: { text/event-stream: { schema: { type: string } } }
+    SourceList:
+      description: OK
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data: { type: array, items: { $ref: '#/components/schemas/Source' } }
+              page: { $ref: '#/components/schemas/Page' }
+    NodeList:
+      description: OK
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data: { type: array, items: { $ref: '#/components/schemas/Node' } }
+              page: { $ref: '#/components/schemas/Page' }
+    EdgeList:
+      description: OK
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data: { type: array, items: { $ref: '#/components/schemas/Edge' } }
+              page: { $ref: '#/components/schemas/Page' }
+    HistoryList:
+      description: OK
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              data:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    entityType: { type: string }
+                    entityId: { type: string }
+                    field: { type: string }
+                    oldValue: { type: string }
+                    newValue: { type: string }
+                    action: { type: string }
+                    actor: { type: string }
+                    reason: { type: string }
+                    ts: { type: string, format: date-time }
+              page: { $ref: '#/components/schemas/Page' }
+    IngestJob:
+      description: Ingestion job
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              jobId: { type: string }
+              status: { type: string, enum: [queued, running, succeeded, failed] }
+              connector: { type: string }
+              tier: { $ref: '#/components/schemas/Tier' }
+              progress:
+                type: object
+                properties:
+                  stage: { type: string }
+                  done: { type: integer }
+                  total: { type: integer }
+              result:
+                type: object
+                properties:
+                  nodes: { type: integer }
+                  edges: { type: integer }
+                  sources: { type: integer }
+                  deduped: { type: integer }
+              delta: { $ref: '#/components/schemas/BrainDelta' }
+              problems: { type: array, items: { $ref: '#/components/schemas/Problem' } }
+
+  schemas:
+    # Enums
+    Tier: { type: string, enum: [PUBLIC, FAMILY, PRIVATE] }
+    Domain: { type: string, enum: [AUKS_ARCHIVE, PERSONAL_MEMORY, PATTERN_OF_MIND, HUMAN_KNOWLEDGE] }
+    AccessScope: { type: string, enum: [PRIVATE_SELF, FAMILY_SHARED, FATHER_ONLY] }
+
+    Page:
+      type: object
+      properties:
+        nextCursor: { type: [string, "null"] }
+        hasMore: { type: boolean }
+        count: { type: integer }
+
+    Problem:
+      type: object
+      properties:
+        type: { type: string }
+        title: { type: string }
+        status: { type: integer }
+        detail: { type: string }
+        instance: { type: string }
+        code: { type: string }
+        requestId: { type: string }
+
+    Locator:
+      type: object
+      properties:
+        byteRange: { $ref: '#/components/schemas/Range' }
+        lineRange: { $ref: '#/components/schemas/Range' }
+    Range:
+      type: object
+      required: [start, end]
+      properties: { start: { type: integer }, end: { type: integer } }
+
+    Source:
+      description: Provenance record. See schema/auks-brain.schema.json#/$defs/Source.
+      type: object
+      required: [id, kind, uri]
+      properties:
+        id: { type: string }
+        kind: { type: string, enum: [conversation, file, url, obsidian, graphify, pdf, rss, api] }
+        uri: { type: string }
+        title: { type: string }
+        auksUuid: { type: string }
+        checksum: { type: string }
+        retrievedAt: { type: string, format: date-time }
+        license: { type: string, enum: [public-domain, cc-by, cc-by-sa, proprietary, personal] }
+        tier: { $ref: '#/components/schemas/Tier' }
+        locator: { $ref: '#/components/schemas/Locator' }
+        excerpt: { type: string }
+
+    Cluster:
+      type: object
+      required: [id, label, color]
+      properties:
+        id: { type: string }
+        label: { type: string }
+        description: { type: string }
+        color: { type: string }
+
+    Node:
+      description: >-
+        The full AUKS node. Only id/label/category/description are required; all
+        other fields from schema/auks-brain.schema.json#/$defs/Node are accepted.
+        Summarized here; the JSON Schema is authoritative.
+      type: object
+      required: [id, label, category, description]
+      additionalProperties: true
+      properties:
+        id: { type: string }
+        label: { type: string }
+        category: { type: string }
+        description: { type: string }
+        significance: { type: integer, minimum: 1, maximum: 10 }
+        cluster: { type: [string, "null"] }
+        sacred: { type: boolean }
+        sourceRef: { type: [string, "null"] }
+        domain: { oneOf: [ { $ref: '#/components/schemas/Domain' }, { type: "null" } ] }
+        trustTier: { type: [integer, "null"], minimum: 1, maximum: 4 }
+        accessScope: { oneOf: [ { $ref: '#/components/schemas/AccessScope' }, { type: "null" } ] }
+        agentId: { type: [string, "null"] }
+        importance: { type: number }
+        emotionalWeight: { type: number }
+        embedding: { type: [string, "null"], description: base64 384-dim }
+        version: { type: integer }
+
+    Edge:
+      description: Relational connection. See schema/auks-brain.schema.json#/$defs/Edge.
+      type: object
+      required: [sourceId, targetId, relationship]
+      additionalProperties: true
+      properties:
+        id: { type: string }
+        sourceId: { type: string }
+        targetId: { type: string }
+        relationship: { type: string }
+        label: { type: [string, "null"] }
+        weight: { type: number }
+        similarity: { type: number }
+        bridgeValue: { type: number }
+        reinforcement: { type: number }
+        confidence: { type: number }
+        trust: { type: number }
+        emotionalBond: { type: number }
+        bondType: { type: [string, "null"] }
+
+    AgentIdentity:
+      type: object
+      required: [id, displayName, kind]
+      properties:
+        id: { type: string }
+        displayName: { type: string }
+        kind: { type: string, enum: [guardian, companion, oracle, scanner, custom] }
+        persona: { type: string }
+        oaths: { type: array, items: { type: string } }
+        model:
+          type: object
+          properties:
+            provider: { type: string, enum: [anthropic, openai, local, relay] }
+            model: { type: string }
+            mode: { type: string, enum: [relay, byo-key] }
+        capabilities: { type: array, items: { type: string } }
+        partition:
+          type: object
+          properties:
+            agentId: { type: string }
+            private: { type: boolean }
+        memoryScopes: { type: array, items: { type: string } }
+        pomEnabled: { type: boolean }
+
+    MemoryScope:
+      type: object
+      required: [id, label, selector]
+      properties:
+        id: { type: string }
+        label: { type: string }
+        selector: { type: object, additionalProperties: true }
+        writePolicy: { type: string, enum: [APPEND_ONLY, SHARED_WRITE, READ_ONLY] }
+        conflictPolicy: { type: string }
+        tier: { $ref: '#/components/schemas/Tier' }
+
+    MemoryGrant:
+      type: object
+      required: [identity, scope, access]
+      properties:
+        id: { type: string }
+        identity: { type: string }
+        scope: { type: string }
+        access: { type: array, items: { type: string, enum: [read, write, reinforce] } }
+        expiresAt: { type: [string, "null"], format: date-time }
+        grantedBy: { type: string }
+        grantedAt: { type: string, format: date-time }
+
+    BrainDelta:
+      type: object
+      properties:
+        sources: { type: array, items: { $ref: '#/components/schemas/Source' } }
+        nodes: { type: array, items: { $ref: '#/components/schemas/Node' } }
+        edges: { type: array, items: { $ref: '#/components/schemas/Edge' } }

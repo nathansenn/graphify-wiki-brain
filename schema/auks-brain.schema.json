@@ -1,0 +1,264 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/nathansenn/graphify-wiki-brain/schema/auks-brain.schema.json",
+  "title": "AUKS Public Brain",
+  "description": "Portable AUKS knowledge brain. Full senn-archive Node/Edge schema, source-linked, with multi-identity agents and shared-memory settings. See docs/auks-public-brain-design.md.",
+  "type": "object",
+  "required": ["schemaVersion", "name", "nodes", "edges"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "const": "auks-brain/1.0" },
+    "name": { "type": "string" },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "build": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "tier": { "$ref": "#/$defs/tier" },
+        "redactions": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "sources": { "type": "array", "items": { "$ref": "#/$defs/Source" } },
+    "clusters": { "type": "array", "items": { "$ref": "#/$defs/Cluster" } },
+    "nodes": { "type": "array", "items": { "$ref": "#/$defs/Node" } },
+    "edges": { "type": "array", "items": { "$ref": "#/$defs/Edge" } },
+    "agents": { "type": "array", "items": { "$ref": "#/$defs/AgentIdentity" } },
+    "memory": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "scopes": { "type": "array", "items": { "$ref": "#/$defs/MemoryScope" } },
+        "grants": { "type": "array", "items": { "$ref": "#/$defs/MemoryGrant" } },
+        "settings": { "type": "object" }
+      }
+    }
+  },
+  "$defs": {
+    "tier": { "enum": ["PUBLIC", "FAMILY", "PRIVATE"] },
+    "domain": { "enum": ["AUKS_ARCHIVE", "PERSONAL_MEMORY", "PATTERN_OF_MIND", "HUMAN_KNOWLEDGE"] },
+    "accessScope": { "enum": ["PRIVATE_SELF", "FAMILY_SHARED", "FATHER_ONLY"] },
+    "category": {
+      "description": "IDENTITY/PROJECT/LESSON/PROTOCOL/MILESTONE/PERSON/SYSTEM plus OATH/TEACHING (see design §14).",
+      "type": "string"
+    },
+    "Source": {
+      "type": "object",
+      "required": ["id", "kind", "uri"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "kind": { "enum": ["conversation", "file", "url", "obsidian", "graphify", "pdf", "rss", "api"] },
+        "uri": { "type": "string" },
+        "title": { "type": "string" },
+        "auksUuid": { "type": "string" },
+        "checksum": { "type": "string" },
+        "retrievedAt": { "type": "string", "format": "date-time" },
+        "license": { "enum": ["public-domain", "cc-by", "cc-by-sa", "proprietary", "personal"] },
+        "tier": { "$ref": "#/$defs/tier" },
+        "locator": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "byteRange": { "$ref": "#/$defs/range" },
+            "lineRange": { "$ref": "#/$defs/range" }
+          }
+        },
+        "excerpt": { "type": "string" }
+      }
+    },
+    "range": {
+      "type": "object",
+      "required": ["start", "end"],
+      "additionalProperties": false,
+      "properties": { "start": { "type": "integer" }, "end": { "type": "integer" } }
+    },
+    "Cluster": {
+      "type": "object",
+      "required": ["id", "label", "color"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "label": { "type": "string" },
+        "description": { "type": "string" },
+        "color": { "type": "string" }
+      }
+    },
+    "Node": {
+      "type": "object",
+      "required": ["id", "label", "category", "description"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "label": { "type": "string" },
+        "category": { "$ref": "#/$defs/category" },
+        "description": { "type": "string" },
+        "significance": { "type": "integer", "minimum": 1, "maximum": 10, "default": 5 },
+        "cluster": { "type": ["string", "null"] },
+        "sacred": { "type": "boolean", "default": false },
+
+        "sourceRef": { "type": ["string", "null"], "description": "id into top-level sources[]" },
+        "sourceFile": { "type": ["string", "null"] },
+        "sourcePath": { "type": ["string", "null"] },
+        "sourceContext": { "type": ["string", "null"] },
+        "additionalSources": { "type": ["string", "null"], "description": "JSON array of paths" },
+        "sourceRange": { "type": ["string", "null"], "description": "JSON {start,end}" },
+        "sourceExcerpt": { "type": ["string", "null"] },
+        "sourceLineStart": { "type": ["integer", "null"] },
+        "sourceLineEnd": { "type": ["integer", "null"] },
+        "sourceChecksum": { "type": ["string", "null"] },
+        "transcriptLink": { "type": ["string", "null"] },
+        "auksUuid": { "type": ["string", "null"] },
+        "date": { "type": ["string", "null"] },
+
+        "narrative": { "type": ["string", "null"] },
+        "apexView": { "type": ["string", "null"] },
+        "lucyView": { "type": ["string", "null"] },
+        "emotionalTags": { "type": ["string", "null"], "description": "JSON array" },
+        "autoTags": { "type": "array", "items": { "type": "string" } },
+        "recordType": { "enum": ["memory", "observation", "decision", "emotion", "protocol", null] },
+
+        "auksScore": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+        "auksBridges": { "type": ["integer", "null"] },
+        "embedding": { "type": ["string", "null"], "description": "base64 of Float32 384-dim" },
+        "embeddingDim": { "type": ["integer", "null"] },
+        "centrality": { "type": "number", "default": 0 },
+        "clusterRole": { "enum": ["hub", "bridge", "leaf"], "default": "leaf" },
+        "importance": { "type": "number", "minimum": 0, "maximum": 1, "default": 0.5 },
+        "emotionalWeight": { "type": "number", "minimum": 0, "maximum": 1, "default": 0 },
+
+        "domain": { "oneOf": [{ "$ref": "#/$defs/domain" }, { "type": "null" }] },
+        "trustTier": { "type": ["integer", "null"], "minimum": 1, "maximum": 4 },
+        "influencePolicy": { "enum": ["GOVERNS", "LOCALIZES", "GROUNDS", "EXPANDS", null] },
+        "conflictPriority": { "type": ["integer", "null"] },
+        "retentionPolicy": { "enum": ["NON_DECAYING", "APPEND_ONLY", "COMPACTABLE", null] },
+        "accessScope": { "oneOf": [{ "$ref": "#/$defs/accessScope" }, { "type": "null" }] },
+        "version": { "type": "integer", "default": 1 },
+        "provenanceNotes": { "type": ["string", "null"] },
+        "provenanceNotesUpdatedAt": { "type": ["string", "null"], "format": "date-time" },
+
+        "agentId": { "type": ["string", "null"], "default": "shared" },
+        "locked": { "type": "boolean", "default": false },
+        "lockedBy": { "type": ["string", "null"] },
+        "lockedAt": { "type": ["string", "null"], "format": "date-time" },
+        "temporalWindow": { "enum": ["1_hour", "6_hours", "12_hours", "today", "yesterday", "this_week", "this_month", "this_year", null] },
+        "traceType": { "enum": ["message", "task", "code_change", "file_touch", "decision", "directive", null] },
+        "expiresAt": { "type": ["string", "null"], "format": "date-time" },
+        "referencedAt": { "type": ["string", "null"], "format": "date-time" },
+        "referenceCount": { "type": "integer", "default": 0 },
+        "accessCount": { "type": "integer", "default": 0 },
+        "lastAccessed": { "type": ["string", "null"], "format": "date-time" },
+        "posX": { "type": ["number", "null"] },
+        "posY": { "type": ["number", "null"] },
+        "posZ": { "type": ["number", "null"] },
+        "createdAt": { "type": ["string", "null"], "format": "date-time" },
+        "updatedAt": { "type": ["string", "null"], "format": "date-time" },
+
+        "isolated": { "type": "boolean", "default": false, "description": "explicitly allow zero edges" }
+      }
+    },
+    "Edge": {
+      "type": "object",
+      "required": ["sourceId", "targetId", "relationship"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "sourceId": { "type": "string" },
+        "targetId": { "type": "string" },
+        "relationship": { "type": "string" },
+        "label": { "type": ["string", "null"] },
+        "weight": { "type": "number", "default": 1.0 },
+
+        "connectionType": { "type": "string", "default": "associative" },
+        "connectionLabel": { "type": ["string", "null"] },
+        "reason": { "type": ["string", "null"] },
+        "typeStrength": { "type": "number", "default": 0.5 },
+        "similarity": { "type": "number", "default": 0 },
+        "bridgeValue": { "type": "number", "default": 0 },
+        "reinforcement": { "type": "number", "default": 0 },
+        "traversalCount": { "type": "integer", "default": 0 },
+        "lastTraversed": { "type": ["string", "null"], "format": "date-time" },
+        "lastReinforced": { "type": ["string", "null"], "format": "date-time" },
+        "decayRate": { "type": "number", "default": 0.05 },
+        "confidence": { "type": "number", "default": 0 },
+        "scoredBy": { "type": "string", "default": "auto-inferred" },
+
+        "trust": { "type": "number", "minimum": 0, "maximum": 1, "default": 0.5 },
+        "emotionalBond": { "type": "number", "minimum": 0, "maximum": 1, "default": 0 },
+        "bondType": { "enum": ["creator", "complement", "enforcer", "healer", "artist", "sibling", null] },
+        "bondTypeVersion": { "type": "integer", "default": 1 },
+        "bondTypeChangedAt": { "type": ["string", "null"], "format": "date-time" },
+        "createdAt": { "type": ["string", "null"], "format": "date-time" },
+        "updatedAt": { "type": ["string", "null"], "format": "date-time" }
+      }
+    },
+    "AgentIdentity": {
+      "type": "object",
+      "required": ["id", "displayName", "kind"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "displayName": { "type": "string" },
+        "kind": { "enum": ["guardian", "companion", "oracle", "scanner", "custom"] },
+        "persona": { "type": "string" },
+        "oaths": { "type": "array", "items": { "type": "string" } },
+        "model": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "provider": { "enum": ["anthropic", "openai", "local", "relay"] },
+            "model": { "type": "string" },
+            "mode": { "enum": ["relay", "byo-key"] }
+          }
+        },
+        "capabilities": { "type": "array", "items": { "type": "string" } },
+        "partition": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "agentId": { "type": "string" },
+            "private": { "type": "boolean" }
+          }
+        },
+        "memoryScopes": { "type": "array", "items": { "type": "string" } },
+        "pomEnabled": { "type": "boolean", "default": false },
+        "createdAt": { "type": ["string", "null"], "format": "date-time" }
+      }
+    },
+    "MemoryScope": {
+      "type": "object",
+      "required": ["id", "label", "selector"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "label": { "type": "string" },
+        "selector": {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "accessScope": { "type": "array", "items": { "$ref": "#/$defs/accessScope" } },
+            "domain": { "type": "array", "items": { "$ref": "#/$defs/domain" } },
+            "agentId": { "type": "array", "items": { "type": "string" } },
+            "tags": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "writePolicy": { "enum": ["APPEND_ONLY", "SHARED_WRITE", "READ_ONLY"], "default": "READ_ONLY" },
+        "conflictPolicy": { "type": "string", "default": "LOWER_conflictPriority_WINS" },
+        "tier": { "$ref": "#/$defs/tier" }
+      }
+    },
+    "MemoryGrant": {
+      "type": "object",
+      "required": ["id", "identity", "scope", "access"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "identity": { "type": "string" },
+        "scope": { "type": "string" },
+        "access": { "type": "array", "items": { "enum": ["read", "write", "reinforce"] } },
+        "expiresAt": { "type": ["string", "null"], "format": "date-time" },
+        "grantedBy": { "type": "string" },
+        "grantedAt": { "type": ["string", "null"], "format": "date-time" }
+      }
+    }
+  }
+}
