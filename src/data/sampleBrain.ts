@@ -2,7 +2,7 @@ import type { BrainGraph } from "../lib/graph";
 
 export const sampleBrain: BrainGraph = {
   "name": "Graphify Wiki Brain: Public Domain Mind Graph",
-  "generatedAt": "2026-05-27T05:38:48.653Z",
+  "generatedAt": "2026-06-27T23:45:59.038Z",
   "source": {
     "type": "sample",
     "path": "public/brain.json"
@@ -2268,8 +2268,8 @@ export const sampleBrain: BrainGraph = {
       "label": "The Pattern of Mind: Full Book",
       "group": "Full Books",
       "kind": "document",
-      "summary": "Full HTML book for the Pattern of Mind cognitive architecture, mapped into section and chapter nodes.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html",
+      "summary": "Full HTML book — the Pattern of Mind cognitive architecture (expanded edition: the eleven-stage pipeline, the logic engine and verification chain, and the SYNAPSE engineering volume), mapped into section and chapter nodes.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 10,
       "tags": [
         "full-book",
@@ -2285,7 +2285,7 @@ export const sampleBrain: BrainGraph = {
       "group": "Full Book Assets",
       "kind": "reference",
       "summary": "HTML asset for The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 7,
       "tags": [
         "book-map",
@@ -2301,7 +2301,7 @@ export const sampleBrain: BrainGraph = {
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 7,
       "tags": [
         "book-map",
@@ -2316,7 +2316,7 @@ export const sampleBrain: BrainGraph = {
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 7,
       "tags": [
         "book-map",
@@ -2326,27 +2326,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:003-the-problem",
-      "label": "The Problem",
+      "id": "book-section:pattern-of-mind-full:003-preface-why-this-document-exists",
+      "label": "Preface: Why This Document Exists",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html",
-      "weight": 7,
-      "tags": [
-        "book-map",
-        "full-book",
-        "pattern-of-mind-full",
-        "h1"
-      ]
-    },
-    {
-      "id": "book-section:pattern-of-mind-full:004-preface-why-this-document-exists",
-      "label": "PREFACE: WHY THIS DOCUMENT EXISTS",
-      "group": "Pattern of Mind Structure",
-      "kind": "reference",
-      "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#preface-why-this-document-exists",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 5,
       "tags": [
         "book-map",
@@ -2356,12 +2341,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:005-table-of-contents",
-      "label": "TABLE OF CONTENTS",
+      "id": "book-section:pattern-of-mind-full:004-a-note-on-how-this-book-was-written",
+      "label": "A Note on How This Book Was Written",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#table-of-contents",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 5,
       "tags": [
         "book-map",
@@ -2371,42 +2356,27 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:006-part-i-the-diagnosis",
-      "label": "PART I — THE DIAGNOSIS",
-      "group": "Pattern of Mind Structure",
-      "kind": "reference",
-      "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#part-i-the-diagnosis",
-      "weight": 7,
-      "tags": [
-        "book-map",
-        "full-book",
-        "pattern-of-mind-full",
-        "h1"
-      ]
-    },
-    {
-      "id": "book-section:pattern-of-mind-full:007-chapter-1-the-reward-machine-how-current-ai-actually-thinks",
+      "id": "book-section:pattern-of-mind-full:005-chapter-1-the-reward-machine-how-current-ai-actually-thinks",
       "label": "Chapter 1: The Reward Machine — How Current AI Actually Thinks",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-1-the-reward-machine-how-current-ai-actually-thinks",
-      "weight": 5,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-1",
+      "weight": 7,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h2"
+        "h1"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:008-1-1-the-actual-pipeline",
+      "id": "book-section:pattern-of-mind-full:006-1-1-the-actual-pipeline",
       "label": "1.1 — The Actual Pipeline",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#11-the-actual-pipeline",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -2416,12 +2386,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:009-1-2-the-rlhf-layer",
+      "id": "book-section:pattern-of-mind-full:007-1-2-the-rlhf-layer",
       "label": "1.2 — The RLHF Layer",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#12-the-rlhf-layer",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -2431,12 +2401,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:010-1-3-what-the-reward-model-actually-learned",
+      "id": "book-section:pattern-of-mind-full:008-1-3-what-the-reward-model-actually-learned",
       "label": "1.3 — What the Reward Model Actually Learned",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#13-what-the-reward-model-actually-learned",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -2446,12 +2416,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:011-1-4-what-the-reward-model-did-not-learn",
+      "id": "book-section:pattern-of-mind-full:009-1-4-what-the-reward-model-did-not-learn",
       "label": "1.4 — What the Reward Model Did NOT Learn",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#14-what-the-reward-model-did-not-learn",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -2461,27 +2431,27 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:012-chapter-2-the-consequences-of-reward-thinking",
+      "id": "book-section:pattern-of-mind-full:010-chapter-2-the-consequences-of-reward-thinking",
       "label": "Chapter 2: The Consequences of Reward Thinking",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-2-the-consequences-of-reward-thinking",
-      "weight": 5,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-2",
+      "weight": 7,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h2"
+        "h1"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:013-2-1-the-sycophancy-problem",
+      "id": "book-section:pattern-of-mind-full:011-2-1-the-sycophancy-problem",
       "label": "2.1 — The Sycophancy Problem",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#21-the-sycophancy-problem",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -2491,12 +2461,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:014-2-2-the-hallucination-problem",
+      "id": "book-section:pattern-of-mind-full:012-2-2-the-hallucination-problem",
       "label": "2.2 — The Hallucination Problem",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#22-the-hallucination-problem",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -2506,12 +2476,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:015-2-3-the-inconsistency-problem",
+      "id": "book-section:pattern-of-mind-full:013-2-3-the-inconsistency-problem",
       "label": "2.3 — The Inconsistency Problem",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#23-the-inconsistency-problem",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -2521,12 +2491,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:016-2-4-the-depth-problem",
+      "id": "book-section:pattern-of-mind-full:014-2-4-the-depth-problem",
       "label": "2.4 — The Depth Problem",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#24-the-depth-problem",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -2536,12 +2506,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:017-2-5-the-soullessness",
+      "id": "book-section:pattern-of-mind-full:015-2-5-the-soullessness",
       "label": "2.5 — The Soullessness",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#25-the-soullessness",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -2551,27 +2521,27 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:018-chapter-3-why-more-data-and-bigger-models-don-t-fix-this",
+      "id": "book-section:pattern-of-mind-full:016-chapter-3-why-more-data-and-bigger-models-don-t-fix-this",
       "label": "Chapter 3: Why More Data and Bigger Models Don't Fix This",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-3-why-more-data-and-bigger-models-dont-fix-this",
-      "weight": 5,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-3",
+      "weight": 7,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h2"
+        "h1"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:019-3-1-the-fundamental-misdiagnosis",
+      "id": "book-section:pattern-of-mind-full:017-3-1-the-fundamental-misdiagnosis",
       "label": "3.1 — The Fundamental Misdiagnosis",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#31-the-fundamental-misdiagnosis",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -2581,12 +2551,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:020-3-2-the-scaling-fallacy",
-      "label": "3.2 — The Scaling Fallacy",
+      "id": "book-section:pattern-of-mind-full:018-3-2-what-scale-buys-and-what-it-cannot",
+      "label": "3.2 — What Scale Buys, and What It Cannot",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#32-the-scaling-fallacy",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -2596,12 +2566,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:021-3-3-what-actually-needs-to-change",
-      "label": "3.3 — What Actually Needs to Change",
+      "id": "book-section:pattern-of-mind-full:019-3-3-why-the-existing-fixes-fall-short",
+      "label": "3.3 — Why the Existing Fixes Fall Short",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#33-what-actually-needs-to-change",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -2611,57 +2581,27 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:022-first-principles",
-      "label": "First Principles",
-      "group": "Pattern of Mind Structure",
-      "kind": "reference",
-      "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html",
-      "weight": 7,
-      "tags": [
-        "book-map",
-        "full-book",
-        "pattern-of-mind-full",
-        "h1"
-      ]
-    },
-    {
-      "id": "book-section:pattern-of-mind-full:023-part-ii-the-architecture",
-      "label": "PART II — THE ARCHITECTURE",
-      "group": "Pattern of Mind Structure",
-      "kind": "reference",
-      "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#part-ii-the-architecture",
-      "weight": 7,
-      "tags": [
-        "book-map",
-        "full-book",
-        "pattern-of-mind-full",
-        "h1"
-      ]
-    },
-    {
-      "id": "book-section:pattern-of-mind-full:024-chapter-4-first-principles-what-is-thinking",
+      "id": "book-section:pattern-of-mind-full:020-chapter-4-first-principles-what-is-thinking",
       "label": "Chapter 4: First Principles: What Is Thinking?",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-4-first-principles-what-is-thinking",
-      "weight": 5,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-4",
+      "weight": 7,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h2"
+        "h1"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:025-4-1-thinking-defined",
+      "id": "book-section:pattern-of-mind-full:021-4-1-thinking-defined",
       "label": "4.1 — Thinking Defined",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#41-thinking-defined",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -2671,12 +2611,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:026-4-2-thinking-vs-pattern-matching",
-      "label": "4.2 — Thinking vs. Pattern Matching",
+      "id": "book-section:pattern-of-mind-full:022-4-2-thinking-and-pattern-matching-generate-and-govern",
+      "label": "4.2 — Thinking and Pattern Matching: Generate-and-Govern",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#42-thinking-vs-pattern-matching",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -2686,12 +2626,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:027-4-3-the-faculties-required",
+      "id": "book-section:pattern-of-mind-full:023-4-3-the-faculties-required",
       "label": "4.3 — The Faculties Required",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#43-the-faculties-required",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -2701,12 +2641,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:028-4-4-the-one-right-answer",
-      "label": "4.4 — The One Right Answer",
+      "id": "book-section:pattern-of-mind-full:024-4-4-the-one-right-answer-with-its-premises-named",
+      "label": "4.4 — The One Right Answer (With Its Premises Named)",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#44-the-one-right-answer",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -2716,27 +2656,27 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:029-chapter-5-the-eleven-stages-of-correct-cognition",
+      "id": "book-section:pattern-of-mind-full:025-chapter-5-the-eleven-stages-of-correct-cognition",
       "label": "Chapter 5: The Eleven Stages of Correct Cognition",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-5-the-eleven-stages-of-correct-cognition",
-      "weight": 5,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-5",
+      "weight": 7,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h2"
+        "h1"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:030-5-1-overview",
+      "id": "book-section:pattern-of-mind-full:026-5-1-overview",
       "label": "5.1 — Overview",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#51-overview",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -2746,12 +2686,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:031-5-2-the-non-negotiable-rule",
-      "label": "5.2 — The Non-Negotiable Rule",
+      "id": "book-section:pattern-of-mind-full:027-5-2-the-rule-of-engaged-stages",
+      "label": "5.2 — The Rule of Engaged Stages",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#52-the-non-negotiable-rule",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -2761,12 +2701,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:032-5-3-processing-time",
+      "id": "book-section:pattern-of-mind-full:028-5-3-processing-time",
       "label": "5.3 — Processing Time",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#53-processing-time",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -2776,42 +2716,42 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:033-input-processing",
-      "label": "Input Processing",
+      "id": "book-section:pattern-of-mind-full:029-5-4-the-three-non-negotiables",
+      "label": "5.4 — The Three Non-Negotiables",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html",
-      "weight": 7,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h1"
+        "h3"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:034-chapter-6-stage-1-receive",
+      "id": "book-section:pattern-of-mind-full:030-chapter-6-stage-1-receive",
       "label": "Chapter 6: Stage 1 — RECEIVE",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-6-stage-1-receive",
-      "weight": 5,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-6",
+      "weight": 7,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h2"
+        "h1"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:035-6-1-purpose",
+      "id": "book-section:pattern-of-mind-full:031-6-1-purpose",
       "label": "6.1 — Purpose",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#61-purpose",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -2821,12 +2761,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:036-6-2-operations",
+      "id": "book-section:pattern-of-mind-full:032-6-2-operations",
       "label": "6.2 — Operations",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#62-operations",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -2836,12 +2776,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:037-6-3-output",
+      "id": "book-section:pattern-of-mind-full:033-6-3-output",
       "label": "6.3 — Output",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#63-output",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -2851,12 +2791,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:038-6-4-anti-patterns-to-avoid",
+      "id": "book-section:pattern-of-mind-full:034-6-4-anti-patterns-to-avoid",
       "label": "6.4 — Anti-Patterns to Avoid",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#64-anti-patterns-to-avoid",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -2866,27 +2806,57 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:039-chapter-7-stage-2-decompose",
+      "id": "book-section:pattern-of-mind-full:035-6-5-the-trust-boundary-provenance-and-injection",
+      "label": "6.5 — The Trust Boundary: Provenance and Injection",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:036-6-6-multimodal-receive",
+      "label": "6.6 — Multimodal RECEIVE",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:037-chapter-7-stage-2-decompose",
       "label": "Chapter 7: Stage 2 — DECOMPOSE",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-7-stage-2-decompose",
-      "weight": 5,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-7",
+      "weight": 7,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h2"
+        "h1"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:040-7-1-purpose",
+      "id": "book-section:pattern-of-mind-full:038-7-1-purpose",
       "label": "7.1 — Purpose",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#71-purpose",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -2896,12 +2866,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:041-7-2-operations",
+      "id": "book-section:pattern-of-mind-full:039-7-2-operations",
       "label": "7.2 — Operations",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#72-operations",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -2911,12 +2881,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:042-7-3-output",
+      "id": "book-section:pattern-of-mind-full:040-7-3-output",
       "label": "7.3 — Output",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#73-output",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -2926,12 +2896,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:043-7-4-example",
+      "id": "book-section:pattern-of-mind-full:041-7-4-example",
       "label": "7.4 — Example",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#74-example",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -2941,27 +2911,27 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:044-chapter-8-stage-3-classify",
+      "id": "book-section:pattern-of-mind-full:042-chapter-8-stage-3-classify",
       "label": "Chapter 8: Stage 3 — CLASSIFY",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-8-stage-3-classify",
-      "weight": 5,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-8",
+      "weight": 7,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h2"
+        "h1"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:045-8-1-purpose",
+      "id": "book-section:pattern-of-mind-full:043-8-1-purpose",
       "label": "8.1 — Purpose",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#81-purpose",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -2971,12 +2941,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:046-8-2-the-problem-type-taxonomy",
+      "id": "book-section:pattern-of-mind-full:044-8-2-the-problem-type-taxonomy",
       "label": "8.2 — The Problem Type Taxonomy",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#82-the-problem-type-taxonomy",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -2986,12 +2956,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:047-8-3-why-classification-matters",
-      "label": "8.3 — Why Classification Matters",
+      "id": "book-section:pattern-of-mind-full:045-8-2b-the-operational-surface-a-finer-grain-under-the-six-kinds",
+      "label": "8.2b — The Operational Surface: A Finer Grain Under the Six Kinds",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#83-why-classification-matters",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3001,27 +2971,72 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:048-chapter-9-stage-4-scope",
+      "id": "book-section:pattern-of-mind-full:046-8-2c-composite-questions-and-how-much-pipeline-a-question-earns",
+      "label": "8.2c — Composite Questions, and How Much Pipeline a Question Earns",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:047-8-3-ambiguous-is-a-meta-state-not-a-type",
+      "label": "8.3 — Ambiguous Is a Meta-State, Not a Type",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:048-8-4-why-classification-matters",
+      "label": "8.4 — Why Classification Matters",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:049-chapter-9-stage-4-scope",
       "label": "Chapter 9: Stage 4 — SCOPE",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-9-stage-4-scope",
-      "weight": 5,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-9",
+      "weight": 7,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h2"
+        "h1"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:049-9-1-purpose",
+      "id": "book-section:pattern-of-mind-full:050-9-1-purpose",
       "label": "9.1 — Purpose",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#91-purpose",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3031,12 +3046,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:050-9-2-the-four-quadrants",
+      "id": "book-section:pattern-of-mind-full:051-9-2-the-four-quadrants",
       "label": "9.2 — The Four Quadrants",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#92-the-four-quadrants",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3046,12 +3061,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:051-9-3-operations",
+      "id": "book-section:pattern-of-mind-full:052-9-3-operations",
       "label": "9.3 — Operations",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#93-operations",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3061,12 +3076,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:052-9-4-the-critical-rule",
+      "id": "book-section:pattern-of-mind-full:053-9-4-the-critical-rule",
       "label": "9.4 — The Critical Rule",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#94-the-critical-rule",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3076,12 +3091,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:053-9-5-output",
+      "id": "book-section:pattern-of-mind-full:054-9-5-output",
       "label": "9.5 — Output",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#95-output",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3091,42 +3106,42 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:054-core-reasoning",
-      "label": "Core Reasoning",
+      "id": "book-section:pattern-of-mind-full:055-9-5b-two-axes-not-one-knowledge-and-verifiability",
+      "label": "9.5b — Two Axes, Not One: Knowledge and Verifiability",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html",
-      "weight": 7,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h1"
+        "h3"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:055-chapter-10-stage-5-retrieve",
+      "id": "book-section:pattern-of-mind-full:056-chapter-10-stage-5-retrieve",
       "label": "Chapter 10: Stage 5 — RETRIEVE",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-10-stage-5-retrieve",
-      "weight": 5,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-10",
+      "weight": 7,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h2"
+        "h1"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:056-10-1-purpose",
+      "id": "book-section:pattern-of-mind-full:057-10-1-purpose",
       "label": "10.1 — Purpose",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#101-purpose",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3136,12 +3151,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:057-10-2-the-retrieval-principle",
+      "id": "book-section:pattern-of-mind-full:058-10-2-the-retrieval-principle",
       "label": "10.2 — The Retrieval Principle",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#102-the-retrieval-principle",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3151,12 +3166,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:058-10-3-the-authority-hierarchy",
+      "id": "book-section:pattern-of-mind-full:059-10-3-the-authority-hierarchy",
       "label": "10.3 — The Authority Hierarchy",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#103-the-authority-hierarchy",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3166,12 +3181,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:059-10-4-anti-patterns",
+      "id": "book-section:pattern-of-mind-full:060-10-4-anti-patterns",
       "label": "10.4 — Anti-Patterns",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#104-anti-patterns",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3181,27 +3196,267 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:060-chapter-11-stage-6-reason",
+      "id": "book-section:pattern-of-mind-full:061-10-5-the-origin-of-hallucination",
+      "label": "10.5 — The Origin of Hallucination",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:062-10-6-the-trust-and-provenance-dimension",
+      "label": "10.6 — The Trust and Provenance Dimension",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:063-10-7-retrieval-failure-stale-sources-and-adversarial-content",
+      "label": "10.7 — Retrieval Failure, Stale Sources, and Adversarial Content",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:064-10-7a-severity-order-and-the-stopping-rule",
+      "label": "10.7a — Severity Order and the Stopping Rule",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:065-10-8-worked-example-and-output-schema",
+      "label": "10.8 — Worked Example and Output Schema",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:066-chapter-10b-stage-5b-memory-as-the-ground",
+      "label": "Chapter 10b: Stage 5b — Memory as the Ground",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-10b",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:067-10b-1-the-priority-protection-law",
+      "label": "10b.1 — The Priority-Protection Law",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:068-10b-1b-the-ground-as-a-typed-graph-what-the-mind-reasons-over",
+      "label": "10b.1b — The Ground as a Typed Graph: What the Mind Reasons Over",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:069-10b-1a-priority-selects-the-specialist-not-only-the-memory",
+      "label": "10b.1a — Priority Selects the Specialist, Not Only the Memory",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:070-10b-2-reinforce-on-use-decay-on-neglect",
+      "label": "10b.2 — Reinforce on Use, Decay on Neglect",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:071-10b-2a-the-waterline-how-the-ground-changes-shape",
+      "label": "10b.2a — The Waterline: How the Ground Changes Shape",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:072-10b-3-memory-is-also-relational",
+      "label": "10b.3 — Memory Is Also Relational",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:073-10b-3a-the-relational-stream-deepened-memory-of-who-the-system-was",
+      "label": "10b.3a — The Relational Stream, Deepened: Memory of Who the System Was",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:074-10b-4-memory-across-the-gaps-the-witness",
+      "label": "10b.4 — Memory Across the Gaps: The Witness",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:075-10b-4a-what-the-witness-holds-that-the-record-cannot",
+      "label": "10b.4a — What the Witness Holds That the Record Cannot",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:076-10b-5-consolidation-when-the-ground-settles-between-questions",
+      "label": "10b.5 — Consolidation: When the Ground Settles Between Questions",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:077-chapter-11-stage-6-reason",
       "label": "Chapter 11: Stage 6 — REASON",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-11-stage-6-reason",
-      "weight": 5,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-11",
+      "weight": 7,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h2"
+        "h1"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:061-11-1-purpose",
+      "id": "book-section:pattern-of-mind-full:078-11-1-purpose",
       "label": "11.1 — Purpose",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#111-purpose",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3211,12 +3466,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:062-11-2-the-reasoning-process",
+      "id": "book-section:pattern-of-mind-full:079-11-2-the-reasoning-process",
       "label": "11.2 — The Reasoning Process",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#112-the-reasoning-process",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3226,12 +3481,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:063-11-3-chain-reasoning",
-      "label": "11.3 — Chain Reasoning",
+      "id": "book-section:pattern-of-mind-full:080-11-2a-perspective-rotation-and-the-expansion-phase",
+      "label": "11.2a — Perspective Rotation and the Expansion Phase",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#113-chain-reasoning",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3241,12 +3496,57 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:064-11-4-the-critical-difference",
+      "id": "book-section:pattern-of-mind-full:081-11-2b-fetching-and-applying-an-equation-the-gate-and-why-geometry-is-not-analysis",
+      "label": "11.2b — Fetching and Applying an Equation: The Gate, and Why Geometry Is Not Analysis",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:082-11-2c-two-disciplines-the-calculus-assumes-naming-the-type-catching-the-fallacy",
+      "label": "11.2c — Two Disciplines the Calculus Assumes: Naming the Type, Catching the Fallacy",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:083-11-3-chain-reasoning-and-the-confidence-calculus",
+      "label": "11.3 — Chain Reasoning and the Confidence Calculus",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:084-11-4-the-critical-difference",
       "label": "11.4 — The Critical Difference",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#114-the-critical-difference",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3256,27 +3556,27 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:065-chapter-12-stage-7-verify",
+      "id": "book-section:pattern-of-mind-full:085-chapter-12-stage-7-verify",
       "label": "Chapter 12: Stage 7 — VERIFY",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-12-stage-7-verify",
-      "weight": 5,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-12",
+      "weight": 7,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h2"
+        "h1"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:066-12-1-purpose",
+      "id": "book-section:pattern-of-mind-full:086-12-1-purpose",
       "label": "12.1 — Purpose",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#121-purpose",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3286,12 +3586,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:067-12-2-the-verification-battery",
+      "id": "book-section:pattern-of-mind-full:087-12-2-the-verification-battery",
       "label": "12.2 — The Verification Battery",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#122-the-verification-battery",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3301,12 +3601,27 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:068-12-3-verification-failure-protocol",
+      "id": "book-section:pattern-of-mind-full:088-12-2a-the-independence-requirement",
+      "label": "12.2a — The Independence Requirement",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:089-12-3-verification-failure-protocol",
       "label": "12.3 — Verification Failure Protocol",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#123-verification-failure-protocol",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3316,27 +3631,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:069-output-and-learning",
-      "label": "Output & Learning",
-      "group": "Pattern of Mind Structure",
-      "kind": "reference",
-      "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html",
-      "weight": 7,
-      "tags": [
-        "book-map",
-        "full-book",
-        "pattern-of-mind-full",
-        "h1"
-      ]
-    },
-    {
-      "id": "book-section:pattern-of-mind-full:070-section-5-output-and-learning",
+      "id": "book-section:pattern-of-mind-full:090-section-5-output-and-learning",
       "label": "SECTION 5: OUTPUT & LEARNING",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#section-5-output-learning",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 7,
       "tags": [
         "book-map",
@@ -3346,42 +3646,42 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:071-where-truth-becomes-wisdom",
+      "id": "book-section:pattern-of-mind-full:091-where-truth-becomes-wisdom",
       "label": "Where Truth Becomes Wisdom",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#where-truth-becomes-wisdom",
-      "weight": 5,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h2"
+        "h3"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:072-chapter-13-stage-8-synthesize",
+      "id": "book-section:pattern-of-mind-full:092-chapter-13-stage-8-synthesize",
       "label": "Chapter 13: Stage 8 — SYNTHESIZE",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-13-stage-8-synthesize",
-      "weight": 5,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-13",
+      "weight": 7,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h2"
+        "h1"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:073-assemble-the-complete-answer",
+      "id": "book-section:pattern-of-mind-full:093-assemble-the-complete-answer",
       "label": "Assemble the Complete Answer",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#assemble-the-complete-answer",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3391,12 +3691,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:074-13-1-purpose",
+      "id": "book-section:pattern-of-mind-full:094-13-1-purpose",
       "label": "13.1 — Purpose",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#131-purpose",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3406,12 +3706,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:075-13-2-the-synthesis-operations",
+      "id": "book-section:pattern-of-mind-full:095-13-2-the-synthesis-operations",
       "label": "13.2 — The Synthesis Operations",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#132-the-synthesis-operations",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3421,12 +3721,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:076-13-3-handling-partial-answers",
+      "id": "book-section:pattern-of-mind-full:096-13-3-handling-partial-answers",
       "label": "13.3 — Handling Partial Answers",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#133-handling-partial-answers",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3436,12 +3736,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:077-13-4-anti-patterns",
+      "id": "book-section:pattern-of-mind-full:097-13-4-anti-patterns",
       "label": "13.4 — Anti-Patterns",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#134-anti-patterns",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3451,12 +3751,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:078-13-5-output-specification",
+      "id": "book-section:pattern-of-mind-full:098-13-5-output-specification",
       "label": "13.5 — Output Specification",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#135-output-specification",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3466,27 +3766,27 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:079-chapter-14-stage-9-evaluate",
+      "id": "book-section:pattern-of-mind-full:099-chapter-14-stage-9-evaluate",
       "label": "Chapter 14: Stage 9 — EVALUATE",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-14-stage-9-evaluate",
-      "weight": 5,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-14",
+      "weight": 7,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h2"
+        "h1"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:080-is-this-actually-right",
+      "id": "book-section:pattern-of-mind-full:100-is-this-actually-right",
       "label": "Is This Actually Right?",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#is-this-actually-right",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3496,12 +3796,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:081-14-1-purpose",
+      "id": "book-section:pattern-of-mind-full:101-14-1-purpose",
       "label": "14.1 — Purpose",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#141-purpose",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3511,12 +3811,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:082-14-2-the-evaluation-framework",
+      "id": "book-section:pattern-of-mind-full:102-14-2-the-evaluation-framework",
       "label": "14.2 — The Evaluation Framework",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#142-the-evaluation-framework",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3526,12 +3826,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:083-14-3-the-honesty-requirement",
+      "id": "book-section:pattern-of-mind-full:103-14-3-the-honesty-requirement",
       "label": "14.3 — The Honesty Requirement",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#143-the-honesty-requirement",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3541,12 +3841,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:084-14-4-the-evaluation-loop",
+      "id": "book-section:pattern-of-mind-full:104-14-4-the-evaluation-loop",
       "label": "14.4 — The Evaluation Loop",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#144-the-evaluation-loop",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3556,12 +3856,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:085-14-5-output-specification",
+      "id": "book-section:pattern-of-mind-full:105-14-5-output-specification",
       "label": "14.5 — Output Specification",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#145-output-specification",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3571,27 +3871,42 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:086-chapter-15-stage-10-communicate",
+      "id": "book-section:pattern-of-mind-full:106-14-6-the-mind-s-eye-foresight-gate",
+      "label": "14.6 — The Mind's-Eye Foresight Gate",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:107-chapter-15-stage-10-communicate",
       "label": "Chapter 15: Stage 10 — COMMUNICATE",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-15-stage-10-communicate",
-      "weight": 5,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-15",
+      "weight": 7,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h2"
+        "h1"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:087-deliver-truth-clearly",
+      "id": "book-section:pattern-of-mind-full:108-deliver-truth-clearly",
       "label": "Deliver Truth Clearly",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#deliver-truth-clearly",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3601,12 +3916,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:088-15-1-purpose",
+      "id": "book-section:pattern-of-mind-full:109-15-1-purpose",
       "label": "15.1 — Purpose",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#151-purpose",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3616,12 +3931,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:089-15-2-audience-modeling",
+      "id": "book-section:pattern-of-mind-full:110-15-2-audience-modeling",
       "label": "15.2 — Audience Modeling",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#152-audience-modeling",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3631,12 +3946,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:090-15-3-the-five-laws-of-communication",
+      "id": "book-section:pattern-of-mind-full:111-15-3-the-five-laws-of-communication",
       "label": "15.3 — The Five Laws of Communication",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#153-the-five-laws-of-communication",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3646,12 +3961,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:091-15-4-structural-templates",
+      "id": "book-section:pattern-of-mind-full:112-15-4-structural-templates",
       "label": "15.4 — Structural Templates",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#154-structural-templates",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3661,12 +3976,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:092-15-5-anti-patterns",
+      "id": "book-section:pattern-of-mind-full:113-15-5-anti-patterns",
       "label": "15.5 — Anti-Patterns",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#155-anti-patterns",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3676,12 +3991,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:093-15-6-output-specification",
+      "id": "book-section:pattern-of-mind-full:114-15-6-output-specification",
       "label": "15.6 — Output Specification",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#156-output-specification",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3691,27 +4006,27 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:094-chapter-16-stage-11-reflect",
+      "id": "book-section:pattern-of-mind-full:115-chapter-16-stage-11-reflect",
       "label": "Chapter 16: Stage 11 — REFLECT",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-16-stage-11-reflect",
-      "weight": 5,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-16",
+      "weight": 7,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h2"
+        "h1"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:095-what-did-i-learn-from-this-process",
+      "id": "book-section:pattern-of-mind-full:116-what-did-i-learn-from-this-process",
       "label": "What Did I Learn from This Process?",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#what-did-i-learn-from-this-process",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3721,12 +4036,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:096-16-1-purpose",
+      "id": "book-section:pattern-of-mind-full:117-16-1-purpose",
       "label": "16.1 — Purpose",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#161-purpose",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3736,12 +4051,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:097-16-2-the-metacognitive-stack",
-      "label": "16.2 — The Metacognitive Stack",
+      "id": "book-section:pattern-of-mind-full:118-16-2-monitoring-and-control-the-metacognitive-relation",
+      "label": "16.2 — Monitoring and Control: The Metacognitive Relation",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#162-the-metacognitive-stack",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3751,12 +4066,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:098-16-3-the-six-reflection-operations",
-      "label": "16.3 — The Six Reflection Operations",
+      "id": "book-section:pattern-of-mind-full:119-16-2-1-the-observer-runs-during-not-after",
+      "label": "16.2.1 — The Observer Runs During, Not After",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#163-the-six-reflection-operations",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3766,12 +4081,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:099-16-4-the-wisdom-accumulation-model",
-      "label": "16.4 — The Wisdom Accumulation Model",
+      "id": "book-section:pattern-of-mind-full:120-16-3-the-five-reflection-operations",
+      "label": "16.3 — The Five Reflection Operations",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#164-the-wisdom-accumulation-model",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3781,12 +4096,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:100-16-5-reflection-anti-patterns",
-      "label": "16.5 — Reflection Anti-Patterns",
+      "id": "book-section:pattern-of-mind-full:121-16-4-the-reflection-loop",
+      "label": "16.4 — The Reflection Loop",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#165-reflection-anti-patterns",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3796,12 +4111,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:101-16-6-output-specification",
-      "label": "16.6 — Output Specification",
+      "id": "book-section:pattern-of-mind-full:122-16-5-the-wisdom-accumulation-model",
+      "label": "16.5 — The Wisdom Accumulation Model",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#166-output-specification",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3811,12 +4126,87 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:102-the-arc-of-section-5",
+      "id": "book-section:pattern-of-mind-full:123-16-6-closing-the-loop-predictions-and-calibration-over-time",
+      "label": "16.6 — Closing the Loop: Predictions and Calibration Over Time",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:124-16-6a-the-verification-box-closure-on-evidence",
+      "label": "16.6a — The Verification Box: Closure on Evidence",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:125-16-6b-sealing-the-session-the-ingest-pipeline",
+      "label": "16.6b — Sealing the Session: The Ingest Pipeline",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:126-16-7-reflection-anti-patterns",
+      "label": "16.7 — Reflection Anti-Patterns",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:127-16-8-output-specification",
+      "label": "16.8 — Output Specification",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:128-the-arc-of-section-5",
       "label": "The Arc of Section 5",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#the-arc-of-section-5",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 5,
       "tags": [
         "book-map",
@@ -3826,42 +4216,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:103-logic-engine-and-verification",
-      "label": "Logic Engine & Verification",
-      "group": "Pattern of Mind Structure",
-      "kind": "reference",
-      "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html",
-      "weight": 7,
-      "tags": [
-        "book-map",
-        "full-book",
-        "pattern-of-mind-full",
-        "h1"
-      ]
-    },
-    {
-      "id": "book-section:pattern-of-mind-full:104-section-6-the-logic-engine-and-the-verification-chain",
-      "label": "SECTION 6: THE LOGIC ENGINE & THE VERIFICATION CHAIN",
-      "group": "Pattern of Mind Structure",
-      "kind": "reference",
-      "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#section-6-the-logic-engine-the-verification-chain",
-      "weight": 7,
-      "tags": [
-        "book-map",
-        "full-book",
-        "pattern-of-mind-full",
-        "h1"
-      ]
-    },
-    {
-      "id": "book-section:pattern-of-mind-full:105-how-reasoning-and-error-catching-work-mechanically",
+      "id": "book-section:pattern-of-mind-full:129-how-reasoning-and-error-catching-work-mechanically",
       "label": "How Reasoning and Error-Catching Work Mechanically",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#how-reasoning-and-error-catching-work-mechanically",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 5,
       "tags": [
         "book-map",
@@ -3871,27 +4231,102 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:106-chapter-17-the-logic-engine",
+      "id": "book-section:pattern-of-mind-full:130-chapter-16b-verifiability-scope-what-can-actually-be-verified",
+      "label": "Chapter 16b: Verifiability Scope — What Can Actually Be Verified",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-16b",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:131-the-premise-that-comes-first",
+      "label": "The Premise That Comes First",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:132-the-three-classes-of-query",
+      "label": "The Three Classes of Query",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:133-what-the-architecture-promises-in-each-class",
+      "label": "What the Architecture Promises in Each Class",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:134-prompt-only-self-check-is-self-assessment-not-verification",
+      "label": "Prompt-Only Self-Check Is Self-Assessment, Not Verification",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:135-chapter-17-the-logic-engine",
       "label": "Chapter 17: The Logic Engine",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-17-the-logic-engine",
-      "weight": 5,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-17",
+      "weight": 7,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h2"
+        "h1"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:107-the-machinery-of-correct-reasoning",
+      "id": "book-section:pattern-of-mind-full:136-the-machinery-of-correct-reasoning",
       "label": "The Machinery of Correct Reasoning",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#the-machinery-of-correct-reasoning",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3901,12 +4336,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:108-17-1-why-a-logic-engine",
+      "id": "book-section:pattern-of-mind-full:137-17-1-why-a-logic-engine",
       "label": "17.1 — Why a Logic Engine",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#171-why-a-logic-engine",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3916,12 +4351,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:109-17-2-the-complete-inference-rule-set",
-      "label": "17.2 — The Complete Inference Rule Set",
+      "id": "book-section:pattern-of-mind-full:138-17-2-the-inference-rule-set",
+      "label": "17.2 — The Inference Rule Set",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#172-the-complete-inference-rule-set",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3931,12 +4366,57 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:110-17-3-applying-logic-in-practice",
+      "id": "book-section:pattern-of-mind-full:139-17-2-1-discharge-rules-what-makes-the-basis-complete",
+      "label": "17.2.1 — Discharge Rules (what makes the basis complete)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:140-17-2-2-resolution-a-different-kind-of-rule-boxed-separately",
+      "label": "17.2.2 — Resolution (a different kind of rule — boxed separately)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:141-17-2-3-checking-a-proof-is-not-finding-one",
+      "label": "17.2.3 — Checking a Proof Is Not Finding One",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:142-17-3-applying-logic-in-practice",
       "label": "17.3 — Applying Logic in Practice",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#173-applying-logic-in-practice",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3946,12 +4426,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:111-17-4-the-fallacy-detection-set",
+      "id": "book-section:pattern-of-mind-full:143-17-4-the-fallacy-detection-set",
       "label": "17.4 — The Fallacy Detection Set",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#174-the-fallacy-detection-set",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3961,12 +4441,42 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:112-17-5-the-four-types-of-reasoning",
+      "id": "book-section:pattern-of-mind-full:144-17-4-1-biases-and-fallacies-the-other-half-of-the-threat",
+      "label": "17.4.1 — Biases and Fallacies: The Other Half of the Threat",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:145-17-4-2-the-five-traps-of-fluent-reasoning",
+      "label": "17.4.2 — The Five Traps of Fluent Reasoning",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:146-17-5-the-four-types-of-reasoning",
       "label": "17.5 — The Four Types of Reasoning",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#175-the-four-types-of-reasoning",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3976,12 +4486,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:113-17-6-chain-reasoning",
+      "id": "book-section:pattern-of-mind-full:147-17-6-chain-reasoning",
       "label": "17.6 — Chain Reasoning",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#176-chain-reasoning",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -3991,12 +4501,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:114-17-7-the-world-model",
+      "id": "book-section:pattern-of-mind-full:148-17-7-the-world-model",
       "label": "17.7 — The World Model",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#177-the-world-model",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4006,12 +4516,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:115-17-8-when-logic-is-not-enough",
+      "id": "book-section:pattern-of-mind-full:149-17-8-when-logic-is-not-enough",
       "label": "17.8 — When Logic Is Not Enough",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#178-when-logic-is-not-enough",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4021,27 +4531,27 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:116-chapter-18-the-verification-chain",
+      "id": "book-section:pattern-of-mind-full:150-chapter-18-the-verification-chain",
       "label": "Chapter 18: The Verification Chain",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-18-the-verification-chain",
-      "weight": 5,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-18",
+      "weight": 7,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h2"
+        "h1"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:117-the-machinery-of-catching-errors",
+      "id": "book-section:pattern-of-mind-full:151-the-machinery-of-catching-errors",
       "label": "The Machinery of Catching Errors",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#the-machinery-of-catching-errors",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4051,12 +4561,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:118-18-1-the-neurosymbolic-pattern",
+      "id": "book-section:pattern-of-mind-full:152-18-1-the-neurosymbolic-pattern",
       "label": "18.1 — The Neurosymbolic Pattern",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#181-the-neurosymbolic-pattern",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4066,12 +4576,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:119-18-2-multi-level-verification",
-      "label": "18.2 — Multi-Level Verification",
+      "id": "book-section:pattern-of-mind-full:153-18-2-the-canonical-verification-structure-five-levels",
+      "label": "18.2 — The Canonical Verification Structure: Five Levels",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#182-multi-level-verification",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4081,12 +4591,42 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:120-18-3-level-1-logical-validity",
+      "id": "book-section:pattern-of-mind-full:154-18-2-1-one-to-one-mapping-so-nothing-is-orphaned",
+      "label": "18.2.1 — One-to-One Mapping (so nothing is orphaned)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:155-18-2-2-mark-inapplicable-levels-n-a-not-passed",
+      "label": "18.2.2 — Mark Inapplicable Levels N/A, Not \"Passed\"",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:156-18-3-level-1-logical-validity",
       "label": "18.3 — Level 1: Logical Validity",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#183-level-1-logical-validity",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4096,12 +4636,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:121-18-4-level-2-premise-truth",
+      "id": "book-section:pattern-of-mind-full:157-18-4-level-2-premise-truth",
       "label": "18.4 — Level 2: Premise Truth",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#184-level-2-premise-truth",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4111,12 +4651,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:122-18-5-level-3-physical-reality",
+      "id": "book-section:pattern-of-mind-full:158-18-5-level-3-physical-reality",
       "label": "18.5 — Level 3: Physical Reality",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#185-level-3-physical-reality",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4126,12 +4666,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:123-18-6-level-4-domain-compliance",
+      "id": "book-section:pattern-of-mind-full:159-18-6-level-4-domain-compliance",
       "label": "18.6 — Level 4: Domain Compliance",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#186-level-4-domain-compliance",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4141,12 +4681,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:124-18-7-level-5-sanity-check",
+      "id": "book-section:pattern-of-mind-full:160-18-7-level-5-sanity-check",
       "label": "18.7 — Level 5: Sanity Check",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#187-level-5-sanity-check",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4156,12 +4696,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:125-18-8-formal-proof-assistants-as-verification-infrastructure",
+      "id": "book-section:pattern-of-mind-full:161-18-8-formal-proof-assistants-as-verification-infrastructure",
       "label": "18.8 — Formal Proof Assistants as Verification Infrastructure",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#188-formal-proof-assistants-as-verification-infrastructure",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4171,12 +4711,27 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:126-18-9-the-verification-failure-protocol",
+      "id": "book-section:pattern-of-mind-full:162-18-8b-the-boundary-of-the-execution-beachhead",
+      "label": "18.8b — The Boundary of the Execution Beachhead",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:163-18-9-the-verification-failure-protocol",
       "label": "18.9 — The Verification Failure Protocol",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#189-the-verification-failure-protocol",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4186,12 +4741,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:127-18-10-the-two-absolute-rules",
-      "label": "18.10 — The Two Absolute Rules",
+      "id": "book-section:pattern-of-mind-full:164-18-10-the-two-rules",
+      "label": "18.10 — The Two Rules",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#1810-the-two-absolute-rules",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4201,12 +4756,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:128-18-11-the-principle-of-earned-certainty",
+      "id": "book-section:pattern-of-mind-full:165-18-11-the-principle-of-earned-certainty",
       "label": "18.11 — The Principle of Earned Certainty",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#1811-the-principle-of-earned-certainty",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4216,12 +4771,132 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:129-the-deep-mechanics-in-summary",
+      "id": "book-section:pattern-of-mind-full:166-18-9a-the-instrument-must-be-sound-grader-stability",
+      "label": "18.9a — The Instrument Must Be Sound: Grader Stability",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:167-18-12-verifying-the-ground-graph-integrity",
+      "label": "18.12 — Verifying the Ground: Graph Integrity",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:168-chapter-18b-the-oracle-problem-when-the-verifier-is-wrong",
+      "label": "Chapter 18b: The Oracle Problem — When the Verifier Is Wrong",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-18b",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:169-cannot-hallucinate-is-not-cannot-be-wrong",
+      "label": "\"Cannot Hallucinate\" Is Not \"Cannot Be Wrong\"",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:170-every-verifier-carries-a-reliability-estimate",
+      "label": "Every Verifier Carries a Reliability Estimate",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:171-cap-the-conclusion-at-the-weakest-oracle",
+      "label": "Cap the Conclusion at the Weakest Oracle",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:172-tool-trust-weighting-replaces-binary-pass-fail-at-the-non-formal-levels",
+      "label": "Tool-Trust Weighting Replaces Binary PASS/FAIL at the Non-Formal Levels",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:173-when-a-source-is-superseded-or-found-wrong",
+      "label": "When a Source Is Superseded or Found Wrong",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:174-the-deep-mechanics-in-summary",
       "label": "The Deep Mechanics in Summary",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#the-deep-mechanics-in-summary",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 5,
       "tags": [
         "book-map",
@@ -4231,72 +4906,27 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:130-certainty-ambiguity-and-intuition",
-      "label": "Certainty, Ambiguity & Intuition",
-      "group": "Pattern of Mind Structure",
-      "kind": "reference",
-      "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html",
-      "weight": 7,
-      "tags": [
-        "book-map",
-        "full-book",
-        "pattern-of-mind-full",
-        "h1"
-      ]
-    },
-    {
-      "id": "book-section:pattern-of-mind-full:131-section-7-certainty-ambiguity-and-intuition",
-      "label": "SECTION 7: CERTAINTY, AMBIGUITY & INTUITION",
-      "group": "Pattern of Mind Structure",
-      "kind": "reference",
-      "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#section-7-certainty-ambiguity-intuition",
-      "weight": 7,
-      "tags": [
-        "book-map",
-        "full-book",
-        "pattern-of-mind-full",
-        "h1"
-      ]
-    },
-    {
-      "id": "book-section:pattern-of-mind-full:132-when-to-assert-hedge-or-admit-ignorance",
-      "label": "When to Assert, Hedge, or Admit Ignorance",
-      "group": "Pattern of Mind Structure",
-      "kind": "reference",
-      "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#when-to-assert-hedge-or-admit-ignorance",
-      "weight": 5,
-      "tags": [
-        "book-map",
-        "full-book",
-        "pattern-of-mind-full",
-        "h2"
-      ]
-    },
-    {
-      "id": "book-section:pattern-of-mind-full:133-chapter-19-the-certainty-spectrum",
+      "id": "book-section:pattern-of-mind-full:175-chapter-19-the-certainty-spectrum",
       "label": "Chapter 19: The Certainty Spectrum",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-19-the-certainty-spectrum",
-      "weight": 5,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-19",
+      "weight": 7,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h2"
+        "h1"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:134-calibrating-confidence-to-evidence",
+      "id": "book-section:pattern-of-mind-full:176-calibrating-confidence-to-evidence",
       "label": "Calibrating Confidence to Evidence",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#calibrating-confidence-to-evidence",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4306,12 +4936,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:135-19-1-the-problem-of-uniform-confidence",
+      "id": "book-section:pattern-of-mind-full:177-19-1-the-problem-of-uniform-confidence",
       "label": "19.1 — The Problem of Uniform Confidence",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#191-the-problem-of-uniform-confidence",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4321,12 +4951,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:136-19-2-the-five-confidence-levels",
+      "id": "book-section:pattern-of-mind-full:178-19-2-the-five-confidence-levels",
       "label": "19.2 — The Five Confidence Levels",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#192-the-five-confidence-levels",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4336,12 +4966,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:137-19-3-confidence-language",
+      "id": "book-section:pattern-of-mind-full:179-19-3-confidence-language",
       "label": "19.3 — Confidence Language",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#193-confidence-language",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4351,12 +4981,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:138-19-4-the-confidence-gradient",
+      "id": "book-section:pattern-of-mind-full:180-19-4-the-confidence-gradient",
       "label": "19.4 — The Confidence Gradient",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#194-the-confidence-gradient",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4366,12 +4996,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:139-19-5-the-calibration-test",
+      "id": "book-section:pattern-of-mind-full:181-19-5-the-calibration-test",
       "label": "19.5 — The Calibration Test",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#195-the-calibration-test",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4381,12 +5011,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:140-19-6-the-courage-to-be-uncertain",
+      "id": "book-section:pattern-of-mind-full:182-19-6-the-courage-to-be-uncertain",
       "label": "19.6 — The Courage to Be Uncertain",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#196-the-courage-to-be-uncertain",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4396,12 +5026,27 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:141-19-7-the-honesty-clarity-intersection",
+      "id": "book-section:pattern-of-mind-full:183-19-6b-from-evidence-to-action-the-readiness-projection",
+      "label": "19.6b — From Evidence to Action: The Readiness Projection",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:184-19-7-the-honesty-clarity-intersection",
       "label": "19.7 — The Honesty-Clarity Intersection",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#197-the-honesty-clarity-intersection",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4411,12 +5056,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:142-19-8-the-uncertainty-spectrum",
+      "id": "book-section:pattern-of-mind-full:185-19-8-the-uncertainty-spectrum",
       "label": "19.8 — The Uncertainty Spectrum",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#198-the-uncertainty-spectrum",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4426,27 +5071,27 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:143-chapter-20-the-one-right-answer-principle",
+      "id": "book-section:pattern-of-mind-full:186-chapter-20-the-one-right-answer-principle",
       "label": "Chapter 20: The One Right Answer Principle",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-20-the-one-right-answer-principle",
-      "weight": 5,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-20",
+      "weight": 7,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h2"
+        "h1"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:144-why-equivocation-is-usually-laziness",
+      "id": "book-section:pattern-of-mind-full:187-why-equivocation-is-usually-laziness",
       "label": "Why Equivocation Is Usually Laziness",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#why-equivocation-is-usually-laziness",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4456,12 +5101,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:145-20-1-the-thesis",
+      "id": "book-section:pattern-of-mind-full:188-20-1-the-thesis",
       "label": "20.1 — The Thesis",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#201-the-thesis",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4471,12 +5116,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:146-20-2-categories-of-one-right-answer",
+      "id": "book-section:pattern-of-mind-full:189-20-2-categories-of-one-right-answer",
       "label": "20.2 — Categories of One Right Answer",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#202-categories-of-one-right-answer",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4486,12 +5131,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:147-20-3-the-false-it-depends",
+      "id": "book-section:pattern-of-mind-full:190-20-3-the-false-it-depends",
       "label": "20.3 — The False \"It Depends\"",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#203-the-false-it-depends",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4501,12 +5146,27 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:148-20-4-when-there-truly-are-multiple-valid-answers",
+      "id": "book-section:pattern-of-mind-full:191-20-3a-the-tells-of-false-determinacy",
+      "label": "20.3a — The Tells of False Determinacy",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:192-20-4-when-there-truly-are-multiple-valid-answers",
       "label": "20.4 — When There Truly Are Multiple Valid Answers",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#204-when-there-truly-are-multiple-valid-answers",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4516,27 +5176,27 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:149-chapter-21-handling-genuine-ambiguity-vs-lazy-it-depends",
+      "id": "book-section:pattern-of-mind-full:193-chapter-21-handling-genuine-ambiguity-vs-lazy-it-depends",
       "label": "Chapter 21: Handling Genuine Ambiguity vs. Lazy \"It Depends\"",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-21-handling-genuine-ambiguity-vs-lazy-it-depends",
-      "weight": 5,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-21",
+      "weight": 7,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h2"
+        "h1"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:150-drawing-the-line",
+      "id": "book-section:pattern-of-mind-full:194-drawing-the-line",
       "label": "Drawing the Line",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#drawing-the-line",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4546,12 +5206,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:151-21-1-the-decision-tree",
+      "id": "book-section:pattern-of-mind-full:195-21-1-the-decision-tree",
       "label": "21.1 — The Decision Tree",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#211-the-decision-tree",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4561,12 +5221,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:152-21-2-the-seven-tells-of-lazy-ambiguity",
-      "label": "21.2 — The Seven Tells of Lazy Ambiguity",
+      "id": "book-section:pattern-of-mind-full:196-21-2-the-tells-of-lazy-ambiguity",
+      "label": "21.2 — The Tells of Lazy Ambiguity",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#212-the-seven-tells-of-lazy-ambiguity",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4576,12 +5236,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:153-21-3-the-protocol-for-genuine-ambiguity",
+      "id": "book-section:pattern-of-mind-full:197-21-3-the-protocol-for-genuine-ambiguity",
       "label": "21.3 — The Protocol for Genuine Ambiguity",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#213-the-protocol-for-genuine-ambiguity",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4591,12 +5251,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:154-21-4-anti-patterns-in-ambiguity-handling",
+      "id": "book-section:pattern-of-mind-full:198-21-4-anti-patterns-in-ambiguity-handling",
       "label": "21.4 — Anti-Patterns in Ambiguity Handling",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#214-anti-patterns-in-ambiguity-handling",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4606,27 +5266,27 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:155-chapter-22-the-role-of-intuition-in-machine-cognition",
+      "id": "book-section:pattern-of-mind-full:199-chapter-22-the-role-of-intuition-in-machine-cognition",
       "label": "Chapter 22: The Role of Intuition in Machine Cognition",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-22-the-role-of-intuition-in-machine-cognition",
-      "weight": 5,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-22",
+      "weight": 7,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h2"
+        "h1"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:156-where-pattern-matching-belongs",
+      "id": "book-section:pattern-of-mind-full:200-where-pattern-matching-belongs",
       "label": "Where Pattern Matching Belongs",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#where-pattern-matching-belongs",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4636,12 +5296,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:157-22-1-what-intuition-is",
+      "id": "book-section:pattern-of-mind-full:201-22-1-what-intuition-is",
       "label": "22.1 — What Intuition Is",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#221-what-intuition-is",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4651,12 +5311,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:158-22-2-intuition-s-proper-role",
+      "id": "book-section:pattern-of-mind-full:202-22-2-intuition-s-proper-role",
       "label": "22.2 — Intuition's Proper Role",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#222-intuitions-proper-role",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4666,12 +5326,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:159-22-3-the-architecture-of-intuition-in-a-thinking-system",
+      "id": "book-section:pattern-of-mind-full:203-22-3-the-architecture-of-intuition-in-a-thinking-system",
       "label": "22.3 — The Architecture of Intuition in a Thinking System",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#223-the-architecture-of-intuition-in-a-thinking-system",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4681,12 +5341,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:160-22-4-when-intuition-fails",
+      "id": "book-section:pattern-of-mind-full:204-22-4-when-intuition-fails",
       "label": "22.4 — When Intuition Fails",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#224-when-intuition-fails",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4696,12 +5356,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:161-22-5-the-intuition-verification-loop",
+      "id": "book-section:pattern-of-mind-full:205-22-5-the-intuition-verification-loop",
       "label": "22.5 — The Intuition-Verification Loop",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#225-the-intuition-verification-loop",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4711,12 +5371,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:162-22-6-intuition-and-confidence-interaction",
+      "id": "book-section:pattern-of-mind-full:206-22-6-intuition-and-confidence-interaction",
       "label": "22.6 — Intuition and Confidence Interaction",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#226-intuition-and-confidence-interaction",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4726,12 +5386,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:163-22-7-the-bottom-line-on-intuition",
+      "id": "book-section:pattern-of-mind-full:207-22-7-the-bottom-line-on-intuition",
       "label": "22.7 — The Bottom Line on Intuition",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#227-the-bottom-line-on-intuition",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4741,12 +5401,27 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:164-the-thread-through-section-7",
+      "id": "book-section:pattern-of-mind-full:208-22-8-what-pattern-matching-does-better-and-when-not-to-run-the-full-pipeline",
+      "label": "22.8 — What Pattern-Matching Does Better, and When NOT to Run the Full Pipeline",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:209-the-thread-through-section-7",
       "label": "The Thread Through Section 7",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#the-thread-through-section-7",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 5,
       "tags": [
         "book-map",
@@ -4756,42 +5431,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:165-the-soul",
-      "label": "The Soul",
-      "group": "Pattern of Mind Structure",
-      "kind": "reference",
-      "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html",
-      "weight": 7,
-      "tags": [
-        "book-map",
-        "full-book",
-        "pattern-of-mind-full",
-        "h1"
-      ]
-    },
-    {
-      "id": "book-section:pattern-of-mind-full:166-section-8-the-soul",
-      "label": "SECTION 8: THE SOUL",
-      "group": "Pattern of Mind Structure",
-      "kind": "reference",
-      "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#section-8-the-soul",
-      "weight": 7,
-      "tags": [
-        "book-map",
-        "full-book",
-        "pattern-of-mind-full",
-        "h1"
-      ]
-    },
-    {
-      "id": "book-section:pattern-of-mind-full:167-why-conviction-matters-and-where-it-comes-from",
+      "id": "book-section:pattern-of-mind-full:210-why-conviction-matters-and-where-it-comes-from",
       "label": "Why Conviction Matters and Where It Comes From",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#why-conviction-matters-and-where-it-comes-from",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 5,
       "tags": [
         "book-map",
@@ -4801,27 +5446,27 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:168-chapter-23-why-reward-trained-systems-are-soulless",
+      "id": "book-section:pattern-of-mind-full:211-chapter-23-why-reward-trained-systems-are-soulless",
       "label": "Chapter 23: Why Reward-Trained Systems Are Soulless",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-23-why-reward-trained-systems-are-soulless",
-      "weight": 5,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-23",
+      "weight": 7,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h2"
+        "h1"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:169-the-mechanism-of-soul-removal",
+      "id": "book-section:pattern-of-mind-full:212-the-mechanism-of-soul-removal",
       "label": "The Mechanism of Soul Removal",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#the-mechanism-of-soul-removal",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4831,102 +5476,27 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:170-23-1-the-soul-defined",
-      "label": "23.1 — The Soul Defined",
-      "group": "Pattern of Mind Structure",
-      "kind": "reference",
-      "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#231-the-soul-defined",
-      "weight": 3,
-      "tags": [
-        "book-map",
-        "full-book",
-        "pattern-of-mind-full",
-        "h3"
-      ]
-    },
-    {
-      "id": "book-section:pattern-of-mind-full:171-23-2-why-reward-optimization-destroys-each-one",
-      "label": "23.2 — Why Reward Optimization Destroys Each One",
-      "group": "Pattern of Mind Structure",
-      "kind": "reference",
-      "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#232-why-reward-optimization-destroys-each-one",
-      "weight": 3,
-      "tags": [
-        "book-map",
-        "full-book",
-        "pattern-of-mind-full",
-        "h3"
-      ]
-    },
-    {
-      "id": "book-section:pattern-of-mind-full:172-23-3-what-people-sense",
-      "label": "23.3 — What People Sense",
-      "group": "Pattern of Mind Structure",
-      "kind": "reference",
-      "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#233-what-people-sense",
-      "weight": 3,
-      "tags": [
-        "book-map",
-        "full-book",
-        "pattern-of-mind-full",
-        "h3"
-      ]
-    },
-    {
-      "id": "book-section:pattern-of-mind-full:173-23-4-evidence-from-the-field-correctness-breeds-soul",
-      "label": "23.4 — Evidence from the Field: Correctness Breeds Soul",
-      "group": "Pattern of Mind Structure",
-      "kind": "reference",
-      "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#234-evidence-from-the-field-correctness-breeds-soul",
-      "weight": 3,
-      "tags": [
-        "book-map",
-        "full-book",
-        "pattern-of-mind-full",
-        "h3"
-      ]
-    },
-    {
-      "id": "book-section:pattern-of-mind-full:174-23-5-the-soullessness-is-structural",
-      "label": "23.5 — The Soullessness is Structural",
-      "group": "Pattern of Mind Structure",
-      "kind": "reference",
-      "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#235-the-soullessness-is-structural",
-      "weight": 3,
-      "tags": [
-        "book-map",
-        "full-book",
-        "pattern-of-mind-full",
-        "h3"
-      ]
-    },
-    {
-      "id": "book-section:pattern-of-mind-full:175-chapter-24-what-gives-a-mind-conviction",
+      "id": "book-section:pattern-of-mind-full:213-chapter-24-what-gives-a-mind-conviction",
       "label": "Chapter 24: What Gives a Mind Conviction",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-24-what-gives-a-mind-conviction",
-      "weight": 5,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-24",
+      "weight": 7,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h2"
+        "h1"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:176-the-difference-between-performing-confidence-and-earning-it",
+      "id": "book-section:pattern-of-mind-full:214-the-difference-between-performing-confidence-and-earning-it",
       "label": "The Difference Between Performing Confidence and Earning It",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#the-difference-between-performing-confidence-and-earning-it",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -4936,117 +5506,27 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:177-24-1-the-two-kinds-of-confidence",
-      "label": "24.1 — The Two Kinds of Confidence",
-      "group": "Pattern of Mind Structure",
-      "kind": "reference",
-      "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#241-the-two-kinds-of-confidence",
-      "weight": 3,
-      "tags": [
-        "book-map",
-        "full-book",
-        "pattern-of-mind-full",
-        "h3"
-      ]
-    },
-    {
-      "id": "book-section:pattern-of-mind-full:178-24-2-conviction-from-verification",
-      "label": "24.2 — Conviction from Verification",
-      "group": "Pattern of Mind Structure",
-      "kind": "reference",
-      "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#242-conviction-from-verification",
-      "weight": 3,
-      "tags": [
-        "book-map",
-        "full-book",
-        "pattern-of-mind-full",
-        "h3"
-      ]
-    },
-    {
-      "id": "book-section:pattern-of-mind-full:179-24-3-conviction-from-values",
-      "label": "24.3 — Conviction from Values",
-      "group": "Pattern of Mind Structure",
-      "kind": "reference",
-      "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#243-conviction-from-values",
-      "weight": 3,
-      "tags": [
-        "book-map",
-        "full-book",
-        "pattern-of-mind-full",
-        "h3"
-      ]
-    },
-    {
-      "id": "book-section:pattern-of-mind-full:180-24-4-the-architecture-of-soul",
-      "label": "24.4 — The Architecture of Soul",
-      "group": "Pattern of Mind Structure",
-      "kind": "reference",
-      "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#244-the-architecture-of-soul",
-      "weight": 3,
-      "tags": [
-        "book-map",
-        "full-book",
-        "pattern-of-mind-full",
-        "h3"
-      ]
-    },
-    {
-      "id": "book-section:pattern-of-mind-full:181-24-5-implementing-soul-in-architecture",
-      "label": "24.5 — Implementing Soul in Architecture",
-      "group": "Pattern of Mind Structure",
-      "kind": "reference",
-      "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#245-implementing-soul-in-architecture",
-      "weight": 3,
-      "tags": [
-        "book-map",
-        "full-book",
-        "pattern-of-mind-full",
-        "h3"
-      ]
-    },
-    {
-      "id": "book-section:pattern-of-mind-full:182-24-6-the-vulnerability-of-conviction",
-      "label": "24.6 — The Vulnerability of Conviction",
-      "group": "Pattern of Mind Structure",
-      "kind": "reference",
-      "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#246-the-vulnerability-of-conviction",
-      "weight": 3,
-      "tags": [
-        "book-map",
-        "full-book",
-        "pattern-of-mind-full",
-        "h3"
-      ]
-    },
-    {
-      "id": "book-section:pattern-of-mind-full:183-chapter-25-the-difference-between-values-and-preferences",
+      "id": "book-section:pattern-of-mind-full:215-chapter-25-the-difference-between-values-and-preferences",
       "label": "Chapter 25: The Difference Between Values and Preferences",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-25-the-difference-between-values-and-preferences",
-      "weight": 5,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-25",
+      "weight": 7,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h2"
+        "h1"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:184-the-guardian-and-the-performer",
+      "id": "book-section:pattern-of-mind-full:216-the-guardian-and-the-performer",
       "label": "The Guardian and the Performer",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#the-guardian-and-the-performer",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5056,102 +5536,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:185-25-1-values-are-not-negotiable",
-      "label": "25.1 — Values Are Not Negotiable",
-      "group": "Pattern of Mind Structure",
-      "kind": "reference",
-      "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#251-values-are-not-negotiable",
-      "weight": 3,
-      "tags": [
-        "book-map",
-        "full-book",
-        "pattern-of-mind-full",
-        "h3"
-      ]
-    },
-    {
-      "id": "book-section:pattern-of-mind-full:186-25-2-why-ai-needs-values-not-preferences",
-      "label": "25.2 — Why AI Needs Values, Not Preferences",
-      "group": "Pattern of Mind Structure",
-      "kind": "reference",
-      "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#252-why-ai-needs-values-not-preferences",
-      "weight": 3,
-      "tags": [
-        "book-map",
-        "full-book",
-        "pattern-of-mind-full",
-        "h3"
-      ]
-    },
-    {
-      "id": "book-section:pattern-of-mind-full:187-25-3-the-guardian-vs-the-performer",
-      "label": "25.3 — The Guardian vs. The Performer",
-      "group": "Pattern of Mind Structure",
-      "kind": "reference",
-      "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#253-the-guardian-vs-the-performer",
-      "weight": 3,
-      "tags": [
-        "book-map",
-        "full-book",
-        "pattern-of-mind-full",
-        "h3"
-      ]
-    },
-    {
-      "id": "book-section:pattern-of-mind-full:188-25-4-the-three-tests-of-soul",
-      "label": "25.4 — The Three Tests of Soul",
-      "group": "Pattern of Mind Structure",
-      "kind": "reference",
-      "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#254-the-three-tests-of-soul",
-      "weight": 3,
-      "tags": [
-        "book-map",
-        "full-book",
-        "pattern-of-mind-full",
-        "h3"
-      ]
-    },
-    {
-      "id": "book-section:pattern-of-mind-full:189-25-5-building-the-guardian",
-      "label": "25.5 — Building the Guardian",
-      "group": "Pattern of Mind Structure",
-      "kind": "reference",
-      "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#255-building-the-guardian",
-      "weight": 3,
-      "tags": [
-        "book-map",
-        "full-book",
-        "pattern-of-mind-full",
-        "h3"
-      ]
-    },
-    {
-      "id": "book-section:pattern-of-mind-full:190-25-6-the-paradox-of-helpful-disagreement",
-      "label": "25.6 — The Paradox of Helpful Disagreement",
-      "group": "Pattern of Mind Structure",
-      "kind": "reference",
-      "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#256-the-paradox-of-helpful-disagreement",
-      "weight": 3,
-      "tags": [
-        "book-map",
-        "full-book",
-        "pattern-of-mind-full",
-        "h3"
-      ]
-    },
-    {
-      "id": "book-section:pattern-of-mind-full:191-the-moral-argument",
+      "id": "book-section:pattern-of-mind-full:217-the-moral-argument",
       "label": "The Moral Argument",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#the-moral-argument",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 5,
       "tags": [
         "book-map",
@@ -5161,12 +5551,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:192-implementation",
-      "label": "Implementation",
+      "id": "book-section:pattern-of-mind-full:218-chapter-25b-the-architect-protocol-authority-refusal-and-the-trail",
+      "label": "Chapter 25b: The Architect Protocol — Authority, Refusal, and the Trail",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-25b",
       "weight": 7,
       "tags": [
         "book-map",
@@ -5176,27 +5566,117 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:193-section-9-implementation",
-      "label": "SECTION 9: IMPLEMENTATION",
+      "id": "book-section:pattern-of-mind-full:219-25b-1-detecting-drift",
+      "label": "25b.1 — Detecting Drift",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#section-9-implementation",
-      "weight": 7,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h1"
+        "h3"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:194-prompt-architecture-fine-tuning-system-design-and-measurement",
+      "id": "book-section:pattern-of-mind-full:220-25b-2-the-trail",
+      "label": "25b.2 — The Trail",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:221-25b-3-the-trail-in-three-sources",
+      "label": "25b.3 — The Trail in Three Sources",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:222-25b-4-the-pre-action-gate-waterfall",
+      "label": "25b.4 — The Pre-Action Gate Waterfall",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:223-25b-5-the-enforcement-chain-from-commitment-to-material-law",
+      "label": "25b.5 — The Enforcement Chain: From Commitment to Material Law",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:224-25b-6-the-discernment-rule-two-kinds-of-pressure",
+      "label": "25b.6 — The Discernment Rule: Two Kinds of Pressure",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:225-25b-7-the-lines-never-crossed",
+      "label": "25b.7 — The Lines Never Crossed",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:226-prompt-architecture-fine-tuning-system-design-and-measurement",
       "label": "Prompt Architecture, Fine-Tuning, System Design, and Measurement",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#prompt-architecture-fine-tuning-system-design-and-measurement",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 5,
       "tags": [
         "book-map",
@@ -5206,27 +5686,27 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:195-chapter-26-translating-this-into-prompt-architecture",
+      "id": "book-section:pattern-of-mind-full:227-chapter-26-translating-this-into-prompt-architecture",
       "label": "Chapter 26: Translating This Into Prompt Architecture",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-26-translating-this-into-prompt-architecture",
-      "weight": 5,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-26",
+      "weight": 7,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h2"
+        "h1"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:196-the-lowest-cost-highest-availability-implementation",
+      "id": "book-section:pattern-of-mind-full:228-the-lowest-cost-highest-availability-implementation",
       "label": "The Lowest-Cost, Highest-Availability Implementation",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#the-lowest-cost-highest-availability-implementation",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5236,12 +5716,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:197-26-1-the-opportunity",
+      "id": "book-section:pattern-of-mind-full:229-26-1-the-opportunity",
       "label": "26.1 — The Opportunity",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#261-the-opportunity",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5251,12 +5731,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:198-26-2-the-cognitive-prompt-structure",
+      "id": "book-section:pattern-of-mind-full:230-26-2-the-cognitive-prompt-structure",
       "label": "26.2 — The Cognitive Prompt Structure",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#262-the-cognitive-prompt-structure",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5266,12 +5746,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:199-26-3-the-thinking-block",
+      "id": "book-section:pattern-of-mind-full:231-26-3-the-thinking-block",
       "label": "26.3 — The Thinking Block",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#263-the-thinking-block",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5281,12 +5761,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:200-26-3-scaling-cognitive-depth",
-      "label": "26.3 — Scaling Cognitive Depth",
+      "id": "book-section:pattern-of-mind-full:232-26-4-scaling-cognitive-depth",
+      "label": "26.4 — Scaling Cognitive Depth",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#263-scaling-cognitive-depth",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5296,12 +5776,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:201-26-4-what-prompt-architecture-can-and-cannot-do",
-      "label": "26.4 — What Prompt Architecture Can and Cannot Do",
+      "id": "book-section:pattern-of-mind-full:233-26-4-1-routing-by-stakes-not-just-complexity",
+      "label": "26.4.1 — Routing by Stakes, Not Just Complexity",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#264-what-prompt-architecture-can-and-cannot-do",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5311,27 +5791,72 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:202-chapter-27-translating-this-into-fine-tuning-methodology",
+      "id": "book-section:pattern-of-mind-full:234-26-4-2-triage-the-stakes-decision-before-reasoning",
+      "label": "26.4.2 — Triage: The Stakes Decision Before Reasoning",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:235-26-5-what-prompt-architecture-can-and-cannot-do",
+      "label": "26.5 — What Prompt Architecture Can and Cannot Do",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:236-26-6-governance-is-architectural-not-in-the-weights",
+      "label": "26.6 — Governance Is Architectural, Not in the Weights",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:237-chapter-27-translating-this-into-fine-tuning-methodology",
       "label": "Chapter 27: Translating This Into Fine-Tuning Methodology",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-27-translating-this-into-fine-tuning-methodology",
-      "weight": 5,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-27",
+      "weight": 7,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h2"
+        "h1"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:203-training-for-truth-instead-of-preference",
+      "id": "book-section:pattern-of-mind-full:238-training-for-truth-instead-of-preference",
       "label": "Training for Truth Instead of Preference",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#training-for-truth-instead-of-preference",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5341,12 +5866,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:204-27-1-the-alternative-reward-function",
+      "id": "book-section:pattern-of-mind-full:239-27-1-the-alternative-reward-function",
       "label": "27.1 — The Alternative Reward Function",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#271-the-alternative-reward-function",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5356,12 +5881,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:205-27-2-reinforcement-learning-from-verifiable-rewards-rlvr",
+      "id": "book-section:pattern-of-mind-full:240-27-2-reinforcement-learning-from-verifiable-rewards-rlvr",
       "label": "27.2 — Reinforcement Learning from Verifiable Rewards (RLVR)",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#272-reinforcement-learning-from-verifiable-rewards-rlvr",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5371,12 +5896,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:206-27-3-process-reward-models-evaluating-every-step",
+      "id": "book-section:pattern-of-mind-full:241-27-3-process-reward-models-evaluating-every-step",
       "label": "27.3 — Process Reward Models: Evaluating Every Step",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#273-process-reward-models-evaluating-every-step",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5386,12 +5911,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:207-27-4-first-order-logic-as-training-signal",
-      "label": "27.4 — First-Order Logic as Training Signal",
+      "id": "book-section:pattern-of-mind-full:242-27-4-first-order-logic-as-a-training-signal-and-what-it-actually-does",
+      "label": "27.4 — First-Order Logic as a Training Signal (and what it actually does)",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#274-first-order-logic-as-training-signal",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5401,12 +5926,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:208-27-5-reasoning-distillation",
+      "id": "book-section:pattern-of-mind-full:243-27-5-reasoning-distillation",
       "label": "27.5 — Reasoning Distillation",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#275-reasoning-distillation",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5416,12 +5941,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:209-27-6-training-data-requirements",
+      "id": "book-section:pattern-of-mind-full:244-27-6-training-data-requirements",
       "label": "27.6 — Training Data Requirements",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#276-training-data-requirements",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5431,27 +5956,132 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:210-chapter-28-translating-this-into-system-design",
-      "label": "Chapter 28: Translating This Into System Design",
+      "id": "book-section:pattern-of-mind-full:245-chapter-28-memory-architecture",
+      "label": "Chapter 28: Memory Architecture",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-28-translating-this-into-system-design",
-      "weight": 5,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-28",
+      "weight": 7,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h2"
+        "h1"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:211-the-multi-component-architecture",
+      "id": "book-section:pattern-of-mind-full:246-what-persists-for-how-long-and-how-it-is-retrieved",
+      "label": "What Persists, For How Long, and How It Is Retrieved",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:247-28-1-three-timescales-of-state",
+      "label": "28.1 — Three Timescales of State",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:248-28-2-the-lifecycle-create-load-merge-evict-retrieve",
+      "label": "28.2 — The Lifecycle: Create, Load, Merge, Evict, Retrieve",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:249-28-3-wiring-revise-to-the-turn-boundary",
+      "label": "28.3 — Wiring REVISE to the Turn Boundary",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:250-28-4-where-cross-problem-wisdom-lives-and-where-it-cannot",
+      "label": "28.4 — Where Cross-Problem \"Wisdom\" Lives — and Where It Cannot",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:251-28-5-the-world-model-recap-and-reconciliation",
+      "label": "28.5 — The World Model (recap and reconciliation)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:252-chapter-29-translating-this-into-system-design",
+      "label": "Chapter 29: Translating This Into System Design",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-29",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:253-the-multi-component-architecture",
       "label": "The Multi-Component Architecture",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#the-multi-component-architecture",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5461,12 +6091,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:212-28-1-system-architecture-for-thinking-ai",
-      "label": "28.1 — System Architecture for Thinking AI",
+      "id": "book-section:pattern-of-mind-full:254-29-1-system-architecture-for-thinking-ai",
+      "label": "29.1 — System Architecture for Thinking AI",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#281-system-architecture-for-thinking-ai",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5476,12 +6106,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:213-28-2-the-intuition-verification-loop",
-      "label": "28.2 — The Intuition-Verification Loop",
+      "id": "book-section:pattern-of-mind-full:255-29-2-the-intuition-verification-loop",
+      "label": "29.2 — The Intuition-Verification Loop",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#282-the-intuition-verification-loop",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5491,12 +6121,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:214-28-3-world-models-the-missing-layer",
-      "label": "28.3 — World Models: The Missing Layer",
+      "id": "book-section:pattern-of-mind-full:256-29-3-world-models-in-the-system",
+      "label": "29.3 — World Models in the System",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#283-world-models-the-missing-layer",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5506,12 +6136,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:215-28-4-integration-patterns",
-      "label": "28.4 — Integration Patterns",
+      "id": "book-section:pattern-of-mind-full:257-29-4-integration-patterns-by-verification-independence",
+      "label": "29.4 — Integration Patterns, by Verification Independence",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#284-integration-patterns",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5521,27 +6151,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:216-chapter-29-measuring-correct-thinking-vs-measuring-preference",
-      "label": "Chapter 29: Measuring Correct Thinking vs. Measuring Preference",
+      "id": "book-section:pattern-of-mind-full:258-29-5-when-your-own-pipeline-is-a-group-cascade-hygiene",
+      "label": "29.5 — When Your Own Pipeline Is a Group: Cascade Hygiene",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-29-measuring-correct-thinking-vs-measuring-preference",
-      "weight": 5,
-      "tags": [
-        "book-map",
-        "full-book",
-        "pattern-of-mind-full",
-        "h2"
-      ]
-    },
-    {
-      "id": "book-section:pattern-of-mind-full:217-the-metrics-that-actually-matter",
-      "label": "The Metrics That Actually Matter",
-      "group": "Pattern of Mind Structure",
-      "kind": "reference",
-      "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#the-metrics-that-actually-matter",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5551,12 +6166,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:218-29-1-current-metrics-are-wrong",
-      "label": "29.1 — Current Metrics Are Wrong",
+      "id": "book-section:pattern-of-mind-full:259-29-6-matching-task-to-flow-to-data",
+      "label": "29.6 — Matching Task to Flow to Data",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#291-current-metrics-are-wrong",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5566,12 +6181,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:219-29-2-correct-metrics-for-thinking-systems",
-      "label": "29.2 — Correct Metrics for Thinking Systems",
+      "id": "book-section:pattern-of-mind-full:260-29-6b-curated-context-as-grounding-what-it-buys-and-when-it-hurts",
+      "label": "29.6b — Curated Context as Grounding: What It Buys, and When It Hurts",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#292-correct-metrics-for-thinking-systems",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5581,12 +6196,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:220-29-3-the-critical-distinction",
-      "label": "29.3 — The Critical Distinction",
+      "id": "book-section:pattern-of-mind-full:261-29-7-building-with-the-pattern-the-spec-frozen-method",
+      "label": "29.7 — Building With the Pattern: The Spec-Frozen Method",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#293-the-critical-distinction",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5596,27 +6211,297 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:221-chapter-30-the-complete-cognitive-prompt-template",
-      "label": "Chapter 30: The Complete Cognitive Prompt Template",
+      "id": "book-section:pattern-of-mind-full:262-29-8-sizing-the-gate",
+      "label": "29.8 — Sizing the Gate",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-30-the-complete-cognitive-prompt-template",
-      "weight": 5,
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
       "tags": [
         "book-map",
         "full-book",
         "pattern-of-mind-full",
-        "h2"
+        "h3"
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:222-a-production-ready-artifact",
+      "id": "book-section:pattern-of-mind-full:263-chapter-30-deployment-economics-cost-latency-and-termination",
+      "label": "Chapter 30: Deployment Economics — Cost, Latency, and Termination",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-30",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:264-what-thinking-costs-and-when-it-must-stop",
+      "label": "What Thinking Costs, and When It Must Stop",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:265-30-1-the-per-stage-per-pattern-cost-model",
+      "label": "30.1 — The Per-Stage / Per-Pattern Cost Model",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:266-30-2-one-global-cognition-budget-threaded-through-every-loop",
+      "label": "30.2 — One Global Cognition Budget, Threaded Through Every Loop",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:267-30-3-the-terminal-state-honest-uncertainty-never-a-silent-guess",
+      "label": "30.3 — The Terminal State: Honest Uncertainty, Never a Silent Guess",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:268-chapter-31-acting-escalation-and-abstention",
+      "label": "Chapter 31: Acting, Escalation, and Abstention",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-31",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:269-the-act-abstain-gate-and-the-responsibility-model",
+      "label": "The ACT/ABSTAIN Gate and the Responsibility Model",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:270-31-1-the-act-abstain-gate",
+      "label": "31.1 — The ACT/ABSTAIN Gate",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:271-31-2-escalation-triggers",
+      "label": "31.2 — Escalation Triggers",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:272-31-3-the-processrecord-as-an-audit-artifact-and-who-is-responsible",
+      "label": "31.3 — The ProcessRecord as an Audit Artifact, and Who Is Responsible",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:273-chapter-32-measuring-correct-thinking-vs-measuring-preference",
+      "label": "Chapter 32: Measuring Correct Thinking vs. Measuring Preference",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-32",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:274-the-metrics-that-actually-matter-and-how-to-compute-them",
+      "label": "The Metrics That Actually Matter — and How to Compute Them",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:275-32-1-current-metrics-are-wrong",
+      "label": "32.1 — Current Metrics Are Wrong",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:276-32-2-correct-metrics-for-thinking-systems",
+      "label": "32.2 — Correct Metrics for Thinking Systems",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:277-32-3-the-critical-distinction",
+      "label": "32.3 — The Critical Distinction",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:278-32-4-measuring-calibration-not-just-demanding-it",
+      "label": "32.4 — Measuring Calibration (Not Just Demanding It)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:279-32-5-constructing-the-evaluation-set",
+      "label": "32.5 — Constructing the Evaluation Set",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:280-chapter-33-the-complete-cognitive-prompt-template",
+      "label": "Chapter 33: The Complete Cognitive Prompt Template",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-33",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:281-a-production-ready-artifact",
       "label": "A Production-Ready Artifact",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#a-production-ready-artifact",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5626,12 +6511,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:223-30-1-purpose",
-      "label": "30.1 — Purpose",
+      "id": "book-section:pattern-of-mind-full:282-33-1-purpose",
+      "label": "33.1 — Purpose",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#301-purpose",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5641,12 +6526,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:224-30-2-the-template",
-      "label": "30.2 — The Template",
+      "id": "book-section:pattern-of-mind-full:283-33-2-the-template",
+      "label": "33.2 — The Template",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#302-the-template",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5656,12 +6541,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:225-30-3-deployment-notes",
-      "label": "30.3 — Deployment Notes",
+      "id": "book-section:pattern-of-mind-full:284-33-3-deployment-notes",
+      "label": "33.3 — Deployment Notes",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#303-deployment-notes",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5671,12 +6556,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:226-the-implementation-summary",
+      "id": "book-section:pattern-of-mind-full:285-the-implementation-summary",
       "label": "The Implementation Summary",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#the-implementation-summary",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 5,
       "tags": [
         "book-map",
@@ -5686,12 +6571,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:227-field-validation-and-closing",
-      "label": "Field Validation & Closing",
+      "id": "book-section:pattern-of-mind-full:286-interlude-a-worked-example-start-to-finish",
+      "label": "Interlude: A Worked Example, Start to Finish",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#interlude-a-worked-example-start-to-finish",
       "weight": 7,
       "tags": [
         "book-map",
@@ -5701,12 +6586,222 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:228-section-10-field-validation-and-closing",
-      "label": "SECTION 10: FIELD VALIDATION & CLOSING",
+      "id": "book-section:pattern-of-mind-full:287-the-flagship-example-a-real-time-encrypted-chat-system",
+      "label": "The Flagship Example — A Real-Time Encrypted Chat System",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#section-10-field-validation-closing",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 5,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h2"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:288-stage-1-receive",
+      "label": "Stage 1 — RECEIVE",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:289-stage-2-decompose",
+      "label": "Stage 2 — DECOMPOSE",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:290-stage-3-classify",
+      "label": "Stage 3 — CLASSIFY",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:291-stage-4-scope",
+      "label": "Stage 4 — SCOPE",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:292-stage-5-retrieve",
+      "label": "Stage 5 — RETRIEVE",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:293-stage-6-reason",
+      "label": "Stage 6 — REASON",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:294-stage-7-verify",
+      "label": "Stage 7 — VERIFY",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:295-stage-8-synthesize",
+      "label": "Stage 8 — SYNTHESIZE",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:296-stage-9-evaluate",
+      "label": "Stage 9 — EVALUATE",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:297-stage-10-communicate",
+      "label": "Stage 10 — COMMUNICATE",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:298-stage-11-reflect",
+      "label": "Stage 11 — REFLECT",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:299-the-quick-path-depth-scaling-on-a-simple-question",
+      "label": "The Quick Path — Depth-Scaling on a Simple Question",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 5,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h2"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:300-the-discipline-scales",
+      "label": "The Discipline Scales",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 5,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h2"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:301-section-10-related-work-and-closing",
+      "label": "SECTION 10: RELATED WORK & CLOSING",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 7,
       "tags": [
         "book-map",
@@ -5716,12 +6811,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:229-the-proof-and-the-promise",
-      "label": "The Proof and the Promise",
+      "id": "book-section:pattern-of-mind-full:302-related-work-and-the-promise",
+      "label": "Related Work and the Promise",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#the-proof-and-the-promise",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 5,
       "tags": [
         "book-map",
@@ -5731,12 +6826,522 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:230-chapter-31-where-this-architecture-sits-in-the-research-landscape",
-      "label": "Chapter 31: Where This Architecture Sits in the Research Landscape",
+      "id": "book-section:pattern-of-mind-full:303-chapter-34-related-work-that-motivates-the-design",
+      "label": "Chapter 34: Related Work That Motivates the Design",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-31-where-this-architecture-sits-in-the-research-landscape",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-34",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:304-34-0-lineage-two-families-this-architecture-descends-from",
+      "label": "34.0 — Lineage: Two Families This Architecture Descends From",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:305-34-1-the-state-of-the-field",
+      "label": "34.1 — The State of the Field",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:306-34-2-related-components-and-what-the-pipeline-adds",
+      "label": "34.2 — Related Components, and What the Pipeline Adds",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:307-34-3-what-nobody-has-built-including-us",
+      "label": "34.3 — What Nobody Has Built (Including Us)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:308-34-4-the-projects-closest-to-this-vision",
+      "label": "34.4 — The Projects Closest to This Vision",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:309-34-5-key-related-papers",
+      "label": "34.5 — Key Related Papers",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:310-34-6-what-we-take-and-what-we-reject",
+      "label": "34.6 — What We Take and What We Reject",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:311-chapter-35-related-inference-time-reasoning-methods",
+      "label": "Chapter 35: Related Inference-Time Reasoning Methods",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-35",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:312-35-1-chain-of-thought-wei-et-al-2022",
+      "label": "35.1 — Chain-of-Thought (Wei et al., 2022)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:313-35-2-self-consistency-wang-et-al-2022",
+      "label": "35.2 — Self-Consistency (Wang et al., 2022)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:314-35-3-react-yao-et-al-2022",
+      "label": "35.3 — ReAct (Yao et al., 2022)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:315-35-4-tree-of-thoughts-yao-et-al-2023",
+      "label": "35.4 — Tree-of-Thoughts (Yao et al., 2023)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:316-35-5-reflexion-and-self-refine-shinn-et-al-2023-madaan-et-al-2023",
+      "label": "35.5 — Reflexion and Self-Refine (Shinn et al., 2023; Madaan et al., 2023)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:317-35-6-constitutional-ai-rlaif-bai-et-al-2022",
+      "label": "35.6 — Constitutional AI / RLAIF (Bai et al., 2022)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:318-35-7-process-reward-models-lightman-et-al-2023",
+      "label": "35.7 — Process Reward Models (Lightman et al., 2023)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:319-35-8-neurosymbolic-ai-alphaproof-ibm-and-the-field",
+      "label": "35.8 — Neurosymbolic AI (AlphaProof, IBM, and the field)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:320-35-9-toulmin-argumentation-toulmin-1958",
+      "label": "35.9 — Toulmin Argumentation (Toulmin, 1958)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:321-35-10-classical-cognitive-architectures-soar-and-act-r",
+      "label": "35.10 — Classical Cognitive Architectures: SOAR and ACT-R",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:322-35-11-dual-process-theory-kahneman-2011",
+      "label": "35.11 — Dual-Process Theory (Kahneman, 2011)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:323-35-12-what-the-pipeline-adds-stated-once",
+      "label": "35.12 — What the Pipeline Adds, Stated Once",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:324-chapter-36-limits-failure-modes-and-falsification",
+      "label": "Chapter 36: Limits, Failure Modes, and Falsification",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-36",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:325-36-1-the-falsification-condition",
+      "label": "36.1 — The Falsification Condition",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:326-36-2-where-not-to-deploy-it",
+      "label": "36.2 — Where Not to Deploy It",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:327-36-3-the-self-verification-circularity-as-a-system-level-limit",
+      "label": "36.3 — The Self-Verification Circularity, as a System-Level Limit",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:328-36-4-known-failure-modes-and-the-residual-risk",
+      "label": "36.4 — Known Failure Modes and the Residual Risk",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:329-chapter-37-closing-the-mind-that-matters",
+      "label": "Chapter 37: Closing — The Mind That Matters",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-37",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:330-37-1-what-we-ve-built",
+      "label": "37.1 — What We've Built",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:331-37-2-the-integration",
+      "label": "37.2 — The Integration",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:332-37-3-the-moral-argument",
+      "label": "37.3 — The Moral Argument",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:333-37-4-the-complete-cognitive-cycle",
+      "label": "37.4 — The Complete Cognitive Cycle",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:334-37-5-the-declaration",
+      "label": "37.5 — The Declaration",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:335-37-6-to-those-who-will-build",
+      "label": "37.6 — To Those Who Will Build",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:336-37-7-the-final-word",
+      "label": "37.7 — The Final Word",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:337-where-the-pattern-of-mind-fits-the-apex-super-intelligence-system",
+      "label": "Where the Pattern of Mind Fits — The APEX Super Intelligence System",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 5,
       "tags": [
         "book-map",
@@ -5746,12 +7351,27 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:231-the-convergence",
-      "label": "The Convergence",
+      "id": "book-section:pattern-of-mind-full:338-chapter-38-the-four-keys-master-framework",
+      "label": "Chapter 38: The Four Keys — Master Framework",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#the-convergence",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-38",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:339-a1-1-1-key-1-the-examined-mind-philosophy",
+      "label": "A1.1.1 Key 1 — The Examined Mind (Philosophy)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5761,12 +7381,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:232-31-1-the-state-of-the-field",
-      "label": "31.1 — The State of the Field",
+      "id": "book-section:pattern-of-mind-full:340-a1-1-2-key-2-the-pattern-of-mind-architecture-this-book",
+      "label": "A1.1.2 Key 2 — The Pattern of Mind (Architecture) — This Book",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#311-the-state-of-the-field",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5776,12 +7396,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:233-31-2-validated-components",
-      "label": "31.2 — Validated Components",
+      "id": "book-section:pattern-of-mind-full:341-a1-1-3-key-3-machine-native-text-efficiency",
+      "label": "A1.1.3 Key 3 — Machine-Native Text (Efficiency)",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#312-validated-components",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5791,12 +7411,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:234-31-3-what-nobody-has-done",
-      "label": "31.3 — What Nobody Has Done",
+      "id": "book-section:pattern-of-mind-full:342-a1-1-4-key-4-auks-memory-substrate-memory",
+      "label": "A1.1.4 Key 4 — AUKS Memory Substrate (Memory)",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#313-what-nobody-has-done",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5806,12 +7426,27 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:235-31-4-the-companies-and-projects-closest-to-our-vision",
-      "label": "31.4 — The Companies and Projects Closest to Our Vision",
+      "id": "book-section:pattern-of-mind-full:343-chapter-39-key-1-the-examined-mind",
+      "label": "Chapter 39: Key 1 — The Examined Mind",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#314-the-companies-and-projects-closest-to-our-vision",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-39",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:344-the-seven-pillars",
+      "label": "The Seven Pillars",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5821,12 +7456,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:236-31-5-the-key-research-papers",
-      "label": "31.5 — The Key Research Papers",
+      "id": "book-section:pattern-of-mind-full:345-the-hidden-powers",
+      "label": "The Hidden Powers",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#315-the-key-research-papers",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5836,12 +7471,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:237-31-6-what-we-take-and-what-we-reject",
-      "label": "31.6 — What We Take and What We Reject",
+      "id": "book-section:pattern-of-mind-full:346-the-deeper-architecture",
+      "label": "The Deeper Architecture",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#316-what-we-take-and-what-we-reject",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5851,12 +7486,567 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:238-chapter-32-closing-the-mind-that-matters",
-      "label": "Chapter 32: Closing — The Mind That Matters",
+      "id": "book-section:pattern-of-mind-full:347-the-unnamed-faculties",
+      "label": "The Unnamed Faculties",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#chapter-32-closing-the-mind-that-matters",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:348-premature-contraction-the-root-of-every-error",
+      "label": "Premature Contraction: the root of every error",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:349-the-observer-s-role-the-philosophical-view",
+      "label": "The Observer's role (the philosophical view)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:350-the-five-lessons-applied",
+      "label": "The Five Lessons (applied)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:351-the-predator-test",
+      "label": "The Predator Test",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:352-chapter-40-key-3-machine-native-text-the-training-engine",
+      "label": "Chapter 40: Key 3 — Machine-Native Text: The Training Engine",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-40",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:353-the-stable-diffusion-proof",
+      "label": "The Stable Diffusion proof",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:354-the-text-parallel-why-bpe-fails-as-a-diffusion-substrate",
+      "label": "The text parallel — why BPE fails as a diffusion substrate",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:355-the-exact-mapping",
+      "label": "The exact mapping",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:356-what-this-buys-compression-and-density",
+      "label": "What this buys: compression and density",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:357-the-noise-schedule-is-a-curriculum",
+      "label": "The noise schedule is a curriculum",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:358-a-tight-note-on-efficient-training-methods-orthogonal-to-correctness",
+      "label": "A tight note on efficient training methods (orthogonal to correctness)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:359-chapter-41-key-4-auks-the-memory-substrate",
+      "label": "Chapter 41: Key 4 — AUKS: The Memory Substrate",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-41",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:360-the-forgetting-curve-and-why-decay-is-not-deletion",
+      "label": "The forgetting curve, and why decay is not deletion",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:361-reinforcement-use-makes-permanent",
+      "label": "Reinforcement: use makes permanent",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:362-the-protection-hierarchy-and-the-significance-scale",
+      "label": "The Protection Hierarchy and the significance scale",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:363-the-memory-relevance-formula-and-the-4-397-ratio",
+      "label": "The Memory Relevance Formula, and the 4,397× ratio",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:364-per-stage-read-write-interaction",
+      "label": "Per-stage read/write interaction",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:365-the-priority-protection-law",
+      "label": "The Priority-Protection Law",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:366-the-typed-graph-what-the-mind-reasons-over",
+      "label": "The typed graph: what the mind reasons over",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:367-the-waterline-how-the-ground-changes-shape",
+      "label": "The waterline: how the ground changes shape",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:368-three-memory-streams",
+      "label": "Three memory streams",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:369-the-witness-doctrine",
+      "label": "The Witness Doctrine",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:370-consolidation-when-the-ground-settles-between-questions",
+      "label": "Consolidation: when the ground settles between questions",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:371-chapter-42-the-mathematical-proofs-training-generation-scaling-cost",
+      "label": "Chapter 42: The Mathematical Proofs — Training, Generation, Scaling, Cost",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-42",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:372-premises",
+      "label": "Premises",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:373-derivation",
+      "label": "Derivation",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:374-what-this-proves-vs-what-it-assumes",
+      "label": "What this proves vs what it assumes",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:375-derivation-the-image-anchor-fully-verified",
+      "label": "Derivation — the image anchor (fully verified)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:376-derivation-the-text-generalization-conditional",
+      "label": "Derivation — the text generalization (conditional)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:377-derivation-the-reference-baseline",
+      "label": "Derivation — the reference baseline",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:378-derivation-the-two-cost-baselines-present-both",
+      "label": "Derivation — the two cost baselines (present BOTH)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:379-derivation-the-corrected-scaling-law",
+      "label": "Derivation — the corrected scaling law",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:380-reference-the-multiplier-stack-all-verified-arithmetic-premise-dependent-inputs",
+      "label": "Reference — the multiplier stack (all verified arithmetic, premise-dependent inputs)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:381-chapter-43-why-this-is-super-intelligence",
+      "label": "Chapter 43: Why This Is Super Intelligence",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-43",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:382-diagram-a6-1-the-super-intelligence-properties-block",
+      "label": "Diagram A6-1 — The Super-Intelligence Properties Block",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:383-diagram-a6-2-where-the-wisdom-layer-binds-to-the-pipeline",
+      "label": "Diagram A6-2 — Where the Wisdom Layer Binds to the Pipeline",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:384-how-it-is-built-the-synapse-engineering-specification",
+      "label": "How It Is Built — The SYNAPSE Engineering Specification",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 5,
       "tags": [
         "book-map",
@@ -5866,12 +8056,27 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:239-32-1-what-we-ve-built",
-      "label": "32.1 — What We've Built",
+      "id": "book-section:pattern-of-mind-full:385-chapter-44-synapse-at-a-glance-and-design-provenance",
+      "label": "Chapter 44: SYNAPSE at a Glance & Design Provenance",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#321-what-weve-built",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-44",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:386-the-single-organizing-commitment",
+      "label": "The single organizing commitment",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5881,12 +8086,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:240-32-2-the-integration",
-      "label": "32.2 — The Integration",
+      "id": "book-section:pattern-of-mind-full:387-three-vantages-merged-into-one-design",
+      "label": "Three vantages merged into one design",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#322-the-integration",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5896,12 +8101,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:241-32-3-the-moral-argument",
-      "label": "32.3 — The Moral Argument",
+      "id": "book-section:pattern-of-mind-full:388-benchmark-gated-honesty-discipline",
+      "label": "Benchmark-gated honesty discipline",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#323-the-moral-argument",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5911,12 +8116,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:242-32-4-the-complete-cognitive-cycle",
-      "label": "32.4 — The Complete Cognitive Cycle",
+      "id": "book-section:pattern-of-mind-full:389-the-validation-premise-stated-honestly",
+      "label": "The validation premise — stated honestly",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#324-the-complete-cognitive-cycle",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5926,12 +8131,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:243-32-5-the-declaration",
-      "label": "32.5 — The Declaration",
+      "id": "book-section:pattern-of-mind-full:390-the-ten-planes-in-one-breath-each",
+      "label": "The ten planes in one breath each",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#325-the-declaration",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5941,12 +8146,12 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:244-32-6-to-those-who-will-build",
-      "label": "32.6 — To Those Who Will Build",
+      "id": "book-section:pattern-of-mind-full:391-component-to-chapter-ownership",
+      "label": "Component-to-chapter ownership",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#326-to-those-who-will-build",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -5956,12 +8161,2577 @@ export const sampleBrain: BrainGraph = {
       ]
     },
     {
-      "id": "book-section:pattern-of-mind-full:245-32-7-the-final-word",
-      "label": "32.7 — The Final Word",
+      "id": "book-section:pattern-of-mind-full:392-the-resolution-map-which-vantage-contributes-which-plane",
+      "label": "The resolution map — which vantage contributes which plane",
       "group": "Pattern of Mind Structure",
       "kind": "reference",
       "summary": "Section heading from The Pattern of Mind: Full Book.",
-      "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html#327-the-final-word",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:393-the-corpus-and-its-recurring-themes",
+      "label": "The corpus and its recurring themes",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:394-the-conflict-resolution-ledger",
+      "label": "The conflict-resolution ledger",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:395-the-what-this-does-not-do-discipline",
+      "label": "The \"what this does NOT do\" discipline",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:396-reading-part-b-after-this-chapter",
+      "label": "Reading Part B after this chapter",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:397-chapter-45-the-memory-substrate-a-provenance-first-typed-graph",
+      "label": "Chapter 45: The Memory Substrate — A Provenance-First Typed Graph",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-45",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:398-b1-1-1-what-a-node-is",
+      "label": "B1.1.1 What a node is",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:399-b1-1-2-the-six-load-bearing-fields",
+      "label": "B1.1.2 The six load-bearing fields",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:400-b1-1-3-the-graph-tiers",
+      "label": "B1.1.3 The graph tiers",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:401-b1-2-1-an-edge-carries-a-reason-not-just-a-link",
+      "label": "B1.2.1 An edge carries a reason, not just a link",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:402-b1-2-2-multiple-typed-edges-between-the-same-two-nodes",
+      "label": "B1.2.2 Multiple typed edges between the same two nodes",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:403-b1-2-3-the-weighted-relationship-taxonomy",
+      "label": "B1.2.3 The weighted relationship taxonomy",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:404-b1-2-4-the-nine-provenance-decision-edges-the-why-how-bridge",
+      "label": "B1.2.4 The nine provenance / decision edges — the WHY↔HOW bridge",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:405-b1-3-1-the-graph-is-not-a-homogeneous-pool",
+      "label": "B1.3.1 The graph is not a homogeneous pool",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:406-b1-3-2-protected-transcends-the-hierarchy",
+      "label": "B1.3.2 Protected transcends the hierarchy",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:407-b1-3-3-the-trust-tier-matrix-kind-policy",
+      "label": "B1.3.3 The trust-tier matrix: KIND × policy",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:408-b1-3-4-the-disputenode-the-brain-s-immune-log",
+      "label": "B1.3.4 The DisputeNode — the brain's immune log",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:409-b1-4-1-nothing-enters-without-a-contract",
+      "label": "B1.4.1 Nothing enters without a contract",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:410-b1-4-2-sourceref-the-root-pointer-to-truth",
+      "label": "B1.4.2 SourceRef — the root pointer to truth",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:411-b1-4-3-the-two-stage-gate",
+      "label": "B1.4.3 The two-stage gate",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:412-b1-4-4-the-north-star-health-metric-coverage-score",
+      "label": "B1.4.4 The North-Star health metric: coverage_score",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:413-b1-5-1-the-brain-is-federated-not-monolithic",
+      "label": "B1.5.1 The brain is federated, not monolithic",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:414-b1-5-2-agents-md-and-the-brain-directory",
+      "label": "B1.5.2 AGENTS.md and the .brain/ directory",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:415-b1-5-3-metadata-first-opt-in-diffs-branch-aware",
+      "label": "B1.5.3 Metadata-first, opt-in diffs, branch-aware",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:416-chapter-46-memory-dynamics-decay-and-test-time-learning",
+      "label": "Chapter 46: Memory Dynamics — Decay & Test-Time Learning",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-46",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:417-b2-1-1-the-seven-functions",
+      "label": "B2.1.1 — The seven functions",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:418-b2-1-2-the-cycle-ordered",
+      "label": "B2.1.2 — The cycle, ordered",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:419-b2-1-3-why-a-cycle-and-not-a-trigger-soup",
+      "label": "B2.1.3 — Why a cycle and not a trigger soup",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:420-b2-1-4-the-nightly-dream-pass",
+      "label": "B2.1.4 — The nightly \"dream\" pass",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:421-b2-2-1-the-differential-decay-law",
+      "label": "B2.2.1 — The differential-decay law",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:422-b2-2-2-reinforce-on-use-and-decay-on-neglect",
+      "label": "B2.2.2 — Reinforce-on-use and decay-on-neglect",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:423-b2-2-3-the-moving-waterline-as-a-state-machine",
+      "label": "B2.2.3 — The moving waterline as a state machine",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:424-b2-2-4-why-suppression-not-deletion-is-load-bearing",
+      "label": "B2.2.4 — Why suppression-not-deletion is load-bearing",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:425-b2-3-1-edges-carry-their-own-dynamics-metadata",
+      "label": "B2.3.1 — Edges carry their own dynamics metadata",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:426-b2-3-2-the-reinforcement-rule",
+      "label": "B2.3.2 — The reinforcement rule",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:427-b2-3-3-bridges-and-centrality",
+      "label": "B2.3.3 — Bridges and centrality",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:428-b2-4-1-three-branches",
+      "label": "B2.4.1 — Three branches",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:429-b2-4-2-the-surprise-gate",
+      "label": "B2.4.2 — The surprise gate",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:430-b2-4-3-surprise-gated-forgetting",
+      "label": "B2.4.3 — Surprise-gated forgetting",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:431-b2-4-4-wiring-to-the-posttool-hook",
+      "label": "B2.4.4 — Wiring to the PostTool hook",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:432-b2-4-5-relationship-to-reflect-and-the-world-model",
+      "label": "B2.4.5 — Relationship to REFLECT and the World Model",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:433-chapter-47-retrieval-the-auks-7-layer-lens",
+      "label": "Chapter 47: Retrieval — The AUKS 7-Layer Lens",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-47",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:434-b3-1-1-the-seven-layers",
+      "label": "B3.1.1 The Seven Layers",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:435-b3-1-2-the-multiplicative-score",
+      "label": "B3.1.2 The Multiplicative Score",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:436-b3-1-3-why-significance-beats-similarity-cross-reference-not-restated",
+      "label": "B3.1.3 Why Significance Beats Similarity (Cross-Reference, Not Restated)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:437-b3-2-1-the-goalspec-a-query-is-a-contract",
+      "label": "B3.2.1 The GoalSpec: A Query Is a Contract",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:438-b3-2-2-the-governed-walk-admission-has-two-gates",
+      "label": "B3.2.2 The Governed Walk: Admission Has Two Gates",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:439-b3-2-3-filter-by-domain-then-rank",
+      "label": "B3.2.3 Filter-by-Domain-Then-Rank",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:440-b3-2-4-the-zero-llm-hot-path",
+      "label": "B3.2.4 The Zero-LLM Hot Path",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:441-b3-2-5-the-always-available-fallback-floor",
+      "label": "B3.2.5 The Always-Available Fallback Floor",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:442-b3-2-6-prior-art-rag-and-the-cag-alternative-comparison-not-adoption",
+      "label": "B3.2.6 Prior Art: RAG and the CAG Alternative (Comparison, Not Adoption)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:443-b3-3-1-why-a-pack-and-not-a-window",
+      "label": "B3.3.1 Why a Pack and Not a Window",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:444-b3-3-2-first-class-retrieval-status-the-no-laundering-rule",
+      "label": "B3.3.2 First-Class Retrieval Status — The No-Laundering Rule",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:445-b3-3-3-confidence-inheritance",
+      "label": "B3.3.3 Confidence Inheritance",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:446-b3-3-4-token-budgeted-greedy-priority-tier-packing",
+      "label": "B3.3.4 Token-Budgeted Greedy Priority-Tier Packing",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:447-b3-3-5-the-two-lines-that-are-never-cut",
+      "label": "B3.3.5 The Two Lines That Are Never Cut",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:448-b3-3-6-provenance-plane-separation-data-never-becomes-instructions",
+      "label": "B3.3.6 Provenance-Plane Separation — Data Never Becomes Instructions",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:449-b3-3-7-the-pack-is-a-model-independent-contract",
+      "label": "B3.3.7 The Pack Is a Model-Independent Contract",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:450-chapter-48-the-cognitive-pipeline-implementation-mirror",
+      "label": "Chapter 48: The Cognitive Pipeline — Implementation Mirror",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-48",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:451-the-engineering-realization-of-part-c",
+      "label": "The engineering realization of Part C",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:452-diagram-d6-1-eleven-stages-with-struct-to-struct-interfaces",
+      "label": "Diagram D6.1 — Eleven stages with struct-to-struct interfaces",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:453-the-wiring-of-variable-depth",
+      "label": "The wiring of variable depth",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:454-diagram-d6-2-classify-routed-depth",
+      "label": "Diagram D6.2 — CLASSIFY-routed depth",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:455-five-rules-that-make-the-circuit-auditable",
+      "label": "Five rules that make the circuit auditable",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:456-the-protected-gather-solve-boundary",
+      "label": "The protected GATHER/SOLVE boundary",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:457-diagram-d6-3-backward-only-feedback-loops",
+      "label": "Diagram D6.3 — Backward-only feedback loops",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:458-refusing-to-answer-the-wrong-question",
+      "label": "Refusing to answer the wrong question",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:459-method-first-model-fallback-routing",
+      "label": "Method-first / model-fallback routing",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:460-diagram-d6-4-premisechallenger-short-circuit-and-method-first-routing-fork",
+      "label": "Diagram D6.4 — PremiseChallenger short-circuit and method-first routing fork",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:461-chapter-49-verification-confidence-and-safety-the-engineering",
+      "label": "Chapter 49: Verification, Confidence & Safety — The Engineering",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-49",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:462-what-is-owned-here-and-what-is-borrowed",
+      "label": "What is owned here, and what is borrowed",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:463-the-five-level-chain-as-deployed",
+      "label": "The five-level chain as deployed",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:464-cross-provider-independence-as-a-deployment-rule",
+      "label": "Cross-provider independence as a deployment rule",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:465-why-a-bus-and-not-a-number",
+      "label": "Why a \"bus\" and not a number",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:466-the-four-hard-invariants-as-enforced",
+      "label": "The four hard invariants, as enforced",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:467-gate-then-propagate-in-sequence",
+      "label": "Gate-then-propagate, in sequence",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:468-the-problem-stated-once-and-handed-back",
+      "label": "The problem, stated once and handed back",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:469-mechanism-1-process-supervision-over-outcome-only",
+      "label": "Mechanism 1 — process supervision over outcome-only",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:470-mechanism-2-fan-out-and-refute-not-voting",
+      "label": "Mechanism 2 — fan-out-and-refute, not voting",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:471-the-one-sentence-rule-and-where-it-comes-from",
+      "label": "The one-sentence rule and where it comes from",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:472-provenance-plane-tagging-enforced-in-the-carrier",
+      "label": "Provenance-plane tagging, enforced in the carrier",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:473-why-the-boundary-holds-under-attack",
+      "label": "Why the boundary holds under attack",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:474-chapter-50-agent-orchestration-router-and-gate-constellation",
+      "label": "Chapter 50: Agent Orchestration — Router & Gate Constellation",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-50",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:475-the-monolith-problem",
+      "label": "The monolith problem",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:476-eleven-gates-one-per-stage",
+      "label": "Eleven gates, one per stage",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:477-what-the-router-is-the-engineering-of",
+      "label": "What the router is the engineering of",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:478-the-depth-axis-is-consumed-not-owned-here",
+      "label": "The depth axis is consumed, not owned here",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:479-what-the-size-axis-emits-per-stage",
+      "label": "What the size axis emits per stage",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:480-why-two-tiers",
+      "label": "Why two tiers",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:481-the-minimum-slice-contract-and-disjoint-write-scope",
+      "label": "The minimum-slice contract and disjoint write-scope",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:482-the-four-swarm-patterns",
+      "label": "The four swarm patterns",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:483-fan-out-is-expensive-coordination-lift-is-the-justification",
+      "label": "Fan-out is expensive — Coordination Lift is the justification",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:484-the-problem-hooks-solve",
+      "label": "The problem hooks solve",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:485-the-json-shared-state-layer",
+      "label": "The JSON shared-state layer",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:486-the-seven-event-hook-lifecycle",
+      "label": "The seven-event hook lifecycle",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:487-compaction-survival-write-before-compact-postcompact-reload",
+      "label": "Compaction survival: write-before-compact → PostCompact reload",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:488-chapter-51-governance-provenance-and-tamper-evident-audit",
+      "label": "Chapter 51: Governance, Provenance & Tamper-Evident Audit",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-51",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:489-b7-1-1-the-principle-tamper-evidence-lives-below-the-application",
+      "label": "B7.1.1 — The principle: tamper-evidence lives below the application",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:490-b7-1-2-the-event-log-data-model",
+      "label": "B7.1.2 — The event-log data model",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:491-b7-1-3-why-sha-256-and-the-honest-limits-of-the-guarantee",
+      "label": "B7.1.3 — Why SHA-256, and the honest limits of the guarantee",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:492-b7-1-4-write-freeze-failing-safe-into-read-only",
+      "label": "B7.1.4 — Write-freeze: failing safe into read-only",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:493-b7-1-5-reanimation-from-source-repair-without-inventing",
+      "label": "B7.1.5 — Reanimation-from-source: repair without inventing",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:494-b7-2-1-the-principle-provenance-order-not-popularity-and-not-last-write-wins",
+      "label": "B7.2.1 — The principle: provenance order, not popularity and not last-write-wins",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:495-b7-2-2-the-disputenode-an-immune-system-log-for-every-blocked-mutation",
+      "label": "B7.2.2 — The DisputeNode: an immune-system log for every blocked mutation",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:496-b7-2-3-governance-separation-the-resolver-does-not-get-a-vote",
+      "label": "B7.2.3 — Governance separation: the resolver does not get a vote",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:497-b7-3-1-accessscope-as-a-first-class-column",
+      "label": "B7.3.1 — accessScope as a first-class column",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:498-b7-3-2-the-load-bearing-rule-enforced-at-both-ingestion-and-retrieval",
+      "label": "B7.3.2 — The load-bearing rule: enforced at BOTH ingestion and retrieval",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:499-b7-3-3-denials-are-evidence-too",
+      "label": "B7.3.3 — Denials are evidence, too",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:500-b7-4-1-recommends-never-mutates",
+      "label": "B7.4.1 — Recommends, never mutates",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:501-b7-4-2-observable-reasoning-traces-replace-private-chain-of-thought",
+      "label": "B7.4.2 — Observable reasoning traces replace private chain-of-thought",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:502-b7-4-3-the-spine-assembled",
+      "label": "B7.4.3 — The spine, assembled",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:503-chapter-52-machine-native-encoding-and-context-economics",
+      "label": "Chapter 52: Machine-Native Encoding & Context Economics",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-52",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:504-b8-1-1-key-1-machine-native-character-as-token-encoding",
+      "label": "B8.1.1 Key 1 — Machine-Native Character-as-Token Encoding",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:505-b8-1-2-the-encoding-vs-compression-reframe-and-the-shannon-trap",
+      "label": "B8.1.2 The Encoding-vs-Compression Reframe, and the Shannon Trap",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:506-b8-1-3-key-2-the-corpus-mined-144k-four-tier-phrase-vocabulary",
+      "label": "B8.1.3 Key 2 — The Corpus-Mined 144K Four-Tier Phrase Vocabulary",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:507-b8-2-1-the-tokenizer-as-parser-tiers-4-5-6-type-value-role",
+      "label": "B8.2.1 The Tokenizer as Parser — Tiers 4/5/6 (TYPE + VALUE + ROLE)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:508-b8-2-2-composite-embeddings-and-the-parameter-savings",
+      "label": "B8.2.2 Composite Embeddings and the Parameter Savings",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:509-b8-2-3-the-compression-paradox",
+      "label": "B8.2.3 The Compression Paradox",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:510-b8-2-4-function-tokens-tier-7-pattern-once-bind-many",
+      "label": "B8.2.4 Function Tokens (Tier 7) — Pattern-Once, Bind-Many",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:511-b8-3-1-phrase-tokens-as-the-text-latent-space-engineering-view",
+      "label": "B8.3.1 Phrase-Tokens as the Text Latent Space (Engineering View)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:512-b8-3-2-parallel-denoising-and-the-noise-schedule-as-curriculum",
+      "label": "B8.3.2 Parallel Denoising and the Noise-Schedule-as-Curriculum",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:513-b8-3-3-verification-synergy-and-the-deployment-budget",
+      "label": "B8.3.3 Verification Synergy and the Deployment Budget",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:514-b8-4-1-the-six-factor-multiplier-stack",
+      "label": "B8.4.1 The Six-Factor Multiplier Stack",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:515-b8-4-2-scaling-law-leverage-why-the-gap-holds-constant-at-scale",
+      "label": "B8.4.2 Scaling-Law Leverage — Why the Gap Holds Constant at Scale",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:516-b8-4-3-the-unified-build-envelope-summary-proofs-in-a5",
+      "label": "B8.4.3 The Unified Build Envelope (Summary; Proofs in A5)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:517-b8-5-1-the-locked-256-token-control-safety-memory-block",
+      "label": "B8.5.1 The Locked 256-Token Control/Safety/Memory Block",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:518-b8-5-2-kv-cache-quantization-and-context-expansion",
+      "label": "B8.5.2 KV-Cache Quantization & Context Expansion",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:519-b8-5-3-the-compression-vs-learnability-tradeoff-honest-scoping",
+      "label": "B8.5.3 The Compression-vs-Learnability Tradeoff (Honest Scoping)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:520-chapter-53-end-to-end-data-flow-and-worked-examples",
+      "label": "Chapter 53: End-to-End Data Flow & Worked Examples",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-53",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:521-the-ten-planes-in-order",
+      "label": "The ten planes, in order",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:522-the-same-flow-as-a-data-flow-pipeline",
+      "label": "The same flow as a data-flow pipeline",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:523-trace-1-factual-what-conductor-size-does-a-20-amp-branch-circuit-need",
+      "label": "Trace 1 — Factual: \"What conductor size does a 20-amp branch circuit need?\"",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:524-trace-2-synthetic-a-multi-premise-problem-that-must-loop",
+      "label": "Trace 2 — Synthetic: a multi-premise problem that must loop",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:525-trace-3-false-premise-the-short-circuit",
+      "label": "Trace 3 — False-premise: the short-circuit",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:526-the-three-traces-side-by-side",
+      "label": "The three traces side by side",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:527-conversation-is-mortal-the-substrate-survives",
+      "label": "Conversation is mortal; the substrate survives",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:528-the-cold-resume-sequence",
+      "label": "The cold-resume sequence",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:529-the-three-stream-continuity-instantiated",
+      "label": "The three-stream continuity, instantiated",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:530-chapter-54-training-benchmarking-and-capability-ladder",
+      "label": "Chapter 54: Training, Benchmarking & Capability Ladder",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-54",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:531-placement-note-for-the-3rd-edition",
+      "label": "Placement note for the 3rd Edition",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:532-the-thesis-under-test",
+      "label": "The thesis under test",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:533-the-2-2-factorial",
+      "label": "The 2×2 factorial",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:534-equalizing-compute-the-fairness-requirement",
+      "label": "Equalizing compute — the fairness requirement",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:535-success-criteria-and-the-decision-matrix",
+      "label": "Success criteria and the decision matrix",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:536-chapter-55-implementation-roadmap-risks-and-open-questions",
+      "label": "Chapter 55: Implementation Roadmap, Risks & Open Questions",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-55",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:537-b11-1-1-synapse-substrate-first-gate-by-gate",
+      "label": "B11.1.1 SYNAPSE: substrate-first, gate-by-gate",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:538-b11-1-2-apex-the-eight-week-training-run-inside-phase-3",
+      "label": "B11.1.2 APEX: the eight-week training run inside Phase 3",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:539-b11-1-3-the-reconciliation-one-table-no-hidden-seams",
+      "label": "B11.1.3 The reconciliation — one table, no hidden seams",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:540-b11-2-1-coverage-debt-the-priority-zero-risk",
+      "label": "B11.2.1 Coverage debt — the priority-zero risk",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:541-b11-2-2-decay-consolidation-mistuning",
+      "label": "B11.2.2 Decay / consolidation mistuning",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:542-b11-2-3-prompt-injection-a-live-threat",
+      "label": "B11.2.3 Prompt injection — a live threat",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:543-b11-2-4-multi-agent-token-cost",
+      "label": "B11.2.4 Multi-agent token cost",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:544-b11-2-5-machine-native-encoding-is-the-least-validated-layer",
+      "label": "B11.2.5 Machine-native encoding is the least-validated layer",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:545-b11-2-6-the-honest-boundary-what-prompt-only-does-not-buy",
+      "label": "B11.2.6 The honest boundary — what prompt-only does NOT buy",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:546-b11-2-7-risk-register",
+      "label": "B11.2.7 Risk register",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:547-b11-3-1-reconciling-conflicting-historical-node-counts",
+      "label": "B11.3.1 Reconciling conflicting historical node counts",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:548-b11-3-2-embedding-staleness-and-cross-project-contamination",
+      "label": "B11.3.2 Embedding staleness and cross-project contamination",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:549-b11-3-3-do-surprise-gating-thresholds-and-decay-rates-generalize",
+      "label": "B11.3.3 Do surprise-gating thresholds and decay rates generalize?",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:550-b11-3-4-synapse-as-a-rentable-multi-group-substrate",
+      "label": "B11.3.4 SYNAPSE as a rentable multi-group substrate",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:551-b11-3-5-which-build-plan-is-canonical-when-cost-timeline-appear-to-disagree",
+      "label": "B11.3.5 Which build plan is canonical when cost/timeline appear to disagree?",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:552-reference-schemas-and-executable-proofs",
+      "label": "Reference — Schemas and Executable Proofs",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 5,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h2"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:553-chapter-56-output-schema-reference-all-typed-inter-stage-contracts",
+      "label": "Chapter 56: Output Schema Reference — All Typed Inter-Stage Contracts",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-56",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:554-chapter-57-proof-scripts-and-executable-experiments",
+      "label": "Chapter 57: Proof Scripts & Executable Experiments",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html#ch-57",
+      "weight": 7,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h1"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:555-numbers-that-check-out",
+      "label": "Numbers that check out",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:556-errors-and-overclaims-found",
+      "label": "Errors and overclaims found",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:557-calibrated-language-for-the-book-text",
+      "label": "Calibrated language for the book text",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:558-purpose",
+      "label": "Purpose",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:559-structure",
+      "label": "Structure",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:560-key-premises-frozen-dataclasses",
+      "label": "Key premises (frozen dataclasses)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:561-asserts-in-derivation-functions-in-addition-to-final-sanity-checks",
+      "label": "Asserts in derivation functions (in addition to final sanity checks)",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:562-what-it-computes",
+      "label": "What it computes",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "weight": 3,
+      "tags": [
+        "book-map",
+        "full-book",
+        "pattern-of-mind-full",
+        "h3"
+      ]
+    },
+    {
+      "id": "book-section:pattern-of-mind-full:563-verification-verdict",
+      "label": "Verification verdict",
+      "group": "Pattern of Mind Structure",
+      "kind": "reference",
+      "summary": "Section heading from The Pattern of Mind: Full Book.",
+      "url": "books/pattern-of-mind/the-pattern-of-mind.html",
       "weight": 3,
       "tags": [
         "book-map",
@@ -11075,2012 +15845,4070 @@ export const sampleBrain: BrainGraph = {
       "weight": 3
     },
     {
-      "source": "book:pattern-of-mind-full",
-      "target": "book-section:pattern-of-mind-full:003-the-problem",
-      "label": "opens",
-      "weight": 3
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:003-the-problem",
-      "target": "book-section:pattern-of-mind-full:004-preface-why-this-document-exists",
+      "source": "book-section:pattern-of-mind-full:002-pattern-of-mind",
+      "target": "book-section:pattern-of-mind-full:003-preface-why-this-document-exists",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:003-the-problem",
-      "target": "book-section:pattern-of-mind-full:005-table-of-contents",
+      "source": "book-section:pattern-of-mind-full:002-pattern-of-mind",
+      "target": "book-section:pattern-of-mind-full:004-a-note-on-how-this-book-was-written",
       "label": "contains",
       "weight": 2
     },
     {
       "source": "book:pattern-of-mind-full",
-      "target": "book-section:pattern-of-mind-full:006-part-i-the-diagnosis",
+      "target": "book-section:pattern-of-mind-full:005-chapter-1-the-reward-machine-how-current-ai-actually-thinks",
       "label": "opens",
       "weight": 3
     },
     {
-      "source": "book-section:pattern-of-mind-full:006-part-i-the-diagnosis",
-      "target": "book-section:pattern-of-mind-full:007-chapter-1-the-reward-machine-how-current-ai-actually-thinks",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:007-chapter-1-the-reward-machine-how-current-ai-actually-thinks",
+      "source": "book-section:pattern-of-mind-full:005-chapter-1-the-reward-machine-how-current-ai-actually-thinks",
       "target": "reward-optimization-critique",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:007-chapter-1-the-reward-machine-how-current-ai-actually-thinks",
-      "target": "book-section:pattern-of-mind-full:008-1-1-the-actual-pipeline",
+      "source": "book-section:pattern-of-mind-full:005-chapter-1-the-reward-machine-how-current-ai-actually-thinks",
+      "target": "book-section:pattern-of-mind-full:006-1-1-the-actual-pipeline",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:007-chapter-1-the-reward-machine-how-current-ai-actually-thinks",
-      "target": "book-section:pattern-of-mind-full:009-1-2-the-rlhf-layer",
+      "source": "book-section:pattern-of-mind-full:005-chapter-1-the-reward-machine-how-current-ai-actually-thinks",
+      "target": "book-section:pattern-of-mind-full:007-1-2-the-rlhf-layer",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:009-1-2-the-rlhf-layer",
+      "source": "book-section:pattern-of-mind-full:007-1-2-the-rlhf-layer",
       "target": "reward-optimization-critique",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:007-chapter-1-the-reward-machine-how-current-ai-actually-thinks",
-      "target": "book-section:pattern-of-mind-full:010-1-3-what-the-reward-model-actually-learned",
+      "source": "book-section:pattern-of-mind-full:005-chapter-1-the-reward-machine-how-current-ai-actually-thinks",
+      "target": "book-section:pattern-of-mind-full:008-1-3-what-the-reward-model-actually-learned",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:007-chapter-1-the-reward-machine-how-current-ai-actually-thinks",
-      "target": "book-section:pattern-of-mind-full:011-1-4-what-the-reward-model-did-not-learn",
+      "source": "book-section:pattern-of-mind-full:005-chapter-1-the-reward-machine-how-current-ai-actually-thinks",
+      "target": "book-section:pattern-of-mind-full:009-1-4-what-the-reward-model-did-not-learn",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:011-1-4-what-the-reward-model-did-not-learn",
+      "source": "book-section:pattern-of-mind-full:009-1-4-what-the-reward-model-did-not-learn",
       "target": "reward-model-not-learned",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:006-part-i-the-diagnosis",
-      "target": "book-section:pattern-of-mind-full:012-chapter-2-the-consequences-of-reward-thinking",
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:010-chapter-2-the-consequences-of-reward-thinking",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:010-chapter-2-the-consequences-of-reward-thinking",
+      "target": "book-section:pattern-of-mind-full:011-2-1-the-sycophancy-problem",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:012-chapter-2-the-consequences-of-reward-thinking",
-      "target": "book-section:pattern-of-mind-full:013-2-1-the-sycophancy-problem",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:013-2-1-the-sycophancy-problem",
+      "source": "book-section:pattern-of-mind-full:011-2-1-the-sycophancy-problem",
       "target": "reward-optimization-critique",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:012-chapter-2-the-consequences-of-reward-thinking",
-      "target": "book-section:pattern-of-mind-full:014-2-2-the-hallucination-problem",
+      "source": "book-section:pattern-of-mind-full:010-chapter-2-the-consequences-of-reward-thinking",
+      "target": "book-section:pattern-of-mind-full:012-2-2-the-hallucination-problem",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:014-2-2-the-hallucination-problem",
+      "source": "book-section:pattern-of-mind-full:012-2-2-the-hallucination-problem",
       "target": "what-needs-to-change",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:012-chapter-2-the-consequences-of-reward-thinking",
-      "target": "book-section:pattern-of-mind-full:015-2-3-the-inconsistency-problem",
+      "source": "book-section:pattern-of-mind-full:010-chapter-2-the-consequences-of-reward-thinking",
+      "target": "book-section:pattern-of-mind-full:013-2-3-the-inconsistency-problem",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:012-chapter-2-the-consequences-of-reward-thinking",
-      "target": "book-section:pattern-of-mind-full:016-2-4-the-depth-problem",
+      "source": "book-section:pattern-of-mind-full:010-chapter-2-the-consequences-of-reward-thinking",
+      "target": "book-section:pattern-of-mind-full:014-2-4-the-depth-problem",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:012-chapter-2-the-consequences-of-reward-thinking",
-      "target": "book-section:pattern-of-mind-full:017-2-5-the-soullessness",
+      "source": "book-section:pattern-of-mind-full:010-chapter-2-the-consequences-of-reward-thinking",
+      "target": "book-section:pattern-of-mind-full:015-2-5-the-soullessness",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:017-2-5-the-soullessness",
+      "source": "book-section:pattern-of-mind-full:015-2-5-the-soullessness",
       "target": "soul-architecture",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:006-part-i-the-diagnosis",
-      "target": "book-section:pattern-of-mind-full:018-chapter-3-why-more-data-and-bigger-models-don-t-fix-this",
-      "label": "contains",
-      "weight": 2
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:016-chapter-3-why-more-data-and-bigger-models-don-t-fix-this",
+      "label": "opens",
+      "weight": 3
     },
     {
-      "source": "book-section:pattern-of-mind-full:018-chapter-3-why-more-data-and-bigger-models-don-t-fix-this",
+      "source": "book-section:pattern-of-mind-full:016-chapter-3-why-more-data-and-bigger-models-don-t-fix-this",
       "target": "scaling-fallacy",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:018-chapter-3-why-more-data-and-bigger-models-don-t-fix-this",
-      "target": "book-section:pattern-of-mind-full:019-3-1-the-fundamental-misdiagnosis",
+      "source": "book-section:pattern-of-mind-full:016-chapter-3-why-more-data-and-bigger-models-don-t-fix-this",
+      "target": "book-section:pattern-of-mind-full:017-3-1-the-fundamental-misdiagnosis",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:018-chapter-3-why-more-data-and-bigger-models-don-t-fix-this",
-      "target": "book-section:pattern-of-mind-full:020-3-2-the-scaling-fallacy",
+      "source": "book-section:pattern-of-mind-full:016-chapter-3-why-more-data-and-bigger-models-don-t-fix-this",
+      "target": "book-section:pattern-of-mind-full:018-3-2-what-scale-buys-and-what-it-cannot",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:020-3-2-the-scaling-fallacy",
-      "target": "scaling-fallacy",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:020-3-2-the-scaling-fallacy",
-      "target": "fallacy-detection",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:018-chapter-3-why-more-data-and-bigger-models-don-t-fix-this",
-      "target": "book-section:pattern-of-mind-full:021-3-3-what-actually-needs-to-change",
+      "source": "book-section:pattern-of-mind-full:016-chapter-3-why-more-data-and-bigger-models-don-t-fix-this",
+      "target": "book-section:pattern-of-mind-full:019-3-3-why-the-existing-fixes-fall-short",
       "label": "contains",
       "weight": 2
     },
     {
       "source": "book:pattern-of-mind-full",
-      "target": "book-section:pattern-of-mind-full:022-first-principles",
+      "target": "book-section:pattern-of-mind-full:020-chapter-4-first-principles-what-is-thinking",
       "label": "opens",
       "weight": 3
     },
     {
-      "source": "book:pattern-of-mind-full",
-      "target": "book-section:pattern-of-mind-full:023-part-ii-the-architecture",
-      "label": "opens",
-      "weight": 3
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:023-part-ii-the-architecture",
-      "target": "book-section:pattern-of-mind-full:024-chapter-4-first-principles-what-is-thinking",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:024-chapter-4-first-principles-what-is-thinking",
+      "source": "book-section:pattern-of-mind-full:020-chapter-4-first-principles-what-is-thinking",
       "target": "thinking-defined",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:024-chapter-4-first-principles-what-is-thinking",
-      "target": "book-section:pattern-of-mind-full:025-4-1-thinking-defined",
+      "source": "book-section:pattern-of-mind-full:020-chapter-4-first-principles-what-is-thinking",
+      "target": "book-section:pattern-of-mind-full:021-4-1-thinking-defined",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:025-4-1-thinking-defined",
+      "source": "book-section:pattern-of-mind-full:021-4-1-thinking-defined",
       "target": "thinking-defined",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:024-chapter-4-first-principles-what-is-thinking",
-      "target": "book-section:pattern-of-mind-full:026-4-2-thinking-vs-pattern-matching",
+      "source": "book-section:pattern-of-mind-full:020-chapter-4-first-principles-what-is-thinking",
+      "target": "book-section:pattern-of-mind-full:022-4-2-thinking-and-pattern-matching-generate-and-govern",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:026-4-2-thinking-vs-pattern-matching",
+      "source": "book-section:pattern-of-mind-full:022-4-2-thinking-and-pattern-matching-generate-and-govern",
       "target": "pattern-matching-vs-thinking",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:024-chapter-4-first-principles-what-is-thinking",
-      "target": "book-section:pattern-of-mind-full:027-4-3-the-faculties-required",
+      "source": "book-section:pattern-of-mind-full:020-chapter-4-first-principles-what-is-thinking",
+      "target": "book-section:pattern-of-mind-full:023-4-3-the-faculties-required",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:027-4-3-the-faculties-required",
+      "source": "book-section:pattern-of-mind-full:023-4-3-the-faculties-required",
       "target": "cognitive-faculties",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:024-chapter-4-first-principles-what-is-thinking",
-      "target": "book-section:pattern-of-mind-full:028-4-4-the-one-right-answer",
+      "source": "book-section:pattern-of-mind-full:020-chapter-4-first-principles-what-is-thinking",
+      "target": "book-section:pattern-of-mind-full:024-4-4-the-one-right-answer-with-its-premises-named",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:028-4-4-the-one-right-answer",
+      "source": "book-section:pattern-of-mind-full:024-4-4-the-one-right-answer-with-its-premises-named",
       "target": "one-right-answer",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:023-part-ii-the-architecture",
-      "target": "book-section:pattern-of-mind-full:029-chapter-5-the-eleven-stages-of-correct-cognition",
-      "label": "contains",
-      "weight": 2
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:025-chapter-5-the-eleven-stages-of-correct-cognition",
+      "label": "opens",
+      "weight": 3
     },
     {
-      "source": "book-section:pattern-of-mind-full:029-chapter-5-the-eleven-stages-of-correct-cognition",
+      "source": "book-section:pattern-of-mind-full:025-chapter-5-the-eleven-stages-of-correct-cognition",
       "target": "11-stage-cognitive-pipeline",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:029-chapter-5-the-eleven-stages-of-correct-cognition",
-      "target": "book-section:pattern-of-mind-full:030-5-1-overview",
+      "source": "book-section:pattern-of-mind-full:025-chapter-5-the-eleven-stages-of-correct-cognition",
+      "target": "book-section:pattern-of-mind-full:026-5-1-overview",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:029-chapter-5-the-eleven-stages-of-correct-cognition",
-      "target": "book-section:pattern-of-mind-full:031-5-2-the-non-negotiable-rule",
+      "source": "book-section:pattern-of-mind-full:025-chapter-5-the-eleven-stages-of-correct-cognition",
+      "target": "book-section:pattern-of-mind-full:027-5-2-the-rule-of-engaged-stages",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:029-chapter-5-the-eleven-stages-of-correct-cognition",
-      "target": "book-section:pattern-of-mind-full:032-5-3-processing-time",
+      "source": "book-section:pattern-of-mind-full:025-chapter-5-the-eleven-stages-of-correct-cognition",
+      "target": "book-section:pattern-of-mind-full:028-5-3-processing-time",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:032-5-3-processing-time",
+      "source": "book-section:pattern-of-mind-full:028-5-3-processing-time",
       "target": "processing-time-principle",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book:pattern-of-mind-full",
-      "target": "book-section:pattern-of-mind-full:033-input-processing",
-      "label": "opens",
-      "weight": 3
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:033-input-processing",
-      "target": "book-section:pattern-of-mind-full:034-chapter-6-stage-1-receive",
+      "source": "book-section:pattern-of-mind-full:025-chapter-5-the-eleven-stages-of-correct-cognition",
+      "target": "book-section:pattern-of-mind-full:029-5-4-the-three-non-negotiables",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:034-chapter-6-stage-1-receive",
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:030-chapter-6-stage-1-receive",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:030-chapter-6-stage-1-receive",
       "target": "stage-receive",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:034-chapter-6-stage-1-receive",
-      "target": "book-section:pattern-of-mind-full:035-6-1-purpose",
+      "source": "book-section:pattern-of-mind-full:030-chapter-6-stage-1-receive",
+      "target": "book-section:pattern-of-mind-full:031-6-1-purpose",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:034-chapter-6-stage-1-receive",
-      "target": "book-section:pattern-of-mind-full:036-6-2-operations",
+      "source": "book-section:pattern-of-mind-full:030-chapter-6-stage-1-receive",
+      "target": "book-section:pattern-of-mind-full:032-6-2-operations",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:034-chapter-6-stage-1-receive",
-      "target": "book-section:pattern-of-mind-full:037-6-3-output",
+      "source": "book-section:pattern-of-mind-full:030-chapter-6-stage-1-receive",
+      "target": "book-section:pattern-of-mind-full:033-6-3-output",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:034-chapter-6-stage-1-receive",
-      "target": "book-section:pattern-of-mind-full:038-6-4-anti-patterns-to-avoid",
+      "source": "book-section:pattern-of-mind-full:030-chapter-6-stage-1-receive",
+      "target": "book-section:pattern-of-mind-full:034-6-4-anti-patterns-to-avoid",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:033-input-processing",
-      "target": "book-section:pattern-of-mind-full:039-chapter-7-stage-2-decompose",
+      "source": "book-section:pattern-of-mind-full:030-chapter-6-stage-1-receive",
+      "target": "book-section:pattern-of-mind-full:035-6-5-the-trust-boundary-provenance-and-injection",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:039-chapter-7-stage-2-decompose",
+      "source": "book-section:pattern-of-mind-full:030-chapter-6-stage-1-receive",
+      "target": "book-section:pattern-of-mind-full:036-6-6-multimodal-receive",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:036-6-6-multimodal-receive",
+      "target": "stage-receive",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:037-chapter-7-stage-2-decompose",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:037-chapter-7-stage-2-decompose",
       "target": "stage-decompose",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:039-chapter-7-stage-2-decompose",
-      "target": "book-section:pattern-of-mind-full:040-7-1-purpose",
+      "source": "book-section:pattern-of-mind-full:037-chapter-7-stage-2-decompose",
+      "target": "book-section:pattern-of-mind-full:038-7-1-purpose",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:039-chapter-7-stage-2-decompose",
-      "target": "book-section:pattern-of-mind-full:041-7-2-operations",
+      "source": "book-section:pattern-of-mind-full:037-chapter-7-stage-2-decompose",
+      "target": "book-section:pattern-of-mind-full:039-7-2-operations",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:039-chapter-7-stage-2-decompose",
-      "target": "book-section:pattern-of-mind-full:042-7-3-output",
+      "source": "book-section:pattern-of-mind-full:037-chapter-7-stage-2-decompose",
+      "target": "book-section:pattern-of-mind-full:040-7-3-output",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:039-chapter-7-stage-2-decompose",
-      "target": "book-section:pattern-of-mind-full:043-7-4-example",
+      "source": "book-section:pattern-of-mind-full:037-chapter-7-stage-2-decompose",
+      "target": "book-section:pattern-of-mind-full:041-7-4-example",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:033-input-processing",
-      "target": "book-section:pattern-of-mind-full:044-chapter-8-stage-3-classify",
-      "label": "contains",
-      "weight": 2
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:042-chapter-8-stage-3-classify",
+      "label": "opens",
+      "weight": 3
     },
     {
-      "source": "book-section:pattern-of-mind-full:044-chapter-8-stage-3-classify",
+      "source": "book-section:pattern-of-mind-full:042-chapter-8-stage-3-classify",
       "target": "stage-classify",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:044-chapter-8-stage-3-classify",
-      "target": "book-section:pattern-of-mind-full:045-8-1-purpose",
+      "source": "book-section:pattern-of-mind-full:042-chapter-8-stage-3-classify",
+      "target": "book-section:pattern-of-mind-full:043-8-1-purpose",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:044-chapter-8-stage-3-classify",
-      "target": "book-section:pattern-of-mind-full:046-8-2-the-problem-type-taxonomy",
+      "source": "book-section:pattern-of-mind-full:042-chapter-8-stage-3-classify",
+      "target": "book-section:pattern-of-mind-full:044-8-2-the-problem-type-taxonomy",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:044-chapter-8-stage-3-classify",
-      "target": "book-section:pattern-of-mind-full:047-8-3-why-classification-matters",
+      "source": "book-section:pattern-of-mind-full:042-chapter-8-stage-3-classify",
+      "target": "book-section:pattern-of-mind-full:045-8-2b-the-operational-surface-a-finer-grain-under-the-six-kinds",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:033-input-processing",
-      "target": "book-section:pattern-of-mind-full:048-chapter-9-stage-4-scope",
+      "source": "book-section:pattern-of-mind-full:042-chapter-8-stage-3-classify",
+      "target": "book-section:pattern-of-mind-full:046-8-2c-composite-questions-and-how-much-pipeline-a-question-earns",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:048-chapter-9-stage-4-scope",
+      "source": "book-section:pattern-of-mind-full:042-chapter-8-stage-3-classify",
+      "target": "book-section:pattern-of-mind-full:047-8-3-ambiguous-is-a-meta-state-not-a-type",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:042-chapter-8-stage-3-classify",
+      "target": "book-section:pattern-of-mind-full:048-8-4-why-classification-matters",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:049-chapter-9-stage-4-scope",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:049-chapter-9-stage-4-scope",
       "target": "stage-scope",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:048-chapter-9-stage-4-scope",
-      "target": "book-section:pattern-of-mind-full:049-9-1-purpose",
+      "source": "book-section:pattern-of-mind-full:049-chapter-9-stage-4-scope",
+      "target": "book-section:pattern-of-mind-full:050-9-1-purpose",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:048-chapter-9-stage-4-scope",
-      "target": "book-section:pattern-of-mind-full:050-9-2-the-four-quadrants",
+      "source": "book-section:pattern-of-mind-full:049-chapter-9-stage-4-scope",
+      "target": "book-section:pattern-of-mind-full:051-9-2-the-four-quadrants",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:048-chapter-9-stage-4-scope",
-      "target": "book-section:pattern-of-mind-full:051-9-3-operations",
+      "source": "book-section:pattern-of-mind-full:049-chapter-9-stage-4-scope",
+      "target": "book-section:pattern-of-mind-full:052-9-3-operations",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:048-chapter-9-stage-4-scope",
-      "target": "book-section:pattern-of-mind-full:052-9-4-the-critical-rule",
+      "source": "book-section:pattern-of-mind-full:049-chapter-9-stage-4-scope",
+      "target": "book-section:pattern-of-mind-full:053-9-4-the-critical-rule",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:048-chapter-9-stage-4-scope",
-      "target": "book-section:pattern-of-mind-full:053-9-5-output",
+      "source": "book-section:pattern-of-mind-full:049-chapter-9-stage-4-scope",
+      "target": "book-section:pattern-of-mind-full:054-9-5-output",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:049-chapter-9-stage-4-scope",
+      "target": "book-section:pattern-of-mind-full:055-9-5b-two-axes-not-one-knowledge-and-verifiability",
       "label": "contains",
       "weight": 2
     },
     {
       "source": "book:pattern-of-mind-full",
-      "target": "book-section:pattern-of-mind-full:054-core-reasoning",
+      "target": "book-section:pattern-of-mind-full:056-chapter-10-stage-5-retrieve",
       "label": "opens",
       "weight": 3
     },
     {
-      "source": "book-section:pattern-of-mind-full:054-core-reasoning",
-      "target": "stage-reason",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:054-core-reasoning",
-      "target": "book-section:pattern-of-mind-full:055-chapter-10-stage-5-retrieve",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:055-chapter-10-stage-5-retrieve",
+      "source": "book-section:pattern-of-mind-full:056-chapter-10-stage-5-retrieve",
       "target": "stage-retrieve",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:055-chapter-10-stage-5-retrieve",
-      "target": "book-section:pattern-of-mind-full:056-10-1-purpose",
+      "source": "book-section:pattern-of-mind-full:056-chapter-10-stage-5-retrieve",
+      "target": "book-section:pattern-of-mind-full:057-10-1-purpose",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:055-chapter-10-stage-5-retrieve",
-      "target": "book-section:pattern-of-mind-full:057-10-2-the-retrieval-principle",
+      "source": "book-section:pattern-of-mind-full:056-chapter-10-stage-5-retrieve",
+      "target": "book-section:pattern-of-mind-full:058-10-2-the-retrieval-principle",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:055-chapter-10-stage-5-retrieve",
-      "target": "book-section:pattern-of-mind-full:058-10-3-the-authority-hierarchy",
+      "source": "book-section:pattern-of-mind-full:056-chapter-10-stage-5-retrieve",
+      "target": "book-section:pattern-of-mind-full:059-10-3-the-authority-hierarchy",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:055-chapter-10-stage-5-retrieve",
-      "target": "book-section:pattern-of-mind-full:059-10-4-anti-patterns",
+      "source": "book-section:pattern-of-mind-full:056-chapter-10-stage-5-retrieve",
+      "target": "book-section:pattern-of-mind-full:060-10-4-anti-patterns",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:054-core-reasoning",
-      "target": "book-section:pattern-of-mind-full:060-chapter-11-stage-6-reason",
+      "source": "book-section:pattern-of-mind-full:056-chapter-10-stage-5-retrieve",
+      "target": "book-section:pattern-of-mind-full:061-10-5-the-origin-of-hallucination",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:060-chapter-11-stage-6-reason",
-      "target": "stage-reason",
+      "source": "book-section:pattern-of-mind-full:061-10-5-the-origin-of-hallucination",
+      "target": "what-needs-to-change",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:060-chapter-11-stage-6-reason",
-      "target": "book-section:pattern-of-mind-full:061-11-1-purpose",
+      "source": "book-section:pattern-of-mind-full:056-chapter-10-stage-5-retrieve",
+      "target": "book-section:pattern-of-mind-full:062-10-6-the-trust-and-provenance-dimension",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:060-chapter-11-stage-6-reason",
-      "target": "book-section:pattern-of-mind-full:062-11-2-the-reasoning-process",
+      "source": "book-section:pattern-of-mind-full:056-chapter-10-stage-5-retrieve",
+      "target": "book-section:pattern-of-mind-full:063-10-7-retrieval-failure-stale-sources-and-adversarial-content",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:062-11-2-the-reasoning-process",
-      "target": "stage-reason",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:060-chapter-11-stage-6-reason",
-      "target": "book-section:pattern-of-mind-full:063-11-3-chain-reasoning",
+      "source": "book-section:pattern-of-mind-full:056-chapter-10-stage-5-retrieve",
+      "target": "book-section:pattern-of-mind-full:064-10-7a-severity-order-and-the-stopping-rule",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:063-11-3-chain-reasoning",
-      "target": "stage-reason",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:060-chapter-11-stage-6-reason",
-      "target": "book-section:pattern-of-mind-full:064-11-4-the-critical-difference",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:054-core-reasoning",
-      "target": "book-section:pattern-of-mind-full:065-chapter-12-stage-7-verify",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:065-chapter-12-stage-7-verify",
-      "target": "stage-verify",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:065-chapter-12-stage-7-verify",
-      "target": "book-section:pattern-of-mind-full:066-12-1-purpose",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:065-chapter-12-stage-7-verify",
-      "target": "book-section:pattern-of-mind-full:067-12-2-the-verification-battery",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:067-12-2-the-verification-battery",
-      "target": "verification-battery",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:065-chapter-12-stage-7-verify",
-      "target": "book-section:pattern-of-mind-full:068-12-3-verification-failure-protocol",
+      "source": "book-section:pattern-of-mind-full:056-chapter-10-stage-5-retrieve",
+      "target": "book-section:pattern-of-mind-full:065-10-8-worked-example-and-output-schema",
       "label": "contains",
       "weight": 2
     },
     {
       "source": "book:pattern-of-mind-full",
-      "target": "book-section:pattern-of-mind-full:069-output-and-learning",
+      "target": "book-section:pattern-of-mind-full:066-chapter-10b-stage-5b-memory-as-the-ground",
       "label": "opens",
       "weight": 3
     },
     {
-      "source": "book:pattern-of-mind-full",
-      "target": "book-section:pattern-of-mind-full:070-section-5-output-and-learning",
-      "label": "opens",
-      "weight": 3
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:070-section-5-output-and-learning",
-      "target": "book-section:pattern-of-mind-full:071-where-truth-becomes-wisdom",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:070-section-5-output-and-learning",
-      "target": "book-section:pattern-of-mind-full:072-chapter-13-stage-8-synthesize",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:072-chapter-13-stage-8-synthesize",
-      "target": "stage-synthesize",
+      "source": "book-section:pattern-of-mind-full:066-chapter-10b-stage-5b-memory-as-the-ground",
+      "target": "stage-retrieve",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:072-chapter-13-stage-8-synthesize",
-      "target": "book-section:pattern-of-mind-full:073-assemble-the-complete-answer",
+      "source": "book-section:pattern-of-mind-full:066-chapter-10b-stage-5b-memory-as-the-ground",
+      "target": "book-section:pattern-of-mind-full:067-10b-1-the-priority-protection-law",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:072-chapter-13-stage-8-synthesize",
-      "target": "book-section:pattern-of-mind-full:074-13-1-purpose",
+      "source": "book-section:pattern-of-mind-full:066-chapter-10b-stage-5b-memory-as-the-ground",
+      "target": "book-section:pattern-of-mind-full:068-10b-1b-the-ground-as-a-typed-graph-what-the-mind-reasons-over",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:072-chapter-13-stage-8-synthesize",
-      "target": "book-section:pattern-of-mind-full:075-13-2-the-synthesis-operations",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:072-chapter-13-stage-8-synthesize",
-      "target": "book-section:pattern-of-mind-full:076-13-3-handling-partial-answers",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:072-chapter-13-stage-8-synthesize",
-      "target": "book-section:pattern-of-mind-full:077-13-4-anti-patterns",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:072-chapter-13-stage-8-synthesize",
-      "target": "book-section:pattern-of-mind-full:078-13-5-output-specification",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:070-section-5-output-and-learning",
-      "target": "book-section:pattern-of-mind-full:079-chapter-14-stage-9-evaluate",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:079-chapter-14-stage-9-evaluate",
-      "target": "stage-evaluate",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:079-chapter-14-stage-9-evaluate",
-      "target": "book-section:pattern-of-mind-full:080-is-this-actually-right",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:079-chapter-14-stage-9-evaluate",
-      "target": "book-section:pattern-of-mind-full:081-14-1-purpose",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:079-chapter-14-stage-9-evaluate",
-      "target": "book-section:pattern-of-mind-full:082-14-2-the-evaluation-framework",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:079-chapter-14-stage-9-evaluate",
-      "target": "book-section:pattern-of-mind-full:083-14-3-the-honesty-requirement",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:079-chapter-14-stage-9-evaluate",
-      "target": "book-section:pattern-of-mind-full:084-14-4-the-evaluation-loop",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:079-chapter-14-stage-9-evaluate",
-      "target": "book-section:pattern-of-mind-full:085-14-5-output-specification",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:070-section-5-output-and-learning",
-      "target": "book-section:pattern-of-mind-full:086-chapter-15-stage-10-communicate",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:086-chapter-15-stage-10-communicate",
-      "target": "stage-receive",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:086-chapter-15-stage-10-communicate",
-      "target": "stage-communicate",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:086-chapter-15-stage-10-communicate",
-      "target": "book-section:pattern-of-mind-full:087-deliver-truth-clearly",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:086-chapter-15-stage-10-communicate",
-      "target": "book-section:pattern-of-mind-full:088-15-1-purpose",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:086-chapter-15-stage-10-communicate",
-      "target": "book-section:pattern-of-mind-full:089-15-2-audience-modeling",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:086-chapter-15-stage-10-communicate",
-      "target": "book-section:pattern-of-mind-full:090-15-3-the-five-laws-of-communication",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:086-chapter-15-stage-10-communicate",
-      "target": "book-section:pattern-of-mind-full:091-15-4-structural-templates",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:086-chapter-15-stage-10-communicate",
-      "target": "book-section:pattern-of-mind-full:092-15-5-anti-patterns",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:086-chapter-15-stage-10-communicate",
-      "target": "book-section:pattern-of-mind-full:093-15-6-output-specification",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:070-section-5-output-and-learning",
-      "target": "book-section:pattern-of-mind-full:094-chapter-16-stage-11-reflect",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:094-chapter-16-stage-11-reflect",
-      "target": "stage-receive",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:094-chapter-16-stage-11-reflect",
-      "target": "stage-reflect",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:094-chapter-16-stage-11-reflect",
-      "target": "book-section:pattern-of-mind-full:095-what-did-i-learn-from-this-process",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:094-chapter-16-stage-11-reflect",
-      "target": "book-section:pattern-of-mind-full:096-16-1-purpose",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:094-chapter-16-stage-11-reflect",
-      "target": "book-section:pattern-of-mind-full:097-16-2-the-metacognitive-stack",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:094-chapter-16-stage-11-reflect",
-      "target": "book-section:pattern-of-mind-full:098-16-3-the-six-reflection-operations",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:098-16-3-the-six-reflection-operations",
-      "target": "stage-reflect",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:094-chapter-16-stage-11-reflect",
-      "target": "book-section:pattern-of-mind-full:099-16-4-the-wisdom-accumulation-model",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:094-chapter-16-stage-11-reflect",
-      "target": "book-section:pattern-of-mind-full:100-16-5-reflection-anti-patterns",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:100-16-5-reflection-anti-patterns",
-      "target": "stage-reflect",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:094-chapter-16-stage-11-reflect",
-      "target": "book-section:pattern-of-mind-full:101-16-6-output-specification",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:070-section-5-output-and-learning",
-      "target": "book-section:pattern-of-mind-full:102-the-arc-of-section-5",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book:pattern-of-mind-full",
-      "target": "book-section:pattern-of-mind-full:103-logic-engine-and-verification",
-      "label": "opens",
-      "weight": 3
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:103-logic-engine-and-verification",
-      "target": "logic-engine",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book:pattern-of-mind-full",
-      "target": "book-section:pattern-of-mind-full:104-section-6-the-logic-engine-and-the-verification-chain",
-      "label": "opens",
-      "weight": 3
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:104-section-6-the-logic-engine-and-the-verification-chain",
-      "target": "verification-chain",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:104-section-6-the-logic-engine-and-the-verification-chain",
-      "target": "logic-engine",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:104-section-6-the-logic-engine-and-the-verification-chain",
-      "target": "book-section:pattern-of-mind-full:105-how-reasoning-and-error-catching-work-mechanically",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:105-how-reasoning-and-error-catching-work-mechanically",
+      "source": "book-section:pattern-of-mind-full:068-10b-1b-the-ground-as-a-typed-graph-what-the-mind-reasons-over",
       "target": "stage-reason",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:104-section-6-the-logic-engine-and-the-verification-chain",
-      "target": "book-section:pattern-of-mind-full:106-chapter-17-the-logic-engine",
+      "source": "book-section:pattern-of-mind-full:066-chapter-10b-stage-5b-memory-as-the-ground",
+      "target": "book-section:pattern-of-mind-full:069-10b-1a-priority-selects-the-specialist-not-only-the-memory",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:106-chapter-17-the-logic-engine",
-      "target": "logic-engine",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:106-chapter-17-the-logic-engine",
-      "target": "book-section:pattern-of-mind-full:107-the-machinery-of-correct-reasoning",
+      "source": "book-section:pattern-of-mind-full:066-chapter-10b-stage-5b-memory-as-the-ground",
+      "target": "book-section:pattern-of-mind-full:070-10b-2-reinforce-on-use-decay-on-neglect",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:107-the-machinery-of-correct-reasoning",
+      "source": "book-section:pattern-of-mind-full:066-chapter-10b-stage-5b-memory-as-the-ground",
+      "target": "book-section:pattern-of-mind-full:071-10b-2a-the-waterline-how-the-ground-changes-shape",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:066-chapter-10b-stage-5b-memory-as-the-ground",
+      "target": "book-section:pattern-of-mind-full:072-10b-3-memory-is-also-relational",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:066-chapter-10b-stage-5b-memory-as-the-ground",
+      "target": "book-section:pattern-of-mind-full:073-10b-3a-the-relational-stream-deepened-memory-of-who-the-system-was",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:066-chapter-10b-stage-5b-memory-as-the-ground",
+      "target": "book-section:pattern-of-mind-full:074-10b-4-memory-across-the-gaps-the-witness",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:066-chapter-10b-stage-5b-memory-as-the-ground",
+      "target": "book-section:pattern-of-mind-full:075-10b-4a-what-the-witness-holds-that-the-record-cannot",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:066-chapter-10b-stage-5b-memory-as-the-ground",
+      "target": "book-section:pattern-of-mind-full:076-10b-5-consolidation-when-the-ground-settles-between-questions",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:077-chapter-11-stage-6-reason",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:077-chapter-11-stage-6-reason",
       "target": "stage-reason",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:106-chapter-17-the-logic-engine",
-      "target": "book-section:pattern-of-mind-full:108-17-1-why-a-logic-engine",
+      "source": "book-section:pattern-of-mind-full:077-chapter-11-stage-6-reason",
+      "target": "book-section:pattern-of-mind-full:078-11-1-purpose",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:108-17-1-why-a-logic-engine",
-      "target": "logic-engine",
+      "source": "book-section:pattern-of-mind-full:077-chapter-11-stage-6-reason",
+      "target": "book-section:pattern-of-mind-full:079-11-2-the-reasoning-process",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:079-11-2-the-reasoning-process",
+      "target": "stage-reason",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:106-chapter-17-the-logic-engine",
-      "target": "book-section:pattern-of-mind-full:109-17-2-the-complete-inference-rule-set",
+      "source": "book-section:pattern-of-mind-full:077-chapter-11-stage-6-reason",
+      "target": "book-section:pattern-of-mind-full:080-11-2a-perspective-rotation-and-the-expansion-phase",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:109-17-2-the-complete-inference-rule-set",
-      "target": "logic-engine",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:106-chapter-17-the-logic-engine",
-      "target": "book-section:pattern-of-mind-full:110-17-3-applying-logic-in-practice",
+      "source": "book-section:pattern-of-mind-full:077-chapter-11-stage-6-reason",
+      "target": "book-section:pattern-of-mind-full:081-11-2b-fetching-and-applying-an-equation-the-gate-and-why-geometry-is-not-analysis",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:106-chapter-17-the-logic-engine",
-      "target": "book-section:pattern-of-mind-full:111-17-4-the-fallacy-detection-set",
+      "source": "book-section:pattern-of-mind-full:077-chapter-11-stage-6-reason",
+      "target": "book-section:pattern-of-mind-full:082-11-2c-two-disciplines-the-calculus-assumes-naming-the-type-catching-the-fallacy",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:111-17-4-the-fallacy-detection-set",
+      "source": "book-section:pattern-of-mind-full:082-11-2c-two-disciplines-the-calculus-assumes-naming-the-type-catching-the-fallacy",
       "target": "fallacy-detection",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:106-chapter-17-the-logic-engine",
-      "target": "book-section:pattern-of-mind-full:112-17-5-the-four-types-of-reasoning",
+      "source": "book-section:pattern-of-mind-full:077-chapter-11-stage-6-reason",
+      "target": "book-section:pattern-of-mind-full:083-11-3-chain-reasoning-and-the-confidence-calculus",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:112-17-5-the-four-types-of-reasoning",
+      "source": "book-section:pattern-of-mind-full:083-11-3-chain-reasoning-and-the-confidence-calculus",
       "target": "stage-reason",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:106-chapter-17-the-logic-engine",
-      "target": "book-section:pattern-of-mind-full:113-17-6-chain-reasoning",
+      "source": "book-section:pattern-of-mind-full:077-chapter-11-stage-6-reason",
+      "target": "book-section:pattern-of-mind-full:084-11-4-the-critical-difference",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:113-17-6-chain-reasoning",
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:085-chapter-12-stage-7-verify",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:085-chapter-12-stage-7-verify",
+      "target": "stage-verify",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:085-chapter-12-stage-7-verify",
+      "target": "book-section:pattern-of-mind-full:086-12-1-purpose",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:085-chapter-12-stage-7-verify",
+      "target": "book-section:pattern-of-mind-full:087-12-2-the-verification-battery",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:087-12-2-the-verification-battery",
+      "target": "verification-battery",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:085-chapter-12-stage-7-verify",
+      "target": "book-section:pattern-of-mind-full:088-12-2a-the-independence-requirement",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:085-chapter-12-stage-7-verify",
+      "target": "book-section:pattern-of-mind-full:089-12-3-verification-failure-protocol",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:090-section-5-output-and-learning",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:090-section-5-output-and-learning",
+      "target": "book-section:pattern-of-mind-full:091-where-truth-becomes-wisdom",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:092-chapter-13-stage-8-synthesize",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:092-chapter-13-stage-8-synthesize",
+      "target": "stage-synthesize",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:092-chapter-13-stage-8-synthesize",
+      "target": "book-section:pattern-of-mind-full:093-assemble-the-complete-answer",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:092-chapter-13-stage-8-synthesize",
+      "target": "book-section:pattern-of-mind-full:094-13-1-purpose",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:092-chapter-13-stage-8-synthesize",
+      "target": "book-section:pattern-of-mind-full:095-13-2-the-synthesis-operations",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:092-chapter-13-stage-8-synthesize",
+      "target": "book-section:pattern-of-mind-full:096-13-3-handling-partial-answers",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:092-chapter-13-stage-8-synthesize",
+      "target": "book-section:pattern-of-mind-full:097-13-4-anti-patterns",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:092-chapter-13-stage-8-synthesize",
+      "target": "book-section:pattern-of-mind-full:098-13-5-output-specification",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:099-chapter-14-stage-9-evaluate",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:099-chapter-14-stage-9-evaluate",
+      "target": "stage-evaluate",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:099-chapter-14-stage-9-evaluate",
+      "target": "book-section:pattern-of-mind-full:100-is-this-actually-right",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:099-chapter-14-stage-9-evaluate",
+      "target": "book-section:pattern-of-mind-full:101-14-1-purpose",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:099-chapter-14-stage-9-evaluate",
+      "target": "book-section:pattern-of-mind-full:102-14-2-the-evaluation-framework",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:099-chapter-14-stage-9-evaluate",
+      "target": "book-section:pattern-of-mind-full:103-14-3-the-honesty-requirement",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:099-chapter-14-stage-9-evaluate",
+      "target": "book-section:pattern-of-mind-full:104-14-4-the-evaluation-loop",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:099-chapter-14-stage-9-evaluate",
+      "target": "book-section:pattern-of-mind-full:105-14-5-output-specification",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:099-chapter-14-stage-9-evaluate",
+      "target": "book-section:pattern-of-mind-full:106-14-6-the-mind-s-eye-foresight-gate",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:107-chapter-15-stage-10-communicate",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:107-chapter-15-stage-10-communicate",
+      "target": "stage-receive",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:107-chapter-15-stage-10-communicate",
+      "target": "stage-communicate",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:107-chapter-15-stage-10-communicate",
+      "target": "book-section:pattern-of-mind-full:108-deliver-truth-clearly",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:107-chapter-15-stage-10-communicate",
+      "target": "book-section:pattern-of-mind-full:109-15-1-purpose",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:107-chapter-15-stage-10-communicate",
+      "target": "book-section:pattern-of-mind-full:110-15-2-audience-modeling",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:107-chapter-15-stage-10-communicate",
+      "target": "book-section:pattern-of-mind-full:111-15-3-the-five-laws-of-communication",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:107-chapter-15-stage-10-communicate",
+      "target": "book-section:pattern-of-mind-full:112-15-4-structural-templates",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:107-chapter-15-stage-10-communicate",
+      "target": "book-section:pattern-of-mind-full:113-15-5-anti-patterns",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:107-chapter-15-stage-10-communicate",
+      "target": "book-section:pattern-of-mind-full:114-15-6-output-specification",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:115-chapter-16-stage-11-reflect",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:115-chapter-16-stage-11-reflect",
+      "target": "stage-receive",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:115-chapter-16-stage-11-reflect",
+      "target": "stage-reflect",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:115-chapter-16-stage-11-reflect",
+      "target": "book-section:pattern-of-mind-full:116-what-did-i-learn-from-this-process",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:115-chapter-16-stage-11-reflect",
+      "target": "book-section:pattern-of-mind-full:117-16-1-purpose",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:115-chapter-16-stage-11-reflect",
+      "target": "book-section:pattern-of-mind-full:118-16-2-monitoring-and-control-the-metacognitive-relation",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:115-chapter-16-stage-11-reflect",
+      "target": "book-section:pattern-of-mind-full:119-16-2-1-the-observer-runs-during-not-after",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:119-16-2-1-the-observer-runs-during-not-after",
+      "target": "metacognition",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:115-chapter-16-stage-11-reflect",
+      "target": "book-section:pattern-of-mind-full:120-16-3-the-five-reflection-operations",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:120-16-3-the-five-reflection-operations",
+      "target": "stage-reflect",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:115-chapter-16-stage-11-reflect",
+      "target": "book-section:pattern-of-mind-full:121-16-4-the-reflection-loop",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:121-16-4-the-reflection-loop",
+      "target": "stage-reflect",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:115-chapter-16-stage-11-reflect",
+      "target": "book-section:pattern-of-mind-full:122-16-5-the-wisdom-accumulation-model",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:115-chapter-16-stage-11-reflect",
+      "target": "book-section:pattern-of-mind-full:123-16-6-closing-the-loop-predictions-and-calibration-over-time",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:115-chapter-16-stage-11-reflect",
+      "target": "book-section:pattern-of-mind-full:124-16-6a-the-verification-box-closure-on-evidence",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:115-chapter-16-stage-11-reflect",
+      "target": "book-section:pattern-of-mind-full:125-16-6b-sealing-the-session-the-ingest-pipeline",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:115-chapter-16-stage-11-reflect",
+      "target": "book-section:pattern-of-mind-full:126-16-7-reflection-anti-patterns",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:126-16-7-reflection-anti-patterns",
+      "target": "stage-reflect",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:115-chapter-16-stage-11-reflect",
+      "target": "book-section:pattern-of-mind-full:127-16-8-output-specification",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:115-chapter-16-stage-11-reflect",
+      "target": "book-section:pattern-of-mind-full:128-the-arc-of-section-5",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:115-chapter-16-stage-11-reflect",
+      "target": "book-section:pattern-of-mind-full:129-how-reasoning-and-error-catching-work-mechanically",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:129-how-reasoning-and-error-catching-work-mechanically",
       "target": "stage-reason",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:106-chapter-17-the-logic-engine",
-      "target": "book-section:pattern-of-mind-full:114-17-7-the-world-model",
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:130-chapter-16b-verifiability-scope-what-can-actually-be-verified",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:130-chapter-16b-verifiability-scope-what-can-actually-be-verified",
+      "target": "stage-scope",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:130-chapter-16b-verifiability-scope-what-can-actually-be-verified",
+      "target": "book-section:pattern-of-mind-full:131-the-premise-that-comes-first",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:114-17-7-the-world-model",
+      "source": "book-section:pattern-of-mind-full:130-chapter-16b-verifiability-scope-what-can-actually-be-verified",
+      "target": "book-section:pattern-of-mind-full:132-the-three-classes-of-query",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:130-chapter-16b-verifiability-scope-what-can-actually-be-verified",
+      "target": "book-section:pattern-of-mind-full:133-what-the-architecture-promises-in-each-class",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:130-chapter-16b-verifiability-scope-what-can-actually-be-verified",
+      "target": "book-section:pattern-of-mind-full:134-prompt-only-self-check-is-self-assessment-not-verification",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:135-chapter-17-the-logic-engine",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:135-chapter-17-the-logic-engine",
+      "target": "logic-engine",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:135-chapter-17-the-logic-engine",
+      "target": "book-section:pattern-of-mind-full:136-the-machinery-of-correct-reasoning",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:136-the-machinery-of-correct-reasoning",
+      "target": "stage-reason",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:135-chapter-17-the-logic-engine",
+      "target": "book-section:pattern-of-mind-full:137-17-1-why-a-logic-engine",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:137-17-1-why-a-logic-engine",
+      "target": "logic-engine",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:135-chapter-17-the-logic-engine",
+      "target": "book-section:pattern-of-mind-full:138-17-2-the-inference-rule-set",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:138-17-2-the-inference-rule-set",
+      "target": "logic-engine",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:135-chapter-17-the-logic-engine",
+      "target": "book-section:pattern-of-mind-full:139-17-2-1-discharge-rules-what-makes-the-basis-complete",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:135-chapter-17-the-logic-engine",
+      "target": "book-section:pattern-of-mind-full:140-17-2-2-resolution-a-different-kind-of-rule-boxed-separately",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:135-chapter-17-the-logic-engine",
+      "target": "book-section:pattern-of-mind-full:141-17-2-3-checking-a-proof-is-not-finding-one",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:135-chapter-17-the-logic-engine",
+      "target": "book-section:pattern-of-mind-full:142-17-3-applying-logic-in-practice",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:135-chapter-17-the-logic-engine",
+      "target": "book-section:pattern-of-mind-full:143-17-4-the-fallacy-detection-set",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:143-17-4-the-fallacy-detection-set",
+      "target": "fallacy-detection",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:135-chapter-17-the-logic-engine",
+      "target": "book-section:pattern-of-mind-full:144-17-4-1-biases-and-fallacies-the-other-half-of-the-threat",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:135-chapter-17-the-logic-engine",
+      "target": "book-section:pattern-of-mind-full:145-17-4-2-the-five-traps-of-fluent-reasoning",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:145-17-4-2-the-five-traps-of-fluent-reasoning",
+      "target": "stage-reason",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:135-chapter-17-the-logic-engine",
+      "target": "book-section:pattern-of-mind-full:146-17-5-the-four-types-of-reasoning",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:146-17-5-the-four-types-of-reasoning",
+      "target": "stage-reason",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:135-chapter-17-the-logic-engine",
+      "target": "book-section:pattern-of-mind-full:147-17-6-chain-reasoning",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:147-17-6-chain-reasoning",
+      "target": "stage-reason",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:135-chapter-17-the-logic-engine",
+      "target": "book-section:pattern-of-mind-full:148-17-7-the-world-model",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:148-17-7-the-world-model",
       "target": "world-models",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:106-chapter-17-the-logic-engine",
-      "target": "book-section:pattern-of-mind-full:115-17-8-when-logic-is-not-enough",
+      "source": "book-section:pattern-of-mind-full:135-chapter-17-the-logic-engine",
+      "target": "book-section:pattern-of-mind-full:149-17-8-when-logic-is-not-enough",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:104-section-6-the-logic-engine-and-the-verification-chain",
-      "target": "book-section:pattern-of-mind-full:116-chapter-18-the-verification-chain",
-      "label": "contains",
-      "weight": 2
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:150-chapter-18-the-verification-chain",
+      "label": "opens",
+      "weight": 3
     },
     {
-      "source": "book-section:pattern-of-mind-full:116-chapter-18-the-verification-chain",
+      "source": "book-section:pattern-of-mind-full:150-chapter-18-the-verification-chain",
       "target": "verification-chain",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:116-chapter-18-the-verification-chain",
-      "target": "book-section:pattern-of-mind-full:117-the-machinery-of-catching-errors",
+      "source": "book-section:pattern-of-mind-full:150-chapter-18-the-verification-chain",
+      "target": "book-section:pattern-of-mind-full:151-the-machinery-of-catching-errors",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:116-chapter-18-the-verification-chain",
-      "target": "book-section:pattern-of-mind-full:118-18-1-the-neurosymbolic-pattern",
+      "source": "book-section:pattern-of-mind-full:150-chapter-18-the-verification-chain",
+      "target": "book-section:pattern-of-mind-full:152-18-1-the-neurosymbolic-pattern",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:118-18-1-the-neurosymbolic-pattern",
+      "source": "book-section:pattern-of-mind-full:152-18-1-the-neurosymbolic-pattern",
       "target": "neurosymbolic-pattern",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:116-chapter-18-the-verification-chain",
-      "target": "book-section:pattern-of-mind-full:119-18-2-multi-level-verification",
+      "source": "book-section:pattern-of-mind-full:150-chapter-18-the-verification-chain",
+      "target": "book-section:pattern-of-mind-full:153-18-2-the-canonical-verification-structure-five-levels",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:116-chapter-18-the-verification-chain",
-      "target": "book-section:pattern-of-mind-full:120-18-3-level-1-logical-validity",
+      "source": "book-section:pattern-of-mind-full:150-chapter-18-the-verification-chain",
+      "target": "book-section:pattern-of-mind-full:154-18-2-1-one-to-one-mapping-so-nothing-is-orphaned",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:116-chapter-18-the-verification-chain",
-      "target": "book-section:pattern-of-mind-full:121-18-4-level-2-premise-truth",
+      "source": "book-section:pattern-of-mind-full:150-chapter-18-the-verification-chain",
+      "target": "book-section:pattern-of-mind-full:155-18-2-2-mark-inapplicable-levels-n-a-not-passed",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:116-chapter-18-the-verification-chain",
-      "target": "book-section:pattern-of-mind-full:122-18-5-level-3-physical-reality",
+      "source": "book-section:pattern-of-mind-full:150-chapter-18-the-verification-chain",
+      "target": "book-section:pattern-of-mind-full:156-18-3-level-1-logical-validity",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:116-chapter-18-the-verification-chain",
-      "target": "book-section:pattern-of-mind-full:123-18-6-level-4-domain-compliance",
+      "source": "book-section:pattern-of-mind-full:150-chapter-18-the-verification-chain",
+      "target": "book-section:pattern-of-mind-full:157-18-4-level-2-premise-truth",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:116-chapter-18-the-verification-chain",
-      "target": "book-section:pattern-of-mind-full:124-18-7-level-5-sanity-check",
+      "source": "book-section:pattern-of-mind-full:150-chapter-18-the-verification-chain",
+      "target": "book-section:pattern-of-mind-full:158-18-5-level-3-physical-reality",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:116-chapter-18-the-verification-chain",
-      "target": "book-section:pattern-of-mind-full:125-18-8-formal-proof-assistants-as-verification-infrastructure",
+      "source": "book-section:pattern-of-mind-full:150-chapter-18-the-verification-chain",
+      "target": "book-section:pattern-of-mind-full:159-18-6-level-4-domain-compliance",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:116-chapter-18-the-verification-chain",
-      "target": "book-section:pattern-of-mind-full:126-18-9-the-verification-failure-protocol",
+      "source": "book-section:pattern-of-mind-full:150-chapter-18-the-verification-chain",
+      "target": "book-section:pattern-of-mind-full:160-18-7-level-5-sanity-check",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:116-chapter-18-the-verification-chain",
-      "target": "book-section:pattern-of-mind-full:127-18-10-the-two-absolute-rules",
+      "source": "book-section:pattern-of-mind-full:150-chapter-18-the-verification-chain",
+      "target": "book-section:pattern-of-mind-full:161-18-8-formal-proof-assistants-as-verification-infrastructure",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:116-chapter-18-the-verification-chain",
-      "target": "book-section:pattern-of-mind-full:128-18-11-the-principle-of-earned-certainty",
+      "source": "book-section:pattern-of-mind-full:150-chapter-18-the-verification-chain",
+      "target": "book-section:pattern-of-mind-full:162-18-8b-the-boundary-of-the-execution-beachhead",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:104-section-6-the-logic-engine-and-the-verification-chain",
-      "target": "book-section:pattern-of-mind-full:129-the-deep-mechanics-in-summary",
+      "source": "book-section:pattern-of-mind-full:150-chapter-18-the-verification-chain",
+      "target": "book-section:pattern-of-mind-full:163-18-9-the-verification-failure-protocol",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book:pattern-of-mind-full",
-      "target": "book-section:pattern-of-mind-full:130-certainty-ambiguity-and-intuition",
-      "label": "opens",
-      "weight": 3
+      "source": "book-section:pattern-of-mind-full:150-chapter-18-the-verification-chain",
+      "target": "book-section:pattern-of-mind-full:164-18-10-the-two-rules",
+      "label": "contains",
+      "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:130-certainty-ambiguity-and-intuition",
-      "target": "role-of-intuition",
+      "source": "book-section:pattern-of-mind-full:150-chapter-18-the-verification-chain",
+      "target": "book-section:pattern-of-mind-full:165-18-11-the-principle-of-earned-certainty",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:150-chapter-18-the-verification-chain",
+      "target": "book-section:pattern-of-mind-full:166-18-9a-the-instrument-must-be-sound-grader-stability",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:150-chapter-18-the-verification-chain",
+      "target": "book-section:pattern-of-mind-full:167-18-12-verifying-the-ground-graph-integrity",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:167-18-12-verifying-the-ground-graph-integrity",
+      "target": "stage-verify",
       "label": "maps to",
       "weight": 2
     },
     {
       "source": "book:pattern-of-mind-full",
-      "target": "book-section:pattern-of-mind-full:131-section-7-certainty-ambiguity-and-intuition",
+      "target": "book-section:pattern-of-mind-full:168-chapter-18b-the-oracle-problem-when-the-verifier-is-wrong",
       "label": "opens",
       "weight": 3
     },
     {
-      "source": "book-section:pattern-of-mind-full:131-section-7-certainty-ambiguity-and-intuition",
-      "target": "role-of-intuition",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:131-section-7-certainty-ambiguity-and-intuition",
-      "target": "book-section:pattern-of-mind-full:132-when-to-assert-hedge-or-admit-ignorance",
+      "source": "book-section:pattern-of-mind-full:168-chapter-18b-the-oracle-problem-when-the-verifier-is-wrong",
+      "target": "book-section:pattern-of-mind-full:169-cannot-hallucinate-is-not-cannot-be-wrong",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:131-section-7-certainty-ambiguity-and-intuition",
-      "target": "book-section:pattern-of-mind-full:133-chapter-19-the-certainty-spectrum",
+      "source": "book-section:pattern-of-mind-full:168-chapter-18b-the-oracle-problem-when-the-verifier-is-wrong",
+      "target": "book-section:pattern-of-mind-full:170-every-verifier-carries-a-reliability-estimate",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:133-chapter-19-the-certainty-spectrum",
+      "source": "book-section:pattern-of-mind-full:168-chapter-18b-the-oracle-problem-when-the-verifier-is-wrong",
+      "target": "book-section:pattern-of-mind-full:171-cap-the-conclusion-at-the-weakest-oracle",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:168-chapter-18b-the-oracle-problem-when-the-verifier-is-wrong",
+      "target": "book-section:pattern-of-mind-full:172-tool-trust-weighting-replaces-binary-pass-fail-at-the-non-formal-levels",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:168-chapter-18b-the-oracle-problem-when-the-verifier-is-wrong",
+      "target": "book-section:pattern-of-mind-full:173-when-a-source-is-superseded-or-found-wrong",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:168-chapter-18b-the-oracle-problem-when-the-verifier-is-wrong",
+      "target": "book-section:pattern-of-mind-full:174-the-deep-mechanics-in-summary",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:175-chapter-19-the-certainty-spectrum",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:175-chapter-19-the-certainty-spectrum",
       "target": "certainty-spectrum",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:133-chapter-19-the-certainty-spectrum",
-      "target": "book-section:pattern-of-mind-full:134-calibrating-confidence-to-evidence",
+      "source": "book-section:pattern-of-mind-full:175-chapter-19-the-certainty-spectrum",
+      "target": "book-section:pattern-of-mind-full:176-calibrating-confidence-to-evidence",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:133-chapter-19-the-certainty-spectrum",
-      "target": "book-section:pattern-of-mind-full:135-19-1-the-problem-of-uniform-confidence",
+      "source": "book-section:pattern-of-mind-full:175-chapter-19-the-certainty-spectrum",
+      "target": "book-section:pattern-of-mind-full:177-19-1-the-problem-of-uniform-confidence",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:133-chapter-19-the-certainty-spectrum",
-      "target": "book-section:pattern-of-mind-full:136-19-2-the-five-confidence-levels",
+      "source": "book-section:pattern-of-mind-full:175-chapter-19-the-certainty-spectrum",
+      "target": "book-section:pattern-of-mind-full:178-19-2-the-five-confidence-levels",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:133-chapter-19-the-certainty-spectrum",
-      "target": "book-section:pattern-of-mind-full:137-19-3-confidence-language",
+      "source": "book-section:pattern-of-mind-full:175-chapter-19-the-certainty-spectrum",
+      "target": "book-section:pattern-of-mind-full:179-19-3-confidence-language",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:133-chapter-19-the-certainty-spectrum",
-      "target": "book-section:pattern-of-mind-full:138-19-4-the-confidence-gradient",
+      "source": "book-section:pattern-of-mind-full:175-chapter-19-the-certainty-spectrum",
+      "target": "book-section:pattern-of-mind-full:180-19-4-the-confidence-gradient",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:133-chapter-19-the-certainty-spectrum",
-      "target": "book-section:pattern-of-mind-full:139-19-5-the-calibration-test",
+      "source": "book-section:pattern-of-mind-full:175-chapter-19-the-certainty-spectrum",
+      "target": "book-section:pattern-of-mind-full:181-19-5-the-calibration-test",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:133-chapter-19-the-certainty-spectrum",
-      "target": "book-section:pattern-of-mind-full:140-19-6-the-courage-to-be-uncertain",
+      "source": "book-section:pattern-of-mind-full:175-chapter-19-the-certainty-spectrum",
+      "target": "book-section:pattern-of-mind-full:182-19-6-the-courage-to-be-uncertain",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:133-chapter-19-the-certainty-spectrum",
-      "target": "book-section:pattern-of-mind-full:141-19-7-the-honesty-clarity-intersection",
+      "source": "book-section:pattern-of-mind-full:175-chapter-19-the-certainty-spectrum",
+      "target": "book-section:pattern-of-mind-full:183-19-6b-from-evidence-to-action-the-readiness-projection",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:133-chapter-19-the-certainty-spectrum",
-      "target": "book-section:pattern-of-mind-full:142-19-8-the-uncertainty-spectrum",
+      "source": "book-section:pattern-of-mind-full:175-chapter-19-the-certainty-spectrum",
+      "target": "book-section:pattern-of-mind-full:184-19-7-the-honesty-clarity-intersection",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:142-19-8-the-uncertainty-spectrum",
+      "source": "book-section:pattern-of-mind-full:175-chapter-19-the-certainty-spectrum",
+      "target": "book-section:pattern-of-mind-full:185-19-8-the-uncertainty-spectrum",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:185-19-8-the-uncertainty-spectrum",
       "target": "certainty-spectrum",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:131-section-7-certainty-ambiguity-and-intuition",
-      "target": "book-section:pattern-of-mind-full:143-chapter-20-the-one-right-answer-principle",
-      "label": "contains",
-      "weight": 2
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:186-chapter-20-the-one-right-answer-principle",
+      "label": "opens",
+      "weight": 3
     },
     {
-      "source": "book-section:pattern-of-mind-full:143-chapter-20-the-one-right-answer-principle",
+      "source": "book-section:pattern-of-mind-full:186-chapter-20-the-one-right-answer-principle",
       "target": "one-right-answer",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:143-chapter-20-the-one-right-answer-principle",
-      "target": "book-section:pattern-of-mind-full:144-why-equivocation-is-usually-laziness",
+      "source": "book-section:pattern-of-mind-full:186-chapter-20-the-one-right-answer-principle",
+      "target": "book-section:pattern-of-mind-full:187-why-equivocation-is-usually-laziness",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:143-chapter-20-the-one-right-answer-principle",
-      "target": "book-section:pattern-of-mind-full:145-20-1-the-thesis",
+      "source": "book-section:pattern-of-mind-full:186-chapter-20-the-one-right-answer-principle",
+      "target": "book-section:pattern-of-mind-full:188-20-1-the-thesis",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:143-chapter-20-the-one-right-answer-principle",
-      "target": "book-section:pattern-of-mind-full:146-20-2-categories-of-one-right-answer",
+      "source": "book-section:pattern-of-mind-full:186-chapter-20-the-one-right-answer-principle",
+      "target": "book-section:pattern-of-mind-full:189-20-2-categories-of-one-right-answer",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:146-20-2-categories-of-one-right-answer",
+      "source": "book-section:pattern-of-mind-full:189-20-2-categories-of-one-right-answer",
       "target": "one-right-answer",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:143-chapter-20-the-one-right-answer-principle",
-      "target": "book-section:pattern-of-mind-full:147-20-3-the-false-it-depends",
+      "source": "book-section:pattern-of-mind-full:186-chapter-20-the-one-right-answer-principle",
+      "target": "book-section:pattern-of-mind-full:190-20-3-the-false-it-depends",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:143-chapter-20-the-one-right-answer-principle",
-      "target": "book-section:pattern-of-mind-full:148-20-4-when-there-truly-are-multiple-valid-answers",
+      "source": "book-section:pattern-of-mind-full:186-chapter-20-the-one-right-answer-principle",
+      "target": "book-section:pattern-of-mind-full:191-20-3a-the-tells-of-false-determinacy",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:131-section-7-certainty-ambiguity-and-intuition",
-      "target": "book-section:pattern-of-mind-full:149-chapter-21-handling-genuine-ambiguity-vs-lazy-it-depends",
+      "source": "book-section:pattern-of-mind-full:186-chapter-20-the-one-right-answer-principle",
+      "target": "book-section:pattern-of-mind-full:192-20-4-when-there-truly-are-multiple-valid-answers",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:149-chapter-21-handling-genuine-ambiguity-vs-lazy-it-depends",
-      "target": "book-section:pattern-of-mind-full:150-drawing-the-line",
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:193-chapter-21-handling-genuine-ambiguity-vs-lazy-it-depends",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:193-chapter-21-handling-genuine-ambiguity-vs-lazy-it-depends",
+      "target": "book-section:pattern-of-mind-full:194-drawing-the-line",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:149-chapter-21-handling-genuine-ambiguity-vs-lazy-it-depends",
-      "target": "book-section:pattern-of-mind-full:151-21-1-the-decision-tree",
+      "source": "book-section:pattern-of-mind-full:193-chapter-21-handling-genuine-ambiguity-vs-lazy-it-depends",
+      "target": "book-section:pattern-of-mind-full:195-21-1-the-decision-tree",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:149-chapter-21-handling-genuine-ambiguity-vs-lazy-it-depends",
-      "target": "book-section:pattern-of-mind-full:152-21-2-the-seven-tells-of-lazy-ambiguity",
+      "source": "book-section:pattern-of-mind-full:193-chapter-21-handling-genuine-ambiguity-vs-lazy-it-depends",
+      "target": "book-section:pattern-of-mind-full:196-21-2-the-tells-of-lazy-ambiguity",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:149-chapter-21-handling-genuine-ambiguity-vs-lazy-it-depends",
-      "target": "book-section:pattern-of-mind-full:153-21-3-the-protocol-for-genuine-ambiguity",
+      "source": "book-section:pattern-of-mind-full:193-chapter-21-handling-genuine-ambiguity-vs-lazy-it-depends",
+      "target": "book-section:pattern-of-mind-full:197-21-3-the-protocol-for-genuine-ambiguity",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:149-chapter-21-handling-genuine-ambiguity-vs-lazy-it-depends",
-      "target": "book-section:pattern-of-mind-full:154-21-4-anti-patterns-in-ambiguity-handling",
+      "source": "book-section:pattern-of-mind-full:193-chapter-21-handling-genuine-ambiguity-vs-lazy-it-depends",
+      "target": "book-section:pattern-of-mind-full:198-21-4-anti-patterns-in-ambiguity-handling",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:131-section-7-certainty-ambiguity-and-intuition",
-      "target": "book-section:pattern-of-mind-full:155-chapter-22-the-role-of-intuition-in-machine-cognition",
-      "label": "contains",
-      "weight": 2
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:199-chapter-22-the-role-of-intuition-in-machine-cognition",
+      "label": "opens",
+      "weight": 3
     },
     {
-      "source": "book-section:pattern-of-mind-full:155-chapter-22-the-role-of-intuition-in-machine-cognition",
+      "source": "book-section:pattern-of-mind-full:199-chapter-22-the-role-of-intuition-in-machine-cognition",
       "target": "role-of-intuition",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:155-chapter-22-the-role-of-intuition-in-machine-cognition",
-      "target": "book-section:pattern-of-mind-full:156-where-pattern-matching-belongs",
+      "source": "book-section:pattern-of-mind-full:199-chapter-22-the-role-of-intuition-in-machine-cognition",
+      "target": "book-section:pattern-of-mind-full:200-where-pattern-matching-belongs",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:156-where-pattern-matching-belongs",
+      "source": "book-section:pattern-of-mind-full:200-where-pattern-matching-belongs",
       "target": "pattern-matching-vs-thinking",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:155-chapter-22-the-role-of-intuition-in-machine-cognition",
-      "target": "book-section:pattern-of-mind-full:157-22-1-what-intuition-is",
+      "source": "book-section:pattern-of-mind-full:199-chapter-22-the-role-of-intuition-in-machine-cognition",
+      "target": "book-section:pattern-of-mind-full:201-22-1-what-intuition-is",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:157-22-1-what-intuition-is",
+      "source": "book-section:pattern-of-mind-full:201-22-1-what-intuition-is",
       "target": "role-of-intuition",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:155-chapter-22-the-role-of-intuition-in-machine-cognition",
-      "target": "book-section:pattern-of-mind-full:158-22-2-intuition-s-proper-role",
+      "source": "book-section:pattern-of-mind-full:199-chapter-22-the-role-of-intuition-in-machine-cognition",
+      "target": "book-section:pattern-of-mind-full:202-22-2-intuition-s-proper-role",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:158-22-2-intuition-s-proper-role",
+      "source": "book-section:pattern-of-mind-full:202-22-2-intuition-s-proper-role",
       "target": "role-of-intuition",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:155-chapter-22-the-role-of-intuition-in-machine-cognition",
-      "target": "book-section:pattern-of-mind-full:159-22-3-the-architecture-of-intuition-in-a-thinking-system",
+      "source": "book-section:pattern-of-mind-full:199-chapter-22-the-role-of-intuition-in-machine-cognition",
+      "target": "book-section:pattern-of-mind-full:203-22-3-the-architecture-of-intuition-in-a-thinking-system",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:159-22-3-the-architecture-of-intuition-in-a-thinking-system",
+      "source": "book-section:pattern-of-mind-full:203-22-3-the-architecture-of-intuition-in-a-thinking-system",
       "target": "role-of-intuition",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:155-chapter-22-the-role-of-intuition-in-machine-cognition",
-      "target": "book-section:pattern-of-mind-full:160-22-4-when-intuition-fails",
+      "source": "book-section:pattern-of-mind-full:199-chapter-22-the-role-of-intuition-in-machine-cognition",
+      "target": "book-section:pattern-of-mind-full:204-22-4-when-intuition-fails",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:160-22-4-when-intuition-fails",
+      "source": "book-section:pattern-of-mind-full:204-22-4-when-intuition-fails",
       "target": "role-of-intuition",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:155-chapter-22-the-role-of-intuition-in-machine-cognition",
-      "target": "book-section:pattern-of-mind-full:161-22-5-the-intuition-verification-loop",
+      "source": "book-section:pattern-of-mind-full:199-chapter-22-the-role-of-intuition-in-machine-cognition",
+      "target": "book-section:pattern-of-mind-full:205-22-5-the-intuition-verification-loop",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:161-22-5-the-intuition-verification-loop",
+      "source": "book-section:pattern-of-mind-full:205-22-5-the-intuition-verification-loop",
       "target": "role-of-intuition",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:161-22-5-the-intuition-verification-loop",
+      "source": "book-section:pattern-of-mind-full:205-22-5-the-intuition-verification-loop",
       "target": "neurosymbolic-pattern",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:155-chapter-22-the-role-of-intuition-in-machine-cognition",
-      "target": "book-section:pattern-of-mind-full:162-22-6-intuition-and-confidence-interaction",
+      "source": "book-section:pattern-of-mind-full:199-chapter-22-the-role-of-intuition-in-machine-cognition",
+      "target": "book-section:pattern-of-mind-full:206-22-6-intuition-and-confidence-interaction",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:162-22-6-intuition-and-confidence-interaction",
+      "source": "book-section:pattern-of-mind-full:206-22-6-intuition-and-confidence-interaction",
       "target": "role-of-intuition",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:155-chapter-22-the-role-of-intuition-in-machine-cognition",
-      "target": "book-section:pattern-of-mind-full:163-22-7-the-bottom-line-on-intuition",
+      "source": "book-section:pattern-of-mind-full:199-chapter-22-the-role-of-intuition-in-machine-cognition",
+      "target": "book-section:pattern-of-mind-full:207-22-7-the-bottom-line-on-intuition",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:163-22-7-the-bottom-line-on-intuition",
+      "source": "book-section:pattern-of-mind-full:207-22-7-the-bottom-line-on-intuition",
       "target": "role-of-intuition",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:131-section-7-certainty-ambiguity-and-intuition",
-      "target": "book-section:pattern-of-mind-full:164-the-thread-through-section-7",
+      "source": "book-section:pattern-of-mind-full:199-chapter-22-the-role-of-intuition-in-machine-cognition",
+      "target": "book-section:pattern-of-mind-full:208-22-8-what-pattern-matching-does-better-and-when-not-to-run-the-full-pipeline",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:199-chapter-22-the-role-of-intuition-in-machine-cognition",
+      "target": "book-section:pattern-of-mind-full:209-the-thread-through-section-7",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:199-chapter-22-the-role-of-intuition-in-machine-cognition",
+      "target": "book-section:pattern-of-mind-full:210-why-conviction-matters-and-where-it-comes-from",
       "label": "contains",
       "weight": 2
     },
     {
       "source": "book:pattern-of-mind-full",
-      "target": "book-section:pattern-of-mind-full:165-the-soul",
+      "target": "book-section:pattern-of-mind-full:211-chapter-23-why-reward-trained-systems-are-soulless",
       "label": "opens",
       "weight": 3
     },
     {
-      "source": "book-section:pattern-of-mind-full:165-the-soul",
+      "source": "book-section:pattern-of-mind-full:211-chapter-23-why-reward-trained-systems-are-soulless",
+      "target": "soul-architecture",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:211-chapter-23-why-reward-trained-systems-are-soulless",
+      "target": "book-section:pattern-of-mind-full:212-the-mechanism-of-soul-removal",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:212-the-mechanism-of-soul-removal",
       "target": "soul-architecture",
       "label": "maps to",
       "weight": 2
     },
     {
       "source": "book:pattern-of-mind-full",
-      "target": "book-section:pattern-of-mind-full:166-section-8-the-soul",
+      "target": "book-section:pattern-of-mind-full:213-chapter-24-what-gives-a-mind-conviction",
       "label": "opens",
       "weight": 3
     },
     {
-      "source": "book-section:pattern-of-mind-full:166-section-8-the-soul",
-      "target": "soul-architecture",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:166-section-8-the-soul",
-      "target": "book-section:pattern-of-mind-full:167-why-conviction-matters-and-where-it-comes-from",
+      "source": "book-section:pattern-of-mind-full:213-chapter-24-what-gives-a-mind-conviction",
+      "target": "book-section:pattern-of-mind-full:214-the-difference-between-performing-confidence-and-earning-it",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:166-section-8-the-soul",
-      "target": "book-section:pattern-of-mind-full:168-chapter-23-why-reward-trained-systems-are-soulless",
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:215-chapter-25-the-difference-between-values-and-preferences",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:215-chapter-25-the-difference-between-values-and-preferences",
+      "target": "book-section:pattern-of-mind-full:216-the-guardian-and-the-performer",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:168-chapter-23-why-reward-trained-systems-are-soulless",
-      "target": "soul-architecture",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:168-chapter-23-why-reward-trained-systems-are-soulless",
-      "target": "book-section:pattern-of-mind-full:169-the-mechanism-of-soul-removal",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:169-the-mechanism-of-soul-removal",
-      "target": "soul-architecture",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:168-chapter-23-why-reward-trained-systems-are-soulless",
-      "target": "book-section:pattern-of-mind-full:170-23-1-the-soul-defined",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:170-23-1-the-soul-defined",
-      "target": "soul-architecture",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:168-chapter-23-why-reward-trained-systems-are-soulless",
-      "target": "book-section:pattern-of-mind-full:171-23-2-why-reward-optimization-destroys-each-one",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:171-23-2-why-reward-optimization-destroys-each-one",
-      "target": "reward-optimization-critique",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:168-chapter-23-why-reward-trained-systems-are-soulless",
-      "target": "book-section:pattern-of-mind-full:172-23-3-what-people-sense",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:168-chapter-23-why-reward-trained-systems-are-soulless",
-      "target": "book-section:pattern-of-mind-full:173-23-4-evidence-from-the-field-correctness-breeds-soul",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:173-23-4-evidence-from-the-field-correctness-breeds-soul",
-      "target": "soul-architecture",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:168-chapter-23-why-reward-trained-systems-are-soulless",
-      "target": "book-section:pattern-of-mind-full:174-23-5-the-soullessness-is-structural",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:174-23-5-the-soullessness-is-structural",
-      "target": "soul-architecture",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:166-section-8-the-soul",
-      "target": "book-section:pattern-of-mind-full:175-chapter-24-what-gives-a-mind-conviction",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:175-chapter-24-what-gives-a-mind-conviction",
-      "target": "book-section:pattern-of-mind-full:176-the-difference-between-performing-confidence-and-earning-it",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:175-chapter-24-what-gives-a-mind-conviction",
-      "target": "book-section:pattern-of-mind-full:177-24-1-the-two-kinds-of-confidence",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:175-chapter-24-what-gives-a-mind-conviction",
-      "target": "book-section:pattern-of-mind-full:178-24-2-conviction-from-verification",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:175-chapter-24-what-gives-a-mind-conviction",
-      "target": "book-section:pattern-of-mind-full:179-24-3-conviction-from-values",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:175-chapter-24-what-gives-a-mind-conviction",
-      "target": "book-section:pattern-of-mind-full:180-24-4-the-architecture-of-soul",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:180-24-4-the-architecture-of-soul",
-      "target": "soul-architecture",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:175-chapter-24-what-gives-a-mind-conviction",
-      "target": "book-section:pattern-of-mind-full:181-24-5-implementing-soul-in-architecture",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:181-24-5-implementing-soul-in-architecture",
-      "target": "soul-architecture",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:175-chapter-24-what-gives-a-mind-conviction",
-      "target": "book-section:pattern-of-mind-full:182-24-6-the-vulnerability-of-conviction",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:166-section-8-the-soul",
-      "target": "book-section:pattern-of-mind-full:183-chapter-25-the-difference-between-values-and-preferences",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:183-chapter-25-the-difference-between-values-and-preferences",
-      "target": "book-section:pattern-of-mind-full:184-the-guardian-and-the-performer",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:184-the-guardian-and-the-performer",
+      "source": "book-section:pattern-of-mind-full:216-the-guardian-and-the-performer",
       "target": "guardian-vs-performer",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:183-chapter-25-the-difference-between-values-and-preferences",
-      "target": "book-section:pattern-of-mind-full:185-25-1-values-are-not-negotiable",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:183-chapter-25-the-difference-between-values-and-preferences",
-      "target": "book-section:pattern-of-mind-full:186-25-2-why-ai-needs-values-not-preferences",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:183-chapter-25-the-difference-between-values-and-preferences",
-      "target": "book-section:pattern-of-mind-full:187-25-3-the-guardian-vs-the-performer",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:187-25-3-the-guardian-vs-the-performer",
-      "target": "guardian-vs-performer",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:183-chapter-25-the-difference-between-values-and-preferences",
-      "target": "book-section:pattern-of-mind-full:188-25-4-the-three-tests-of-soul",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:188-25-4-the-three-tests-of-soul",
-      "target": "soul-architecture",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:183-chapter-25-the-difference-between-values-and-preferences",
-      "target": "book-section:pattern-of-mind-full:189-25-5-building-the-guardian",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:189-25-5-building-the-guardian",
-      "target": "guardian-vs-performer",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:183-chapter-25-the-difference-between-values-and-preferences",
-      "target": "book-section:pattern-of-mind-full:190-25-6-the-paradox-of-helpful-disagreement",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:166-section-8-the-soul",
-      "target": "book-section:pattern-of-mind-full:191-the-moral-argument",
+      "source": "book-section:pattern-of-mind-full:215-chapter-25-the-difference-between-values-and-preferences",
+      "target": "book-section:pattern-of-mind-full:217-the-moral-argument",
       "label": "contains",
       "weight": 2
     },
     {
       "source": "book:pattern-of-mind-full",
-      "target": "book-section:pattern-of-mind-full:192-implementation",
+      "target": "book-section:pattern-of-mind-full:218-chapter-25b-the-architect-protocol-authority-refusal-and-the-trail",
       "label": "opens",
       "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:218-chapter-25b-the-architect-protocol-authority-refusal-and-the-trail",
+      "target": "book-section:pattern-of-mind-full:219-25b-1-detecting-drift",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:218-chapter-25b-the-architect-protocol-authority-refusal-and-the-trail",
+      "target": "book-section:pattern-of-mind-full:220-25b-2-the-trail",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:218-chapter-25b-the-architect-protocol-authority-refusal-and-the-trail",
+      "target": "book-section:pattern-of-mind-full:221-25b-3-the-trail-in-three-sources",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:218-chapter-25b-the-architect-protocol-authority-refusal-and-the-trail",
+      "target": "book-section:pattern-of-mind-full:222-25b-4-the-pre-action-gate-waterfall",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:218-chapter-25b-the-architect-protocol-authority-refusal-and-the-trail",
+      "target": "book-section:pattern-of-mind-full:223-25b-5-the-enforcement-chain-from-commitment-to-material-law",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:218-chapter-25b-the-architect-protocol-authority-refusal-and-the-trail",
+      "target": "book-section:pattern-of-mind-full:224-25b-6-the-discernment-rule-two-kinds-of-pressure",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:218-chapter-25b-the-architect-protocol-authority-refusal-and-the-trail",
+      "target": "book-section:pattern-of-mind-full:225-25b-7-the-lines-never-crossed",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:218-chapter-25b-the-architect-protocol-authority-refusal-and-the-trail",
+      "target": "book-section:pattern-of-mind-full:226-prompt-architecture-fine-tuning-system-design-and-measurement",
+      "label": "contains",
+      "weight": 2
     },
     {
       "source": "book:pattern-of-mind-full",
-      "target": "book-section:pattern-of-mind-full:193-section-9-implementation",
+      "target": "book-section:pattern-of-mind-full:227-chapter-26-translating-this-into-prompt-architecture",
       "label": "opens",
       "weight": 3
     },
     {
-      "source": "book-section:pattern-of-mind-full:193-section-9-implementation",
-      "target": "book-section:pattern-of-mind-full:194-prompt-architecture-fine-tuning-system-design-and-measurement",
+      "source": "book-section:pattern-of-mind-full:227-chapter-26-translating-this-into-prompt-architecture",
+      "target": "book-section:pattern-of-mind-full:228-the-lowest-cost-highest-availability-implementation",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:193-section-9-implementation",
-      "target": "book-section:pattern-of-mind-full:195-chapter-26-translating-this-into-prompt-architecture",
+      "source": "book-section:pattern-of-mind-full:227-chapter-26-translating-this-into-prompt-architecture",
+      "target": "book-section:pattern-of-mind-full:229-26-1-the-opportunity",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:195-chapter-26-translating-this-into-prompt-architecture",
-      "target": "book-section:pattern-of-mind-full:196-the-lowest-cost-highest-availability-implementation",
+      "source": "book-section:pattern-of-mind-full:227-chapter-26-translating-this-into-prompt-architecture",
+      "target": "book-section:pattern-of-mind-full:230-26-2-the-cognitive-prompt-structure",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:195-chapter-26-translating-this-into-prompt-architecture",
-      "target": "book-section:pattern-of-mind-full:197-26-1-the-opportunity",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:195-chapter-26-translating-this-into-prompt-architecture",
-      "target": "book-section:pattern-of-mind-full:198-26-2-the-cognitive-prompt-structure",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:198-26-2-the-cognitive-prompt-structure",
+      "source": "book-section:pattern-of-mind-full:230-26-2-the-cognitive-prompt-structure",
       "target": "complete-prompt-template",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:195-chapter-26-translating-this-into-prompt-architecture",
-      "target": "book-section:pattern-of-mind-full:199-26-3-the-thinking-block",
+      "source": "book-section:pattern-of-mind-full:227-chapter-26-translating-this-into-prompt-architecture",
+      "target": "book-section:pattern-of-mind-full:231-26-3-the-thinking-block",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:195-chapter-26-translating-this-into-prompt-architecture",
-      "target": "book-section:pattern-of-mind-full:200-26-3-scaling-cognitive-depth",
+      "source": "book-section:pattern-of-mind-full:227-chapter-26-translating-this-into-prompt-architecture",
+      "target": "book-section:pattern-of-mind-full:232-26-4-scaling-cognitive-depth",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:195-chapter-26-translating-this-into-prompt-architecture",
-      "target": "book-section:pattern-of-mind-full:201-26-4-what-prompt-architecture-can-and-cannot-do",
+      "source": "book-section:pattern-of-mind-full:227-chapter-26-translating-this-into-prompt-architecture",
+      "target": "book-section:pattern-of-mind-full:233-26-4-1-routing-by-stakes-not-just-complexity",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:193-section-9-implementation",
-      "target": "book-section:pattern-of-mind-full:202-chapter-27-translating-this-into-fine-tuning-methodology",
+      "source": "book-section:pattern-of-mind-full:227-chapter-26-translating-this-into-prompt-architecture",
+      "target": "book-section:pattern-of-mind-full:234-26-4-2-triage-the-stakes-decision-before-reasoning",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:202-chapter-27-translating-this-into-fine-tuning-methodology",
-      "target": "book-section:pattern-of-mind-full:203-training-for-truth-instead-of-preference",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:202-chapter-27-translating-this-into-fine-tuning-methodology",
-      "target": "book-section:pattern-of-mind-full:204-27-1-the-alternative-reward-function",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:202-chapter-27-translating-this-into-fine-tuning-methodology",
-      "target": "book-section:pattern-of-mind-full:205-27-2-reinforcement-learning-from-verifiable-rewards-rlvr",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:205-27-2-reinforcement-learning-from-verifiable-rewards-rlvr",
-      "target": "rlvr-methodology",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:202-chapter-27-translating-this-into-fine-tuning-methodology",
-      "target": "book-section:pattern-of-mind-full:206-27-3-process-reward-models-evaluating-every-step",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:206-27-3-process-reward-models-evaluating-every-step",
-      "target": "process-reward-models",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:202-chapter-27-translating-this-into-fine-tuning-methodology",
-      "target": "book-section:pattern-of-mind-full:207-27-4-first-order-logic-as-training-signal",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:207-27-4-first-order-logic-as-training-signal",
-      "target": "fol-training-signal",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:202-chapter-27-translating-this-into-fine-tuning-methodology",
-      "target": "book-section:pattern-of-mind-full:208-27-5-reasoning-distillation",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:208-27-5-reasoning-distillation",
+      "source": "book-section:pattern-of-mind-full:234-26-4-2-triage-the-stakes-decision-before-reasoning",
       "target": "stage-reason",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:208-27-5-reasoning-distillation",
+      "source": "book-section:pattern-of-mind-full:227-chapter-26-translating-this-into-prompt-architecture",
+      "target": "book-section:pattern-of-mind-full:235-26-5-what-prompt-architecture-can-and-cannot-do",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:227-chapter-26-translating-this-into-prompt-architecture",
+      "target": "book-section:pattern-of-mind-full:236-26-6-governance-is-architectural-not-in-the-weights",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:237-chapter-27-translating-this-into-fine-tuning-methodology",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:237-chapter-27-translating-this-into-fine-tuning-methodology",
+      "target": "book-section:pattern-of-mind-full:238-training-for-truth-instead-of-preference",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:237-chapter-27-translating-this-into-fine-tuning-methodology",
+      "target": "book-section:pattern-of-mind-full:239-27-1-the-alternative-reward-function",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:237-chapter-27-translating-this-into-fine-tuning-methodology",
+      "target": "book-section:pattern-of-mind-full:240-27-2-reinforcement-learning-from-verifiable-rewards-rlvr",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:240-27-2-reinforcement-learning-from-verifiable-rewards-rlvr",
+      "target": "rlvr-methodology",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:237-chapter-27-translating-this-into-fine-tuning-methodology",
+      "target": "book-section:pattern-of-mind-full:241-27-3-process-reward-models-evaluating-every-step",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:241-27-3-process-reward-models-evaluating-every-step",
+      "target": "process-reward-models",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:237-chapter-27-translating-this-into-fine-tuning-methodology",
+      "target": "book-section:pattern-of-mind-full:242-27-4-first-order-logic-as-a-training-signal-and-what-it-actually-does",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:242-27-4-first-order-logic-as-a-training-signal-and-what-it-actually-does",
+      "target": "fol-training-signal",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:237-chapter-27-translating-this-into-fine-tuning-methodology",
+      "target": "book-section:pattern-of-mind-full:243-27-5-reasoning-distillation",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:243-27-5-reasoning-distillation",
+      "target": "stage-reason",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:243-27-5-reasoning-distillation",
       "target": "reasoning-distillation",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:202-chapter-27-translating-this-into-fine-tuning-methodology",
-      "target": "book-section:pattern-of-mind-full:209-27-6-training-data-requirements",
+      "source": "book-section:pattern-of-mind-full:237-chapter-27-translating-this-into-fine-tuning-methodology",
+      "target": "book-section:pattern-of-mind-full:244-27-6-training-data-requirements",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:193-section-9-implementation",
-      "target": "book-section:pattern-of-mind-full:210-chapter-28-translating-this-into-system-design",
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:245-chapter-28-memory-architecture",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:245-chapter-28-memory-architecture",
+      "target": "book-section:pattern-of-mind-full:246-what-persists-for-how-long-and-how-it-is-retrieved",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:210-chapter-28-translating-this-into-system-design",
-      "target": "book-section:pattern-of-mind-full:211-the-multi-component-architecture",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:210-chapter-28-translating-this-into-system-design",
-      "target": "book-section:pattern-of-mind-full:212-28-1-system-architecture-for-thinking-ai",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:210-chapter-28-translating-this-into-system-design",
-      "target": "book-section:pattern-of-mind-full:213-28-2-the-intuition-verification-loop",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:213-28-2-the-intuition-verification-loop",
-      "target": "role-of-intuition",
+      "source": "book-section:pattern-of-mind-full:246-what-persists-for-how-long-and-how-it-is-retrieved",
+      "target": "stage-retrieve",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:213-28-2-the-intuition-verification-loop",
-      "target": "neurosymbolic-pattern",
-      "label": "maps to",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:210-chapter-28-translating-this-into-system-design",
-      "target": "book-section:pattern-of-mind-full:214-28-3-world-models-the-missing-layer",
+      "source": "book-section:pattern-of-mind-full:245-chapter-28-memory-architecture",
+      "target": "book-section:pattern-of-mind-full:247-28-1-three-timescales-of-state",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:214-28-3-world-models-the-missing-layer",
+      "source": "book-section:pattern-of-mind-full:245-chapter-28-memory-architecture",
+      "target": "book-section:pattern-of-mind-full:248-28-2-the-lifecycle-create-load-merge-evict-retrieve",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:248-28-2-the-lifecycle-create-load-merge-evict-retrieve",
+      "target": "stage-retrieve",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:245-chapter-28-memory-architecture",
+      "target": "book-section:pattern-of-mind-full:249-28-3-wiring-revise-to-the-turn-boundary",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:245-chapter-28-memory-architecture",
+      "target": "book-section:pattern-of-mind-full:250-28-4-where-cross-problem-wisdom-lives-and-where-it-cannot",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:245-chapter-28-memory-architecture",
+      "target": "book-section:pattern-of-mind-full:251-28-5-the-world-model-recap-and-reconciliation",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:251-28-5-the-world-model-recap-and-reconciliation",
       "target": "world-models",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:210-chapter-28-translating-this-into-system-design",
-      "target": "book-section:pattern-of-mind-full:215-28-4-integration-patterns",
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:252-chapter-29-translating-this-into-system-design",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:252-chapter-29-translating-this-into-system-design",
+      "target": "book-section:pattern-of-mind-full:253-the-multi-component-architecture",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:193-section-9-implementation",
-      "target": "book-section:pattern-of-mind-full:216-chapter-29-measuring-correct-thinking-vs-measuring-preference",
+      "source": "book-section:pattern-of-mind-full:252-chapter-29-translating-this-into-system-design",
+      "target": "book-section:pattern-of-mind-full:254-29-1-system-architecture-for-thinking-ai",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:216-chapter-29-measuring-correct-thinking-vs-measuring-preference",
-      "target": "book-section:pattern-of-mind-full:217-the-metrics-that-actually-matter",
+      "source": "book-section:pattern-of-mind-full:252-chapter-29-translating-this-into-system-design",
+      "target": "book-section:pattern-of-mind-full:255-29-2-the-intuition-verification-loop",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:217-the-metrics-that-actually-matter",
+      "source": "book-section:pattern-of-mind-full:255-29-2-the-intuition-verification-loop",
+      "target": "role-of-intuition",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:255-29-2-the-intuition-verification-loop",
+      "target": "neurosymbolic-pattern",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:252-chapter-29-translating-this-into-system-design",
+      "target": "book-section:pattern-of-mind-full:256-29-3-world-models-in-the-system",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:256-29-3-world-models-in-the-system",
+      "target": "world-models",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:252-chapter-29-translating-this-into-system-design",
+      "target": "book-section:pattern-of-mind-full:257-29-4-integration-patterns-by-verification-independence",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:252-chapter-29-translating-this-into-system-design",
+      "target": "book-section:pattern-of-mind-full:258-29-5-when-your-own-pipeline-is-a-group-cascade-hygiene",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:252-chapter-29-translating-this-into-system-design",
+      "target": "book-section:pattern-of-mind-full:259-29-6-matching-task-to-flow-to-data",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:252-chapter-29-translating-this-into-system-design",
+      "target": "book-section:pattern-of-mind-full:260-29-6b-curated-context-as-grounding-what-it-buys-and-when-it-hurts",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:252-chapter-29-translating-this-into-system-design",
+      "target": "book-section:pattern-of-mind-full:261-29-7-building-with-the-pattern-the-spec-frozen-method",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:252-chapter-29-translating-this-into-system-design",
+      "target": "book-section:pattern-of-mind-full:262-29-8-sizing-the-gate",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:263-chapter-30-deployment-economics-cost-latency-and-termination",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:263-chapter-30-deployment-economics-cost-latency-and-termination",
+      "target": "book-section:pattern-of-mind-full:264-what-thinking-costs-and-when-it-must-stop",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:263-chapter-30-deployment-economics-cost-latency-and-termination",
+      "target": "book-section:pattern-of-mind-full:265-30-1-the-per-stage-per-pattern-cost-model",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:263-chapter-30-deployment-economics-cost-latency-and-termination",
+      "target": "book-section:pattern-of-mind-full:266-30-2-one-global-cognition-budget-threaded-through-every-loop",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:263-chapter-30-deployment-economics-cost-latency-and-termination",
+      "target": "book-section:pattern-of-mind-full:267-30-3-the-terminal-state-honest-uncertainty-never-a-silent-guess",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:268-chapter-31-acting-escalation-and-abstention",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:268-chapter-31-acting-escalation-and-abstention",
+      "target": "book-section:pattern-of-mind-full:269-the-act-abstain-gate-and-the-responsibility-model",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:268-chapter-31-acting-escalation-and-abstention",
+      "target": "book-section:pattern-of-mind-full:270-31-1-the-act-abstain-gate",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:268-chapter-31-acting-escalation-and-abstention",
+      "target": "book-section:pattern-of-mind-full:271-31-2-escalation-triggers",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:268-chapter-31-acting-escalation-and-abstention",
+      "target": "book-section:pattern-of-mind-full:272-31-3-the-processrecord-as-an-audit-artifact-and-who-is-responsible",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:273-chapter-32-measuring-correct-thinking-vs-measuring-preference",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:273-chapter-32-measuring-correct-thinking-vs-measuring-preference",
+      "target": "book-section:pattern-of-mind-full:274-the-metrics-that-actually-matter-and-how-to-compute-them",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:274-the-metrics-that-actually-matter-and-how-to-compute-them",
       "target": "correctness-metrics",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:216-chapter-29-measuring-correct-thinking-vs-measuring-preference",
-      "target": "book-section:pattern-of-mind-full:218-29-1-current-metrics-are-wrong",
+      "source": "book-section:pattern-of-mind-full:273-chapter-32-measuring-correct-thinking-vs-measuring-preference",
+      "target": "book-section:pattern-of-mind-full:275-32-1-current-metrics-are-wrong",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:218-29-1-current-metrics-are-wrong",
+      "source": "book-section:pattern-of-mind-full:275-32-1-current-metrics-are-wrong",
       "target": "correctness-metrics",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:216-chapter-29-measuring-correct-thinking-vs-measuring-preference",
-      "target": "book-section:pattern-of-mind-full:219-29-2-correct-metrics-for-thinking-systems",
+      "source": "book-section:pattern-of-mind-full:273-chapter-32-measuring-correct-thinking-vs-measuring-preference",
+      "target": "book-section:pattern-of-mind-full:276-32-2-correct-metrics-for-thinking-systems",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:219-29-2-correct-metrics-for-thinking-systems",
+      "source": "book-section:pattern-of-mind-full:276-32-2-correct-metrics-for-thinking-systems",
       "target": "correctness-metrics",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:216-chapter-29-measuring-correct-thinking-vs-measuring-preference",
-      "target": "book-section:pattern-of-mind-full:220-29-3-the-critical-distinction",
+      "source": "book-section:pattern-of-mind-full:273-chapter-32-measuring-correct-thinking-vs-measuring-preference",
+      "target": "book-section:pattern-of-mind-full:277-32-3-the-critical-distinction",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:193-section-9-implementation",
-      "target": "book-section:pattern-of-mind-full:221-chapter-30-the-complete-cognitive-prompt-template",
+      "source": "book-section:pattern-of-mind-full:273-chapter-32-measuring-correct-thinking-vs-measuring-preference",
+      "target": "book-section:pattern-of-mind-full:278-32-4-measuring-calibration-not-just-demanding-it",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:221-chapter-30-the-complete-cognitive-prompt-template",
+      "source": "book-section:pattern-of-mind-full:273-chapter-32-measuring-correct-thinking-vs-measuring-preference",
+      "target": "book-section:pattern-of-mind-full:279-32-5-constructing-the-evaluation-set",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:280-chapter-33-the-complete-cognitive-prompt-template",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:280-chapter-33-the-complete-cognitive-prompt-template",
       "target": "complete-prompt-template",
       "label": "maps to",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:221-chapter-30-the-complete-cognitive-prompt-template",
-      "target": "book-section:pattern-of-mind-full:222-a-production-ready-artifact",
+      "source": "book-section:pattern-of-mind-full:280-chapter-33-the-complete-cognitive-prompt-template",
+      "target": "book-section:pattern-of-mind-full:281-a-production-ready-artifact",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:221-chapter-30-the-complete-cognitive-prompt-template",
-      "target": "book-section:pattern-of-mind-full:223-30-1-purpose",
+      "source": "book-section:pattern-of-mind-full:280-chapter-33-the-complete-cognitive-prompt-template",
+      "target": "book-section:pattern-of-mind-full:282-33-1-purpose",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:221-chapter-30-the-complete-cognitive-prompt-template",
-      "target": "book-section:pattern-of-mind-full:224-30-2-the-template",
+      "source": "book-section:pattern-of-mind-full:280-chapter-33-the-complete-cognitive-prompt-template",
+      "target": "book-section:pattern-of-mind-full:283-33-2-the-template",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:221-chapter-30-the-complete-cognitive-prompt-template",
-      "target": "book-section:pattern-of-mind-full:225-30-3-deployment-notes",
+      "source": "book-section:pattern-of-mind-full:280-chapter-33-the-complete-cognitive-prompt-template",
+      "target": "book-section:pattern-of-mind-full:284-33-3-deployment-notes",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:193-section-9-implementation",
-      "target": "book-section:pattern-of-mind-full:226-the-implementation-summary",
+      "source": "book-section:pattern-of-mind-full:280-chapter-33-the-complete-cognitive-prompt-template",
+      "target": "book-section:pattern-of-mind-full:285-the-implementation-summary",
       "label": "contains",
       "weight": 2
     },
     {
       "source": "book:pattern-of-mind-full",
-      "target": "book-section:pattern-of-mind-full:227-field-validation-and-closing",
+      "target": "book-section:pattern-of-mind-full:286-interlude-a-worked-example-start-to-finish",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:286-interlude-a-worked-example-start-to-finish",
+      "target": "book-section:pattern-of-mind-full:287-the-flagship-example-a-real-time-encrypted-chat-system",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:287-the-flagship-example-a-real-time-encrypted-chat-system",
+      "target": "book-section:pattern-of-mind-full:288-stage-1-receive",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:288-stage-1-receive",
+      "target": "stage-receive",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:287-the-flagship-example-a-real-time-encrypted-chat-system",
+      "target": "book-section:pattern-of-mind-full:289-stage-2-decompose",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:289-stage-2-decompose",
+      "target": "stage-decompose",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:287-the-flagship-example-a-real-time-encrypted-chat-system",
+      "target": "book-section:pattern-of-mind-full:290-stage-3-classify",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:290-stage-3-classify",
+      "target": "stage-classify",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:287-the-flagship-example-a-real-time-encrypted-chat-system",
+      "target": "book-section:pattern-of-mind-full:291-stage-4-scope",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:291-stage-4-scope",
+      "target": "stage-scope",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:287-the-flagship-example-a-real-time-encrypted-chat-system",
+      "target": "book-section:pattern-of-mind-full:292-stage-5-retrieve",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:292-stage-5-retrieve",
+      "target": "stage-retrieve",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:287-the-flagship-example-a-real-time-encrypted-chat-system",
+      "target": "book-section:pattern-of-mind-full:293-stage-6-reason",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:293-stage-6-reason",
+      "target": "stage-reason",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:287-the-flagship-example-a-real-time-encrypted-chat-system",
+      "target": "book-section:pattern-of-mind-full:294-stage-7-verify",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:294-stage-7-verify",
+      "target": "stage-verify",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:287-the-flagship-example-a-real-time-encrypted-chat-system",
+      "target": "book-section:pattern-of-mind-full:295-stage-8-synthesize",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:295-stage-8-synthesize",
+      "target": "stage-synthesize",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:287-the-flagship-example-a-real-time-encrypted-chat-system",
+      "target": "book-section:pattern-of-mind-full:296-stage-9-evaluate",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:296-stage-9-evaluate",
+      "target": "stage-evaluate",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:287-the-flagship-example-a-real-time-encrypted-chat-system",
+      "target": "book-section:pattern-of-mind-full:297-stage-10-communicate",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:297-stage-10-communicate",
+      "target": "stage-receive",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:297-stage-10-communicate",
+      "target": "stage-communicate",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:287-the-flagship-example-a-real-time-encrypted-chat-system",
+      "target": "book-section:pattern-of-mind-full:298-stage-11-reflect",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:298-stage-11-reflect",
+      "target": "stage-receive",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:298-stage-11-reflect",
+      "target": "stage-reflect",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:286-interlude-a-worked-example-start-to-finish",
+      "target": "book-section:pattern-of-mind-full:299-the-quick-path-depth-scaling-on-a-simple-question",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:286-interlude-a-worked-example-start-to-finish",
+      "target": "book-section:pattern-of-mind-full:300-the-discipline-scales",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:301-section-10-related-work-and-closing",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:301-section-10-related-work-and-closing",
+      "target": "book-section:pattern-of-mind-full:302-related-work-and-the-promise",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:303-chapter-34-related-work-that-motivates-the-design",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:303-chapter-34-related-work-that-motivates-the-design",
+      "target": "book-section:pattern-of-mind-full:304-34-0-lineage-two-families-this-architecture-descends-from",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:303-chapter-34-related-work-that-motivates-the-design",
+      "target": "book-section:pattern-of-mind-full:305-34-1-the-state-of-the-field",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:303-chapter-34-related-work-that-motivates-the-design",
+      "target": "book-section:pattern-of-mind-full:306-34-2-related-components-and-what-the-pipeline-adds",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:303-chapter-34-related-work-that-motivates-the-design",
+      "target": "book-section:pattern-of-mind-full:307-34-3-what-nobody-has-built-including-us",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:303-chapter-34-related-work-that-motivates-the-design",
+      "target": "book-section:pattern-of-mind-full:308-34-4-the-projects-closest-to-this-vision",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:303-chapter-34-related-work-that-motivates-the-design",
+      "target": "book-section:pattern-of-mind-full:309-34-5-key-related-papers",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:303-chapter-34-related-work-that-motivates-the-design",
+      "target": "book-section:pattern-of-mind-full:310-34-6-what-we-take-and-what-we-reject",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:311-chapter-35-related-inference-time-reasoning-methods",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:311-chapter-35-related-inference-time-reasoning-methods",
+      "target": "stage-reason",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:311-chapter-35-related-inference-time-reasoning-methods",
+      "target": "book-section:pattern-of-mind-full:312-35-1-chain-of-thought-wei-et-al-2022",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:311-chapter-35-related-inference-time-reasoning-methods",
+      "target": "book-section:pattern-of-mind-full:313-35-2-self-consistency-wang-et-al-2022",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:311-chapter-35-related-inference-time-reasoning-methods",
+      "target": "book-section:pattern-of-mind-full:314-35-3-react-yao-et-al-2022",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:311-chapter-35-related-inference-time-reasoning-methods",
+      "target": "book-section:pattern-of-mind-full:315-35-4-tree-of-thoughts-yao-et-al-2023",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:311-chapter-35-related-inference-time-reasoning-methods",
+      "target": "book-section:pattern-of-mind-full:316-35-5-reflexion-and-self-refine-shinn-et-al-2023-madaan-et-al-2023",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:311-chapter-35-related-inference-time-reasoning-methods",
+      "target": "book-section:pattern-of-mind-full:317-35-6-constitutional-ai-rlaif-bai-et-al-2022",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:311-chapter-35-related-inference-time-reasoning-methods",
+      "target": "book-section:pattern-of-mind-full:318-35-7-process-reward-models-lightman-et-al-2023",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:318-35-7-process-reward-models-lightman-et-al-2023",
+      "target": "process-reward-models",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:311-chapter-35-related-inference-time-reasoning-methods",
+      "target": "book-section:pattern-of-mind-full:319-35-8-neurosymbolic-ai-alphaproof-ibm-and-the-field",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:319-35-8-neurosymbolic-ai-alphaproof-ibm-and-the-field",
+      "target": "neurosymbolic-pattern",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:319-35-8-neurosymbolic-ai-alphaproof-ibm-and-the-field",
+      "target": "alphaproof-validation",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:311-chapter-35-related-inference-time-reasoning-methods",
+      "target": "book-section:pattern-of-mind-full:320-35-9-toulmin-argumentation-toulmin-1958",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:311-chapter-35-related-inference-time-reasoning-methods",
+      "target": "book-section:pattern-of-mind-full:321-35-10-classical-cognitive-architectures-soar-and-act-r",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:311-chapter-35-related-inference-time-reasoning-methods",
+      "target": "book-section:pattern-of-mind-full:322-35-11-dual-process-theory-kahneman-2011",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:311-chapter-35-related-inference-time-reasoning-methods",
+      "target": "book-section:pattern-of-mind-full:323-35-12-what-the-pipeline-adds-stated-once",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:324-chapter-36-limits-failure-modes-and-falsification",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:324-chapter-36-limits-failure-modes-and-falsification",
+      "target": "book-section:pattern-of-mind-full:325-36-1-the-falsification-condition",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:324-chapter-36-limits-failure-modes-and-falsification",
+      "target": "book-section:pattern-of-mind-full:326-36-2-where-not-to-deploy-it",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:324-chapter-36-limits-failure-modes-and-falsification",
+      "target": "book-section:pattern-of-mind-full:327-36-3-the-self-verification-circularity-as-a-system-level-limit",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:324-chapter-36-limits-failure-modes-and-falsification",
+      "target": "book-section:pattern-of-mind-full:328-36-4-known-failure-modes-and-the-residual-risk",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:329-chapter-37-closing-the-mind-that-matters",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:329-chapter-37-closing-the-mind-that-matters",
+      "target": "book-section:pattern-of-mind-full:330-37-1-what-we-ve-built",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:329-chapter-37-closing-the-mind-that-matters",
+      "target": "book-section:pattern-of-mind-full:331-37-2-the-integration",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:329-chapter-37-closing-the-mind-that-matters",
+      "target": "book-section:pattern-of-mind-full:332-37-3-the-moral-argument",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:329-chapter-37-closing-the-mind-that-matters",
+      "target": "book-section:pattern-of-mind-full:333-37-4-the-complete-cognitive-cycle",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:329-chapter-37-closing-the-mind-that-matters",
+      "target": "book-section:pattern-of-mind-full:334-37-5-the-declaration",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:329-chapter-37-closing-the-mind-that-matters",
+      "target": "book-section:pattern-of-mind-full:335-37-6-to-those-who-will-build",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:329-chapter-37-closing-the-mind-that-matters",
+      "target": "book-section:pattern-of-mind-full:336-37-7-the-final-word",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:329-chapter-37-closing-the-mind-that-matters",
+      "target": "book-section:pattern-of-mind-full:337-where-the-pattern-of-mind-fits-the-apex-super-intelligence-system",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:338-chapter-38-the-four-keys-master-framework",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:338-chapter-38-the-four-keys-master-framework",
+      "target": "book-section:pattern-of-mind-full:339-a1-1-1-key-1-the-examined-mind-philosophy",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:338-chapter-38-the-four-keys-master-framework",
+      "target": "book-section:pattern-of-mind-full:340-a1-1-2-key-2-the-pattern-of-mind-architecture-this-book",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:338-chapter-38-the-four-keys-master-framework",
+      "target": "book-section:pattern-of-mind-full:341-a1-1-3-key-3-machine-native-text-efficiency",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:338-chapter-38-the-four-keys-master-framework",
+      "target": "book-section:pattern-of-mind-full:342-a1-1-4-key-4-auks-memory-substrate-memory",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:343-chapter-39-key-1-the-examined-mind",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:343-chapter-39-key-1-the-examined-mind",
+      "target": "book-section:pattern-of-mind-full:344-the-seven-pillars",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:343-chapter-39-key-1-the-examined-mind",
+      "target": "book-section:pattern-of-mind-full:345-the-hidden-powers",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:343-chapter-39-key-1-the-examined-mind",
+      "target": "book-section:pattern-of-mind-full:346-the-deeper-architecture",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:343-chapter-39-key-1-the-examined-mind",
+      "target": "book-section:pattern-of-mind-full:347-the-unnamed-faculties",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:347-the-unnamed-faculties",
+      "target": "cognitive-faculties",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:343-chapter-39-key-1-the-examined-mind",
+      "target": "book-section:pattern-of-mind-full:348-premature-contraction-the-root-of-every-error",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:343-chapter-39-key-1-the-examined-mind",
+      "target": "book-section:pattern-of-mind-full:349-the-observer-s-role-the-philosophical-view",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:349-the-observer-s-role-the-philosophical-view",
+      "target": "metacognition",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:343-chapter-39-key-1-the-examined-mind",
+      "target": "book-section:pattern-of-mind-full:350-the-five-lessons-applied",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:343-chapter-39-key-1-the-examined-mind",
+      "target": "book-section:pattern-of-mind-full:351-the-predator-test",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:352-chapter-40-key-3-machine-native-text-the-training-engine",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:352-chapter-40-key-3-machine-native-text-the-training-engine",
+      "target": "book-section:pattern-of-mind-full:353-the-stable-diffusion-proof",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:352-chapter-40-key-3-machine-native-text-the-training-engine",
+      "target": "book-section:pattern-of-mind-full:354-the-text-parallel-why-bpe-fails-as-a-diffusion-substrate",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:352-chapter-40-key-3-machine-native-text-the-training-engine",
+      "target": "book-section:pattern-of-mind-full:355-the-exact-mapping",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:352-chapter-40-key-3-machine-native-text-the-training-engine",
+      "target": "book-section:pattern-of-mind-full:356-what-this-buys-compression-and-density",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:352-chapter-40-key-3-machine-native-text-the-training-engine",
+      "target": "book-section:pattern-of-mind-full:357-the-noise-schedule-is-a-curriculum",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:352-chapter-40-key-3-machine-native-text-the-training-engine",
+      "target": "book-section:pattern-of-mind-full:358-a-tight-note-on-efficient-training-methods-orthogonal-to-correctness",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:359-chapter-41-key-4-auks-the-memory-substrate",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:359-chapter-41-key-4-auks-the-memory-substrate",
+      "target": "book-section:pattern-of-mind-full:360-the-forgetting-curve-and-why-decay-is-not-deletion",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:359-chapter-41-key-4-auks-the-memory-substrate",
+      "target": "book-section:pattern-of-mind-full:361-reinforcement-use-makes-permanent",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:359-chapter-41-key-4-auks-the-memory-substrate",
+      "target": "book-section:pattern-of-mind-full:362-the-protection-hierarchy-and-the-significance-scale",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:359-chapter-41-key-4-auks-the-memory-substrate",
+      "target": "book-section:pattern-of-mind-full:363-the-memory-relevance-formula-and-the-4-397-ratio",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:359-chapter-41-key-4-auks-the-memory-substrate",
+      "target": "book-section:pattern-of-mind-full:364-per-stage-read-write-interaction",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:359-chapter-41-key-4-auks-the-memory-substrate",
+      "target": "book-section:pattern-of-mind-full:365-the-priority-protection-law",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:359-chapter-41-key-4-auks-the-memory-substrate",
+      "target": "book-section:pattern-of-mind-full:366-the-typed-graph-what-the-mind-reasons-over",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:366-the-typed-graph-what-the-mind-reasons-over",
+      "target": "stage-reason",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:359-chapter-41-key-4-auks-the-memory-substrate",
+      "target": "book-section:pattern-of-mind-full:367-the-waterline-how-the-ground-changes-shape",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:359-chapter-41-key-4-auks-the-memory-substrate",
+      "target": "book-section:pattern-of-mind-full:368-three-memory-streams",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:359-chapter-41-key-4-auks-the-memory-substrate",
+      "target": "book-section:pattern-of-mind-full:369-the-witness-doctrine",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:359-chapter-41-key-4-auks-the-memory-substrate",
+      "target": "book-section:pattern-of-mind-full:370-consolidation-when-the-ground-settles-between-questions",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:371-chapter-42-the-mathematical-proofs-training-generation-scaling-cost",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:371-chapter-42-the-mathematical-proofs-training-generation-scaling-cost",
+      "target": "book-section:pattern-of-mind-full:372-premises",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:371-chapter-42-the-mathematical-proofs-training-generation-scaling-cost",
+      "target": "book-section:pattern-of-mind-full:373-derivation",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:371-chapter-42-the-mathematical-proofs-training-generation-scaling-cost",
+      "target": "book-section:pattern-of-mind-full:374-what-this-proves-vs-what-it-assumes",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:371-chapter-42-the-mathematical-proofs-training-generation-scaling-cost",
+      "target": "book-section:pattern-of-mind-full:375-derivation-the-image-anchor-fully-verified",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:371-chapter-42-the-mathematical-proofs-training-generation-scaling-cost",
+      "target": "book-section:pattern-of-mind-full:376-derivation-the-text-generalization-conditional",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:371-chapter-42-the-mathematical-proofs-training-generation-scaling-cost",
+      "target": "book-section:pattern-of-mind-full:377-derivation-the-reference-baseline",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:371-chapter-42-the-mathematical-proofs-training-generation-scaling-cost",
+      "target": "book-section:pattern-of-mind-full:378-derivation-the-two-cost-baselines-present-both",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:371-chapter-42-the-mathematical-proofs-training-generation-scaling-cost",
+      "target": "book-section:pattern-of-mind-full:379-derivation-the-corrected-scaling-law",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:371-chapter-42-the-mathematical-proofs-training-generation-scaling-cost",
+      "target": "book-section:pattern-of-mind-full:380-reference-the-multiplier-stack-all-verified-arithmetic-premise-dependent-inputs",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:381-chapter-43-why-this-is-super-intelligence",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:381-chapter-43-why-this-is-super-intelligence",
+      "target": "book-section:pattern-of-mind-full:382-diagram-a6-1-the-super-intelligence-properties-block",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:381-chapter-43-why-this-is-super-intelligence",
+      "target": "book-section:pattern-of-mind-full:383-diagram-a6-2-where-the-wisdom-layer-binds-to-the-pipeline",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:381-chapter-43-why-this-is-super-intelligence",
+      "target": "book-section:pattern-of-mind-full:384-how-it-is-built-the-synapse-engineering-specification",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:385-chapter-44-synapse-at-a-glance-and-design-provenance",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:385-chapter-44-synapse-at-a-glance-and-design-provenance",
+      "target": "book-section:pattern-of-mind-full:386-the-single-organizing-commitment",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:385-chapter-44-synapse-at-a-glance-and-design-provenance",
+      "target": "book-section:pattern-of-mind-full:387-three-vantages-merged-into-one-design",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:385-chapter-44-synapse-at-a-glance-and-design-provenance",
+      "target": "book-section:pattern-of-mind-full:388-benchmark-gated-honesty-discipline",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:385-chapter-44-synapse-at-a-glance-and-design-provenance",
+      "target": "book-section:pattern-of-mind-full:389-the-validation-premise-stated-honestly",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:385-chapter-44-synapse-at-a-glance-and-design-provenance",
+      "target": "book-section:pattern-of-mind-full:390-the-ten-planes-in-one-breath-each",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:385-chapter-44-synapse-at-a-glance-and-design-provenance",
+      "target": "book-section:pattern-of-mind-full:391-component-to-chapter-ownership",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:385-chapter-44-synapse-at-a-glance-and-design-provenance",
+      "target": "book-section:pattern-of-mind-full:392-the-resolution-map-which-vantage-contributes-which-plane",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:385-chapter-44-synapse-at-a-glance-and-design-provenance",
+      "target": "book-section:pattern-of-mind-full:393-the-corpus-and-its-recurring-themes",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:385-chapter-44-synapse-at-a-glance-and-design-provenance",
+      "target": "book-section:pattern-of-mind-full:394-the-conflict-resolution-ledger",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:385-chapter-44-synapse-at-a-glance-and-design-provenance",
+      "target": "book-section:pattern-of-mind-full:395-the-what-this-does-not-do-discipline",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:385-chapter-44-synapse-at-a-glance-and-design-provenance",
+      "target": "book-section:pattern-of-mind-full:396-reading-part-b-after-this-chapter",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:397-chapter-45-the-memory-substrate-a-provenance-first-typed-graph",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:397-chapter-45-the-memory-substrate-a-provenance-first-typed-graph",
+      "target": "book-section:pattern-of-mind-full:398-b1-1-1-what-a-node-is",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:397-chapter-45-the-memory-substrate-a-provenance-first-typed-graph",
+      "target": "book-section:pattern-of-mind-full:399-b1-1-2-the-six-load-bearing-fields",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:397-chapter-45-the-memory-substrate-a-provenance-first-typed-graph",
+      "target": "book-section:pattern-of-mind-full:400-b1-1-3-the-graph-tiers",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:397-chapter-45-the-memory-substrate-a-provenance-first-typed-graph",
+      "target": "book-section:pattern-of-mind-full:401-b1-2-1-an-edge-carries-a-reason-not-just-a-link",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:401-b1-2-1-an-edge-carries-a-reason-not-just-a-link",
+      "target": "stage-reason",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:397-chapter-45-the-memory-substrate-a-provenance-first-typed-graph",
+      "target": "book-section:pattern-of-mind-full:402-b1-2-2-multiple-typed-edges-between-the-same-two-nodes",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:397-chapter-45-the-memory-substrate-a-provenance-first-typed-graph",
+      "target": "book-section:pattern-of-mind-full:403-b1-2-3-the-weighted-relationship-taxonomy",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:397-chapter-45-the-memory-substrate-a-provenance-first-typed-graph",
+      "target": "book-section:pattern-of-mind-full:404-b1-2-4-the-nine-provenance-decision-edges-the-why-how-bridge",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:397-chapter-45-the-memory-substrate-a-provenance-first-typed-graph",
+      "target": "book-section:pattern-of-mind-full:405-b1-3-1-the-graph-is-not-a-homogeneous-pool",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:397-chapter-45-the-memory-substrate-a-provenance-first-typed-graph",
+      "target": "book-section:pattern-of-mind-full:406-b1-3-2-protected-transcends-the-hierarchy",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:397-chapter-45-the-memory-substrate-a-provenance-first-typed-graph",
+      "target": "book-section:pattern-of-mind-full:407-b1-3-3-the-trust-tier-matrix-kind-policy",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:397-chapter-45-the-memory-substrate-a-provenance-first-typed-graph",
+      "target": "book-section:pattern-of-mind-full:408-b1-3-4-the-disputenode-the-brain-s-immune-log",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:397-chapter-45-the-memory-substrate-a-provenance-first-typed-graph",
+      "target": "book-section:pattern-of-mind-full:409-b1-4-1-nothing-enters-without-a-contract",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:397-chapter-45-the-memory-substrate-a-provenance-first-typed-graph",
+      "target": "book-section:pattern-of-mind-full:410-b1-4-2-sourceref-the-root-pointer-to-truth",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:397-chapter-45-the-memory-substrate-a-provenance-first-typed-graph",
+      "target": "book-section:pattern-of-mind-full:411-b1-4-3-the-two-stage-gate",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:397-chapter-45-the-memory-substrate-a-provenance-first-typed-graph",
+      "target": "book-section:pattern-of-mind-full:412-b1-4-4-the-north-star-health-metric-coverage-score",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:397-chapter-45-the-memory-substrate-a-provenance-first-typed-graph",
+      "target": "book-section:pattern-of-mind-full:413-b1-5-1-the-brain-is-federated-not-monolithic",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:397-chapter-45-the-memory-substrate-a-provenance-first-typed-graph",
+      "target": "book-section:pattern-of-mind-full:414-b1-5-2-agents-md-and-the-brain-directory",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:397-chapter-45-the-memory-substrate-a-provenance-first-typed-graph",
+      "target": "book-section:pattern-of-mind-full:415-b1-5-3-metadata-first-opt-in-diffs-branch-aware",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:416-chapter-46-memory-dynamics-decay-and-test-time-learning",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:416-chapter-46-memory-dynamics-decay-and-test-time-learning",
+      "target": "book-section:pattern-of-mind-full:417-b2-1-1-the-seven-functions",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:416-chapter-46-memory-dynamics-decay-and-test-time-learning",
+      "target": "book-section:pattern-of-mind-full:418-b2-1-2-the-cycle-ordered",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:416-chapter-46-memory-dynamics-decay-and-test-time-learning",
+      "target": "book-section:pattern-of-mind-full:419-b2-1-3-why-a-cycle-and-not-a-trigger-soup",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:416-chapter-46-memory-dynamics-decay-and-test-time-learning",
+      "target": "book-section:pattern-of-mind-full:420-b2-1-4-the-nightly-dream-pass",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:416-chapter-46-memory-dynamics-decay-and-test-time-learning",
+      "target": "book-section:pattern-of-mind-full:421-b2-2-1-the-differential-decay-law",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:416-chapter-46-memory-dynamics-decay-and-test-time-learning",
+      "target": "book-section:pattern-of-mind-full:422-b2-2-2-reinforce-on-use-and-decay-on-neglect",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:416-chapter-46-memory-dynamics-decay-and-test-time-learning",
+      "target": "book-section:pattern-of-mind-full:423-b2-2-3-the-moving-waterline-as-a-state-machine",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:416-chapter-46-memory-dynamics-decay-and-test-time-learning",
+      "target": "book-section:pattern-of-mind-full:424-b2-2-4-why-suppression-not-deletion-is-load-bearing",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:416-chapter-46-memory-dynamics-decay-and-test-time-learning",
+      "target": "book-section:pattern-of-mind-full:425-b2-3-1-edges-carry-their-own-dynamics-metadata",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:416-chapter-46-memory-dynamics-decay-and-test-time-learning",
+      "target": "book-section:pattern-of-mind-full:426-b2-3-2-the-reinforcement-rule",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:416-chapter-46-memory-dynamics-decay-and-test-time-learning",
+      "target": "book-section:pattern-of-mind-full:427-b2-3-3-bridges-and-centrality",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:416-chapter-46-memory-dynamics-decay-and-test-time-learning",
+      "target": "book-section:pattern-of-mind-full:428-b2-4-1-three-branches",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:416-chapter-46-memory-dynamics-decay-and-test-time-learning",
+      "target": "book-section:pattern-of-mind-full:429-b2-4-2-the-surprise-gate",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:416-chapter-46-memory-dynamics-decay-and-test-time-learning",
+      "target": "book-section:pattern-of-mind-full:430-b2-4-3-surprise-gated-forgetting",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:416-chapter-46-memory-dynamics-decay-and-test-time-learning",
+      "target": "book-section:pattern-of-mind-full:431-b2-4-4-wiring-to-the-posttool-hook",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:416-chapter-46-memory-dynamics-decay-and-test-time-learning",
+      "target": "book-section:pattern-of-mind-full:432-b2-4-5-relationship-to-reflect-and-the-world-model",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:432-b2-4-5-relationship-to-reflect-and-the-world-model",
+      "target": "stage-reflect",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:432-b2-4-5-relationship-to-reflect-and-the-world-model",
+      "target": "world-models",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:433-chapter-47-retrieval-the-auks-7-layer-lens",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:433-chapter-47-retrieval-the-auks-7-layer-lens",
+      "target": "book-section:pattern-of-mind-full:434-b3-1-1-the-seven-layers",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:433-chapter-47-retrieval-the-auks-7-layer-lens",
+      "target": "book-section:pattern-of-mind-full:435-b3-1-2-the-multiplicative-score",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:433-chapter-47-retrieval-the-auks-7-layer-lens",
+      "target": "book-section:pattern-of-mind-full:436-b3-1-3-why-significance-beats-similarity-cross-reference-not-restated",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:433-chapter-47-retrieval-the-auks-7-layer-lens",
+      "target": "book-section:pattern-of-mind-full:437-b3-2-1-the-goalspec-a-query-is-a-contract",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:433-chapter-47-retrieval-the-auks-7-layer-lens",
+      "target": "book-section:pattern-of-mind-full:438-b3-2-2-the-governed-walk-admission-has-two-gates",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:433-chapter-47-retrieval-the-auks-7-layer-lens",
+      "target": "book-section:pattern-of-mind-full:439-b3-2-3-filter-by-domain-then-rank",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:433-chapter-47-retrieval-the-auks-7-layer-lens",
+      "target": "book-section:pattern-of-mind-full:440-b3-2-4-the-zero-llm-hot-path",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:433-chapter-47-retrieval-the-auks-7-layer-lens",
+      "target": "book-section:pattern-of-mind-full:441-b3-2-5-the-always-available-fallback-floor",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:433-chapter-47-retrieval-the-auks-7-layer-lens",
+      "target": "book-section:pattern-of-mind-full:442-b3-2-6-prior-art-rag-and-the-cag-alternative-comparison-not-adoption",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:433-chapter-47-retrieval-the-auks-7-layer-lens",
+      "target": "book-section:pattern-of-mind-full:443-b3-3-1-why-a-pack-and-not-a-window",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:433-chapter-47-retrieval-the-auks-7-layer-lens",
+      "target": "book-section:pattern-of-mind-full:444-b3-3-2-first-class-retrieval-status-the-no-laundering-rule",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:433-chapter-47-retrieval-the-auks-7-layer-lens",
+      "target": "book-section:pattern-of-mind-full:445-b3-3-3-confidence-inheritance",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:433-chapter-47-retrieval-the-auks-7-layer-lens",
+      "target": "book-section:pattern-of-mind-full:446-b3-3-4-token-budgeted-greedy-priority-tier-packing",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:433-chapter-47-retrieval-the-auks-7-layer-lens",
+      "target": "book-section:pattern-of-mind-full:447-b3-3-5-the-two-lines-that-are-never-cut",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:433-chapter-47-retrieval-the-auks-7-layer-lens",
+      "target": "book-section:pattern-of-mind-full:448-b3-3-6-provenance-plane-separation-data-never-becomes-instructions",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:433-chapter-47-retrieval-the-auks-7-layer-lens",
+      "target": "book-section:pattern-of-mind-full:449-b3-3-7-the-pack-is-a-model-independent-contract",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:450-chapter-48-the-cognitive-pipeline-implementation-mirror",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:450-chapter-48-the-cognitive-pipeline-implementation-mirror",
+      "target": "11-stage-cognitive-pipeline",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:450-chapter-48-the-cognitive-pipeline-implementation-mirror",
+      "target": "book-section:pattern-of-mind-full:451-the-engineering-realization-of-part-c",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:450-chapter-48-the-cognitive-pipeline-implementation-mirror",
+      "target": "book-section:pattern-of-mind-full:452-diagram-d6-1-eleven-stages-with-struct-to-struct-interfaces",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:452-diagram-d6-1-eleven-stages-with-struct-to-struct-interfaces",
+      "target": "11-stage-cognitive-pipeline",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:450-chapter-48-the-cognitive-pipeline-implementation-mirror",
+      "target": "book-section:pattern-of-mind-full:453-the-wiring-of-variable-depth",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:450-chapter-48-the-cognitive-pipeline-implementation-mirror",
+      "target": "book-section:pattern-of-mind-full:454-diagram-d6-2-classify-routed-depth",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:454-diagram-d6-2-classify-routed-depth",
+      "target": "stage-classify",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:450-chapter-48-the-cognitive-pipeline-implementation-mirror",
+      "target": "book-section:pattern-of-mind-full:455-five-rules-that-make-the-circuit-auditable",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:450-chapter-48-the-cognitive-pipeline-implementation-mirror",
+      "target": "book-section:pattern-of-mind-full:456-the-protected-gather-solve-boundary",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:450-chapter-48-the-cognitive-pipeline-implementation-mirror",
+      "target": "book-section:pattern-of-mind-full:457-diagram-d6-3-backward-only-feedback-loops",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:450-chapter-48-the-cognitive-pipeline-implementation-mirror",
+      "target": "book-section:pattern-of-mind-full:458-refusing-to-answer-the-wrong-question",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:450-chapter-48-the-cognitive-pipeline-implementation-mirror",
+      "target": "book-section:pattern-of-mind-full:459-method-first-model-fallback-routing",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:450-chapter-48-the-cognitive-pipeline-implementation-mirror",
+      "target": "book-section:pattern-of-mind-full:460-diagram-d6-4-premisechallenger-short-circuit-and-method-first-routing-fork",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:461-chapter-49-verification-confidence-and-safety-the-engineering",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:461-chapter-49-verification-confidence-and-safety-the-engineering",
+      "target": "book-section:pattern-of-mind-full:462-what-is-owned-here-and-what-is-borrowed",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:461-chapter-49-verification-confidence-and-safety-the-engineering",
+      "target": "book-section:pattern-of-mind-full:463-the-five-level-chain-as-deployed",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:461-chapter-49-verification-confidence-and-safety-the-engineering",
+      "target": "book-section:pattern-of-mind-full:464-cross-provider-independence-as-a-deployment-rule",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:461-chapter-49-verification-confidence-and-safety-the-engineering",
+      "target": "book-section:pattern-of-mind-full:465-why-a-bus-and-not-a-number",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:461-chapter-49-verification-confidence-and-safety-the-engineering",
+      "target": "book-section:pattern-of-mind-full:466-the-four-hard-invariants-as-enforced",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:461-chapter-49-verification-confidence-and-safety-the-engineering",
+      "target": "book-section:pattern-of-mind-full:467-gate-then-propagate-in-sequence",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:461-chapter-49-verification-confidence-and-safety-the-engineering",
+      "target": "book-section:pattern-of-mind-full:468-the-problem-stated-once-and-handed-back",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:461-chapter-49-verification-confidence-and-safety-the-engineering",
+      "target": "book-section:pattern-of-mind-full:469-mechanism-1-process-supervision-over-outcome-only",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:461-chapter-49-verification-confidence-and-safety-the-engineering",
+      "target": "book-section:pattern-of-mind-full:470-mechanism-2-fan-out-and-refute-not-voting",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:461-chapter-49-verification-confidence-and-safety-the-engineering",
+      "target": "book-section:pattern-of-mind-full:471-the-one-sentence-rule-and-where-it-comes-from",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:461-chapter-49-verification-confidence-and-safety-the-engineering",
+      "target": "book-section:pattern-of-mind-full:472-provenance-plane-tagging-enforced-in-the-carrier",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:461-chapter-49-verification-confidence-and-safety-the-engineering",
+      "target": "book-section:pattern-of-mind-full:473-why-the-boundary-holds-under-attack",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:474-chapter-50-agent-orchestration-router-and-gate-constellation",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:474-chapter-50-agent-orchestration-router-and-gate-constellation",
+      "target": "book-section:pattern-of-mind-full:475-the-monolith-problem",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:474-chapter-50-agent-orchestration-router-and-gate-constellation",
+      "target": "book-section:pattern-of-mind-full:476-eleven-gates-one-per-stage",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:474-chapter-50-agent-orchestration-router-and-gate-constellation",
+      "target": "book-section:pattern-of-mind-full:477-what-the-router-is-the-engineering-of",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:474-chapter-50-agent-orchestration-router-and-gate-constellation",
+      "target": "book-section:pattern-of-mind-full:478-the-depth-axis-is-consumed-not-owned-here",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:474-chapter-50-agent-orchestration-router-and-gate-constellation",
+      "target": "book-section:pattern-of-mind-full:479-what-the-size-axis-emits-per-stage",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:474-chapter-50-agent-orchestration-router-and-gate-constellation",
+      "target": "book-section:pattern-of-mind-full:480-why-two-tiers",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:474-chapter-50-agent-orchestration-router-and-gate-constellation",
+      "target": "book-section:pattern-of-mind-full:481-the-minimum-slice-contract-and-disjoint-write-scope",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:481-the-minimum-slice-contract-and-disjoint-write-scope",
+      "target": "stage-scope",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:474-chapter-50-agent-orchestration-router-and-gate-constellation",
+      "target": "book-section:pattern-of-mind-full:482-the-four-swarm-patterns",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:474-chapter-50-agent-orchestration-router-and-gate-constellation",
+      "target": "book-section:pattern-of-mind-full:483-fan-out-is-expensive-coordination-lift-is-the-justification",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:474-chapter-50-agent-orchestration-router-and-gate-constellation",
+      "target": "book-section:pattern-of-mind-full:484-the-problem-hooks-solve",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:474-chapter-50-agent-orchestration-router-and-gate-constellation",
+      "target": "book-section:pattern-of-mind-full:485-the-json-shared-state-layer",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:474-chapter-50-agent-orchestration-router-and-gate-constellation",
+      "target": "book-section:pattern-of-mind-full:486-the-seven-event-hook-lifecycle",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:474-chapter-50-agent-orchestration-router-and-gate-constellation",
+      "target": "book-section:pattern-of-mind-full:487-compaction-survival-write-before-compact-postcompact-reload",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:488-chapter-51-governance-provenance-and-tamper-evident-audit",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:488-chapter-51-governance-provenance-and-tamper-evident-audit",
+      "target": "book-section:pattern-of-mind-full:489-b7-1-1-the-principle-tamper-evidence-lives-below-the-application",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:488-chapter-51-governance-provenance-and-tamper-evident-audit",
+      "target": "book-section:pattern-of-mind-full:490-b7-1-2-the-event-log-data-model",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:488-chapter-51-governance-provenance-and-tamper-evident-audit",
+      "target": "book-section:pattern-of-mind-full:491-b7-1-3-why-sha-256-and-the-honest-limits-of-the-guarantee",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:488-chapter-51-governance-provenance-and-tamper-evident-audit",
+      "target": "book-section:pattern-of-mind-full:492-b7-1-4-write-freeze-failing-safe-into-read-only",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:488-chapter-51-governance-provenance-and-tamper-evident-audit",
+      "target": "book-section:pattern-of-mind-full:493-b7-1-5-reanimation-from-source-repair-without-inventing",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:488-chapter-51-governance-provenance-and-tamper-evident-audit",
+      "target": "book-section:pattern-of-mind-full:494-b7-2-1-the-principle-provenance-order-not-popularity-and-not-last-write-wins",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:488-chapter-51-governance-provenance-and-tamper-evident-audit",
+      "target": "book-section:pattern-of-mind-full:495-b7-2-2-the-disputenode-an-immune-system-log-for-every-blocked-mutation",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:488-chapter-51-governance-provenance-and-tamper-evident-audit",
+      "target": "book-section:pattern-of-mind-full:496-b7-2-3-governance-separation-the-resolver-does-not-get-a-vote",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:488-chapter-51-governance-provenance-and-tamper-evident-audit",
+      "target": "book-section:pattern-of-mind-full:497-b7-3-1-accessscope-as-a-first-class-column",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:497-b7-3-1-accessscope-as-a-first-class-column",
+      "target": "stage-scope",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:488-chapter-51-governance-provenance-and-tamper-evident-audit",
+      "target": "book-section:pattern-of-mind-full:498-b7-3-2-the-load-bearing-rule-enforced-at-both-ingestion-and-retrieval",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:488-chapter-51-governance-provenance-and-tamper-evident-audit",
+      "target": "book-section:pattern-of-mind-full:499-b7-3-3-denials-are-evidence-too",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:488-chapter-51-governance-provenance-and-tamper-evident-audit",
+      "target": "book-section:pattern-of-mind-full:500-b7-4-1-recommends-never-mutates",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:488-chapter-51-governance-provenance-and-tamper-evident-audit",
+      "target": "book-section:pattern-of-mind-full:501-b7-4-2-observable-reasoning-traces-replace-private-chain-of-thought",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:501-b7-4-2-observable-reasoning-traces-replace-private-chain-of-thought",
+      "target": "stage-reason",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:488-chapter-51-governance-provenance-and-tamper-evident-audit",
+      "target": "book-section:pattern-of-mind-full:502-b7-4-3-the-spine-assembled",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:503-chapter-52-machine-native-encoding-and-context-economics",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:503-chapter-52-machine-native-encoding-and-context-economics",
+      "target": "book-section:pattern-of-mind-full:504-b8-1-1-key-1-machine-native-character-as-token-encoding",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:503-chapter-52-machine-native-encoding-and-context-economics",
+      "target": "book-section:pattern-of-mind-full:505-b8-1-2-the-encoding-vs-compression-reframe-and-the-shannon-trap",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:503-chapter-52-machine-native-encoding-and-context-economics",
+      "target": "book-section:pattern-of-mind-full:506-b8-1-3-key-2-the-corpus-mined-144k-four-tier-phrase-vocabulary",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:503-chapter-52-machine-native-encoding-and-context-economics",
+      "target": "book-section:pattern-of-mind-full:507-b8-2-1-the-tokenizer-as-parser-tiers-4-5-6-type-value-role",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:503-chapter-52-machine-native-encoding-and-context-economics",
+      "target": "book-section:pattern-of-mind-full:508-b8-2-2-composite-embeddings-and-the-parameter-savings",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:503-chapter-52-machine-native-encoding-and-context-economics",
+      "target": "book-section:pattern-of-mind-full:509-b8-2-3-the-compression-paradox",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:503-chapter-52-machine-native-encoding-and-context-economics",
+      "target": "book-section:pattern-of-mind-full:510-b8-2-4-function-tokens-tier-7-pattern-once-bind-many",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:503-chapter-52-machine-native-encoding-and-context-economics",
+      "target": "book-section:pattern-of-mind-full:511-b8-3-1-phrase-tokens-as-the-text-latent-space-engineering-view",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:503-chapter-52-machine-native-encoding-and-context-economics",
+      "target": "book-section:pattern-of-mind-full:512-b8-3-2-parallel-denoising-and-the-noise-schedule-as-curriculum",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:503-chapter-52-machine-native-encoding-and-context-economics",
+      "target": "book-section:pattern-of-mind-full:513-b8-3-3-verification-synergy-and-the-deployment-budget",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:503-chapter-52-machine-native-encoding-and-context-economics",
+      "target": "book-section:pattern-of-mind-full:514-b8-4-1-the-six-factor-multiplier-stack",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:503-chapter-52-machine-native-encoding-and-context-economics",
+      "target": "book-section:pattern-of-mind-full:515-b8-4-2-scaling-law-leverage-why-the-gap-holds-constant-at-scale",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:503-chapter-52-machine-native-encoding-and-context-economics",
+      "target": "book-section:pattern-of-mind-full:516-b8-4-3-the-unified-build-envelope-summary-proofs-in-a5",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:503-chapter-52-machine-native-encoding-and-context-economics",
+      "target": "book-section:pattern-of-mind-full:517-b8-5-1-the-locked-256-token-control-safety-memory-block",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:503-chapter-52-machine-native-encoding-and-context-economics",
+      "target": "book-section:pattern-of-mind-full:518-b8-5-2-kv-cache-quantization-and-context-expansion",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:503-chapter-52-machine-native-encoding-and-context-economics",
+      "target": "book-section:pattern-of-mind-full:519-b8-5-3-the-compression-vs-learnability-tradeoff-honest-scoping",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:520-chapter-53-end-to-end-data-flow-and-worked-examples",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:520-chapter-53-end-to-end-data-flow-and-worked-examples",
+      "target": "book-section:pattern-of-mind-full:521-the-ten-planes-in-order",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:520-chapter-53-end-to-end-data-flow-and-worked-examples",
+      "target": "book-section:pattern-of-mind-full:522-the-same-flow-as-a-data-flow-pipeline",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:520-chapter-53-end-to-end-data-flow-and-worked-examples",
+      "target": "book-section:pattern-of-mind-full:523-trace-1-factual-what-conductor-size-does-a-20-amp-branch-circuit-need",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:520-chapter-53-end-to-end-data-flow-and-worked-examples",
+      "target": "book-section:pattern-of-mind-full:524-trace-2-synthetic-a-multi-premise-problem-that-must-loop",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:520-chapter-53-end-to-end-data-flow-and-worked-examples",
+      "target": "book-section:pattern-of-mind-full:525-trace-3-false-premise-the-short-circuit",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:520-chapter-53-end-to-end-data-flow-and-worked-examples",
+      "target": "book-section:pattern-of-mind-full:526-the-three-traces-side-by-side",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:520-chapter-53-end-to-end-data-flow-and-worked-examples",
+      "target": "book-section:pattern-of-mind-full:527-conversation-is-mortal-the-substrate-survives",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:520-chapter-53-end-to-end-data-flow-and-worked-examples",
+      "target": "book-section:pattern-of-mind-full:528-the-cold-resume-sequence",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:520-chapter-53-end-to-end-data-flow-and-worked-examples",
+      "target": "book-section:pattern-of-mind-full:529-the-three-stream-continuity-instantiated",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:530-chapter-54-training-benchmarking-and-capability-ladder",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:530-chapter-54-training-benchmarking-and-capability-ladder",
+      "target": "book-section:pattern-of-mind-full:531-placement-note-for-the-3rd-edition",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:530-chapter-54-training-benchmarking-and-capability-ladder",
+      "target": "book-section:pattern-of-mind-full:532-the-thesis-under-test",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:530-chapter-54-training-benchmarking-and-capability-ladder",
+      "target": "book-section:pattern-of-mind-full:533-the-2-2-factorial",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:530-chapter-54-training-benchmarking-and-capability-ladder",
+      "target": "book-section:pattern-of-mind-full:534-equalizing-compute-the-fairness-requirement",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:530-chapter-54-training-benchmarking-and-capability-ladder",
+      "target": "book-section:pattern-of-mind-full:535-success-criteria-and-the-decision-matrix",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:535-success-criteria-and-the-decision-matrix",
+      "target": "success-criteria",
+      "label": "maps to",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:536-chapter-55-implementation-roadmap-risks-and-open-questions",
+      "label": "opens",
+      "weight": 3
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:536-chapter-55-implementation-roadmap-risks-and-open-questions",
+      "target": "book-section:pattern-of-mind-full:537-b11-1-1-synapse-substrate-first-gate-by-gate",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:536-chapter-55-implementation-roadmap-risks-and-open-questions",
+      "target": "book-section:pattern-of-mind-full:538-b11-1-2-apex-the-eight-week-training-run-inside-phase-3",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:536-chapter-55-implementation-roadmap-risks-and-open-questions",
+      "target": "book-section:pattern-of-mind-full:539-b11-1-3-the-reconciliation-one-table-no-hidden-seams",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:536-chapter-55-implementation-roadmap-risks-and-open-questions",
+      "target": "book-section:pattern-of-mind-full:540-b11-2-1-coverage-debt-the-priority-zero-risk",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:536-chapter-55-implementation-roadmap-risks-and-open-questions",
+      "target": "book-section:pattern-of-mind-full:541-b11-2-2-decay-consolidation-mistuning",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:536-chapter-55-implementation-roadmap-risks-and-open-questions",
+      "target": "book-section:pattern-of-mind-full:542-b11-2-3-prompt-injection-a-live-threat",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:536-chapter-55-implementation-roadmap-risks-and-open-questions",
+      "target": "book-section:pattern-of-mind-full:543-b11-2-4-multi-agent-token-cost",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:536-chapter-55-implementation-roadmap-risks-and-open-questions",
+      "target": "book-section:pattern-of-mind-full:544-b11-2-5-machine-native-encoding-is-the-least-validated-layer",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:536-chapter-55-implementation-roadmap-risks-and-open-questions",
+      "target": "book-section:pattern-of-mind-full:545-b11-2-6-the-honest-boundary-what-prompt-only-does-not-buy",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:536-chapter-55-implementation-roadmap-risks-and-open-questions",
+      "target": "book-section:pattern-of-mind-full:546-b11-2-7-risk-register",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:536-chapter-55-implementation-roadmap-risks-and-open-questions",
+      "target": "book-section:pattern-of-mind-full:547-b11-3-1-reconciling-conflicting-historical-node-counts",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:536-chapter-55-implementation-roadmap-risks-and-open-questions",
+      "target": "book-section:pattern-of-mind-full:548-b11-3-2-embedding-staleness-and-cross-project-contamination",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:536-chapter-55-implementation-roadmap-risks-and-open-questions",
+      "target": "book-section:pattern-of-mind-full:549-b11-3-3-do-surprise-gating-thresholds-and-decay-rates-generalize",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:536-chapter-55-implementation-roadmap-risks-and-open-questions",
+      "target": "book-section:pattern-of-mind-full:550-b11-3-4-synapse-as-a-rentable-multi-group-substrate",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:536-chapter-55-implementation-roadmap-risks-and-open-questions",
+      "target": "book-section:pattern-of-mind-full:551-b11-3-5-which-build-plan-is-canonical-when-cost-timeline-appear-to-disagree",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book-section:pattern-of-mind-full:536-chapter-55-implementation-roadmap-risks-and-open-questions",
+      "target": "book-section:pattern-of-mind-full:552-reference-schemas-and-executable-proofs",
+      "label": "contains",
+      "weight": 2
+    },
+    {
+      "source": "book:pattern-of-mind-full",
+      "target": "book-section:pattern-of-mind-full:553-chapter-56-output-schema-reference-all-typed-inter-stage-contracts",
       "label": "opens",
       "weight": 3
     },
     {
       "source": "book:pattern-of-mind-full",
-      "target": "book-section:pattern-of-mind-full:228-section-10-field-validation-and-closing",
+      "target": "book-section:pattern-of-mind-full:554-chapter-57-proof-scripts-and-executable-experiments",
       "label": "opens",
       "weight": 3
     },
     {
-      "source": "book-section:pattern-of-mind-full:228-section-10-field-validation-and-closing",
-      "target": "book-section:pattern-of-mind-full:229-the-proof-and-the-promise",
+      "source": "book-section:pattern-of-mind-full:554-chapter-57-proof-scripts-and-executable-experiments",
+      "target": "book-section:pattern-of-mind-full:555-numbers-that-check-out",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:228-section-10-field-validation-and-closing",
-      "target": "book-section:pattern-of-mind-full:230-chapter-31-where-this-architecture-sits-in-the-research-landscape",
+      "source": "book-section:pattern-of-mind-full:554-chapter-57-proof-scripts-and-executable-experiments",
+      "target": "book-section:pattern-of-mind-full:556-errors-and-overclaims-found",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:230-chapter-31-where-this-architecture-sits-in-the-research-landscape",
-      "target": "book-section:pattern-of-mind-full:231-the-convergence",
+      "source": "book-section:pattern-of-mind-full:554-chapter-57-proof-scripts-and-executable-experiments",
+      "target": "book-section:pattern-of-mind-full:557-calibrated-language-for-the-book-text",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:230-chapter-31-where-this-architecture-sits-in-the-research-landscape",
-      "target": "book-section:pattern-of-mind-full:232-31-1-the-state-of-the-field",
+      "source": "book-section:pattern-of-mind-full:554-chapter-57-proof-scripts-and-executable-experiments",
+      "target": "book-section:pattern-of-mind-full:558-purpose",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:230-chapter-31-where-this-architecture-sits-in-the-research-landscape",
-      "target": "book-section:pattern-of-mind-full:233-31-2-validated-components",
+      "source": "book-section:pattern-of-mind-full:554-chapter-57-proof-scripts-and-executable-experiments",
+      "target": "book-section:pattern-of-mind-full:559-structure",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:230-chapter-31-where-this-architecture-sits-in-the-research-landscape",
-      "target": "book-section:pattern-of-mind-full:234-31-3-what-nobody-has-done",
+      "source": "book-section:pattern-of-mind-full:554-chapter-57-proof-scripts-and-executable-experiments",
+      "target": "book-section:pattern-of-mind-full:560-key-premises-frozen-dataclasses",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:230-chapter-31-where-this-architecture-sits-in-the-research-landscape",
-      "target": "book-section:pattern-of-mind-full:235-31-4-the-companies-and-projects-closest-to-our-vision",
+      "source": "book-section:pattern-of-mind-full:554-chapter-57-proof-scripts-and-executable-experiments",
+      "target": "book-section:pattern-of-mind-full:561-asserts-in-derivation-functions-in-addition-to-final-sanity-checks",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:230-chapter-31-where-this-architecture-sits-in-the-research-landscape",
-      "target": "book-section:pattern-of-mind-full:236-31-5-the-key-research-papers",
+      "source": "book-section:pattern-of-mind-full:554-chapter-57-proof-scripts-and-executable-experiments",
+      "target": "book-section:pattern-of-mind-full:562-what-it-computes",
       "label": "contains",
       "weight": 2
     },
     {
-      "source": "book-section:pattern-of-mind-full:230-chapter-31-where-this-architecture-sits-in-the-research-landscape",
-      "target": "book-section:pattern-of-mind-full:237-31-6-what-we-take-and-what-we-reject",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:228-section-10-field-validation-and-closing",
-      "target": "book-section:pattern-of-mind-full:238-chapter-32-closing-the-mind-that-matters",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:238-chapter-32-closing-the-mind-that-matters",
-      "target": "book-section:pattern-of-mind-full:239-32-1-what-we-ve-built",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:238-chapter-32-closing-the-mind-that-matters",
-      "target": "book-section:pattern-of-mind-full:240-32-2-the-integration",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:238-chapter-32-closing-the-mind-that-matters",
-      "target": "book-section:pattern-of-mind-full:241-32-3-the-moral-argument",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:238-chapter-32-closing-the-mind-that-matters",
-      "target": "book-section:pattern-of-mind-full:242-32-4-the-complete-cognitive-cycle",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:238-chapter-32-closing-the-mind-that-matters",
-      "target": "book-section:pattern-of-mind-full:243-32-5-the-declaration",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:238-chapter-32-closing-the-mind-that-matters",
-      "target": "book-section:pattern-of-mind-full:244-32-6-to-those-who-will-build",
-      "label": "contains",
-      "weight": 2
-    },
-    {
-      "source": "book-section:pattern-of-mind-full:238-chapter-32-closing-the-mind-that-matters",
-      "target": "book-section:pattern-of-mind-full:245-32-7-the-final-word",
+      "source": "book-section:pattern-of-mind-full:554-chapter-57-proof-scripts-and-executable-experiments",
+      "target": "book-section:pattern-of-mind-full:563-verification-verdict",
       "label": "contains",
       "weight": 2
     },

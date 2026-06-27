@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-05-27T05:38:48.732Z",
+  "generatedAt": "2026-06-27T23:45:59.137Z",
   "graph": {
     "name": "Graphify Wiki Brain: Public Domain Mind Graph",
-    "nodeCount": 554,
-    "edgeCount": 1051,
+    "nodeCount": 872,
+    "edgeCount": 1394,
     "groups": [
       "Examined Mind Structure",
       "Full Book Assets",
@@ -33,7 +33,7 @@
       "book:the-witness",
       "book:the-examined-mind"
     ],
-    "sectionNodeCount": 375,
+    "sectionNodeCount": 693,
     "assetNodeCount": 5
   }
 }

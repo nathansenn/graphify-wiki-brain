@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-27T05:38:48.732Z",
+  "generatedAt": "2026-06-27T23:45:59.137Z",
   "source": "public/books/books.manifest.json",
   "count": 3,
   "books": [
@@ -7,8 +7,8 @@
       "id": "pattern-of-mind-full",
       "title": "The Pattern of Mind: Full Book",
       "shortTitle": "Pattern of Mind",
-      "mainUrl": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html",
-      "summary": "Full HTML book for the Pattern of Mind cognitive architecture, mapped into section and chapter nodes.",
+      "mainUrl": "books/pattern-of-mind/the-pattern-of-mind.html",
+      "summary": "Full HTML book — the Pattern of Mind cognitive architecture (expanded edition: the eleven-stage pipeline, the logic engine and verification chain, and the SYNAPSE engineering volume), mapped into section and chapter nodes.",
       "tags": [
         "full-book",
         "pattern-of-mind",
@@ -18,15 +18,15 @@
         {
           "role": "full-html",
           "format": "html",
-          "path": "public/books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html",
-          "url": "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html",
-          "bytes": 6021582,
-          "sha256": "0db45e610d4d345d092fe4be9c35488437f777be803fd972f91d686bc2389694"
+          "path": "public/books/pattern-of-mind/the-pattern-of-mind.html",
+          "url": "books/pattern-of-mind/the-pattern-of-mind.html",
+          "bytes": 4774684,
+          "sha256": "26878542211f839c5c8e32688da78c36b62ffdf06e399b412d68c7419d765ff5"
         }
       ],
       "graphNodeId": "book:pattern-of-mind-full",
       "graphUrl": "api/brain.json",
-      "sectionCount": 245,
+      "sectionCount": 563,
       "assetNodeIds": [
         "book-asset:pattern-of-mind-full:full-html"
       ]

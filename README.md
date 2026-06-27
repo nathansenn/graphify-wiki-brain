@@ -435,7 +435,7 @@ node scripts/build-public-domain-brain-package.mjs
 
 Full book artifacts live in `public/books/` and are mapped into `public/brain.json`.
 
-- [The Pattern of Mind full HTML](public/books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html)
+- [The Pattern of Mind full HTML](public/books/pattern-of-mind/the-pattern-of-mind.html)
 - [The Witness full HTML](public/books/the-witness/the-witness.html)
 - [The Examined Mind original DOCX](public/books/the-examined-mind/The_Examined_Mind.docx)
 - [The Examined Mind reader HTML](public/books/the-examined-mind/the-examined-mind.html)

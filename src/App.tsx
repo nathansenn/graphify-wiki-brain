@@ -36,7 +36,7 @@ function detectWebglSupport() {
 const homeLinks = [
   {
     label: "Pattern of Mind",
-    href: "books/pattern-of-mind/The-Pattern-of-Mind-BOOK.html",
+    href: "books/pattern-of-mind/the-pattern-of-mind.html",
     icon: BookOpen,
   },
   {
